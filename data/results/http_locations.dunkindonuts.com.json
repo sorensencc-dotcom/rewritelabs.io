@@ -1,0 +1,25 @@
+{
+  "url": "http://locations.dunkindonuts.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "assets/hydrate/root.b5cee4a6.js"
+    ],
+    "stylesheets": [
+      "assets/static/DirectoryCard-77450a25.css"
+    ],
+    "meta_generator": null
+  }
+}

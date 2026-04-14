@@ -1,0 +1,23 @@
+{
+  "url": "http://restaurants.subway.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "//assets.adobedtm.com/041a2403188d/46b5b45d8f01/launch-d251aacf6731.min.js"
+    ],
+    "stylesheets": [],
+    "meta_generator": null
+  }
+}

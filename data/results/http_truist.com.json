@@ -1,0 +1,37 @@
+{
+  "url": "http://truist.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+      "https://dias.bank.truist.com/ui/scripts/truist_common2.js?single",
+      "https://cdn.cookielaw.org/consent/a36cbfdc-000f-45ef-92ae-779176195d77/otSDKStub.js",
+      "//assets.adobedtm.com/550322ae7d69/9113c9ef16ff/launch-003a007a2c4b.min.js",
+      "/content/dam/truist-bank/us/en/internal-applications/motionpoint/mp_linkcode.js",
+      "https://fast.wistia.com/player.js",
+      "https://fast.wistia.com/embed/1196j4aayy.js",
+      "/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-base.min.ef98de142ce9ebdec1ecc18c6bdab175.js",
+      "/etc.clientlibs/microsites/clientlibs/clientlibs-micro-site/clientlibs-truist-bank.min.d41d8cd98f00b204e9800998ecf8427e.js",
+      "//truist.mpeasylink.com/mpel/mpel.js"
+    ],
+    "stylesheets": [
+      "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400",
+      "/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-base.min.7e3a7bbc95980784cd2f346067bd6fb6.css",
+      "/etc.clientlibs/microsites/clientlibs/clientlibs-micro-site/clientlibs-truist-bank.min.0a4ca97e1bfe5039355808377cd46ecd.css",
+      "/content/dam/truist-bank/css/custom.css"
+    ],
+    "meta_generator": null
+  }
+}

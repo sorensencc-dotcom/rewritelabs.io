@@ -1,0 +1,26 @@
+{
+  "url": "http://stores.staples.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [],
+    "stylesheets": [
+      "/assets/static/search-CEA1J-DE.css",
+      "/assets/static/fonts-BKtubHCP.css",
+      "/assets/static/SearchBar-CBXXnyXS.css",
+      "/assets/static/Breadcrumbs-CZg-M8ke.css"
+    ],
+    "meta_generator": null
+  }
+}

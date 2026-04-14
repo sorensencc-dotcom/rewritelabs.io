@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "throttle_per_minute": 600,
+  "burst_mode": false,
+  "burst_multiplier": 5,
+  "kill_switch": false,
+  "log_level": "info"
+}

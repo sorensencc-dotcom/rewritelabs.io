@@ -1,0 +1,39 @@
+{
+  "url": "http://mcdonalds.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+      "//assets.adobedtm.com/da51ad226ecd/a66f000a15e9/launch-00b6b5d33e75.min.js",
+      "https://www.mcdonalds.com/akam/13/1f0926d0",
+      "/libs/dam/components/scene7/common/clientlibs/viewer.lc-286d51076949b1908ec34d18f81e6977-lc.min.js",
+      "/etc.clientlibs/mcdonalds/clientlibs/clientlibs-jquery-upgrade.lc-d7b1e75865cff046eb51cb2bcb68f114-lc.min.js",
+      "/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js",
+      "/etc.clientlibs/mcdonalds/clientlibs/dynamicmedia.lc-f8d2a00a8c38ff026b323d132989169c-lc.min.js",
+      "/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+      "/etc.clientlibs/mcdonalds/clientlibs/clientlib-dependencies.lc-112fb9bad784754b2e6750b0c6c3f622-lc.min.js",
+      "/etc.clientlibs/mcdonalds/clientlibs/clientlib-site-global.lc-6a720be6e625ca61e0eee805c8cbf7f5-lc.min.js",
+      "/lGwr_0kY8ZarvBpI2A/9OX1tb8JN1JtJ8/BUYyEwh-WAY/eAEALmg/NZREB"
+    ],
+    "stylesheets": [
+      "/etc.clientlibs/mcdonalds/clientlibs/clientlib-grid.lc-4fb628f2edf7b457c6ec0b16fbabb054-lc.min.css",
+      "/etc.clientlibs/mcdonalds/clientlibs/clientlibs-jquery-upgrade.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css",
+      "/etc.clientlibs/mcdonalds/clientlibs/dynamicmedia.lc-a97e0418f0d0d6fe2eea57c7dc5e8804-lc.min.css",
+      "/etc.clientlibs/mcdonalds/clientlibs/clientlib-dependencies.lc-a49e169f41f57a75ecce8c10a244ff9c-lc.min.css",
+      "/etc.clientlibs/mcdonalds/clientlibs/clientlib-site-global.lc-5fca98d4f23346c726db41021a9346d7-lc.min.css"
+    ],
+    "meta_generator": null
+  }
+}

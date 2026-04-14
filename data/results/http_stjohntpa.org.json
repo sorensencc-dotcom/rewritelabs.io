@@ -1,0 +1,34 @@
+{
+  "url": "http://stjohntpa.org",
+  "isWordPress": true,
+  "wordpressVersion": "6.9.4",
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": true,
+    "wordpress_version": "6.9.4",
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "//a.mailmunch.co/app/v1/site.js",
+      "https://stjohntpa.org/mm/javascript/common-20260403-0404.js",
+      "https://stjohntpa.org/wp-content/plugins/youtube-channel/assets/lib/bigger-picture/bigger-picture.min.js?ver=3.25.2",
+      "https://stjohntpa.org/wp-content/plugins/youtube-channel/assets/js/youtube-channel.min.js?ver=3.25.2",
+      "https://stjohntpa.org/wp-content/themes/customify/assets/js/theme.min.js?ver=0.4.13",
+      "https://stats.wp.com/e-202615.js"
+    ],
+    "stylesheets": [
+      "https://stjohntpa.org/wp-content/plugins/youtube-channel/assets/lib/bigger-picture/css/bigger-picture.min.css?ver=3.25.2",
+      "https://stjohntpa.org/wp-content/plugins/youtube-channel/assets/css/youtube-channel.min.css?ver=3.25.2",
+      "https://stjohntpa.org/wp-content/plugins/advanced-wp-columns/assets/css/awp-columns.css?ver=6.9.4",
+      "https://stjohntpa.org/wp-content/themes/customify/assets/fonts/font-awesome/css/font-awesome.min.css?ver=5.0.0",
+      "https://stjohntpa.org/wp-content/themes/customify/style.min.css?ver=0.4.13"
+    ],
+    "meta_generator": "WordPress 6.9.4"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "url": "http://locations.tacobell.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://transcend-cdn.com/cm/e7401ac7-ba3d-4dda-8e3b-63475ab9990f/airgap.js"
+    ],
+    "stylesheets": [
+      "/assets/static/index-B2qbR437.css"
+    ],
+    "meta_generator": null
+  }
+}

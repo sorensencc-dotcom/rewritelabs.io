@@ -1,0 +1,24 @@
+{
+  "url": "http://locations.kfc.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://transcend-cdn.com/cm/d6de5d47-a47d-475d-b690-15a2f619e0f7/airgap.js",
+      "permanent-b0b701/locations.kfc.com/stateList/en.1366b810.js"
+    ],
+    "stylesheets": [],
+    "meta_generator": null
+  }
+}

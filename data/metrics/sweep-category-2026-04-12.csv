@@ -1,0 +1,25 @@
+region,category,avg_ms,count,ok,fail
+US,plumber,40703,96,95,1
+US,roofer,1465,96,96,0
+US,electrician,1419,96,96,0
+US,dentist,1341,96,96,0
+US,hvac,1429,96,96,0
+US,landscaping,1382,96,96,0
+US,cleaning service,1425,96,96,0
+US,accountant,1491,96,96,0
+US,solicitor,5126,96,95,1
+US,barber,1394,96,96,0
+US,restaurant,1348,96,96,0
+US,auto repair,1492,96,96,0
+UK,plumber,2421,24,24,0
+UK,roofer,2770,24,24,0
+UK,electrician,3485,24,24,0
+UK,dentist,3366,24,24,0
+UK,hvac,3698,24,24,0
+UK,landscaping,3179,24,24,0
+UK,cleaning service,3001,24,24,0
+UK,accountant,2852,24,24,0
+UK,solicitor,2706,24,24,0
+UK,barber,2822,24,24,0
+UK,restaurant,2446,24,24,0
+UK,auto repair,2590,24,24,0

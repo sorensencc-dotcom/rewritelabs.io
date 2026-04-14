@@ -1,0 +1,51 @@
+{
+  "url": "http://tools.usps.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": "3.7.1",
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": "3.7.1",
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://www.googleoptimize.com/optimize.js?id=GTM-T35N9RL",
+      "/global-elements/footer/script/jquery-3.7.1.js",
+      "/global-elements/lib/script/modernizr/modernizr.js",
+      "/global-elements/header/script/megamenu-v3.js",
+      "https://www.usps.com/ContentTemplates/common/scripts/OneLinkUsps.js",
+      "/global-elements/header/script/ge-login.js",
+      "/global-elements/lib/script/requirejs/require-2.3.6.js",
+      "/global-elements/header/script/header-search.js",
+      "https://www.usps.com/assets/script/home/megamenu-additions.js",
+      "scripts/libs/jquery.min.js",
+      "scripts/libs/bootstrap.min.js",
+      "scripts/libs/jquery-ui.min.js",
+      "scripts/libs/jquery.mask.min.js",
+      "scripts/libs/moment.min.js",
+      "scripts/libs/calendar.js",
+      "scripts/tracking-landing.js",
+      "/wJ-axXNfRK/eacfr8Wo/0n/1J1uGzcNiY6LSJEp/ax9IbA/fXlf/b0UXRwkC"
+    ],
+    "stylesheets": [
+      "styles/libs/jquery-ui.min.css",
+      "styles/default-styles.css",
+      "styles/tracking-widget.css",
+      "styles/tracking-cross-sell.css",
+      "styles/libs/bootstrap.min.css",
+      "styles/main.css",
+      "styles/tracking-reskin.css",
+      "styles/tracking-progress-bar.css",
+      "https://tools.usps.com/global-elements/header/css/megamenu-v4.css",
+      "https://tools.usps.com/global-elements/footer/css/main-sb.css",
+      "https://tools.usps.com/global-elements/footer/css/footer-sb.css"
+    ],
+    "meta_generator": null
+  }
+}

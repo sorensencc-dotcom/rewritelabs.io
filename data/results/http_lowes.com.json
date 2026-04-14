@@ -1,0 +1,46 @@
+{
+  "url": "http://lowes.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://www.lowes.com/resources/f15b3f2fbe7933b339c1266885d50364a1c78de092b14",
+      "https://www.lowes.com/akam/13/563a6e7c",
+      "https://www.lowescdn.com/mfe/fabrik_nested_components/latest/react@16.14.0.js",
+      "https://www.lowescdn.com/mfe/fabrik_nested_components/latest/react-dom@16.14.0.js",
+      "https://www.lowescdn.com/engage-one/0.0.1/vendors.6b56c8c5.js",
+      "https://www.lowescdn.com/engage-one/0.0.1/client.41a83165.js",
+      "//lowes15841z.btttag.com/btt.js",
+      "https://www.lowescdn.com/mfe/login_authentication_mfe/2_33_17/reauth.umd.js",
+      "//www.lowescdn.com/www/node/p13n/V4.7.2-B1088-master/clientlibrary.min.js",
+      "https://www.lowescdn.com/global-header-footer/search/header-v2.ffbc2329.js",
+      "https://www.lowescdn.com/visualsearchplugin/1.1.147/index.backyard.min.js",
+      "https://cdn.zineone.com/cloud/latest/z1m.js",
+      "https://www.lowescdn.com/global-header-footer/search/session-ai.d7b80f18.js",
+      "https://www.lowescdn.com/global-header-footer/search/footer-v2.6937866a.js",
+      "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+      "https://www.lowescdn.com/www/node/googleadmanagerlibrary/V1.01.121-B397/gamlibrary.min.js",
+      "https://www.lowescdn.com/www/node/exp-target/2.0.23/exp.js",
+      "https://www.lowescdn.com/mfe/purchase_atc_flyout/1_5_1-alpha_83/atc.umd.js",
+      "https://www.lowescdn.com/digital-purchase-mvpprotools/24.19.0/mvpprotools.umd.js",
+      "/jqgACc5UcIp22OfIEw/p57p0GLELEOLh4Yf/LlUCAg/W30r/cEt9H2UB",
+      "/jqgACc5UcIp22OfIEw/rD7p/HEphAQ/FStz/UCoJZHUp",
+      "/jqgACc5UcIp22OfIEw/rD7p0GLELE/Bw0MAg/E3QP/JC8kSX5u?v=61590b10-e8db-9a12-1305-630f507a17ce"
+    ],
+    "stylesheets": [
+      "/jqgACc5UcIp22OfIEw/rD7p/HEphAQ/YW92/e08DOQVZ"
+    ],
+    "meta_generator": null
+  }
+}

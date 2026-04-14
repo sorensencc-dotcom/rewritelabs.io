@@ -1,0 +1,13 @@
+﻿.rl-panel {
+  background: var(--rl-bg-panel);
+  border: 1px solid var(--rl-border);
+  border-radius: var(--rl-radius);
+  padding: 20px;
+  box-shadow: var(--rl-shadow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rl-panel:hover {
+  border-color: var(--rl-accent);
+  box-shadow: 0 0 22px var(--rl-accent-glow);
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://dollartree.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://www.dollartree.com/resources/4c66183ac40a94aca8840649ee71a43e9fe3eea046099",
+      "https://www.dollartree.com/akam/13/2e28da07",
+      "https://www.dollartree.com/file/v4847802116576099056/storeJS/25.12/require.js?bust=25.12",
+      "https://www.dollartree.com/file/v2572979678047634012/storeJS/25.12/main.js?bust=25.12",
+      "https://www.dollartree.com/file/v6643827783781820991/storeJS/25.12/store-libs.js?bust=25.12",
+      "https://www.dollartree.com/file/v6512591561371657474/storeJS/25.12/cc-ko-oj-extensions.js?bust=25.12",
+      "/59iydl/hO7o/5q/hFdV/WThjxtYo/EbGwr88Gwmzhkkuf/dzldXmhnIQk/Rlx-/JX0sZBsB"
+    ],
+    "stylesheets": [
+      "/css/style.css?bust=25.12",
+      "https://www.dollartree.com/file/v554386149054956433/css/base.css?occsite=siteUS",
+      "https://www.dollartree.com/file/v3136209199042347445/css/common.css?occsite=siteUS",
+      "https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap",
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    ],
+    "meta_generator": null
+  }
+}

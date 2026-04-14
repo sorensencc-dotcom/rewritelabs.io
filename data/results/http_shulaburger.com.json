@@ -1,0 +1,51 @@
+{
+  "url": "http://shulaburger.com",
+  "isWordPress": true,
+  "wordpressVersion": "3.7.1",
+  "isOutdated": true,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": true,
+    "wordpress_version": "3.7.1",
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://shulaburger.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://shulaburger.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+      "https://cdn.userway.org/widget.js",
+      "https://shulaburger.com/wp-content/plugins/bb-plugin/js/jquery.waypoints.min.js?ver=2.9.4.1",
+      "https://shulaburger.com/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/jquery-carousel.js?ver=6.9.4",
+      "https://shulaburger.com/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/imagesloaded.min.js?ver=6.9.4",
+      "https://shulaburger.com/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.9.4.1",
+      "https://shulaburger.com/wp-content/plugins/bb-plugin/js/jquery.imagesloaded.min.js?ver=2.9.4.1",
+      "https://shulaburger.com/wp-includes/js/masonry.min.js?ver=4.2.2",
+      "https://shulaburger.com/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b",
+      "https://shulaburger.com/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/jquery-masonary.js?ver=6.9.4",
+      "https://shulaburger.com/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7",
+      "https://shulaburger.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1775526880",
+      "https://shulaburger.com/wp-content/plugins/formidable-pro/js/frm.min.js?ver=6.26.2-6.26.1-jquery"
+    ],
+    "stylesheets": [
+      "https://shulaburger.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4",
+      "https://shulaburger.com/wp-content/uploads/font-awesome/v6.4.2/css/svg-with-js.css",
+      "https://shulaburger.com/wp-content/uploads/bb-plugin/icons/ultimate-icons/style.css?ver=2.9.4.1",
+      "https://shulaburger.com/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css?ver=2.9.4.1",
+      "https://shulaburger.com/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=1775526880",
+      "https://shulaburger.com/wp-content/themes/blankslate/style.css?ver=6.9.4",
+      "https://shulaburger.com/wp-includes/css/dashicons.min.css?ver=6.9.4",
+      "https://shulaburger.com/wp-content/themes/blankslate-child/style.css?ver=1775962987",
+      "https://fonts.googleapis.com/css2?family=Montserrat%3Aital%2Cwght%400%2C100..900%3B1%2C100..900&display=swap%22+rel%3D%22stylesheet&ver=6.9.4",
+      "https://use.fontawesome.com/releases/v6.4.2/css/all.css",
+      "//fonts.googleapis.com/css?family=DM+Sans%3A600&ver=6.9.4",
+      "https://use.fontawesome.com/releases/v6.4.2/css/v4-shims.css",
+      "https://shulaburger.com/wp-content/plugins/formidable/css/formidableforms.css?ver=2262114",
+      "https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C700&ver=6.9.4"
+    ],
+    "meta_generator": "performance-lab 4.0.0; plugins: webp-uploads"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "url": "http://savealot.com",
+  "isWordPress": true,
+  "wordpressVersion": "3.7.1",
+  "isOutdated": true,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": true,
+    "wordpress_version": "3.7.1",
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://savealot.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://savealot.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+      "https://savealot.com/wp-content/plugins/a-city-ranked-suite/suite/review/js/review-handler.js?ver=6.9.4",
+      "https://savealot.com/wp-content/plugins/sal-store-locator/build/sal-rewards-widget/view.js?ver=c2d6fd567fa2a68aaf60",
+      "https://savealot.com/wp-content/plugins/sal-store-locator/build/sal-coupons/view.js?ver=31d6cfe0d16ae931b73c",
+      "https://savealot.com/wp-content/plugins/a-city-ranked-suite/suite/review/js/review-scripts.js?ver=6.9.4",
+      "https://savealot.com/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=b0f909c3ec791c383210",
+      "https://savealot.com/wp-content/plugins/instagram-feed/js/sbi-scripts.min.js?ver=6.10.1",
+      "https://savealot.com/wp-content/plugins/perfmatters/js/lazyload.min.js?ver=2.6.0",
+      "https://savealot.com/wp-content/plugins/sal-store-locator/assets/js/sal-gravity-forms.js?ver=1.0",
+      "/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=760332887"
+    ],
+    "stylesheets": [
+      "https://savealot.com/wp-content/cache/perfmatters/savealot.com/minify/6beb3f6be940.editor-styles.min.css?ver=1.0.9",
+      "https://savealot.com/wp-includes/blocks/navigation/style.min.css?ver=6.9.4",
+      "https://savealot.com/wp-includes/blocks/cover/style.min.css?ver=6.9.4",
+      "https://savealot.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.10.1",
+      "https://savealot.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4",
+      "https://savealot.com/wp-content/cache/perfmatters/savealot.com/minify/ad8b3d0ebf02.cr-suite.min.css?ver=6.9.4",
+      "https://savealot.com/wp-content/cache/perfmatters/savealot.com/minify/85073df81a2c.style.min.css?ver=1.0.9",
+      "https://savealot.com/wp-content/cache/perfmatters/savealot.com/minify/4405619036df.style.min.css?ver=1775771292"
+    ],
+    "meta_generator": null
+  }
+}

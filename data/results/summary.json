@@ -1,0 +1,3605 @@
+[
+  {
+    "url": "http://berniniofybor.com",
+    "isWordPress": true,
+    "wordpressVersion": "6.9.4",
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [
+      "center"
+    ],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": "6.9.4",
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [
+        "center"
+      ],
+      "scripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
+        "https://berniniofybor.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://berniniofybor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js",
+        "https://berniniofybor.com/wp-content/themes/bernini-restaurant-theme/js/bootstrap.min.js",
+        "https://berniniofybor.com/wp-content/themes/bernini-restaurant-theme/js/ie10-viewport-bug-workaround.js",
+        "https://berniniofybor.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+        "https://berniniofybor.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+        "https://berniniofybor.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5",
+        "https://berniniofybor.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5",
+        "https://berniniofybor.com/wp-content/plugins/foodpress/assets/js/foodpress_frontend.js?ver=1.0",
+        "https://berniniofybor.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+        "https://berniniofybor.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3",
+        "https://berniniofybor.com/wp-content/plugins/foodpress/assets/js/jquery.timepicker.js?ver=1.0",
+        "https://berniniofybor.com/wp-content/plugins/foodpress/assets/js/jquery-ui-1.10.4.custom.min.js?ver=1.0",
+        "https://www.google.com/recaptcha/api.js?render=6LfNMnQmAAAAAOVUa_ifWSF_NAYUHeemclN51cTI&ver=3.0",
+        "https://berniniofybor.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0",
+        "https://berniniofybor.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.1.5"
+      ],
+      "stylesheets": [
+        "https://berniniofybor.com/wp-content/themes/bernini-restaurant-theme/css/bootstrap.min.css",
+        "https://berniniofybor.com/wp-content/themes/bernini-restaurant-theme/styles.css",
+        "https://fast.fonts.net/cssapi/e561249f-25e5-438f-b753-3f41f1b496d7.css",
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
+        "https://berniniofybor.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5",
+        "https://berniniofybor.com/wp-content/plugins/foodpress/assets/fonts/font-awesome.css?ver=6.9.4",
+        "https://berniniofybor.com/wp-content/plugins/foodpress/assets/fonts/fp_fonts.css?ver=6.9.4",
+        "https://berniniofybor.com/wp-content/plugins/foodpress/assets/css/foodpress_styles.css?ver=6.9.4",
+        "//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C600%2C700%2C400%2C300&ver=6.9.4",
+        "https://berniniofybor.com/wp-content/plugins/foodpress/assets/css/foodpress_dynamic_styles.css?ver=6.9.4",
+        "https://berniniofybor.com/wp-content/plugins/foodpress/assets/css/jquery.timepicker.css?ver=6.9.4",
+        "https://berniniofybor.com/wp-content/plugins/foodpress/assets/css/jquery-ui.min.css?ver=6.9.4"
+      ],
+      "meta_generator": "WordPress 6.9.4"
+    },
+    "enriched": {
+      "url": "http://berniniofybor.com",
+      "hostname": "berniniofybor.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": false,
+      "wordpressVersion": "6.9.4",
+      "hasDeprecated": true,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://berniniofybor.com",
+      "score": 40,
+      "reasons": [
+        "WordPress site",
+        "Uses deprecated HTML tags",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://bk.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://cdn.cookielaw.org/consent/1aad1bfb-17b6-4023-aa99-6f60a365e4b5/OtAutoBlock.js",
+        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+        "/oneTrust.js",
+        "/_expo/static/js/web/index-e082dd064ad4e949b8749efa191d55b5.js"
+      ],
+      "stylesheets": [],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://bk.com",
+      "hostname": "bk.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://bk.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://cigarcastle.com",
+    "isWordPress": true,
+    "wordpressVersion": "3.7.1",
+    "isOutdated": true,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": "3.2.0",
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": "3.7.1",
+      "jquery_version": null,
+      "bootstrap_version": "3.2.0",
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "http://cigarcastle.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "http://cigarcastle.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "//cigarcastle.com/wp-content/plugins/revslider/public/js/libs/tptools.js?ver=6.7.29",
+        "//cigarcastle.com/wp-content/plugins/revslider/public/js/sr7.js?ver=6.7.29",
+        "https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js?ver=1.0.0",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.9-wc.10.4.3",
+        "http://cigarcastle.com/wp-includes/js/underscore.min.js?ver=1.13.7",
+        "http://cigarcastle.com/wp-includes/js/wp-util.min.js?ver=6.9.4",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/addify-product-dynamic-pricing-and-discounts/front/../includes/js/addf-drpc-front.js?ver=1.0.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/typeahead.bundle.min.js",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/bootstrap.min.js?ver=20150330",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/slick.min.js?ver=1.8.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/countdown.js?ver=20150315",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/jquery.magnific-popup.min.js?ver=1.1.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/jquery.unveil.js?ver=1.1.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/perfect-scrollbar.jquery.min.js?ver=0.6.12",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/sliding-menu.min.js?ver=0.3.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/gsap.min.js?ver=3.4.1",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/functions.js?ver=20150330",
+        "http://cigarcastle.com/wp-content/plugins/age-gate/dist/all.js?ver=3.7.2",
+        "http://cigarcastle.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+        "http://cigarcastle.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+        "http://cigarcastle.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5",
+        "http://cigarcastle.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5",
+        "http://cigarcastle.com/wp-content/plugins/goal-salespopup/assets/script.js?ver=1.0.0",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-compare/assets/libs/print/jQuery.print.js?ver=6.5.3",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-compare/assets/libs/table-head-fixer/table-head-fixer.js?ver=6.5.3",
+        "http://cigarcastle.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+        "http://cigarcastle.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3",
+        "http://cigarcastle.com/wp-includes/js/jquery/ui/sortable.min.js?ver=1.13.3",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-compare/assets/js/frontend.js?ver=6.5.3",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-wishlist/assets/js/frontend.js?ver=5.0.8",
+        "http://cigarcastle.com/wp-content/plugins/smart-search-and-product-filter/assets/js/se-widgets.js?ver=1.0.18",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/wc-quantity-increment.js?ver=20150330",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/js/woocommerce.js?ver=20150330",
+        "http://cigarcastle.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/jquery-ui-touch-punch/jquery-ui-touch-punch.min.js?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/accounting/accounting.min.js?ver=0.4.2",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/frontend/price-slider.min.js?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/jquery-payment/jquery.payment.min.js?ver=3.0.0-wc.10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce-gateway-authorize-net-cim/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/dist/frontend/sv-wc-payment-gateway-payment-form.js?ver=5.15.12",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/variation-swatches-for-woocommerce/assets/js/frontend.js?ver=2.2.5",
+        "http://cigarcastle.com/wp-content/plugins/age-gate/dist/age-gate.js?ver=3.7.2",
+        "http://cigarcastle.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.35.0",
+        "http://cigarcastle.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.35.0",
+        "http://cigarcastle.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.35.0",
+        "http://cigarcastle.com/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.11.1",
+        "http://cigarcastle.com/wp-content/plugins/mailchimp-for-wp/assets/js/email-typo-checker.js?ver=4.11.1",
+        "http://cigarcastle.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.34.2",
+        "http://cigarcastle.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.34.2",
+        "http://cigarcastle.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.34.2"
+      ],
+      "stylesheets": [
+        "http://cigarcastle.com/wp-content/plugins/woocommerce-gateway-authorize-net-cim/assets/css/blocks/wc-authorize-net-cim-checkout-block.css?ver=3.10.14",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce-gateway-authorize-net-cim/assets/css/blocks/wc-authorize-net-cim-checkout-block.css?ver=3.10.14",
+        "http://cigarcastle.com/wp-content/plugins/age-gate/dist/main.css?ver=3.7.2",
+        "http://cigarcastle.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5",
+        "http://cigarcastle.com/wp-content/plugins/goal-salespopup/assets/style.css?ver=1.0.0",
+        "//cigarcastle.com/wp-content/plugins/revslider/public/css/sr7.css?ver=6.7.29",
+        "https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css?ver=1.0.0",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-compare/assets/libs/hint/hint.min.css?ver=6.9.4",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/css/perfect-scrollbar.min.css?ver=6.9.4",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-compare/assets/libs/perfect-scrollbar/css/custom-theme.css?ver=6.9.4",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-compare/assets/css/frontend.css?ver=6.5.3",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-wishlist/assets/css/icons.css?ver=5.0.8",
+        "http://cigarcastle.com/wp-content/plugins/woo-smart-wishlist/assets/css/frontend.css?ver=5.0.8",
+        "http://cigarcastle.com/wp-content/plugins/smart-search-and-product-filter/assets/css/se-styles.css?ver=1.0.18",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/css/select2.css?ver=10.4.3",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce-gateway-authorize-net-cim/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/css/frontend/sv-wc-payment-gateway-payment-form.min.css?ver=5.15.12",
+        "http://cigarcastle.com/wp-content/plugins/addify-product-dynamic-pricing-and-discounts/front/../includes/css/addf-drpc-style.css?ver=1.0.0",
+        "http://cigarcastle.com/wp-content/plugins/variation-swatches-for-woocommerce/assets/css/frontend.css?ver=2.2.5",
+        "http://cigarcastle.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.35.0",
+        "http://cigarcastle.com/wp-content/uploads/elementor/css/post-1741.css?ver=1775587687",
+        "http://cigarcastle.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.35.0",
+        "http://cigarcastle.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.35.0",
+        "http://cigarcastle.com/wp-content/uploads/elementor/css/post-18344.css?ver=1775589236",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/wc-quantity-increment.css?ver=6.9.4",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/woocommerce.css?ver=1.0.7",
+        "http://cigarcastle.com/wp-content/themes/ecosoap-child/style.css?ver=6.9.4",
+        "http://fonts.googleapis.com/css?family=Plus%20Jakarta%20Sans:300,300i,400,400i,500,600,700,800&subset=latin%2Clatin-ext",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/all-awesome.css?ver=6.6.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/font-icomoon.css?ver=1.0.7",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/themify-icons.css?ver=1.0.7",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/eleganticon-style.css?ver=1.0.7",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/animate.css?ver=3.6.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/bootstrap.css?ver=3.2.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/slick.css?ver=1.8.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/magnific-popup.css?ver=1.1.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/sliding-menu.min.css?ver=0.3.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/woocommerce-smallscreen.css?ver=6.9.4",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/css/template.css?ver=1.0",
+        "http://cigarcastle.com/wp-content/themes/ecosoap/style.css?ver=1.0",
+        "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "//fonts.googleapis.com/css2?family=Roboto:wght@500&family=Montserrat:wght@400&family=Poppins:wght@500&display=swap",
+        "http://cigarcastle.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.4.3",
+        "http://cigarcastle.com/wp-content/uploads/elementor/css/post-16637.css?ver=1775751964",
+        "http://cigarcastle.com/wp-content/uploads/elementor/css/post-1554.css?ver=1775766729",
+        "http://cigarcastle.com/wp-content/uploads/elementor/css/post-19662.css?ver=1775765199",
+        "http://cigarcastle.com/wp-content/uploads/elementor/css/post-16708.css?ver=1775587686",
+        "http://cigarcastle.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.35.0",
+        "http://cigarcastle.com/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.35.0",
+        "https://fonts.googleapis.com/css?family=Inter+Tight:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap"
+      ],
+      "meta_generator": "Redux 4.4.18"
+    },
+    "enriched": {
+      "url": "http://cigarcastle.com",
+      "hostname": "cigarcastle.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": true,
+      "wordpressVersion": "3.7.1",
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://cigarcastle.com",
+      "score": 80,
+      "reasons": [
+        "WordPress site",
+        "Outdated WordPress version",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://cvs.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "/~/_next/static/chunks/7ed0c9e8-1144786bedbf95f8.js",
+        "/~/_next/static/chunks/6557-b0c8b279ec5b0235.js",
+        "/~/_next/static/chunks/main-app-55d780ac7e1fae1e.js",
+        "/~/_next/static/chunks/2168-b44b98e5a80cb636.js",
+        "/~/_next/static/chunks/6383-a2f0d3af023a5322.js",
+        "/~/_next/static/chunks/6691-dc4243658649e098.js",
+        "/~/_next/static/chunks/app/%5B%5B...slug%5D%5D/error-8adaa20727108357.js",
+        "/~/_next/static/chunks/app/global-error-35afe23d5ddaf586.js",
+        "/~/_next/static/chunks/7990-7e016727a0284f3e.js",
+        "/~/_next/static/chunks/app/layout-555d9c2dde37fc40.js",
+        "/~/_next/static/chunks/fdda9f2b-2be79c9635888e49.js",
+        "/~/_next/static/chunks/7e2637bd-1507956b9e9fa7e1.js",
+        "/~/_next/static/chunks/773932db-e8e902dbfb9ae13b.js",
+        "/~/_next/static/chunks/5561-87b0cd0ffaecf78c.js",
+        "/~/_next/static/chunks/3370-307a9ed977f02a58.js",
+        "/~/_next/static/chunks/app/%5B%5B...slug%5D%5D/page-26fbb0d71e43273e.js",
+        "/~/_next/static/chunks/app/error-234c6085d47bcc76.js",
+        "/~/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "https://www.youtube.com/iframe_api",
+        "https://www.cvs.com/cuMSAzl0n/jruWAaz/aQ/ufGa2c1Xt7NYV4r5/KSsCAQ/M3VQDWZ/KAx4B",
+        "/cuMSAzl0n/jruWAaz/aQ/ufGa/YBVx/dzZ0OxQ/YByAq",
+        "/cuMSAzl0n/jruWAaz/aQ/bGGa2c1Xt7/aAYHAQ/F3dCU1p/UMRVv?v=b4abe236-f28b-ad4b-5746-85e9aee1173d",
+        "/~/_next/static/chunks/webpack-fa8c79e3212d6ce6.js"
+      ],
+      "stylesheets": [
+        "/~/_next/static/css/393786e7d5730f6a.css",
+        "/~/_next/static/css/225385f7db85519b.css",
+        "/~/_next/static/css/0d65d44f627869f0.css",
+        "/~/_next/static/css/76fc0a7faf4ebea6.css",
+        "/~/_next/static/css/af3a07c857fdbfc7.css",
+        "/~/_next/static/css/45eafe31f276fb97.css",
+        "/~/_next/static/css/f11931d09174c243.css",
+        "/~/_next/static/css/d73f86a23cb5b339.css",
+        "/~/_next/static/css/7906ee53f3b336cd.css",
+        "/cuMSAzl0n/jruWAaz/aQ/bGGa/YBVx/Y2ozchI/vFHtY"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://cvs.com",
+      "hostname": "cvs.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://cvs.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://davidsworld.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [
+      "font"
+    ],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [
+        "font"
+      ],
+      "scripts": [
+        "/_ui/desktop/theme-trek/js/common_start.2704479e.js",
+        "/_ui/desktop/theme-trek/js/legacy-base-vendors.8a494a74.js",
+        "/_ui/desktop/theme-trek/js/legacy-all-vendors.09a24269.js",
+        "/_ui/desktop/theme-trek/js/pedal-package.ac87e99a.js",
+        "/_ui/desktop/theme-trek/js/vuejs-package.dda8cc95.js",
+        "/_ui/desktop/theme-trek/js/vendors.9946d05d.js",
+        "/_ui/desktop/theme-trek/js/chunk-common.2de0ac89.js",
+        "/_ui/desktop/theme-trek/js/bundle.26a51212.js",
+        "/_ui/desktop/theme-trek/js/common_end.8436ec43.js",
+        "https://consent.cookiebot.com/uc.js",
+        "https://www.lightboxcdn.com/vendor/1f262582-bf92-4a2b-a871-d34e7872844b/lightbox_inline.js"
+      ],
+      "stylesheets": [],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://davidsworld.com",
+      "hostname": "davidsworld.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": true,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://davidsworld.com",
+      "score": 20,
+      "reasons": [
+        "Uses deprecated HTML tags",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://davisislandspharmacy.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://davisislandspharmacy.com/static/version1768462624/_cache/merged/bc9b8b5ade2257a22858937d13366c22.js",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/DS2D_CustomizeSite/js/addAccessibilityClass.js",
+        "https://jsappcdn.hikeorders.com/main/assets/js/hko-accessibility.min.js?orgId=MuRQZ8DxFKv6",
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyBjDjYpHH7idyFAqPtGdPcK4UHY5QJ97LA&libraries=places"
+      ],
+      "stylesheets": [
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/mage/calendar.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Codazon_Slideshow/css/owl.carousel.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Codazon_Slideshow/css/owl.theme.default.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Codazon_Slideshow/css/animate.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/GlobalPayments_PaymentGateway/css/styles.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/css/styles-m.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/jquery/uppy/dist/uppy-custom.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Codazon_OneStepCheckout/custom.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/MageWorx_SearchSuiteAutocomplete/css/searchsuiteautocomplete.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/DS2D_Overwrite/css/translate-bar.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magenest_Popup/css/animate.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magenest_Popup/css/font-awesome.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magenest_Popup/css/bootstrap.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Mageplaza_Core/css/owl.carousel.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Mageplaza_Core/css/owl.theme.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Mageplaza_BannerSlider/css/animate.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Mageplaza_BannerSlider/css/style.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Core/css/styles.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Core/css/owlcarousel/owl.carousel.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Core/css/animate.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Core/css/fontawesome5.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Core/css/mgz_font.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Core/css/mgz_bootstrap.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Builder/css/openiconic.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Builder/css/styles.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Builder/css/common.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Core/css/magnific.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_PageBuilder/css/styles.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_PageBuilder/vendor/photoswipe/photoswipe.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_PageBuilder/vendor/photoswipe/default-skin/default-skin.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_PageBuilder/vendor/blueimp/css/blueimp-gallery.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_Newsletter/css/styles.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_HeaderFooterBuilder/css/styles.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_PageBuilderIconBox/css/styles.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magezon_PageBuilderShapeDivider/css/styles.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Webiators_GoogleTranslator/css/gtranslator.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magento_Theme/css/ds2d_left_nav_custom.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magento_Theme/css/chat_box.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magefan_Blog/css/blog-m.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magefan_Blog/css/blog-new.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/Magefan_Blog/css/blog-custom.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/css/styles-l.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/css/print.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/css/fontawesome/font-awesome.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/css/fontpeicon/pe-icon-7-stroke.min.css",
+        "https://davisislandspharmacy.com/static/version1768462624/frontend/Codazon/fastest_ds2d_2021/en_US/css/custom-styles.min.css",
+        "https://use.fontawesome.com/releases/v5.11.0/css/all.css",
+        "https://davisislandspharmacy.com/media/ds2d/web/css/ds2d_global.css",
+        "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css",
+        "https://fonts.googleapis.com/css?family=Poppins:200,200italic,300,300italic,400,400italic,500,500italic,600italic,600italic,700,700italic,800,800italic,900,900italic&subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese,latin-ext"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://davisislandspharmacy.com",
+      "hostname": "davisislandspharmacy.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://davisislandspharmacy.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://dillards.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": false,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": false,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://cdn.quantummetric.com/network-interceptor/quantum-dillards.js",
+        "/static/dist/js/vendor/shared.bundle.min.js?v=37",
+        "/javascript/compressed/adobeLaunch.js?v=37",
+        "/master/dist/a02880045b927d31-runtime.min.js",
+        "/master/dist/a02880045b927d31-node_modules_core-js_internals_create-iter-result-object_js-node_modules_core-js_internals_ex-f81c22.min.js",
+        "/master/dist/a02880045b927d31-webpack_container_entry_master-webpack_sharing_provide_default_loadable_component-webpack_sha-22947c.min.js",
+        "/master/dist/a02880045b927d31-desktopBundle.min.js",
+        "/master/dist/a02880045b927d31-client_components_Feedback_FeedbackContext_js.min.js",
+        "/master/dist/a02880045b927d31-client_components_UI_Icons_Icons_js.min.js",
+        "/master/dist/a02880045b927d31-client_components_Views_Shared_Header_Search_Search_js.min.js",
+        "/master/dist/a02880045b927d31-client_components_Containers_Shared_SharedApp_SharedApp_js-client_components_Views_Shared_Hea-f96037.min.js",
+        "/master/dist/a02880045b927d31-client_components_Views_Desktop_Header_Search_Search_js.min.js",
+        "/master/dist/a02880045b927d31-client_components_Containers_Desktop_HeaderContainer_HeaderContainer_js-client_components_Err-9037cb.min.js",
+        "/master/dist/a02880045b927d31-client_components_Containers_Desktop_FooterContainer_FooterContainer_js-client_components_Con-114039.min.js",
+        "/master/dist/a02880045b927d31-client_components_Error_Shared_ContentError_js-client_components_Error_Shared_GenericError_js-ca9e59.min.js",
+        "/master/dist/a02880045b927d31-desktop.min.js",
+        "/master/dist/a02880045b927d31-client_components_Swiper_Swiper_js.min.js",
+        "/master/dist/a02880045b927d31-node_modules_react-lazy-load-image-component_build_index_js.min.js",
+        "/master/dist/a02880045b927d31-node_modules_date-fns_esm_format_index_js.min.js",
+        "/master/dist/a02880045b927d31-node_modules_date-fns_esm_parse_index_js.min.js",
+        "/master/dist/a02880045b927d31-client_components_Views_Shared_Content_Layouts_Widgets_HorizontalRecommendation_HorizontalRec-f683a0.min.js",
+        "/master/dist/a02880045b927d31-node_modules_react-datepicker_dist_react-datepicker_min_js.min.js",
+        "/master/dist/a02880045b927d31-node_modules_react-slick_lib_index_js-node_modules_core-js_modules_es_string_replace-all_js.min.js",
+        "/master/dist/a02880045b927d31-node_modules_core-js_modules_web_url-search-params_js-node_modules_core-js_modules_web_url_js-d7598c.min.js",
+        "/master/dist/a02880045b927d31-client_components_Hooks_useAppContext_js-client_components_Views_Shared_Content_Chanel_Chanel-6b2047.min.js",
+        "/master/dist/a02880045b927d31-client_components_Hooks_Shared_Facet_useSelectedFacetsByType_js-client_components_Hooks_Share-29edb5.min.js",
+        "/master/dist/a02880045b927d31-desktopLayouts.min.js",
+        "/static/dist/js/bundle/desktopStaticNode.min.js?v=37",
+        "https://hello.zonos.com/s/dillards_hello.js?siteKey=BHCX1AWJKM4G",
+        "/y38WiA/Op/nz/V0DO/89C-miNbUk/Xa5Lp0f5Y7JibzEa/RwZjAQ/EGFzM1g-/Gg4B",
+        "/y38WiA/Op/nz/V0DO/89C-miNbUk/Dt5L/R2RGAQ/Z2x2flxf/CVgp"
+      ],
+      "stylesheets": [
+        "/assets/css/DdsHostedGoogleFonts_35.css",
+        "/static/dist/css/app/react-desktop.min.css?v=37",
+        "/master/dist/css/a02880045b927d31-desktop.css",
+        "/master/dist/css/a02880045b927d31-desktopLayouts.css",
+        "/y38WiA/Op/nz/V0DO/89C-miNbUk/Dt5L/R2RGAQ/dHVIB2Y2/LCtZ"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://dillards.com",
+      "hostname": "dillards.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": false
+    },
+    "score": {
+      "url": "http://dillards.com",
+      "score": 25,
+      "reasons": [
+        "Not responsive",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://diotampa.com",
+    "isWordPress": true,
+    "wordpressVersion": "6.4.8",
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": "6.4.8",
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://diotampa.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://diotampa.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://www.sevenrooms.com/widget/embed.js",
+        "https://diotampa.com/wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js?ver=3.17.1",
+        "https://diotampa.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2",
+        "https://diotampa.com/wp-content/themes/flatsome/assets/js/flatsome.js?ver=f2c57559524d9813afd4",
+        "https://diotampa.com/wp-content/plugins/instagram-feed/js/sbi-scripts.min.js?ver=6.2",
+        "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/lib/jquery.validate.min.js?ver=1.19.5",
+        "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/lib/mailcheck.min.js?ver=1.1.2",
+        "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/lib/punycode.min.js?ver=1.0.0",
+        "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/js/utils.min.js?ver=1.8.3.1",
+        "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/js/wpforms.min.js?ver=1.8.3.1",
+        "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/js/wpforms-modern.min.js?ver=1.8.3.1",
+        "https://www.sevenrooms.com/widget/embed.js"
+      ],
+      "stylesheets": [
+        "https://diotampa.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.2",
+        "https://diotampa.com/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.17.1",
+        "https://diotampa.com/wp-content/themes/flatsome-child/style.css?ver=3.0",
+        "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/css/frontend/modern/wpforms-full.min.css?ver=1.8.3.1"
+      ],
+      "meta_generator": "WordPress 6.4.8"
+    },
+    "enriched": {
+      "url": "http://diotampa.com",
+      "hostname": "diotampa.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": false,
+      "wordpressVersion": "6.4.8",
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://diotampa.com",
+      "score": 30,
+      "reasons": [
+        "WordPress site",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://dollartree.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://www.dollartree.com/resources/4c66183ac40a94aca8840649ee71a43e9fe3eea046099",
+        "https://www.dollartree.com/akam/13/2e28da07",
+        "https://www.dollartree.com/file/v4847802116576099056/storeJS/25.12/require.js?bust=25.12",
+        "https://www.dollartree.com/file/v2572979678047634012/storeJS/25.12/main.js?bust=25.12",
+        "https://www.dollartree.com/file/v6643827783781820991/storeJS/25.12/store-libs.js?bust=25.12",
+        "https://www.dollartree.com/file/v6512591561371657474/storeJS/25.12/cc-ko-oj-extensions.js?bust=25.12",
+        "/59iydl/hO7o/5q/hFdV/WThjxtYo/EbGwr88Gwmzhkkuf/dzldXmhnIQk/Rlx-/JX0sZBsB"
+      ],
+      "stylesheets": [
+        "/css/style.css?bust=25.12",
+        "https://www.dollartree.com/file/v554386149054956433/css/base.css?occsite=siteUS",
+        "https://www.dollartree.com/file/v3136209199042347445/css/common.css?occsite=siteUS",
+        "https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap",
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://dollartree.com",
+      "hostname": "dollartree.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://dollartree.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://example.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [],
+      "stylesheets": [],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://example.com",
+      "hostname": "example.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://example.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://happiwokfl.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": "3.6.0",
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": "3.6.0",
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://kit.fontawesome.com/a4edb6363d.js",
+        "https://www.googletagmanager.com/gtag/js?id=G-TTTWDHS5S5",
+        "/share42/share42.js",
+        "https://code.jquery.com/jquery-3.6.0.min.js",
+        "https://code.jquery.com/jquery-migrate-3.3.2.js",
+        "https://code.jquery.com/ui/1.13.2/jquery-ui.min.js",
+        "/min/g=js4.0&1773118496",
+        "https://www.google.com/recaptcha/api.js?render=explicit&onload=initRecaptchas"
+      ],
+      "stylesheets": [
+        "/min/g=css4.0&1775583039",
+        "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/minified/jquery-ui.min.css",
+        "//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700",
+        "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Nunito:400,700"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://happiwokfl.com",
+      "hostname": "happiwokfl.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://happiwokfl.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://hillsboroughschools.org",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-E1B2CKV7RB",
+        "https://www.googletagmanager.com/gtag/js?id=G-E1B2CKV7RB",
+        "https://cmsv2-static-cdn-prod.apptegy.net/static_js/d88b0e054773d6aedb651456aeb2320e6efab63d/_nuxt/B6o11378.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/cms-page-plugins/hero-image.js",
+        "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Custom-Classes/helpers.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Extended-Schools-Dropdown/extended-schools-dropdown.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Animated-Numbers/countup-numbers.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/infinite-scroller/infinite-scroller-2.js",
+        "https://cmsv2-shared-assets.apptegy.net/Schools/Hillsborough-County-Public-Schools-5557/hillsboroughcountypsfl-district-js.js"
+      ],
+      "stylesheets": [
+        "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&family=Roboto+Slab:wght@300;400;500;700;900&display=swap",
+        "/alias_font_faces.css",
+        "https://use.typekit.net/hbz2uvz.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/cms-page-plugins/hero-image.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Custom-Styles/helpers.css",
+        "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Extended-Schools-Dropdown/extended-schools-dropdown-v2.min.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Animated-Numbers/countup-numbers.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/infinite-scroller/infinite-scroller-2.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/custom-social-icons/social-simple-icons-p1.css",
+        "https://cmsv2-shared-assets.apptegy.net/Schools/Hillsborough-County-Public-Schools-5557/hillsboroughcountypsfl-district-css.css",
+        "https://cmsv2-static-cdn-prod.apptegy.net/static_js/d88b0e054773d6aedb651456aeb2320e6efab63d/_nuxt/entry.BA50bAqL.css",
+        "https://cmsv2-static-cdn-prod.apptegy.net/static_js/d88b0e054773d6aedb651456aeb2320e6efab63d/_nuxt/ViewHomepage.BmOyg8CL.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://hillsboroughschools.org",
+      "hostname": "hillsboroughschools.org",
+      "tld": "org",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://hillsboroughschools.org",
+      "score": 5,
+      "reasons": [
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://joesautobody.com",
+    "isWordPress": true,
+    "wordpressVersion": "6.9.4",
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": "6.9.4",
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/main.js?ver=1.0.2",
+        "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/swiper-bundle.min.js?ver=11.1.4",
+        "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/hybridmag-swiper.js?ver=1.0.2",
+        "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/tab-widget.js?ver=1.0.2"
+      ],
+      "stylesheets": [
+        "https://www.joesautobody.com/wp-content/themes/hybridmag/style.css?ver=1.0.2",
+        "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/css/swiper-bundle.css?ver=11.1.4",
+        "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/css/font-figtree.css"
+      ],
+      "meta_generator": "WordPress 6.9.4"
+    },
+    "enriched": {
+      "url": "http://joesautobody.com",
+      "hostname": "joesautobody.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": false,
+      "wordpressVersion": "6.9.4",
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://joesautobody.com",
+      "score": 30,
+      "reasons": [
+        "WordPress site",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://littlecaesars.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
+        "https://cdn.cookielaw.org/consent/3a859a77-a005-4183-94c7-c2134566bf55/OtAutoBlock.js",
+        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+        "/_next/static/chunks/webpack-25f06c00ea8a21bc.js",
+        "/_next/static/chunks/framework-cf0c0f7fb1761dea.js",
+        "/_next/static/chunks/main-21c1cea5745b420f.js",
+        "/_next/static/chunks/pages/_app-1f5cb46efb896d52.js",
+        "/_next/static/chunks/63-46ef9763187e9073.js",
+        "/_next/static/chunks/191-9328b32013082b64.js",
+        "/_next/static/chunks/pages/index-3bad7a9cb18d6910.js",
+        "/_next/static/TgWkC10NXBk2RYVQNNFzj/_buildManifest.js",
+        "/_next/static/TgWkC10NXBk2RYVQNNFzj/_ssgManifest.js"
+      ],
+      "stylesheets": [
+        "/_next/static/css/90237d9b2c612f74.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://littlecaesars.com",
+      "hostname": "littlecaesars.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://littlecaesars.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://locations.dunkindonuts.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "assets/hydrate/root.b5cee4a6.js"
+      ],
+      "stylesheets": [
+        "assets/static/DirectoryCard-77450a25.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://locations.dunkindonuts.com",
+      "hostname": "locations.dunkindonuts.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://locations.dunkindonuts.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://locations.einsteinbros.com",
+    "isWordPress": true,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [],
+      "stylesheets": [
+        "/assets/static/index-BR-44w8M.css",
+        "/assets/static/template-CmujHvZA.css",
+        "/assets/static/filterEncodings-Dn8lXSgF.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://locations.einsteinbros.com",
+      "hostname": "locations.einsteinbros.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://locations.einsteinbros.com",
+      "score": 30,
+      "reasons": [
+        "WordPress site",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://locations.kfc.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://transcend-cdn.com/cm/d6de5d47-a47d-475d-b690-15a2f619e0f7/airgap.js",
+        "permanent-b0b701/locations.kfc.com/stateList/en.1366b810.js"
+      ],
+      "stylesheets": [],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://locations.kfc.com",
+      "hostname": "locations.kfc.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://locations.kfc.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://locations.panerabread.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://www.panerabread.com/public/12c33e9e05fae0f490b569b430b9aed62f7e98a9cc41",
+        "//assets.adobedtm.com/launch-EN068643e629ca4b7b82a1039958329904.min.js",
+        "https://ssl.kaptcha.com/collect/sdk?m=100225",
+        "/content/dam/panerabread/static/www-ui/2.88.0-39cf1e0f/js/manifest.min.js",
+        "/content/dam/panerabread/static/www-ui/2.88.0-39cf1e0f/js/vendor.min.js",
+        "/content/dam/panerabread/static/www-ui/2.88.0-39cf1e0f/js/www-ui.min.js",
+        "https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit",
+        "https://resources.digital-cloud-west.medallia.com/wdcwest/69912/onsite/embed.js",
+        "/E9wSRn7K5jqa/fM/JRnZ9f4CM1/EpGawtLpD8XDcXXE/RkQCTFVf/Gw1EfTUn/DxgB"
+      ],
+      "stylesheets": [
+        "/content/dam/panerabread/static/www-ui/2.88.0-39cf1e0f/css/www-ui.min.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://locations.panerabread.com",
+      "hostname": "locations.panerabread.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://locations.panerabread.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://locations.pizzahut.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+      ],
+      "stylesheets": [
+        "/assets/static/index-DlESKZlj.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://locations.pizzahut.com",
+      "hostname": "locations.pizzahut.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://locations.pizzahut.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://locations.qdoba.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [],
+      "stylesheets": [
+        "/assets/static/config-ClNN44EY.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://locations.qdoba.com",
+      "hostname": "locations.qdoba.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://locations.qdoba.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://locations.tacobell.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://transcend-cdn.com/cm/e7401ac7-ba3d-4dda-8e3b-63475ab9990f/airgap.js"
+      ],
+      "stylesheets": [
+        "/assets/static/index-B2qbR437.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://locations.tacobell.com",
+      "hostname": "locations.tacobell.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://locations.tacobell.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://locations.wendys.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "permanent-b0b701/locations.wendys.com/countryList/main.1ab80eca.js",
+        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+      ],
+      "stylesheets": [
+        "permanent-b0b701/locations.wendys.com/countryList/main.1ab80eca.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://locations.wendys.com",
+      "hostname": "locations.wendys.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://locations.wendys.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://locators.bankofamerica.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://assets.bankofamerica.com/js/pollyfill.min.js",
+        "https://assets.bankofamerica.com/js/vendor/leaflet.js?v=123",
+        "https://assets.bankofamerica.com/js/vendor/leaflet.plugins.js?v=123",
+        "https://assets.bankofamerica.com/js/vendor/leaflet.markercluster.js?v=123",
+        "https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDErZdm6p3XF6hcBbj79xDVLngA420Nb8s&callback=googleInitalized",
+        "https://assets.bankofamerica.com/js/vendor/Leaflet.GoogleMutant.js?v=12345",
+        "https://assets.bankofamerica.com/min/scripts.min.js?v=a86d4752c8cc53c15c796233a0faf4aa)",
+        "https://assets.bankofamerica.com/js/babel/module/page.js?v=980a690f12dde91f81f1717f57870526)",
+        "https://assets.bankofamerica.com/js/babel/module/locator.js?v=6f49b141961eed43e257a855339545a6)"
+      ],
+      "stylesheets": [
+        "https://assets.bankofamerica.com/min/styles.min.css?v=fa244542e76ffd3ab5eb2c26232e7ad4",
+        "https://assets.bankofamerica.com/css/leaflet.css",
+        "https://assets.bankofamerica.com/css/print.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://locators.bankofamerica.com",
+      "hostname": "locators.bankofamerica.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://locators.bankofamerica.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://lowes.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://www.lowes.com/resources/f15b3f2fbe7933b339c1266885d50364a1c78de092b14",
+        "https://www.lowes.com/akam/13/563a6e7c",
+        "https://www.lowescdn.com/mfe/fabrik_nested_components/latest/react@16.14.0.js",
+        "https://www.lowescdn.com/mfe/fabrik_nested_components/latest/react-dom@16.14.0.js",
+        "https://www.lowescdn.com/engage-one/0.0.1/vendors.6b56c8c5.js",
+        "https://www.lowescdn.com/engage-one/0.0.1/client.41a83165.js",
+        "//lowes15841z.btttag.com/btt.js",
+        "https://www.lowescdn.com/mfe/login_authentication_mfe/2_33_17/reauth.umd.js",
+        "//www.lowescdn.com/www/node/p13n/V4.7.2-B1088-master/clientlibrary.min.js",
+        "https://www.lowescdn.com/global-header-footer/search/header-v2.ffbc2329.js",
+        "https://www.lowescdn.com/visualsearchplugin/1.1.147/index.backyard.min.js",
+        "https://cdn.zineone.com/cloud/latest/z1m.js",
+        "https://www.lowescdn.com/global-header-footer/search/session-ai.d7b80f18.js",
+        "https://www.lowescdn.com/global-header-footer/search/footer-v2.6937866a.js",
+        "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "https://www.lowescdn.com/www/node/googleadmanagerlibrary/V1.01.121-B397/gamlibrary.min.js",
+        "https://www.lowescdn.com/www/node/exp-target/2.0.23/exp.js",
+        "https://www.lowescdn.com/mfe/purchase_atc_flyout/1_5_1-alpha_83/atc.umd.js",
+        "https://www.lowescdn.com/digital-purchase-mvpprotools/24.19.0/mvpprotools.umd.js",
+        "/jqgACc5UcIp22OfIEw/p57p0GLELEOLh4Yf/LlUCAg/W30r/cEt9H2UB",
+        "/jqgACc5UcIp22OfIEw/rD7p/HEphAQ/FStz/UCoJZHUp",
+        "/jqgACc5UcIp22OfIEw/rD7p0GLELE/Bw0MAg/E3QP/JC8kSX5u?v=61590b10-e8db-9a12-1305-630f507a17ce"
+      ],
+      "stylesheets": [
+        "/jqgACc5UcIp22OfIEw/rD7p/HEphAQ/YW92/e08DOQVZ"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://lowes.com",
+      "hostname": "lowes.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://lowes.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://mcdonalds.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+        "//assets.adobedtm.com/da51ad226ecd/a66f000a15e9/launch-00b6b5d33e75.min.js",
+        "https://www.mcdonalds.com/akam/13/1f0926d0",
+        "/libs/dam/components/scene7/common/clientlibs/viewer.lc-286d51076949b1908ec34d18f81e6977-lc.min.js",
+        "/etc.clientlibs/mcdonalds/clientlibs/clientlibs-jquery-upgrade.lc-d7b1e75865cff046eb51cb2bcb68f114-lc.min.js",
+        "/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js",
+        "/etc.clientlibs/mcdonalds/clientlibs/dynamicmedia.lc-f8d2a00a8c38ff026b323d132989169c-lc.min.js",
+        "/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+        "/etc.clientlibs/mcdonalds/clientlibs/clientlib-dependencies.lc-112fb9bad784754b2e6750b0c6c3f622-lc.min.js",
+        "/etc.clientlibs/mcdonalds/clientlibs/clientlib-site-global.lc-6a720be6e625ca61e0eee805c8cbf7f5-lc.min.js",
+        "/lGwr_0kY8ZarvBpI2A/9OX1tb8JN1JtJ8/BUYyEwh-WAY/eAEALmg/NZREB"
+      ],
+      "stylesheets": [
+        "/etc.clientlibs/mcdonalds/clientlibs/clientlib-grid.lc-4fb628f2edf7b457c6ec0b16fbabb054-lc.min.css",
+        "/etc.clientlibs/mcdonalds/clientlibs/clientlibs-jquery-upgrade.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css",
+        "/etc.clientlibs/mcdonalds/clientlibs/dynamicmedia.lc-a97e0418f0d0d6fe2eea57c7dc5e8804-lc.min.css",
+        "/etc.clientlibs/mcdonalds/clientlibs/clientlib-dependencies.lc-a49e169f41f57a75ecce8c10a244ff9c-lc.min.css",
+        "/etc.clientlibs/mcdonalds/clientlibs/clientlib-site-global.lc-5fca98d4f23346c726db41021a9346d7-lc.min.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://mcdonalds.com",
+      "hostname": "mcdonalds.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://mcdonalds.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://metrobyt-mobile.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+        "//martech.metrobyt-mobile.com/metro/launch/metro-prod/a18f612bc208/9f71d183d9fb/launch-7aa64f54d2c7.min.js",
+        "/etc.clientlibs/digx/analytics/clientlibs/vendor-clientlibs/webvitals.ACSHASH14dfd6ba6f23c7a4c7c487862098b6d4.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/alpinejs.ACSHASH2453b284a11f4fbb5aaa6d4c111fa871.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/js-cookie.ACSHASH793ed004164ec84192dfa5e9822232f4.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/uuid.ACSHASH80536753726e4fa6badf81f5ea6bd8dd.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/localforage.ACSHASH32205f70fcea25a843357ca1fc583a9e.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/fetch.ACSHASHcb9b7dd7d9ca749d722d5a17d55c9c87.js",
+        "/etc.clientlibs/digx/platform/clientlibs/clientlib-platform-main.ACSHASH55ef298f2cd9548750b07fcb6f416e97.js",
+        "/etc.clientlibs/digx/privacy/clientlibs/service-clientlibs/global-privacy.ACSHASHb9fbf5147c9805a15379ffe4a168a1af.js",
+        "/etc.clientlibs/digx/platform/clientlibs/service-clientlibs/metro-authorization.ACSHASH28703f5e4e7741c066966afb272512db.js",
+        "/etc.clientlibs/digx/unav/components/content/utility-search/v1/utility-search/clientlib.ACSHASH13173ef9eceba33ce9193a83d1eddeb1.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/lodash.ACSHASHed99813f6624ab28a05b1313f5841b16.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-utils.ACSHASH4a400ab31806c6841417dc7ad76cfe4f.js",
+        "/etc.clientlibs/digx/unav/components/content/util/v1/util/clientlib.ACSHASH9777e402a52ff19ac85c1c60da645ffe.js",
+        "/etc.clientlibs/digx/unav/components/content/header/v1/header/clientlib.ACSHASHe0334561e693ef73e2f201f7841bad6f.js",
+        "/etc.clientlibs/digx/unav/components/content/utility-cart/v1/utility-cart/clientlib.ACSHASHcbc020bf0acb867fb91f6a96322289cd.js",
+        "/etc.clientlibs/digx/experience/components/content/npi/v1/npi/clientlib.ACSHASHbdabb266843ba504f575cbb668a39a38.js",
+        "/etc.clientlibs/digx/unav/components/content/footer/v1/footer/clientlib.ACSHASH2b6f85ae150da008c95105381ab8250e.js",
+        "/etc.clientlibs/digx/experience/components/content/snackbar/v1/snackbar/clientlib.ACSHASHda8216cbba64e5ca7ab0aa44b8ec7dc5.js",
+        "/etc.clientlibs/digx/experience/clientlibs/vendor-clientlibs/body-scroll-lock.ACSHASH180b568c955f5b85a6630e77320514c6.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-main.ACSHASHb2c93a071866af65fdf7edf0c1ad24b8.js",
+        "/etc.clientlibs/digx/experience/clientlibs/vendor-clientlibs/a11y-dialog.ACSHASH95ee986a68d685e3dd4d79f25c9d5c26.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-components.ACSHASH85fab4fcbe0a4a38e96c65d3a74702e1.js",
+        "/etc.clientlibs/digx/analytics/clientlibs/clientlib-analytics-main.ACSHASH3228a4cfdb023aa7adb9db21afcf8f2a.js",
+        "/etc.clientlibs/digx/experience/clientlibs/vendor-clientlibs/iodine.ACSHASH1fc85131439d7d97be06299fdbb49363.js",
+        "/etc.clientlibs/digx/experience/clientlibs/vendor-clientlibs/cleave.ACSHASH7313234d1438110c5f88431f7b51a118.js",
+        "/etc.clientlibs/digx/experience/clientlibs/service-clientlibs/recaptcha.ACSHASH5346cd9b9e076fa36cf37bdebb619553.js",
+        "/etc.clientlibs/digx/experience/clientlibs/service-clientlibs/leadGen.ACSHASH2c4de2e919220ab87236e845eada8d79.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-forms.ACSHASHd153818d7b4b33e9d1317f62835b4704.js",
+        "/etc.clientlibs/digx/metro-upper-funnel/clientlibs/page-clientlibs/metro/jebbit-integration.ACSHASH27c1a7c4262b33b5e29fd6028da5d9cf.js",
+        "/sTh_hO0z5Q/_xboj0yZ4A/mizYQNaf9fEamr/e04mRgUE/QhI/AYwxsMSkB"
+      ],
+      "stylesheets": [
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-grid.ACSHASHe5a90b6937b02320e2d0958dac105269.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-main.ACSHASHa97ba7c9c03eebd2fa0e0c1527cb01c9.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-metro.ACSHASHea4ff6b6e35cb13f8e37d1d25c0c8672.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-components.ACSHASH098bdc2af18d5b1cd08f4bc59dd0430e.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-forms.ACSHASHcb7e1b05ee248ff8483e2ac5a833a618.css",
+        "/etc.clientlibs/digx/unav/clientlibs/clientlib-unav-main.ACSHASH406e4a66bf137e8b6d5041591e912a01.css",
+        "/etc.clientlibs/digx/unav/components/content/header/v1/header/clientlib.ACSHASH5ea25f8830353b49083d646b4b731bf8.css",
+        "/etc.clientlibs/digx/unav/components/content/utility-search/v1/utility-search/clientlib.ACSHASH80b6ddc73f890fff3d729589b169d738.css",
+        "/etc.clientlibs/digx/unav/components/content/footer/v1/footer/clientlib.ACSHASHbce39ace05659ae5eb6b1c410353a3e2.css",
+        "/etc.clientlibs/digx/unav/components/content/footer-universal/v1/footer-universal/clientlib.ACSHASH41c1a2973ec1a37eb3ce575efdced7a5.css",
+        "/etc.clientlibs/digx/experience/components/content/snackbar/v1/snackbar/clientlib.ACSHASHa3d412154ae1383495c658c4896ca835.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://metrobyt-mobile.com",
+      "hostname": "metrobyt-mobile.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://metrobyt-mobile.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://mysdhc.org",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-E1B2CKV7RB",
+        "https://www.googletagmanager.com/gtag/js?id=G-E1B2CKV7RB",
+        "https://cmsv2-static-cdn-prod.apptegy.net/static_js/d88b0e054773d6aedb651456aeb2320e6efab63d/_nuxt/B6o11378.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/cms-page-plugins/hero-image.js",
+        "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Custom-Classes/helpers.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Extended-Schools-Dropdown/extended-schools-dropdown.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Animated-Numbers/countup-numbers.js",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/infinite-scroller/infinite-scroller-2.js",
+        "https://cmsv2-shared-assets.apptegy.net/Schools/Hillsborough-County-Public-Schools-5557/hillsboroughcountypsfl-district-js.js"
+      ],
+      "stylesheets": [
+        "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&family=Roboto+Slab:wght@300;400;500;700;900&display=swap",
+        "/alias_font_faces.css",
+        "https://use.typekit.net/hbz2uvz.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/cms-page-plugins/hero-image.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Custom-Styles/helpers.css",
+        "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Extended-Schools-Dropdown/extended-schools-dropdown-v2.min.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/Animated-Numbers/countup-numbers.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/infinite-scroller/infinite-scroller-2.css",
+        "https://cmsv2-shared-assets.apptegy.net/Global/Components/custom-social-icons/social-simple-icons-p1.css",
+        "https://cmsv2-shared-assets.apptegy.net/Schools/Hillsborough-County-Public-Schools-5557/hillsboroughcountypsfl-district-css.css",
+        "https://cmsv2-static-cdn-prod.apptegy.net/static_js/d88b0e054773d6aedb651456aeb2320e6efab63d/_nuxt/entry.BA50bAqL.css",
+        "https://cmsv2-static-cdn-prod.apptegy.net/static_js/d88b0e054773d6aedb651456aeb2320e6efab63d/_nuxt/ViewHomepage.BmOyg8CL.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://mysdhc.org",
+      "hostname": "mysdhc.org",
+      "tld": "org",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://mysdhc.org",
+      "score": 5,
+      "reasons": [
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://pinchapenny.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://pinchapenny.com/js/polyfills.js?v=2026.2.13.0",
+        "//www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit",
+        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+        "https://pinchapenny.com/js/manifest.js?v=2026.2.13.0",
+        "https://pinchapenny.com/js/vendor-bs3.js?v=2026.2.13.0",
+        "https://pinchapenny.com/js/app-bs3.js?v=2026.2.13.0",
+        "https://pinchapenny.com/js/home.js?v=2026.2.13.0",
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyDHYGc-p9cYWjPSv7UyppxNEMDt6prTnp4&callback=onGmapApiLoaded&loading=async",
+        "https://magento.instantsearchplus.com/js/acp-magento.js?v=2&mode=magento&UUID=7c8547c5-b07a-4e65-8c56-e92ebbe1dd6e&store=1"
+      ],
+      "stylesheets": [
+        "https://pinchapenny.com/css/app-bs3.css?v=2026.2.13.0"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://pinchapenny.com",
+      "hostname": "pinchapenny.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://pinchapenny.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://pizza.dominos.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "//assets.adobedtm.com/0d0617bb44f3/d9b228c8652d/launch-016321e30689.min.js"
+      ],
+      "stylesheets": [
+        "/assets/static/useBreakpoints-2d1b9b9a.css",
+        "/assets/static/GeolocateButton-d658f9dd.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://pizza.dominos.com",
+      "hostname": "pizza.dominos.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://pizza.dominos.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://publix.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "/ruxitagentjs_A7NVefghjqrtu_10327251022105625.js",
+        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+        "https://cdn.optimizely.com/datafiles/6cNytN7mzo28nc2wa5yEq.json/tag.js",
+        "https://cdn.optimizely.com/js/18372160253.js",
+        "https://assets.adobedtm.com/6262187ff74a/e03fc5c503a5/launch-1bddd4271e00.min.js",
+        "https://www.publix.com/akam/13/79bffff3",
+        "https://assets.publixcdn.com/assets/scripts/vendors.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/pb_design.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/pb_loading.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/design/PSnackbarStack.1773262001309.js",
+        "https://assets.publixcdn.com/assets/scripts/components/messaging/pb_GlobalMessaging.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/core/pb_SkeletonRemover.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/discovery/visualnavigation/pb_VisualNavigationGrid.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/navigation/pb_NavigationBarWrapper.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/navigation/pb_NavigationBarFunctions.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/navigation/pb_NavigationBarCurrentStore.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/navigation/pb_NavigationSidebar.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/common/pb_PageVuexStore.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/design/PIconButton.1773262001258.js",
+        "https://assets.publixcdn.com/assets/scripts/components/design/PImage.1773262001258.js",
+        "https://assets.publixcdn.com/assets/scripts/components/design/PIcon.1773262001257.js",
+        "https://assets.publixcdn.com/assets/scripts/components/design/PText.1773262001319.js",
+        "https://assets.publixcdn.com/assets/scripts/components/design/PNotificationButton.1773262001279.js",
+        "https://assets.publixcdn.com/assets/scripts/components/design/PButton.1773262001210.js",
+        "https://assets.publixcdn.com/assets/scripts/components/design/PDivider.1773262001240.js",
+        "https://assets.publixcdn.com/assets/scripts/components/common/pb_DynamicLoader.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/modals/pb_ClubPublixFlyout.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/discovery/modulargrid/banner/pb_ModularBanner.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/core/pb_SkeletonRemoverCaller.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/discovery/carousel/pb_CuratedProductCarouselDelayed.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/core/pb_ToastDrawer.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/cards/pb_NavigationCardsDatalayer.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/core/LazyBackgroundImage.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/components/account/userintent/pb_UserIntent.779912505de8b641.js",
+        "https://assets.publixcdn.com/assets/scripts/pb_Publix.779912505de8b641.js",
+        "/yFbv0sYiV/H5/8lIn1Qg/huaENVOEik3Qmr9h7p/CQd7MApEZw/KkE8/Dh59BW0B"
+      ],
+      "stylesheets": [],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://publix.com",
+      "hostname": "publix.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://publix.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://pupspub.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://s3-us-west-2.amazonaws.com/support.letesoft.com/apps/newClientPage/latest.js",
+        "/checkouts/internal/preloads.js?locale=en-US",
+        "//pupspub.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+        "//pupspub.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-496de5fe.js",
+        "//pupspub.com/cdn/shop/t/8/assets/utils.js?v=7831558957854122511753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/global.bundle.min.js?v=83394101171225484751753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/cart-count.js?v=51561485870383068741753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/cart-items.js?v=18494231088895156391753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/cart-footer.js?v=107578074203092953621753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/cart-note.js?v=175945663109345311611753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/alpine-extensions.js?v=130255111265633159301753718492",
+        "https://cdn.shopify.com/extensions/4d5a2c47-c9fc-4724-a26e-14d501c856c6/attrac-6/assets/attrac-embed-bars.js",
+        "https://cdn.shopify.com/extensions/019d48ff-5ff5-7527-be8d-00968557a25d/form-builder-by-hulkapps-61/assets/form-builder-script.js",
+        "https://pupspub.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+        "//pupspub.com/cdn/shop/t/8/assets/header.js?v=36849506637616900911753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/modules-predictive-search.bundle.min.js?v=100006850133386087801753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/offset-gallery-item.js?v=163228018526710532881753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/sections-footer.bundle.min.js?v=165345289835534809381753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/modals.js?v=160051358362553771071753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/modal-cart.js?v=136095141966072940001753718492"
+      ],
+      "stylesheets": [
+        "https://s3-us-west-2.amazonaws.com/support.letesoft.com/apps/newClientPage/latest.css",
+        "https://pupspub.com/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css",
+        "//pupspub.com/cdn/shop/t/8/assets/base.bundle.css?v=6320695771660625931753718492",
+        "//pupspub.com/cdn/shop/t/8/assets/custom.css?v=84056706649334343261767895373"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://pupspub.com",
+      "hostname": "pupspub.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://pupspub.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://restaurants.fiveguys.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://cdn.cookielaw.org/consent/e45d34e7-1025-47fa-84d1-54dab0b7e862/OtAutoBlock.js",
+        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+        "permanent-b0b701/restaurants.fiveguys.com/stateList/en.5d6102ad.js",
+        "https://www.googletagmanager.com/gtag/js?id=UA-8465414-1"
+      ],
+      "stylesheets": [],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://restaurants.fiveguys.com",
+      "hostname": "restaurants.fiveguys.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://restaurants.fiveguys.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://restaurants.subway.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "//assets.adobedtm.com/041a2403188d/46b5b45d8f01/launch-d251aacf6731.min.js"
+      ],
+      "stylesheets": [],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://restaurants.subway.com",
+      "hostname": "restaurants.subway.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://restaurants.subway.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://savealot.com",
+    "isWordPress": true,
+    "wordpressVersion": "3.7.1",
+    "isOutdated": true,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": "3.7.1",
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://savealot.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://savealot.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://savealot.com/wp-content/plugins/a-city-ranked-suite/suite/review/js/review-handler.js?ver=6.9.4",
+        "https://savealot.com/wp-content/plugins/sal-store-locator/build/sal-rewards-widget/view.js?ver=c2d6fd567fa2a68aaf60",
+        "https://savealot.com/wp-content/plugins/sal-store-locator/build/sal-coupons/view.js?ver=31d6cfe0d16ae931b73c",
+        "https://savealot.com/wp-content/plugins/a-city-ranked-suite/suite/review/js/review-scripts.js?ver=6.9.4",
+        "https://savealot.com/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=b0f909c3ec791c383210",
+        "https://savealot.com/wp-content/plugins/instagram-feed/js/sbi-scripts.min.js?ver=6.10.1",
+        "https://savealot.com/wp-content/plugins/perfmatters/js/lazyload.min.js?ver=2.6.0",
+        "https://savealot.com/wp-content/plugins/sal-store-locator/assets/js/sal-gravity-forms.js?ver=1.0",
+        "/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=760332887"
+      ],
+      "stylesheets": [
+        "https://savealot.com/wp-content/cache/perfmatters/savealot.com/minify/6beb3f6be940.editor-styles.min.css?ver=1.0.9",
+        "https://savealot.com/wp-includes/blocks/navigation/style.min.css?ver=6.9.4",
+        "https://savealot.com/wp-includes/blocks/cover/style.min.css?ver=6.9.4",
+        "https://savealot.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.10.1",
+        "https://savealot.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4",
+        "https://savealot.com/wp-content/cache/perfmatters/savealot.com/minify/ad8b3d0ebf02.cr-suite.min.css?ver=6.9.4",
+        "https://savealot.com/wp-content/cache/perfmatters/savealot.com/minify/85073df81a2c.style.min.css?ver=1.0.9",
+        "https://savealot.com/wp-content/cache/perfmatters/savealot.com/minify/4405619036df.style.min.css?ver=1775771292"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://savealot.com",
+      "hostname": "savealot.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": true,
+      "wordpressVersion": "3.7.1",
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://savealot.com",
+      "score": 80,
+      "reasons": [
+        "WordPress site",
+        "Outdated WordPress version",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://shulaburger.com",
+    "isWordPress": true,
+    "wordpressVersion": "3.7.1",
+    "isOutdated": true,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": "3.7.1",
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://shulaburger.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://shulaburger.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://cdn.userway.org/widget.js",
+        "https://shulaburger.com/wp-content/plugins/bb-plugin/js/jquery.waypoints.min.js?ver=2.9.4.1",
+        "https://shulaburger.com/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/jquery-carousel.js?ver=6.9.4",
+        "https://shulaburger.com/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/imagesloaded.min.js?ver=6.9.4",
+        "https://shulaburger.com/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.9.4.1",
+        "https://shulaburger.com/wp-content/plugins/bb-plugin/js/jquery.imagesloaded.min.js?ver=2.9.4.1",
+        "https://shulaburger.com/wp-includes/js/masonry.min.js?ver=4.2.2",
+        "https://shulaburger.com/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b",
+        "https://shulaburger.com/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/jquery-masonary.js?ver=6.9.4",
+        "https://shulaburger.com/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7",
+        "https://shulaburger.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1775526880",
+        "https://shulaburger.com/wp-content/plugins/formidable-pro/js/frm.min.js?ver=6.26.2-6.26.1-jquery"
+      ],
+      "stylesheets": [
+        "https://shulaburger.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4",
+        "https://shulaburger.com/wp-content/uploads/font-awesome/v6.4.2/css/svg-with-js.css",
+        "https://shulaburger.com/wp-content/uploads/bb-plugin/icons/ultimate-icons/style.css?ver=2.9.4.1",
+        "https://shulaburger.com/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css?ver=2.9.4.1",
+        "https://shulaburger.com/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=1775526880",
+        "https://shulaburger.com/wp-content/themes/blankslate/style.css?ver=6.9.4",
+        "https://shulaburger.com/wp-includes/css/dashicons.min.css?ver=6.9.4",
+        "https://shulaburger.com/wp-content/themes/blankslate-child/style.css?ver=1775962987",
+        "https://fonts.googleapis.com/css2?family=Montserrat%3Aital%2Cwght%400%2C100..900%3B1%2C100..900&display=swap%22+rel%3D%22stylesheet&ver=6.9.4",
+        "https://use.fontawesome.com/releases/v6.4.2/css/all.css",
+        "//fonts.googleapis.com/css?family=DM+Sans%3A600&ver=6.9.4",
+        "https://use.fontawesome.com/releases/v6.4.2/css/v4-shims.css",
+        "https://shulaburger.com/wp-content/plugins/formidable/css/formidableforms.css?ver=2262114",
+        "https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C700&ver=6.9.4"
+      ],
+      "meta_generator": "performance-lab 4.0.0; plugins: webp-uploads"
+    },
+    "enriched": {
+      "url": "http://shulaburger.com",
+      "hostname": "shulaburger.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": true,
+      "wordpressVersion": "3.7.1",
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://shulaburger.com",
+      "score": 80,
+      "reasons": [
+        "WordPress site",
+        "Outdated WordPress version",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://starbucks.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://cdn.optimizely.com/js/13849340212.js",
+        "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "/_next/static/chunks/webpack-a339f4a57035852b.js",
+        "/_next/static/chunks/framework-4c8e7e593a0ef696.js",
+        "/_next/static/chunks/main-c55ed56afb511107.js",
+        "/_next/static/chunks/pages/_app-36b854eca122cc10.js",
+        "/_next/static/chunks/8-4cb85718db2280f9.js",
+        "/_next/static/chunks/153-db6cf0a8a1347aa5.js",
+        "/_next/static/chunks/pages/%5B%5B...page%5D%5D-7e1584ddbee8de10.js",
+        "/_next/static/jq3YoW9OPSLg0JmxS5LPP/_buildManifest.js",
+        "/_next/static/jq3YoW9OPSLg0JmxS5LPP/_ssgManifest.js",
+        "//consent.trustarc.com/notice?domain=app.starbucks.com&gtm=1&ostype=mobile&pcookie&oc=1&c=teconsent&text=true&js=nj&noticeType=bb&pn=1&country=us&language=en_us"
+      ],
+      "stylesheets": [
+        "/_next/static/css/a238819714180add.css",
+        "/_next/static/css/2106d8714ee3f9ec.css",
+        "/_next/static/css/6d556b2302d130d1.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://starbucks.com",
+      "hostname": "starbucks.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://starbucks.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://steaknshake.com",
+    "isWordPress": true,
+    "wordpressVersion": "3.7.1",
+    "isOutdated": true,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": "3.7.1",
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://cdn-cookieyes.com/client_data/9bbfc02ba1a1dd34819913cd/script.js",
+        "https://www.steaknshake.com/wp-content/plugins/business-reviews-bundle/assets/1.9.140/js/public-main.js",
+        "https://www.steaknshake.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://www.steaknshake.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/tab.js?ver=1",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/slider.js?ver=1",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/jquery.matchHeight-min.js?ver=6.9.4",
+        "https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js?ver=6.9.4",
+        "https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.js?ver=6.9.4",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/jquery-migrate-min.js?ver=6.9.4",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/common.js?ver=6.9.4",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/eclubpopup.js?ver=6.9.4",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/feedback-page.js?ver=6.9.4",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/owl.carousel.js?ver=1",
+        "https://www.steaknshake.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+        "https://www.steaknshake.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+        "https://www.steaknshake.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5",
+        "https://www.steaknshake.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/theme.min.js?ver=1.0.65",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/js/custom.js?ver=1"
+      ],
+      "stylesheets": [
+        "https://www.steaknshake.com/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4",
+        "https://www.steaknshake.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5",
+        "https://www.steaknshake.com/wp-content/plugins/page-list/css/page-list.css?ver=5.9",
+        "https://www.steaknshake.com/wp-content/plugins/wp-store-locator/css/styles.min.css?ver=2.2.261",
+        "https://www.steaknshake.com/wp-content/plugins/business-reviews-bundle/assets/1.9.140/css/public-main.css",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/css/theme.min.css?ver=1.0.65",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/style.css?ver=1.0.65",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/css/slider.css?ver=2",
+        "https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.css?ver=6.9.4",
+        "https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css?ver=6.9.4",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/css/owl.theme.default.min.css?ver=1.0.65",
+        "https://www.steaknshake.com/wp-content/themes/steaknshake/css/owl.carousel.min.css?ver=1.0.65",
+        "https://www.steaknshake.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.35.8",
+        "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+        "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap"
+      ],
+      "meta_generator": "Elementor 3.35.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-internal, google_font-enabled, font_display-swap"
+    },
+    "enriched": {
+      "url": "http://steaknshake.com",
+      "hostname": "steaknshake.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": true,
+      "wordpressVersion": "3.7.1",
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://steaknshake.com",
+      "score": 80,
+      "reasons": [
+        "WordPress site",
+        "Outdated WordPress version",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://stjohntpa.org",
+    "isWordPress": true,
+    "wordpressVersion": "6.9.4",
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": "6.9.4",
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "//a.mailmunch.co/app/v1/site.js",
+        "https://stjohntpa.org/mm/javascript/common-20260403-0404.js",
+        "https://stjohntpa.org/wp-content/plugins/youtube-channel/assets/lib/bigger-picture/bigger-picture.min.js?ver=3.25.2",
+        "https://stjohntpa.org/wp-content/plugins/youtube-channel/assets/js/youtube-channel.min.js?ver=3.25.2",
+        "https://stjohntpa.org/wp-content/themes/customify/assets/js/theme.min.js?ver=0.4.13",
+        "https://stats.wp.com/e-202615.js"
+      ],
+      "stylesheets": [
+        "https://stjohntpa.org/wp-content/plugins/youtube-channel/assets/lib/bigger-picture/css/bigger-picture.min.css?ver=3.25.2",
+        "https://stjohntpa.org/wp-content/plugins/youtube-channel/assets/css/youtube-channel.min.css?ver=3.25.2",
+        "https://stjohntpa.org/wp-content/plugins/advanced-wp-columns/assets/css/awp-columns.css?ver=6.9.4",
+        "https://stjohntpa.org/wp-content/themes/customify/assets/fonts/font-awesome/css/font-awesome.min.css?ver=5.0.0",
+        "https://stjohntpa.org/wp-content/themes/customify/style.min.css?ver=0.4.13"
+      ],
+      "meta_generator": "WordPress 6.9.4"
+    },
+    "enriched": {
+      "url": "http://stjohntpa.org",
+      "hostname": "stjohntpa.org",
+      "tld": "org",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": false,
+      "wordpressVersion": "6.9.4",
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://stjohntpa.org",
+      "score": 25,
+      "reasons": [
+        "WordPress site",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://stores.advanceautoparts.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+        "https://www.googletagmanager.com/gtag/destination?id=G-54NMRM2LBX&l=dataLayer&cx=c",
+        "https://www.googletagmanager.com/gtag/js?id=G-54NMRM2LBX&l=dataLayer&cx=c",
+        "https://www.googletagmanager.com/gtag/destination?id=AW-965963465&l=dataLayer&cx=c",
+        "https://www.googletagmanager.com/gtag/js?id=AW-965963465&l=dataLayer&cx=c",
+        "https://www.googletagmanager.com/gtag/js?id=DC-6837024",
+        "https://tags.tiqcdn.com/utag/advanceautoparts/storesaap/prod/utag.js"
+      ],
+      "stylesheets": [
+        "/assets/static/root-6bffe82d.css",
+        "/assets/static/main-86a9b0dc.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://stores.advanceautoparts.com",
+      "hostname": "stores.advanceautoparts.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://stores.advanceautoparts.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://stores.aldi.us",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/sentry-bundle.min-e758b2a5efb6b457-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/ahoy.min-8bcbc394d9e9ac73-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/runtime.webpack_bundle-221ffe8abb45cd24-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/vendor-react.webpack_bundle-7f4a9374e14b69ab-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/vendor-ids.webpack_bundle-3c3b7d0cdf115bb8-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/51981.webpack_bundle-3bc321014e836c10-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/50142.webpack_bundle-ac38f3179a9024a2-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/926.webpack_bundle-71654ba62dfe5fb0-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/47136.webpack_bundle-898c3892a7a99871-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/21730.webpack_bundle-d385d8343553f744-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/70856.webpack_bundle-e23cd8786be315b1-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/67268.webpack_bundle-a16b1f34dd915740-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/29341.webpack_bundle-cd6d9a4b297701c3-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/8614.webpack_bundle-9043246d8f39085f-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/8777.webpack_bundle-bcbb8d7a8de926e2-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/24805.webpack_bundle-4e574a4be438df4c-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/43798.webpack_bundle-848d6a1a06197a11-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/87324.webpack_bundle-c434c4d0f63b64c8-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/63766.webpack_bundle-28439bd14fde0571-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/47678.webpack_bundle-d35ba0acf26104be-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/32455.webpack_bundle-59fb5a6396007351-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/19384.webpack_bundle-04988784139601d7-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/18849.webpack_bundle-c2b8c9bca55cc7eb-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/85374.webpack_bundle-4151add84eebf7b8-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/78996.webpack_bundle-6b1090db0da46877-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/89418.webpack_bundle-ee0f8337bb7bf4e3-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/2394.webpack_bundle-4d9084e031b5bb23-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/16635.webpack_bundle-4a2148b82d8213f0-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/82358.webpack_bundle-629f9a5d231a3104-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/8265.webpack_bundle-c472a366cbb9557f-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/20150.webpack_bundle-209922d2632cbca6-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/83293.webpack_bundle-f699d0741fb046b9-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/54680.webpack_bundle-f417d475b7ab42bc-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/22605.webpack_bundle-280567a05fd28769-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/7975.webpack_bundle-0cecdba850fa79ae-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/53096.webpack_bundle-7ae6c0d544022b48-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/28132.webpack_bundle-1faf94e93037a968-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/65874.webpack_bundle-356d202090c3f505-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/90427.webpack_bundle-493ae4aa1023de8c-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/19347.webpack_bundle-14780710b7bd12df-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/65423.webpack_bundle-dcc091c0cd9e3785-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/50348.webpack_bundle-8e5616921e9f76bc-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/95304.webpack_bundle-ecdf8c8fee24f4d5-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/43368.webpack_bundle-1141f04a9f5d1a60-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/28110.webpack_bundle-e76c52679decda1a-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/57215.webpack_bundle-4ab6ba5d0832611e-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/54631.webpack_bundle-afafc5ee3a361361-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/12397.webpack_bundle-ec0c2808168bb064-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/61028.webpack_bundle-ee1b1a840175aed5-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/16343.webpack_bundle-46d780ec5cc9e6fb-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/51100.webpack_bundle-b8254dd6f7421595-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/63882.webpack_bundle-3fdb216615094886-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/93656.webpack_bundle-75e7ee0a19d9f96d-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/61026.webpack_bundle-7bef5b02540eca06-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/81537.webpack_bundle-ee003efce55a427c-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/47598.webpack_bundle-6e2d28ca39cadf5f-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/86910.webpack_bundle-c0bf562e26f13ad3-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/94763.webpack_bundle-d9aa5ab53aafea1e-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/44695.webpack_bundle-2b3a445c1bd9ad92-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/7741.webpack_bundle-60fc88f5402b8474-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/38146.webpack_bundle-1c3f7330e4ed2184-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/37072.webpack_bundle-efbd0e993997fa50-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/44986.webpack_bundle-e027e9399753ee81-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/32657.webpack_bundle-1b93e04123989838-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/72740.webpack_bundle-eda905a663977388-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/7667.webpack_bundle-cb5258e0ee848aee-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/5102.webpack_bundle-feff79c583db7d98-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/84209.webpack_bundle-651dc9bda701573d-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/63657.webpack_bundle-539a88e20ef439f3-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/98721.webpack_bundle-e357bb5ad9c5a38c-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/75702.webpack_bundle-f67c3d9a7d3c639d-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/13133.webpack_bundle-3c719d1066d8d603-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/9734.webpack_bundle-a7a83d0d2490bb19-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/61970.webpack_bundle-b3eb0992d3c75b29-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/37966.webpack_bundle-488e230fd13927f5-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/83196.webpack_bundle-cdfbe5938b7af0c5-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/81082.webpack_bundle-5d4284453a42a11f-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/8487.webpack_bundle-fc7972c4e2995a0e-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/71908.webpack_bundle-65d951168c132517-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/57236.webpack_bundle-1b25638dcefb4946-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/28303.webpack_bundle-85eec55f549e0da7-v2.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/store.webpack_bundle-ef0ed4e08f9f83b7-v2.js",
+        "https://js.stripe.com/v3/",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/12276-e622679f36867a0e-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/77556-b59f1d9aaca994e6-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/50697-948d4e2e952af203-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/54869-40576bc41bb835b9-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/96130-7fbe6bd25180c865-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/80149-cb9649afc0025ce3-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/64850-eac57bc1a4eb10c6-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/20891-fb58a119d85701d0-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/53396-32f3c950569d0f07-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/60653-04649d3454e822b9-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/51412-a7b7d6487f0e4c32-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/45790-2d98305d0062213e-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/35168-3a2d3456c0c6f104-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/91994-1af58df68cc18b26-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/62723-1f5e03013d2013ea-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/5154-ab7d7761f66570b0-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/64598-3efe6ca09d6bd130-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/93890-52ba5f5e3d06b7ae-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/12148-fc41fd5cd4904e0e-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/46376-d7a7ef79ae0ba10a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/67197-a4daf3cc289087f5-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/84813-e1328bae9d4c8069-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/31416-daa75cc1335e05b4-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/58666-ddeb1f4271cdb33a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/72127-a7e9988a6dc73e1a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/43013-f1bbc60f0510c9b0-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/4613-9a908336eaed0171-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/1698-9f3b49cbda76e3a2-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/18876-ec88a5cfbaeb224e-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/5793-b7065e53454e25e2-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/42443-3f97e5444920a396-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/19936-f96e7353e73f8ed1-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/76926-96326798a56df017-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/35063-a43dd3732ac5d331-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/84525-6e8bc12cb0f5cb54-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/43999-35cf04ba87a7c31d-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/96832-5d174877d519a6c5-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/40282-9bb0f1c9cd06345c-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/87440-1667bcaa03fa7d24-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/51204-25cfa389f08529e3-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/68663-843c2b51b0dce488-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/54116-d029dc92d8a9bb8a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/51349-c3034d49e939485c-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/47622-f430ee77ed746460-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/9822-fe8f6a843304f84f-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/36532-cfe827d312c1a9d3-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/41965-6927066346606d9a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/27565-ae7fd7cfd92372a4-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/20315-023ed1b472098279-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/77271-9300440be52ced0b-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/42556-9d23f6ae0b8ae079-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/12970-2ec4147555bfa0c8-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/25179-e1d4aa6b9b93b889-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/89922-dcf01ac06dd3a4c5-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/88394-4b561d1b830b3b3a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/42118-c0ad4bb6655b2372-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/37560-2b2f3cf0e18706fb-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/92401-99d381086b0393cd-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/36308-1893d9af287a18a0-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/52476-3b7b8af30d69474d-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/48179-daaba90e02a1f24c-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/42463-77d32c45c82d31e9-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/96032-b3bf2198484c408a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/47022-8b00c9fb76d5dcfa-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/65425-ac1a72a70ab4741e-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/64127-ed5faa05e51a806f-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/9531-058115647fbd048a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/49654-f3a0ae80eddce056-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/2520-f1cfb64384b884d1-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/44835-d4b3af774d819c42-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/18675-99d533320dccd331-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/84303-2d7456d5ea085919-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/44740-378834c6cd3c1414-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/48468-804c762bffeb342b-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/84352-23a8bffa0c4f73a7-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/60273-8b2657fe197804d7-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/46819-aaeadbe52b2566e1-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/12920-af3e27124f67f7ef-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/8804-e4b204079c5ef554-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/69827-f69d267d6b5b125b-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/67812-face20a1af67b90b-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/89611-7c9e7f8d75130b62-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/48436-b293b4b0a5ea7fdc-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/31983-bf106bd4280ee8fe-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/414-6617d582298367e8-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/5959-1a4f765e094b1ba6-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/18797-82c508f71d32efc3-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/24612-4db6d5ce6220579a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/26634-6b53e197e0e7ff32-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/10332-32ddd25d5e70d41c-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/8293-af37382098c04f8f-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/24968-36b7b52ca29d677c-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/38180-4000082b0c72091d-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/4849-d0ce35373d3b8523-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/38687-ac1ab441820c23be-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/49844-1cf1fe0ae65f4793-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/31926-ce3c987c23abf47e-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/76968-7cd621a66f7bea3a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/54046-0c98862de0ac9343-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/60059-fe9f185a9398ed2f-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/69431-5d418760fd0b09ba-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/79017-893c17862c85b8f6-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/83591-90d6d8717b8b5cef-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/93349-88a57f03e70d1c29-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/39508-ed63db848569cfc2-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/94682-9b3988067e5d71f6-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/46927-75e6f4effbdc803d-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/80170-baf6b058c70b4870-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/41181-70b91e6591f5e544-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/32083-22bd7a239473f88a-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/70176-41c1184fd5fd5559-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/31597-2b76a5d9e128e8de-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/32159-b923371d01190e40-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/45164-05b5dc7e17fe48e6-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/35506-8b0a3f253970cebd-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/88691-e54c5e594d96bd45-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/48404-5ae6624bbc97f28e-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/82718-e02afa2f65328585-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/vendor-filestack-js-7cd626ff22555da3-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/6898-f681e041b027a539-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/49203-6f79fdb0dc182ca8-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/66217-0f3f2a767e80adf6-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/49960-c0b107b0e7b69f7c-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/58399-2ce475c07c49af29-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/43844-678d35e35fc4be3c-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/78496-36fcbf44dbafb672-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/97128-2cfbf7b9d6a9e757-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/20144-ecbefb56da419cbb-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/92394-ecdb203a2e36fed4-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/18859-7410245fd83d9a32-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/43037-7ddee8b64a777534-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/63381-7b88fb97eafdbc76-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/7812-eca4b9c04111b04f-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/38676-e738189f7f12a813-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/48443-dbbc904a65c97ff7-v2.webpack_chunk.js",
+        "https://d2guulkeunn7d8.cloudfront.net/assets/rspack/80834-0351c9a756aa5d68-v2.webpack_chunk.js",
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyA73Myy5GzL_RNjJ32db_2J6Mqs-0RDh4U&libraries=places"
+      ],
+      "stylesheets": [],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://stores.aldi.us",
+      "hostname": "stores.aldi.us",
+      "tld": "us",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://stores.aldi.us",
+      "score": 5,
+      "reasons": [
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://stores.staples.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [],
+      "stylesheets": [
+        "/assets/static/search-CEA1J-DE.css",
+        "/assets/static/fonts-BKtubHCP.css",
+        "/assets/static/SearchBar-CBXXnyXS.css",
+        "/assets/static/Breadcrumbs-CZg-M8ke.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://stores.staples.com",
+      "hostname": "stores.staples.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://stores.staples.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://sunoco.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": "1.11.0",
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": "1.11.0",
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "/admin/assets/js/vendor/jquery-1.11.0.min.js",
+        "/admin/assets/js/vendor/bootstrap/js/bootstrap.min.js",
+        "/admin/assets/js/vendor/slick/slick.custom.js",
+        "/admin/assets/js/vendor/aos/aos.js",
+        "/admin/assets/js/vendor/jarallax/jarallax.min.js",
+        "/admin/assets/js/vendor/validate/jquery.validate.min.js",
+        "/js/main.js?v=1.45"
+      ],
+      "stylesheets": [
+        "https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@300;400;700&display=swap",
+        "/admin/assets/js/vendor/bootstrap/css/bootstrap.min.css",
+        "/admin/assets/js/vendor/slick/slick.css",
+        "/css/main.css?v=1.37",
+        "/admin/assets/js/vendor/aos/aos.css",
+        "/admin/assets/css/animate.min.css",
+        "/admin/assets/css/fontawesome/css/all.min.css"
+      ],
+      "meta_generator": "Third Wave Digital CMS v7.0.1713"
+    },
+    "enriched": {
+      "url": "http://sunoco.com",
+      "hostname": "sunoco.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://sunoco.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://sushiyamatampa.com",
+    "isWordPress": true,
+    "wordpressVersion": "6.9.4",
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": true,
+      "wordpress_version": "6.9.4",
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "http://sushiyamatampa.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/aos/aos.js?ver=1",
+        "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/unslider/unslider-min.js?ver=6.9.4",
+        "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/unslider/jquery.event.move.js?ver=6.9.4",
+        "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/unslider/jquery.event.swipe.js?ver=6.9.4"
+      ],
+      "stylesheets": [
+        "https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700,800,900|Oswald:100,200,300,400,500,600,700,800,900|Montserrat:100,200,300,400,500,600,700,800,900",
+        "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/oxygen.css?ver=4.9.3",
+        "//sushiyamatampa.com/wp-content/uploads/oxygen/css/8.css?cache=1764694723&ver=6.9.4",
+        "//sushiyamatampa.com/wp-content/uploads/oxygen/css/12.css?cache=1764694723&ver=6.9.4",
+        "//sushiyamatampa.com/wp-content/uploads/oxygen/css/universal.css?cache=1764694724&ver=6.9.4",
+        "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/aos/aos.css?ver=6.9.4",
+        "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/unslider/unslider.css"
+      ],
+      "meta_generator": "WordPress 6.9.4"
+    },
+    "enriched": {
+      "url": "http://sushiyamatampa.com",
+      "hostname": "sushiyamatampa.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": true,
+      "isOutdated": false,
+      "wordpressVersion": "6.9.4",
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://sushiyamatampa.com",
+      "score": 30,
+      "reasons": [
+        "WordPress site",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://t-mobile.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://www.t-mobile.com/public/db88babf8dfd48f2009167e0c6224a8b68d3071226fc",
+        "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+        "//assets.adobedtm.com/a18f612bc208/551ac0da9716/launch-1df223c5538b.min.js",
+        "/etc.clientlibs/digx/analytics/clientlibs/vendor-clientlibs/webvitals.ACSHASH14dfd6ba6f23c7a4c7c487862098b6d4.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/alpinejs.ACSHASH2453b284a11f4fbb5aaa6d4c111fa871.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/js-cookie.ACSHASH793ed004164ec84192dfa5e9822232f4.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/uuid.ACSHASH80536753726e4fa6badf81f5ea6bd8dd.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/localforage.ACSHASH32205f70fcea25a843357ca1fc583a9e.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/fetch.ACSHASHcb9b7dd7d9ca749d722d5a17d55c9c87.js",
+        "/etc.clientlibs/digx/platform/clientlibs/clientlib-platform-main.ACSHASH55ef298f2cd9548750b07fcb6f416e97.js",
+        "/etc.clientlibs/digx/privacy/clientlibs/service-clientlibs/global-privacy.ACSHASHb9fbf5147c9805a15379ffe4a168a1af.js",
+        "/etc.clientlibs/digx/platform/clientlibs/service-clientlibs/authorization.ACSHASH0043b2693cb11339443ee4a4bd93684f.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/lodash.ACSHASHed99813f6624ab28a05b1313f5841b16.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-utils.ACSHASH4a400ab31806c6841417dc7ad76cfe4f.js",
+        "/etc.clientlibs/digx/unav/components/content/util/v1/util/clientlib.ACSHASH9777e402a52ff19ac85c1c60da645ffe.js",
+        "/etc.clientlibs/digx/unav/components/content/header/v1/header/clientlib.ACSHASHe0334561e693ef73e2f201f7841bad6f.js",
+        "/etc.clientlibs/digx/unav/components/content/utility-cart/v1/utility-cart/clientlib.ACSHASHcbc020bf0acb867fb91f6a96322289cd.js",
+        "/etc.clientlibs/digx/unav/components/content/utility-search/v1/utility-search/clientlib.ACSHASH13173ef9eceba33ce9193a83d1eddeb1.js",
+        "/etc.clientlibs/digx/experience/components/content/actionButtons/v1/actionButtons/clientlib.ACSHASHab98eb6c520de6fafce14d0ebc0292df.js",
+        "/etc.clientlibs/digx/experience/clientlibs/element-clientlibs/menu.ACSHASH603df8f424896917bf04a547a58ba257.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-elements/menu.ACSHASH0f66b305f21a82c1b6cd1c5c1fd3ffc8.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-elements/disclosure-menu.ACSHASHf33e3fc843d019e717e5ffac30013f26.js",
+        "/etc.clientlibs/digx/experience/components/content/aiChat/v1/aiChat/clientlib.ACSHASHe16caada9c03120c8ca31ff30984e72b.js",
+        "/etc.clientlibs/digx/experience/components/content/webScreenShare/v1/webScreenShare/clientlib.ACSHASHfd5c7a9106c2753409c4f8a9a7913f83.js",
+        "/etc.clientlibs/digx/unav/components/content/footer/v1/footer/clientlib.ACSHASH2b6f85ae150da008c95105381ab8250e.js",
+        "/etc.clientlibs/digx/platform/clientlibs/vendor-clientlibs/moengage.ACSHASHeb7c21edbe45f037fa68d43e65eed2e2.js",
+        "/etc.clientlibs/digx/experience/clientlibs/vendor-clientlibs/body-scroll-lock.ACSHASH180b568c955f5b85a6630e77320514c6.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-main.ACSHASHb2c93a071866af65fdf7edf0c1ad24b8.js",
+        "/etc.clientlibs/digx/experience/clientlibs/vendor-clientlibs/a11y-dialog.ACSHASH95ee986a68d685e3dd4d79f25c9d5c26.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-components.ACSHASH85fab4fcbe0a4a38e96c65d3a74702e1.js",
+        "/etc.clientlibs/digx/experience/clientlibs/vendor-clientlibs/iodine.ACSHASH1fc85131439d7d97be06299fdbb49363.js",
+        "/etc.clientlibs/digx/experience/clientlibs/vendor-clientlibs/cleave.ACSHASH7313234d1438110c5f88431f7b51a118.js",
+        "/etc.clientlibs/digx/experience/clientlibs/service-clientlibs/recaptcha.ACSHASH5346cd9b9e076fa36cf37bdebb619553.js",
+        "/etc.clientlibs/digx/experience/clientlibs/service-clientlibs/leadGen.ACSHASH2c4de2e919220ab87236e845eada8d79.js",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-forms.ACSHASHd153818d7b4b33e9d1317f62835b4704.js",
+        "/etc.clientlibs/digx/analytics/clientlibs/clientlib-analytics-main.ACSHASH3228a4cfdb023aa7adb9db21afcf8f2a.js"
+      ],
+      "stylesheets": [
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-grid.ACSHASHe5a90b6937b02320e2d0958dac105269.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-main.ACSHASHa97ba7c9c03eebd2fa0e0c1527cb01c9.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-tmobile.ACSHASH05f9d9cf442b78fa17c7823ccfb6de72.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-components.ACSHASH098bdc2af18d5b1cd08f4bc59dd0430e.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-experience-forms.ACSHASHcb7e1b05ee248ff8483e2ac5a833a618.css",
+        "/etc.clientlibs/digx/experience/components/content/actionButtons/v1/actionButtons/clientlib.ACSHASH3c4c5ca8f1907320d942f659b02d9937.css",
+        "/etc.clientlibs/digx/unav/clientlibs/clientlib-unav-main.ACSHASH406e4a66bf137e8b6d5041591e912a01.css",
+        "/etc.clientlibs/digx/unav/components/content/header/v1/header/clientlib.ACSHASH5ea25f8830353b49083d646b4b731bf8.css",
+        "/etc.clientlibs/digx/unav/components/content/utility-search/v1/utility-search/clientlib.ACSHASH80b6ddc73f890fff3d729589b169d738.css",
+        "/etc.clientlibs/digx/experience/clientlibs/element-clientlibs/menu.ACSHASH3a5d01eb796d9f639258a73ee8aadc0b.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-elements/menu.ACSHASHa748832a11a3e145dac1a06b01e0c1a3.css",
+        "/etc.clientlibs/digx/experience/clientlibs/clientlib-elements/disclosure-menu.ACSHASH725f52dec4ce1382d95251a849c74f74.css",
+        "/etc.clientlibs/digx/experience/components/content/aiChat/v1/aiChat/clientlib.ACSHASH395b227ce9bc9b5e8e1713cc5650006e.css",
+        "/etc.clientlibs/digx/experience/components/content/webScreenShare/v1/webScreenShare/clientlib.ACSHASH8cb688c07194f13228a5d9387dcde19d.css",
+        "/etc.clientlibs/digx/unav/components/content/footer/v1/footer/clientlib.ACSHASHbce39ace05659ae5eb6b1c410353a3e2.css",
+        "/etc.clientlibs/digx/unav/components/content/footer-universal/v1/footer-universal/clientlib.ACSHASH41c1a2973ec1a37eb3ce575efdced7a5.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://t-mobile.com",
+      "hostname": "t-mobile.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://t-mobile.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://target.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://assets.targetimg1.com/ssx/ssx.mod.js?async",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "https://client.px-cloud.net/PXGWPp4wUS/main.min.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/6286-ac02fdebe322b150.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/1178.a09b7ae42bf5bdf2.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/2779-b47b6fc36f213572.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/162-09e5617e0060e03c.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/410-e03c1d0e83b9fe0a.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/6217-7affc1be1b40933e.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/5550-b26648431b593b70.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/311.6d43df44ddf3c606.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/8596-b048d39b1f2a2a94.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/525-11e2febc7672a20b.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/6339-d8e0f6b991e71619.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/6295.32cac65eb76d8651.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4708.4cb48aa9bf0ca8a4.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/6093-33e90c4cf7656237.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/2668-d030d9a4ac36a3d3.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/7176.9b63bca69d52f68e.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/8336.27f2f90ffa0fc133.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/3437.702b85efdf009a9f.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/2242-613d206a5dab3d25.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/5588.5f269002e9069484.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4198.b1706c6fc28136b5.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/5357.7002e20946de06d1.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/stof-PageTitleHidden.411ef799364e42a8.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4606-9ed9c69cb499d5d6.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/5968.85aed8cfa105f8ca.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/7624-855e7198f33f3027.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/6710-33b85ad2ce231edf.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/8844.f61e664cbffe05c0.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/7301.480cc1f2c36dcba3.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4390.5daa4096bb2fef2d.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/287.cd06cfdd013f5826.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4865.418ac55fcec5415e.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4909.9291d5d25efe5add.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/3973.7fb485e5ddf57127.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/8992.18fd9cf3e8f7d1bb.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/1975.500d27751d284c2a.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/2517.7224e28387d4e6f1.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4117.c9c3b666439d19e3.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4132.d0f27ecb608079c6.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/7314.1808c34ef2d450c9.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/slingshot-components-Banner.176c03c0c84eaae7.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/AdAddToCartWrapper.afd1f3abe111f9d4.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/6275.98c3ee5e3e8a481e.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/UseGptComponent.eaa164364e1b453d.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/stof-BaseboardAdWrapper.1d9aca601344112f.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/4873.2cfebbdad7e29c47.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/ScheduledDeliveryRateAndTipDrawerDynamic.753b7315930d56c9.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/webpack-59eda63169ebb5d6.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/framework-65a34a0ddb0ddadf.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/vendor-00a20a4dd125b198.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/main-d062b029a63e5b60.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/pages/_app-2c522eafa70c69c7.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/1045-5d3306b22ffe6c41.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/9959-1024812a931cbee9.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/6247-2ba7ad151b4e1964.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/1925-14d89caa625b2efa.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/7754-fc9403845a9d604b.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/chunks/pages/index-476ba7545944b6fd.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/dce05c010afb7283975ad4b5d16857ef92066fd4-standard/_buildManifest.js",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/dce05c010afb7283975ad4b5d16857ef92066fd4-standard/_ssgManifest.js"
+      ],
+      "stylesheets": [
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/42b347fb8b92b376.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/bf89a49f8eb1c407.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/a8c23e46b69c5702.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/0fb732d70bf8c3c9.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/05a9fa24920ed5de.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/ae62697162fbb106.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/0dd101bfa8183baa.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/4fc0ab6da93fdf82.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/0940e323d79e0003.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/2bc04fbd89f84e9a.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/34c7e68c68c48202.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/ff4b0bbb1a05a5fa.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/293cda6693f373f7.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/61402b2998a3b244.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/5bc112c144c52089.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/4dd2962657f9acb5.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/d759b8b80f4c8f48.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/ba07462179f197ea.css",
+        "https://assets.targetimg1.com/webui/top-of-funnel/_next/static/css/5061f413ea3b59e1.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://target.com",
+      "hostname": "target.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://target.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://tgh.org",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://freshpaint-cdn.com/js/103161b8-dce6-42b9-8b1a-5331a84e52c5/freshpaint.js",
+        "https://script-app.mercuryhealthcare.com/mhc-orbit-v1.0.min.js",
+        "/layouts/system/VisitorIdentification.js",
+        "/assets/js/main.js?v=639107251600000000"
+      ],
+      "stylesheets": [
+        "https://use.typekit.net/xus6sna.css",
+        "/assets/css/global.css?v=639107251600000000"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://tgh.org",
+      "hostname": "tgh.org",
+      "tld": "org",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://tgh.org",
+      "score": 5,
+      "reasons": [
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://thehubbartampa.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": false,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": false,
+      "deprecated_tags": [],
+      "scripts": [],
+      "stylesheets": [],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://thehubbartampa.com",
+      "hostname": "thehubbartampa.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": false
+    },
+    "score": {
+      "url": "http://thehubbartampa.com",
+      "score": 25,
+      "reasons": [
+        "Not responsive",
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://tools.usps.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": "3.7.1",
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": "3.7.1",
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://www.googleoptimize.com/optimize.js?id=GTM-T35N9RL",
+        "/global-elements/footer/script/jquery-3.7.1.js",
+        "/global-elements/lib/script/modernizr/modernizr.js",
+        "/global-elements/header/script/megamenu-v3.js",
+        "https://www.usps.com/ContentTemplates/common/scripts/OneLinkUsps.js",
+        "/global-elements/header/script/ge-login.js",
+        "/global-elements/lib/script/requirejs/require-2.3.6.js",
+        "/global-elements/header/script/header-search.js",
+        "https://www.usps.com/assets/script/home/megamenu-additions.js",
+        "scripts/libs/jquery.min.js",
+        "scripts/libs/bootstrap.min.js",
+        "scripts/libs/jquery-ui.min.js",
+        "scripts/libs/jquery.mask.min.js",
+        "scripts/libs/moment.min.js",
+        "scripts/libs/calendar.js",
+        "scripts/tracking-landing.js",
+        "/wJ-axXNfRK/eacfr8Wo/0n/1J1uGzcNiY6LSJEp/ax9IbA/fXlf/b0UXRwkC"
+      ],
+      "stylesheets": [
+        "styles/libs/jquery-ui.min.css",
+        "styles/default-styles.css",
+        "styles/tracking-widget.css",
+        "styles/tracking-cross-sell.css",
+        "styles/libs/bootstrap.min.css",
+        "styles/main.css",
+        "styles/tracking-reskin.css",
+        "styles/tracking-progress-bar.css",
+        "https://tools.usps.com/global-elements/header/css/megamenu-v4.css",
+        "https://tools.usps.com/global-elements/footer/css/main-sb.css",
+        "https://tools.usps.com/global-elements/footer/css/footer-sb.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://tools.usps.com",
+      "hostname": "tools.usps.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://tools.usps.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://truist.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+        "https://dias.bank.truist.com/ui/scripts/truist_common2.js?single",
+        "https://cdn.cookielaw.org/consent/a36cbfdc-000f-45ef-92ae-779176195d77/otSDKStub.js",
+        "//assets.adobedtm.com/550322ae7d69/9113c9ef16ff/launch-003a007a2c4b.min.js",
+        "/content/dam/truist-bank/us/en/internal-applications/motionpoint/mp_linkcode.js",
+        "https://fast.wistia.com/player.js",
+        "https://fast.wistia.com/embed/1196j4aayy.js",
+        "/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-base.min.ef98de142ce9ebdec1ecc18c6bdab175.js",
+        "/etc.clientlibs/microsites/clientlibs/clientlibs-micro-site/clientlibs-truist-bank.min.d41d8cd98f00b204e9800998ecf8427e.js",
+        "//truist.mpeasylink.com/mpel/mpel.js"
+      ],
+      "stylesheets": [
+        "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400",
+        "/etc.clientlibs/stcom-aem-globalcomponents/clientlibs/clientlib-base.min.7e3a7bbc95980784cd2f346067bd6fb6.css",
+        "/etc.clientlibs/microsites/clientlibs/clientlibs-micro-site/clientlibs-truist-bank.min.0a4ca97e1bfe5039355808377cd46ecd.css",
+        "/content/dam/truist-bank/css/custom.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://truist.com",
+      "hostname": "truist.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://truist.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://walmart.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": null,
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": null,
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "/px/PXu6b0qd2S/init.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "//i5.walmartimages.com/beacon/beacon.js?bd=b.www.walmart.com&bh=beacon.lightest.walmart.com",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_item-queue_banner_queue-banner-a3aea219816764a2.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_event-timer_queue-timer.07772626f4853033.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/node_modules_.pnpm_react-device-detect%402.2.3_react-dom%4018.2.0_react%4018.2.0__react%4018.2_node_modules_react-device-detect_dist_lib-3c96f37d6645a4f9.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_core_hooks_use-should-not-render-1ea633a116ae7af3.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_ui_feedback_disclaimer-with-link-efc486a5b8da0c8c.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/intl-ads_sponsored-products-tracking_use-sponsored-product-atc-62be3b5663e987ad.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_core_hooks_use-load-ivt-5bd440706189ce2d.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/intl-ads_video_video-player-635524e64fd8037f.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/intl-ads_ui_btf-7656e3718dd46b3c.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/intl-ads_ad-routing_hooks_useAdOptions-02f44cb29d26048b.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/intl-ads_ad-routing_intl-ad-routing-8af7049e00e1d639.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/tempo-shared-modules_adaptive-card_adaptive-card.254f9e5a524c4f71.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/tempo-shared-modules_adaptive-card_adaptive-card-wrapper.fc5a26374f18a541.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_core_components_feature-wrapper.2837571f1c56f50a.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_core_components_feature-wrapper.8db975234d88d03c.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_core_components_remount-wrapper.588d4c37b4cb2820.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_identity-merge-panel.2eaccd5b019397fa.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/cart_mp-pickup-bottomsheet.26d9a7ba7f9e0c16.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/cart_common-components_drone-bottomsheet_drone-error-bottomsheet.4c9600c3c094bcd1.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/cart_common-components_drone-bottomsheet_drone-confirm-bottomsheet.e335c22d26884d5e.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/cart_common-components_hook_use-reservation-snackbar.4de3f296f73a31ad.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/webpack-4e7724908cbdfae7.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/framework-f63ef51b63b99aa1.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/main-3897228db92d0e87.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/pages/_app-6405a7ad462e48b2.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/node_modules_.pnpm_%40walmart%2Buse-safeframe%402.4.4_react%4018.2_node_modules_%40walmart_use-safeframe_lib_index-d4d3ab9c4979f1e9.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_product-tile_vertical_product-reward-18e69b9e4662926f.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_product-badge_product-badge-09ffe95fb455b45f.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_product-tile_hooks_use-on-product-126694b39fa5a902.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_review_locale_messages-d21858ef352ffc59.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_product-tile_vertical_product-promo-discount-833f241051b55b64.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_product-tile_product-unified-badges-978a6051b95ff8bc.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_product-tile_vertical-9fdeaad658823b1e.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_core_hooks_use-is-tracking-enabled-b332628697f4fe13.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/item_reviews_data-access_reviews-cloud-variables-f4af5f026baf32b5.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/item_reviews_locale_messages-0f479b88acf94224.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_product-tile_vertical_product-image-responsive-vertical-f2058a558b19d995.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_product-tile_vertical_product-flag-b98c2e839b07825f.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_horizontal-scroller_skinny-horizontal-scroller-56ebe290b501ae3f.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/item_reviews_reviews-summary_review-insights-bottom-sheet-cf081c41a244b71b.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_global-product-tile_global-product-tile-2dea1f18cf37d0d1.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_ui_video_video-player-2bad7b3bfd3ad92a.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ui_product-carousel_product-carousel-e4ad5073f8a57c08.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/tempo-shared-modules_data-access_transformFulfillmentBadge_export-sla-message-25f3441dd6804bf7.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_sponsored-products-tracking_ad-click-beacon-f30facea8ccfb58e.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/wplus_gamification-onboarding_gamification-progress-circle-wrapper-c78f2722541d4259.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_data-access_transforms-b259bb13259c8564.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_core_components_display-ad-wrapper-b791533fa0ff3d48.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_core_fire-pixel-4f052ea82ec78301.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/ads_generic-utils_use-dom-element-event-2f5ec358199b1a6d.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/home_data-access_utils-5bc3d139a0e1cada.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/repurchase_data-access_repurchase-cloud-variables-9bf099264b66d867.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/node_modules_.pnpm_%40livingdesign%2Breact%401.20.0_%40babel%2Bruntime%407.26.0_%40types%2Breact-dom%4018.2.0_%40types%2Breact%4018.2_node_modules_%40livingdesign_react_dist_regular_esm_Button_Button-9f971ede57776f18.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/chunks/pages/index-bc1e02467662d645.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/production_20260409T081335497Z-en-US/_buildManifest.js",
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/production_20260409T081335497Z-en-US/_ssgManifest.js",
+        "https://www.walmart.com/akam/13/38f4ee81"
+      ],
+      "stylesheets": [
+        "https://i5.walmartimages.com/dfw/63fd9f59-cfbb/95a5b9ed-2e08-4fa8-91fd-5481b920aef4/v2/en-US/_next/static/css/9f67cded6aafbf07.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://walmart.com",
+      "hostname": "walmart.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://walmart.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "url": "http://winndixie.com",
+    "isWordPress": false,
+    "wordpressVersion": null,
+    "isOutdated": false,
+    "responsive": true,
+    "jqueryVersion": "3.7.1",
+    "bootstrapVersion": null,
+    "deprecatedTags": [],
+    "tech": {
+      "wordpress": false,
+      "wordpress_version": null,
+      "jquery_version": "3.7.1",
+      "bootstrap_version": null,
+      "responsive": true,
+      "deprecated_tags": [],
+      "scripts": [
+        "/ruxitagentjs_ICANVfqru_10333260303165926.js",
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyB6wCPMOJWZ4i1iTnfxb9K_0hCAvk9_9KU&libraries=places&language=en",
+        "/Areas/V2/JS/jquery-3.7.1.min.js",
+        "https://dok.js-cdn.dynatrace.com/jstag/17dbdbb3f28/bf06123kxt/126d4faef8b9d4fd_complete.js",
+        "/Areas/V2/JS/jquery-3.7.1.min.js",
+        "/bundles/js/_slick.min.js",
+        "/bundles/js/_recipeSelector.min.js",
+        "https://www.googletagmanager.com/gtag/js?id=AW-800345563",
+        "/Areas/V2/JS/ie-emulation-modes-warning.js",
+        "/Areas/V2/JS/ie10-viewport-bug-workaround.js",
+        "/bundles/js/jqueryval.min.js",
+        "/Scripts/jquery-ui.min.js",
+        "/bundles/js/_slick.min.js",
+        "/bundles/js/app_v2.min.js?1113_V03",
+        "https://100016758.collect.igodigital.com/collect.js",
+        "/bundles/js/_slick.min.js",
+        "/bundles/js/_InstagramVideoCarousel.js?2026",
+        "/bundles/js/_deleteAccount.js?Oct01",
+        "/bundles/js/couponsHome.ang.js",
+        "/bundles/js/_clippedSavingsDrawer.js",
+        "/bundles/js/_percentBackCoupons.ang.js",
+        "/bundles/js/_clippedSavingsDrawer.ang.js"
+      ],
+      "stylesheets": [
+        "/bundles/css/all.css",
+        "/bundles/css/bootstrap-5.3.8.min.css",
+        "/bundles/css/refresh.min.css",
+        "/bundles/css/app-wd.min.css?022026",
+        "/-/media/CSS/WD/WDMarketing.css",
+        "https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i|Fjalla+One&display=swap",
+        "/bundles/sass/WD/_eReceiptsmodel-wd.min.css",
+        "/bundles/Sass/WD/_InstagramVideoCarousel-wd.min.css?2026",
+        "/bundles/sass/WD/_couponsSectionHome-wd.min.css",
+        "/bundles/sass/WD/_welcomemodel-wd.min.css",
+        "/bundles/sass/WD/_percentBackCoupons-wd.min.css",
+        "/bundles/sass/WD/_deletionModal-wd.min.css",
+        "/bundles/sass/WD/_recipeSelector-WD.min.css",
+        "/bundles/sass/WD/_refreshRewards-wd.min.css",
+        "/bundles/sass/WD/_homeCarousel-wd.css",
+        "/bundles/sass/WD/_clippedSavingsDrawer-wd.min.css?1410",
+        "/bundles/css/slider.min.css",
+        "/bundles/css/slick_theme.min.css",
+        "/bundles/css/slider.min.css",
+        "/bundles/css/slick_theme.min.css"
+      ],
+      "meta_generator": null
+    },
+    "enriched": {
+      "url": "http://winndixie.com",
+      "hostname": "winndixie.com",
+      "tld": "com",
+      "pathDepth": 0,
+      "isWordPress": false,
+      "isOutdated": false,
+      "wordpressVersion": null,
+      "hasDeprecated": false,
+      "isResponsive": true
+    },
+    "score": {
+      "url": "http://winndixie.com",
+      "score": 10,
+      "reasons": [
+        "Commercial TLD (.com)",
+        "Simple URL structure"
+      ]
+    }
+  },
+  {
+    "0": {
+      "url": "http://example.com",
+      "isWordPress": false,
+      "wordpressVersion": null,
+      "isOutdated": false,
+      "responsive": true,
+      "jqueryVersion": null,
+      "bootstrapVersion": null,
+      "deprecatedTags": [],
+      "tech": {
+        "wordpress": false,
+        "wordpress_version": null,
+        "jquery_version": null,
+        "bootstrap_version": null,
+        "responsive": true,
+        "deprecated_tags": [],
+        "scripts": [],
+        "stylesheets": [],
+        "meta_generator": null
+      },
+      "enriched": {
+        "url": "http://example.com",
+        "hostname": "example.com",
+        "tld": "com",
+        "pathDepth": 0,
+        "isWordPress": false,
+        "isOutdated": false,
+        "wordpressVersion": null,
+        "hasDeprecated": false,
+        "isResponsive": true
+      },
+      "score": {
+        "url": "http://example.com",
+        "score": 10,
+        "reasons": [
+          "Commercial TLD (.com)",
+          "Simple URL structure"
+        ]
+      }
+    },
+    "1": {
+      "url": "http://joesautobody.com",
+      "isWordPress": true,
+      "wordpressVersion": "6.9.4",
+      "isOutdated": false,
+      "responsive": true,
+      "jqueryVersion": null,
+      "bootstrapVersion": null,
+      "deprecatedTags": [],
+      "tech": {
+        "wordpress": true,
+        "wordpress_version": "6.9.4",
+        "jquery_version": null,
+        "bootstrap_version": null,
+        "responsive": true,
+        "deprecated_tags": [],
+        "scripts": [
+          "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/main.js?ver=1.0.2",
+          "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/swiper-bundle.min.js?ver=11.1.4",
+          "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/hybridmag-swiper.js?ver=1.0.2",
+          "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/tab-widget.js?ver=1.0.2"
+        ],
+        "stylesheets": [
+          "https://www.joesautobody.com/wp-content/themes/hybridmag/style.css?ver=1.0.2",
+          "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/css/swiper-bundle.css?ver=11.1.4",
+          "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/css/font-figtree.css"
+        ],
+        "meta_generator": "WordPress 6.9.4"
+      },
+      "enriched": {
+        "url": "http://joesautobody.com",
+        "hostname": "joesautobody.com",
+        "tld": "com",
+        "pathDepth": 0,
+        "isWordPress": true,
+        "isOutdated": false,
+        "wordpressVersion": "6.9.4",
+        "hasDeprecated": false,
+        "isResponsive": true
+      },
+      "score": {
+        "url": "http://joesautobody.com",
+        "score": 30,
+        "reasons": [
+          "WordPress site",
+          "Commercial TLD (.com)",
+          "Simple URL structure"
+        ]
+      }
+    },
+    "2": {
+      "0": {
+        "url": "http://example.com",
+        "isWordPress": false,
+        "wordpressVersion": null,
+        "isOutdated": false,
+        "responsive": true,
+        "jqueryVersion": null,
+        "bootstrapVersion": null,
+        "deprecatedTags": [],
+        "tech": {
+          "wordpress": false,
+          "wordpress_version": null,
+          "jquery_version": null,
+          "bootstrap_version": null,
+          "responsive": true,
+          "deprecated_tags": [],
+          "scripts": [],
+          "stylesheets": [],
+          "meta_generator": null
+        },
+        "enriched": {
+          "url": "http://example.com",
+          "hostname": "example.com",
+          "tld": "com",
+          "pathDepth": 0,
+          "isWordPress": false,
+          "isOutdated": false,
+          "wordpressVersion": null,
+          "hasDeprecated": false,
+          "isResponsive": true
+        },
+        "score": {
+          "url": "http://example.com",
+          "score": 10,
+          "reasons": [
+            "Commercial TLD (.com)",
+            "Simple URL structure"
+          ]
+        }
+      },
+      "1": {
+        "0": {
+          "url": "http://example.com",
+          "isWordPress": false,
+          "wordpressVersion": null,
+          "isOutdated": false,
+          "responsive": true,
+          "jqueryVersion": null,
+          "bootstrapVersion": null,
+          "deprecatedTags": [],
+          "tech": {
+            "wordpress": false,
+            "wordpress_version": null,
+            "jquery_version": null,
+            "bootstrap_version": null,
+            "responsive": true,
+            "deprecated_tags": [],
+            "scripts": [],
+            "stylesheets": [],
+            "meta_generator": null
+          },
+          "enriched": {
+            "url": "http://example.com",
+            "hostname": "example.com",
+            "tld": "com",
+            "pathDepth": 0,
+            "isWordPress": false,
+            "isOutdated": false,
+            "wordpressVersion": null,
+            "hasDeprecated": false,
+            "isResponsive": true
+          },
+          "score": {
+            "url": "http://example.com",
+            "score": 10,
+            "reasons": [
+              "Commercial TLD (.com)",
+              "Simple URL structure"
+            ]
+          }
+        },
+        "enriched": {
+          "hostname": null,
+          "tld": null,
+          "pathDepth": 0,
+          "hasDeprecated": false,
+          "isResponsive": false
+        },
+        "score": {
+          "score": 20,
+          "reasons": [
+            "Not responsive",
+            "Simple URL structure"
+          ]
+        }
+      },
+      "enriched": {
+        "hostname": null,
+        "tld": null,
+        "pathDepth": 0,
+        "hasDeprecated": false,
+        "isResponsive": false
+      },
+      "score": {
+        "score": 20,
+        "reasons": [
+          "Not responsive",
+          "Simple URL structure"
+        ]
+      }
+    },
+    "enriched": {
+      "hostname": null,
+      "tld": null,
+      "pathDepth": 0,
+      "hasDeprecated": false,
+      "isResponsive": false
+    },
+    "score": {
+      "score": 20,
+      "reasons": [
+        "Not responsive",
+        "Simple URL structure"
+      ]
+    }
+  }
+]

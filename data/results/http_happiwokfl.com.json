@@ -1,0 +1,35 @@
+{
+  "url": "http://happiwokfl.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": "3.6.0",
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": "3.6.0",
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://kit.fontawesome.com/a4edb6363d.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-TTTWDHS5S5",
+      "/share42/share42.js",
+      "https://code.jquery.com/jquery-3.6.0.min.js",
+      "https://code.jquery.com/jquery-migrate-3.3.2.js",
+      "https://code.jquery.com/ui/1.13.2/jquery-ui.min.js",
+      "/min/g=js4.0&1773118496",
+      "https://www.google.com/recaptcha/api.js?render=explicit&onload=initRecaptchas"
+    ],
+    "stylesheets": [
+      "/min/g=css4.0&1775583039",
+      "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/minified/jquery-ui.min.css",
+      "//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700",
+      "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Nunito:400,700"
+    ],
+    "meta_generator": null
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "url": "http://locations.panerabread.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://www.panerabread.com/public/12c33e9e05fae0f490b569b430b9aed62f7e98a9cc41",
+      "//assets.adobedtm.com/launch-EN068643e629ca4b7b82a1039958329904.min.js",
+      "https://ssl.kaptcha.com/collect/sdk?m=100225",
+      "/content/dam/panerabread/static/www-ui/2.88.0-39cf1e0f/js/manifest.min.js",
+      "/content/dam/panerabread/static/www-ui/2.88.0-39cf1e0f/js/vendor.min.js",
+      "/content/dam/panerabread/static/www-ui/2.88.0-39cf1e0f/js/www-ui.min.js",
+      "https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit",
+      "https://resources.digital-cloud-west.medallia.com/wdcwest/69912/onsite/embed.js",
+      "/E9wSRn7K5jqa/fM/JRnZ9f4CM1/EpGawtLpD8XDcXXE/RkQCTFVf/Gw1EfTUn/DxgB"
+    ],
+    "stylesheets": [
+      "/content/dam/panerabread/static/www-ui/2.88.0-39cf1e0f/css/www-ui.min.css"
+    ],
+    "meta_generator": null
+  }
+}

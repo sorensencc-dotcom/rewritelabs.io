@@ -1,0 +1,33 @@
+{
+  "url": "http://pinchapenny.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://pinchapenny.com/js/polyfills.js?v=2026.2.13.0",
+      "//www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit",
+      "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "https://pinchapenny.com/js/manifest.js?v=2026.2.13.0",
+      "https://pinchapenny.com/js/vendor-bs3.js?v=2026.2.13.0",
+      "https://pinchapenny.com/js/app-bs3.js?v=2026.2.13.0",
+      "https://pinchapenny.com/js/home.js?v=2026.2.13.0",
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyDHYGc-p9cYWjPSv7UyppxNEMDt6prTnp4&callback=onGmapApiLoaded&loading=async",
+      "https://magento.instantsearchplus.com/js/acp-magento.js?v=2&mode=magento&UUID=7c8547c5-b07a-4e65-8c56-e92ebbe1dd6e&store=1"
+    ],
+    "stylesheets": [
+      "https://pinchapenny.com/css/app-bs3.css?v=2026.2.13.0"
+    ],
+    "meta_generator": null
+  }
+}

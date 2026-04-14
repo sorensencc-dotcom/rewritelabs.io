@@ -1,0 +1,47 @@
+{
+  "url": "http://pupspub.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://s3-us-west-2.amazonaws.com/support.letesoft.com/apps/newClientPage/latest.js",
+      "/checkouts/internal/preloads.js?locale=en-US",
+      "//pupspub.com/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+      "//pupspub.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-496de5fe.js",
+      "//pupspub.com/cdn/shop/t/8/assets/utils.js?v=7831558957854122511753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/global.bundle.min.js?v=83394101171225484751753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/cart-count.js?v=51561485870383068741753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/cart-items.js?v=18494231088895156391753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/cart-footer.js?v=107578074203092953621753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/cart-note.js?v=175945663109345311611753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/alpine-extensions.js?v=130255111265633159301753718492",
+      "https://cdn.shopify.com/extensions/4d5a2c47-c9fc-4724-a26e-14d501c856c6/attrac-6/assets/attrac-embed-bars.js",
+      "https://cdn.shopify.com/extensions/019d48ff-5ff5-7527-be8d-00968557a25d/form-builder-by-hulkapps-61/assets/form-builder-script.js",
+      "https://pupspub.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js",
+      "//pupspub.com/cdn/shop/t/8/assets/header.js?v=36849506637616900911753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/modules-predictive-search.bundle.min.js?v=100006850133386087801753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/offset-gallery-item.js?v=163228018526710532881753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/sections-footer.bundle.min.js?v=165345289835534809381753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/modals.js?v=160051358362553771071753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/modal-cart.js?v=136095141966072940001753718492"
+    ],
+    "stylesheets": [
+      "https://s3-us-west-2.amazonaws.com/support.letesoft.com/apps/newClientPage/latest.css",
+      "https://pupspub.com/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css",
+      "//pupspub.com/cdn/shop/t/8/assets/base.bundle.css?v=6320695771660625931753718492",
+      "//pupspub.com/cdn/shop/t/8/assets/custom.css?v=84056706649334343261767895373"
+    ],
+    "meta_generator": null
+  }
+}

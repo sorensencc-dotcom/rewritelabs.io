@@ -1,0 +1,29 @@
+{
+  "url": "http://tgh.org",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://freshpaint-cdn.com/js/103161b8-dce6-42b9-8b1a-5331a84e52c5/freshpaint.js",
+      "https://script-app.mercuryhealthcare.com/mhc-orbit-v1.0.min.js",
+      "/layouts/system/VisitorIdentification.js",
+      "/assets/js/main.js?v=639107251600000000"
+    ],
+    "stylesheets": [
+      "https://use.typekit.net/xus6sna.css",
+      "/assets/css/global.css?v=639107251600000000"
+    ],
+    "meta_generator": null
+  }
+}

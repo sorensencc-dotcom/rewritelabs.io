@@ -1,0 +1,24 @@
+﻿:root {
+  --rl-bg: #0b0f19;
+  --rl-bg-panel: #111726;
+  --rl-bg-panel-alt: #0f1422;
+
+  --rl-border: #1b2337;
+  --rl-border-strong: #2a3550;
+
+  --rl-text: #e6ecff;
+  --rl-text-dim: #9aa4c8;
+  --rl-text-faint: #6b7390;
+
+  --rl-accent: #3b82f6;
+  --rl-accent-strong: #60a5fa;
+  --rl-accent-glow: rgba(59, 130, 246, 0.35);
+
+  --rl-radius: 12px;
+  --rl-radius-lg: 18px;
+
+  --rl-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+  --rl-shadow-strong: 0 0 28px rgba(0, 0, 0, 0.65);
+
+  --rl-font: "Inter", system-ui, sans-serif;
+}

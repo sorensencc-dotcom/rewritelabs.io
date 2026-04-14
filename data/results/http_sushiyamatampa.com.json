@@ -1,0 +1,35 @@
+{
+  "url": "http://sushiyamatampa.com",
+  "isWordPress": true,
+  "wordpressVersion": "6.9.4",
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": true,
+    "wordpress_version": "6.9.4",
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "http://sushiyamatampa.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/aos/aos.js?ver=1",
+      "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/unslider/unslider-min.js?ver=6.9.4",
+      "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/unslider/jquery.event.move.js?ver=6.9.4",
+      "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/unslider/jquery.event.swipe.js?ver=6.9.4"
+    ],
+    "stylesheets": [
+      "https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700,800,900|Oswald:100,200,300,400,500,600,700,800,900|Montserrat:100,200,300,400,500,600,700,800,900",
+      "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/oxygen.css?ver=4.9.3",
+      "//sushiyamatampa.com/wp-content/uploads/oxygen/css/8.css?cache=1764694723&ver=6.9.4",
+      "//sushiyamatampa.com/wp-content/uploads/oxygen/css/12.css?cache=1764694723&ver=6.9.4",
+      "//sushiyamatampa.com/wp-content/uploads/oxygen/css/universal.css?cache=1764694724&ver=6.9.4",
+      "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/aos/aos.css?ver=6.9.4",
+      "http://sushiyamatampa.com/wp-content/plugins/oxygen/component-framework/vendor/unslider/unslider.css"
+    ],
+    "meta_generator": "WordPress 6.9.4"
+  }
+}

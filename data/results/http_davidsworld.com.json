@@ -1,0 +1,37 @@
+{
+  "url": "http://davidsworld.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [
+    "font"
+  ],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [
+      "font"
+    ],
+    "scripts": [
+      "/_ui/desktop/theme-trek/js/common_start.2704479e.js",
+      "/_ui/desktop/theme-trek/js/legacy-base-vendors.8a494a74.js",
+      "/_ui/desktop/theme-trek/js/legacy-all-vendors.09a24269.js",
+      "/_ui/desktop/theme-trek/js/pedal-package.ac87e99a.js",
+      "/_ui/desktop/theme-trek/js/vuejs-package.dda8cc95.js",
+      "/_ui/desktop/theme-trek/js/vendors.9946d05d.js",
+      "/_ui/desktop/theme-trek/js/chunk-common.2de0ac89.js",
+      "/_ui/desktop/theme-trek/js/bundle.26a51212.js",
+      "/_ui/desktop/theme-trek/js/common_end.8436ec43.js",
+      "https://consent.cookiebot.com/uc.js",
+      "https://www.lightboxcdn.com/vendor/1f262582-bf92-4a2b-a871-d34e7872844b/lightbox_inline.js"
+    ],
+    "stylesheets": [],
+    "meta_generator": null
+  }
+}

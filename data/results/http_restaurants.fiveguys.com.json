@@ -1,0 +1,26 @@
+{
+  "url": "http://restaurants.fiveguys.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://cdn.cookielaw.org/consent/e45d34e7-1025-47fa-84d1-54dab0b7e862/OtAutoBlock.js",
+      "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "permanent-b0b701/restaurants.fiveguys.com/stateList/en.5d6102ad.js",
+      "https://www.googletagmanager.com/gtag/js?id=UA-8465414-1"
+    ],
+    "stylesheets": [],
+    "meta_generator": null
+  }
+}

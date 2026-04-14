@@ -1,0 +1,25 @@
+{
+  "url": "http://locations.einsteinbros.com",
+  "isWordPress": true,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": true,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [],
+    "stylesheets": [
+      "/assets/static/index-BR-44w8M.css",
+      "/assets/static/template-CmujHvZA.css",
+      "/assets/static/filterEncodings-Dn8lXSgF.css"
+    ],
+    "meta_generator": null
+  }
+}

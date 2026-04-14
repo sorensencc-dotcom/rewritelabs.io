@@ -1,0 +1,32 @@
+{
+  "url": "http://stores.advanceautoparts.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "https://www.googletagmanager.com/gtag/destination?id=G-54NMRM2LBX&l=dataLayer&cx=c",
+      "https://www.googletagmanager.com/gtag/js?id=G-54NMRM2LBX&l=dataLayer&cx=c",
+      "https://www.googletagmanager.com/gtag/destination?id=AW-965963465&l=dataLayer&cx=c",
+      "https://www.googletagmanager.com/gtag/js?id=AW-965963465&l=dataLayer&cx=c",
+      "https://www.googletagmanager.com/gtag/js?id=DC-6837024",
+      "https://tags.tiqcdn.com/utag/advanceautoparts/storesaap/prod/utag.js"
+    ],
+    "stylesheets": [
+      "/assets/static/root-6bffe82d.css",
+      "/assets/static/main-86a9b0dc.css"
+    ],
+    "meta_generator": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://littlecaesars.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
+      "https://cdn.cookielaw.org/consent/3a859a77-a005-4183-94c7-c2134566bf55/OtAutoBlock.js",
+      "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "/_next/static/chunks/webpack-25f06c00ea8a21bc.js",
+      "/_next/static/chunks/framework-cf0c0f7fb1761dea.js",
+      "/_next/static/chunks/main-21c1cea5745b420f.js",
+      "/_next/static/chunks/pages/_app-1f5cb46efb896d52.js",
+      "/_next/static/chunks/63-46ef9763187e9073.js",
+      "/_next/static/chunks/191-9328b32013082b64.js",
+      "/_next/static/chunks/pages/index-3bad7a9cb18d6910.js",
+      "/_next/static/TgWkC10NXBk2RYVQNNFzj/_buildManifest.js",
+      "/_next/static/TgWkC10NXBk2RYVQNNFzj/_ssgManifest.js"
+    ],
+    "stylesheets": [
+      "/_next/static/css/90237d9b2c612f74.css"
+    ],
+    "meta_generator": null
+  }
+}

@@ -1,0 +1,1441 @@
+region,city,state,zip,category,module,ms,ok
+US,Tampa,FL,33602,plumber,Yelp,135,1
+US,Tampa,FL,33602,plumber,YellowPages,63,1
+US,Tampa,FL,33602,plumber,OSM,4285,1
+US,Tampa,FL,33602,plumber,GooglePlaces,92,1
+US,Tampa,FL,33602,roofer,Yelp,58,1
+US,Tampa,FL,33602,roofer,YellowPages,47,1
+US,Tampa,FL,33602,roofer,OSM,3168,1
+US,Tampa,FL,33602,roofer,GooglePlaces,32,1
+US,Tampa,FL,33602,electrician,Yelp,29,1
+US,Tampa,FL,33602,electrician,YellowPages,15,1
+US,Tampa,FL,33602,electrician,OSM,4796,1
+US,Tampa,FL,33602,electrician,GooglePlaces,138,1
+US,Tampa,FL,33602,dentist,Yelp,72,1
+US,Tampa,FL,33602,dentist,YellowPages,70,1
+US,Tampa,FL,33602,dentist,OSM,4824,1
+US,Tampa,FL,33602,dentist,GooglePlaces,133,1
+US,Tampa,FL,33602,hvac,Yelp,65,1
+US,Tampa,FL,33602,hvac,YellowPages,63,1
+US,Tampa,FL,33602,hvac,OSM,4827,1
+US,Tampa,FL,33602,hvac,GooglePlaces,76,1
+US,Tampa,FL,33602,landscaping,Yelp,66,1
+US,Tampa,FL,33602,landscaping,YellowPages,67,1
+US,Tampa,FL,33602,landscaping,OSM,4242,1
+US,Tampa,FL,33602,landscaping,GooglePlaces,76,1
+US,Tampa,FL,33602,cleaning service,Yelp,59,1
+US,Tampa,FL,33602,cleaning service,YellowPages,49,1
+US,Tampa,FL,33602,cleaning service,OSM,4221,1
+US,Tampa,FL,33602,cleaning service,GooglePlaces,139,1
+US,Tampa,FL,33602,accountant,Yelp,78,1
+US,Tampa,FL,33602,accountant,YellowPages,72,1
+US,Tampa,FL,33602,accountant,OSM,10080,1
+US,Tampa,FL,33602,accountant,GooglePlaces,78,1
+US,Tampa,FL,33602,solicitor,Yelp,70,1
+US,Tampa,FL,33602,solicitor,YellowPages,77,1
+US,Tampa,FL,33602,solicitor,OSM,5612,1
+US,Tampa,FL,33602,solicitor,GooglePlaces,77,1
+US,Tampa,FL,33602,barber,Yelp,78,1
+US,Tampa,FL,33602,barber,YellowPages,60,1
+US,Tampa,FL,33602,barber,OSM,4950,1
+US,Tampa,FL,33602,barber,GooglePlaces,71,1
+US,Tampa,FL,33602,restaurant,Yelp,71,1
+US,Tampa,FL,33602,restaurant,YellowPages,57,1
+US,Tampa,FL,33602,restaurant,OSM,5468,1
+US,Tampa,FL,33602,restaurant,GooglePlaces,68,1
+US,Tampa,FL,33602,auto repair,Yelp,75,1
+US,Tampa,FL,33602,auto repair,YellowPages,54,1
+US,Tampa,FL,33602,auto repair,OSM,4853,1
+US,Tampa,FL,33602,auto repair,GooglePlaces,89,1
+US,Tampa,FL,33603,plumber,Yelp,74,1
+US,Tampa,FL,33603,plumber,YellowPages,66,1
+US,Tampa,FL,33603,plumber,OSM,6111,1
+US,Tampa,FL,33603,plumber,GooglePlaces,77,1
+US,Tampa,FL,33603,roofer,Yelp,68,1
+US,Tampa,FL,33603,roofer,YellowPages,72,1
+US,Tampa,FL,33603,roofer,OSM,5466,1
+US,Tampa,FL,33603,roofer,GooglePlaces,80,1
+US,Tampa,FL,33603,electrician,Yelp,70,1
+US,Tampa,FL,33603,electrician,YellowPages,53,1
+US,Tampa,FL,33603,electrician,OSM,5528,1
+US,Tampa,FL,33603,electrician,GooglePlaces,71,1
+US,Tampa,FL,33603,dentist,Yelp,79,1
+US,Tampa,FL,33603,dentist,YellowPages,63,1
+US,Tampa,FL,33603,dentist,OSM,4822,1
+US,Tampa,FL,33603,dentist,GooglePlaces,97,1
+US,Tampa,FL,33603,hvac,Yelp,78,1
+US,Tampa,FL,33603,hvac,YellowPages,72,1
+US,Tampa,FL,33603,hvac,OSM,4870,1
+US,Tampa,FL,33603,hvac,GooglePlaces,169,1
+US,Tampa,FL,33603,landscaping,Yelp,140,1
+US,Tampa,FL,33603,landscaping,YellowPages,70,1
+US,Tampa,FL,33603,landscaping,OSM,5534,1
+US,Tampa,FL,33603,landscaping,GooglePlaces,159,1
+US,Tampa,FL,33603,cleaning service,Yelp,84,1
+US,Tampa,FL,33603,cleaning service,YellowPages,78,1
+US,Tampa,FL,33603,cleaning service,OSM,8495,1
+US,Tampa,FL,33603,cleaning service,GooglePlaces,74,1
+US,Tampa,FL,33603,accountant,Yelp,75,1
+US,Tampa,FL,33603,accountant,YellowPages,125,1
+US,Tampa,FL,33603,accountant,OSM,3880,1
+US,Tampa,FL,33603,accountant,GooglePlaces,73,1
+US,Tampa,FL,33603,solicitor,Yelp,67,1
+US,Tampa,FL,33603,solicitor,YellowPages,51,1
+US,Tampa,FL,33603,solicitor,OSM,4892,1
+US,Tampa,FL,33603,solicitor,GooglePlaces,89,1
+US,Tampa,FL,33603,barber,Yelp,72,1
+US,Tampa,FL,33603,barber,YellowPages,75,1
+US,Tampa,FL,33603,barber,OSM,2281,1
+US,Tampa,FL,33603,barber,GooglePlaces,31,1
+US,Tampa,FL,33603,restaurant,Yelp,30,1
+US,Tampa,FL,33603,restaurant,YellowPages,19,1
+US,Tampa,FL,33603,restaurant,OSM,5380,1
+US,Tampa,FL,33603,restaurant,GooglePlaces,73,1
+US,Tampa,FL,33603,auto repair,Yelp,109,1
+US,Tampa,FL,33603,auto repair,YellowPages,71,1
+US,Tampa,FL,33603,auto repair,OSM,2840,1
+US,Tampa,FL,33603,auto repair,GooglePlaces,30,1
+US,Tampa,FL,33604,plumber,Yelp,29,1
+US,Tampa,FL,33604,plumber,YellowPages,17,1
+US,Tampa,FL,33604,plumber,OSM,4814,1
+US,Tampa,FL,33604,plumber,GooglePlaces,81,1
+US,Tampa,FL,33604,roofer,Yelp,83,1
+US,Tampa,FL,33604,roofer,YellowPages,59,1
+US,Tampa,FL,33604,roofer,OSM,5739,1
+US,Tampa,FL,33604,roofer,GooglePlaces,78,1
+US,Tampa,FL,33604,electrician,Yelp,73,1
+US,Tampa,FL,33604,electrician,YellowPages,62,1
+US,Tampa,FL,33604,electrician,OSM,5731,1
+US,Tampa,FL,33604,electrician,GooglePlaces,136,1
+US,Tampa,FL,33604,dentist,Yelp,99,1
+US,Tampa,FL,33604,dentist,YellowPages,59,1
+US,Tampa,FL,33604,dentist,OSM,5727,1
+US,Tampa,FL,33604,dentist,GooglePlaces,135,1
+US,Tampa,FL,33604,hvac,Yelp,74,1
+US,Tampa,FL,33604,hvac,YellowPages,71,1
+US,Tampa,FL,33604,hvac,OSM,5731,1
+US,Tampa,FL,33604,hvac,GooglePlaces,83,1
+US,Tampa,FL,33604,landscaping,Yelp,71,1
+US,Tampa,FL,33604,landscaping,YellowPages,75,1
+US,Tampa,FL,33604,landscaping,OSM,8752,1
+US,Tampa,FL,33604,landscaping,GooglePlaces,144,1
+US,Tampa,FL,33604,cleaning service,Yelp,72,1
+US,Tampa,FL,33604,cleaning service,YellowPages,69,1
+US,Tampa,FL,33604,cleaning service,OSM,2398,1
+US,Tampa,FL,33604,cleaning service,GooglePlaces,34,1
+US,Tampa,FL,33604,accountant,Yelp,28,1
+US,Tampa,FL,33604,accountant,YellowPages,19,1
+US,Tampa,FL,33604,accountant,OSM,5145,1
+US,Tampa,FL,33604,accountant,GooglePlaces,127,1
+US,Tampa,FL,33604,solicitor,Yelp,63,1
+US,Tampa,FL,33604,solicitor,YellowPages,62,1
+US,Tampa,FL,33604,solicitor,OSM,6262,1
+US,Tampa,FL,33604,solicitor,GooglePlaces,145,1
+US,Tampa,FL,33604,barber,Yelp,83,1
+US,Tampa,FL,33604,barber,YellowPages,65,1
+US,Tampa,FL,33604,barber,OSM,5202,1
+US,Tampa,FL,33604,barber,GooglePlaces,81,1
+US,Tampa,FL,33604,restaurant,Yelp,76,1
+US,Tampa,FL,33604,restaurant,YellowPages,69,1
+US,Tampa,FL,33604,restaurant,OSM,4662,1
+US,Tampa,FL,33604,restaurant,GooglePlaces,145,1
+US,Tampa,FL,33604,auto repair,Yelp,83,1
+US,Tampa,FL,33604,auto repair,YellowPages,67,1
+US,Tampa,FL,33604,auto repair,OSM,5648,1
+US,Tampa,FL,33604,auto repair,GooglePlaces,77,1
+US,Tampa,FL,33605,plumber,Yelp,66,1
+US,Tampa,FL,33605,plumber,YellowPages,63,1
+US,Tampa,FL,33605,plumber,OSM,4844,1
+US,Tampa,FL,33605,plumber,GooglePlaces,94,1
+US,Tampa,FL,33605,roofer,Yelp,75,1
+US,Tampa,FL,33605,roofer,YellowPages,74,1
+US,Tampa,FL,33605,roofer,OSM,9979,1
+US,Tampa,FL,33605,roofer,GooglePlaces,138,1
+US,Tampa,FL,33605,electrician,Yelp,73,1
+US,Tampa,FL,33605,electrician,YellowPages,62,1
+US,Tampa,FL,33605,electrician,OSM,6489,1
+US,Tampa,FL,33605,electrician,GooglePlaces,143,1
+US,Tampa,FL,33605,dentist,Yelp,107,1
+US,Tampa,FL,33605,dentist,YellowPages,76,1
+US,Tampa,FL,33605,dentist,OSM,6935,1
+US,Tampa,FL,33605,dentist,GooglePlaces,97,1
+US,Tampa,FL,33605,hvac,Yelp,72,1
+US,Tampa,FL,33605,hvac,YellowPages,76,1
+US,Tampa,FL,33605,hvac,OSM,6776,1
+US,Tampa,FL,33605,hvac,GooglePlaces,80,1
+US,Tampa,FL,33605,landscaping,Yelp,67,1
+US,Tampa,FL,33605,landscaping,YellowPages,63,1
+US,Tampa,FL,33605,landscaping,OSM,5441,1
+US,Tampa,FL,33605,landscaping,GooglePlaces,84,1
+US,Tampa,FL,33605,cleaning service,Yelp,82,1
+US,Tampa,FL,33605,cleaning service,YellowPages,72,1
+US,Tampa,FL,33605,cleaning service,OSM,4624,1
+US,Tampa,FL,33605,cleaning service,GooglePlaces,90,1
+US,Tampa,FL,33605,accountant,Yelp,81,1
+US,Tampa,FL,33605,accountant,YellowPages,65,1
+US,Tampa,FL,33605,accountant,OSM,3418,1
+US,Tampa,FL,33605,accountant,GooglePlaces,32,1
+US,Tampa,FL,33605,solicitor,Yelp,33,1
+US,Tampa,FL,33605,solicitor,YellowPages,19,1
+US,Tampa,FL,33605,solicitor,OSM,5260,1
+US,Tampa,FL,33605,solicitor,GooglePlaces,65,1
+US,Tampa,FL,33605,barber,Yelp,72,1
+US,Tampa,FL,33605,barber,YellowPages,63,1
+US,Tampa,FL,33605,barber,OSM,4892,1
+US,Tampa,FL,33605,barber,GooglePlaces,79,1
+US,Tampa,FL,33605,restaurant,Yelp,71,1
+US,Tampa,FL,33605,restaurant,YellowPages,68,1
+US,Tampa,FL,33605,restaurant,OSM,5779,1
+US,Tampa,FL,33605,restaurant,GooglePlaces,148,1
+US,Tampa,FL,33605,auto repair,Yelp,84,1
+US,Tampa,FL,33605,auto repair,YellowPages,74,1
+US,Tampa,FL,33605,auto repair,OSM,6277,1
+US,Tampa,FL,33605,auto repair,GooglePlaces,72,1
+US,Tampa,FL,33606,plumber,Yelp,128,1
+US,Tampa,FL,33606,plumber,YellowPages,64,1
+US,Tampa,FL,33606,plumber,OSM,6191,1
+US,Tampa,FL,33606,plumber,GooglePlaces,78,1
+US,Tampa,FL,33606,roofer,Yelp,113,1
+US,Tampa,FL,33606,roofer,YellowPages,68,1
+US,Tampa,FL,33606,roofer,OSM,5642,1
+US,Tampa,FL,33606,roofer,GooglePlaces,151,1
+US,Tampa,FL,33606,electrician,Yelp,145,1
+US,Tampa,FL,33606,electrician,YellowPages,69,1
+US,Tampa,FL,33606,electrician,OSM,5628,1
+US,Tampa,FL,33606,electrician,GooglePlaces,109,1
+US,Tampa,FL,33606,dentist,Yelp,78,1
+US,Tampa,FL,33606,dentist,YellowPages,72,1
+US,Tampa,FL,33606,dentist,OSM,5734,1
+US,Tampa,FL,33606,dentist,GooglePlaces,89,1
+US,Tampa,FL,33606,hvac,Yelp,67,1
+US,Tampa,FL,33606,hvac,YellowPages,69,1
+US,Tampa,FL,33606,hvac,OSM,2870,1
+US,Tampa,FL,33606,hvac,GooglePlaces,38,1
+US,Tampa,FL,33606,landscaping,Yelp,27,1
+US,Tampa,FL,33606,landscaping,YellowPages,16,1
+US,Tampa,FL,33606,landscaping,OSM,2360,1
+US,Tampa,FL,33606,landscaping,GooglePlaces,33,1
+US,Tampa,FL,33606,cleaning service,Yelp,26,1
+US,Tampa,FL,33606,cleaning service,YellowPages,14,1
+US,Tampa,FL,33606,cleaning service,OSM,5182,1
+US,Tampa,FL,33606,cleaning service,GooglePlaces,73,1
+US,Tampa,FL,33606,accountant,Yelp,110,1
+US,Tampa,FL,33606,accountant,YellowPages,65,1
+US,Tampa,FL,33606,accountant,OSM,4848,1
+US,Tampa,FL,33606,accountant,GooglePlaces,130,1
+US,Tampa,FL,33606,solicitor,Yelp,68,1
+US,Tampa,FL,33606,solicitor,YellowPages,58,1
+US,Tampa,FL,33606,solicitor,OSM,4851,1
+US,Tampa,FL,33606,solicitor,GooglePlaces,77,1
+US,Tampa,FL,33606,barber,Yelp,139,1
+US,Tampa,FL,33606,barber,YellowPages,79,1
+US,Tampa,FL,33606,barber,OSM,5549,1
+US,Tampa,FL,33606,barber,GooglePlaces,96,1
+US,Tampa,FL,33606,restaurant,Yelp,87,1
+US,Tampa,FL,33606,restaurant,YellowPages,69,1
+US,Tampa,FL,33606,restaurant,OSM,4757,1
+US,Tampa,FL,33606,restaurant,GooglePlaces,73,1
+US,Tampa,FL,33606,auto repair,Yelp,74,1
+US,Tampa,FL,33606,auto repair,YellowPages,72,1
+US,Tampa,FL,33606,auto repair,OSM,3726,1
+US,Tampa,FL,33606,auto repair,GooglePlaces,33,1
+US,Tampa,FL,33607,plumber,Yelp,29,1
+US,Tampa,FL,33607,plumber,YellowPages,20,1
+US,Tampa,FL,33607,plumber,OSM,4837,1
+US,Tampa,FL,33607,plumber,GooglePlaces,94,1
+US,Tampa,FL,33607,roofer,Yelp,73,1
+US,Tampa,FL,33607,roofer,YellowPages,59,1
+US,Tampa,FL,33607,roofer,OSM,5058,1
+US,Tampa,FL,33607,roofer,GooglePlaces,77,1
+US,Tampa,FL,33607,electrician,Yelp,66,1
+US,Tampa,FL,33607,electrician,YellowPages,61,1
+US,Tampa,FL,33607,electrician,OSM,7551,1
+US,Tampa,FL,33607,electrician,GooglePlaces,79,1
+US,Tampa,FL,33607,dentist,Yelp,79,1
+US,Tampa,FL,33607,dentist,YellowPages,69,1
+US,Tampa,FL,33607,dentist,OSM,3964,1
+US,Tampa,FL,33607,dentist,GooglePlaces,144,1
+US,Tampa,FL,33607,hvac,Yelp,81,1
+US,Tampa,FL,33607,hvac,YellowPages,51,1
+US,Tampa,FL,33607,hvac,OSM,5478,1
+US,Tampa,FL,33607,hvac,GooglePlaces,76,1
+US,Tampa,FL,33607,landscaping,Yelp,138,1
+US,Tampa,FL,33607,landscaping,YellowPages,72,1
+US,Tampa,FL,33607,landscaping,OSM,2370,1
+US,Tampa,FL,33607,landscaping,GooglePlaces,32,1
+US,Tampa,FL,33607,cleaning service,Yelp,29,1
+US,Tampa,FL,33607,cleaning service,YellowPages,19,1
+US,Tampa,FL,33607,cleaning service,OSM,2585,1
+US,Tampa,FL,33607,cleaning service,GooglePlaces,32,1
+US,Tampa,FL,33607,accountant,Yelp,30,1
+US,Tampa,FL,33607,accountant,YellowPages,18,1
+US,Tampa,FL,33607,accountant,OSM,5721,1
+US,Tampa,FL,33607,accountant,GooglePlaces,113,1
+US,Tampa,FL,33607,solicitor,Yelp,75,1
+US,Tampa,FL,33607,solicitor,YellowPages,67,1
+US,Tampa,FL,33607,solicitor,OSM,5532,1
+US,Tampa,FL,33607,solicitor,GooglePlaces,143,1
+US,Tampa,FL,33607,barber,Yelp,72,1
+US,Tampa,FL,33607,barber,YellowPages,68,1
+US,Tampa,FL,33607,barber,OSM,4884,1
+US,Tampa,FL,33607,barber,GooglePlaces,137,1
+US,Tampa,FL,33607,restaurant,Yelp,75,1
+US,Tampa,FL,33607,restaurant,YellowPages,72,1
+US,Tampa,FL,33607,restaurant,OSM,5799,1
+US,Tampa,FL,33607,restaurant,GooglePlaces,77,1
+US,Tampa,FL,33607,auto repair,Yelp,72,1
+US,Tampa,FL,33607,auto repair,YellowPages,77,1
+US,Tampa,FL,33607,auto repair,OSM,5493,1
+US,Tampa,FL,33607,auto repair,GooglePlaces,68,1
+US,Tampa,FL,33609,plumber,Yelp,83,1
+US,Tampa,FL,33609,plumber,YellowPages,60,1
+US,Tampa,FL,33609,plumber,OSM,4846,1
+US,Tampa,FL,33609,plumber,GooglePlaces,132,1
+US,Tampa,FL,33609,roofer,Yelp,77,1
+US,Tampa,FL,33609,roofer,YellowPages,81,1
+US,Tampa,FL,33609,roofer,OSM,4880,1
+US,Tampa,FL,33609,roofer,GooglePlaces,136,1
+US,Tampa,FL,33609,electrician,Yelp,69,1
+US,Tampa,FL,33609,electrician,YellowPages,66,1
+US,Tampa,FL,33609,electrician,OSM,8049,1
+US,Tampa,FL,33609,electrician,GooglePlaces,129,1
+US,Tampa,FL,33609,dentist,Yelp,76,1
+US,Tampa,FL,33609,dentist,YellowPages,71,1
+US,Tampa,FL,33609,dentist,OSM,2611,1
+US,Tampa,FL,33609,dentist,GooglePlaces,32,1
+US,Tampa,FL,33609,hvac,Yelp,31,1
+US,Tampa,FL,33609,hvac,YellowPages,19,1
+US,Tampa,FL,33609,hvac,OSM,5520,1
+US,Tampa,FL,33609,hvac,GooglePlaces,79,1
+US,Tampa,FL,33609,landscaping,Yelp,82,1
+US,Tampa,FL,33609,landscaping,YellowPages,60,1
+US,Tampa,FL,33609,landscaping,OSM,4861,1
+US,Tampa,FL,33609,landscaping,GooglePlaces,80,1
+US,Tampa,FL,33609,cleaning service,Yelp,71,1
+US,Tampa,FL,33609,cleaning service,YellowPages,61,1
+US,Tampa,FL,33609,cleaning service,OSM,5808,1
+US,Tampa,FL,33609,cleaning service,GooglePlaces,101,1
+US,Tampa,FL,33609,accountant,Yelp,75,1
+US,Tampa,FL,33609,accountant,YellowPages,68,1
+US,Tampa,FL,33609,accountant,OSM,5527,1
+US,Tampa,FL,33609,accountant,GooglePlaces,88,1
+US,Tampa,FL,33609,solicitor,Yelp,78,1
+US,Tampa,FL,33609,solicitor,YellowPages,68,1
+US,Tampa,FL,33609,solicitor,OSM,5818,1
+US,Tampa,FL,33609,solicitor,GooglePlaces,80,1
+US,Tampa,FL,33609,barber,Yelp,78,1
+US,Tampa,FL,33609,barber,YellowPages,64,1
+US,Tampa,FL,33609,barber,OSM,4854,1
+US,Tampa,FL,33609,barber,GooglePlaces,76,1
+US,Tampa,FL,33609,restaurant,Yelp,73,1
+US,Tampa,FL,33609,restaurant,YellowPages,72,1
+US,Tampa,FL,33609,restaurant,OSM,4867,1
+US,Tampa,FL,33609,restaurant,GooglePlaces,90,1
+US,Tampa,FL,33609,auto repair,Yelp,74,1
+US,Tampa,FL,33609,auto repair,YellowPages,59,1
+US,Tampa,FL,33609,auto repair,OSM,8180,1
+US,Tampa,FL,33609,auto repair,GooglePlaces,135,1
+US,Tampa,FL,33610,plumber,Yelp,83,1
+US,Tampa,FL,33610,plumber,YellowPages,65,1
+US,Tampa,FL,33610,plumber,OSM,5157,1
+US,Tampa,FL,33610,plumber,GooglePlaces,66,1
+US,Tampa,FL,33610,roofer,Yelp,76,1
+US,Tampa,FL,33610,roofer,YellowPages,71,1
+US,Tampa,FL,33610,roofer,OSM,10369,1
+US,Tampa,FL,33610,roofer,GooglePlaces,152,1
+US,Tampa,FL,33610,electrician,Yelp,80,1
+US,Tampa,FL,33610,electrician,YellowPages,73,1
+US,Tampa,FL,33610,electrician,OSM,5225,1
+US,Tampa,FL,33610,electrician,GooglePlaces,153,1
+US,Tampa,FL,33610,dentist,Yelp,80,1
+US,Tampa,FL,33610,dentist,YellowPages,76,1
+US,Tampa,FL,33610,dentist,OSM,5437,1
+US,Tampa,FL,33610,dentist,GooglePlaces,73,1
+US,Tampa,FL,33610,hvac,Yelp,83,1
+US,Tampa,FL,33610,hvac,YellowPages,70,1
+US,Tampa,FL,33610,hvac,OSM,4927,1
+US,Tampa,FL,33610,hvac,GooglePlaces,73,1
+US,Tampa,FL,33610,landscaping,Yelp,74,1
+US,Tampa,FL,33610,landscaping,YellowPages,70,1
+US,Tampa,FL,33610,landscaping,OSM,4808,1
+US,Tampa,FL,33610,landscaping,GooglePlaces,90,1
+US,Tampa,FL,33610,cleaning service,Yelp,66,1
+US,Tampa,FL,33610,cleaning service,YellowPages,68,1
+US,Tampa,FL,33610,cleaning service,OSM,5729,1
+US,Tampa,FL,33610,cleaning service,GooglePlaces,139,1
+US,Tampa,FL,33610,accountant,Yelp,79,1
+US,Tampa,FL,33610,accountant,YellowPages,58,1
+US,Tampa,FL,33610,accountant,OSM,5741,1
+US,Tampa,FL,33610,accountant,GooglePlaces,71,1
+US,Tampa,FL,33610,solicitor,Yelp,76,1
+US,Tampa,FL,33610,solicitor,YellowPages,70,1
+US,Tampa,FL,33610,solicitor,OSM,5736,1
+US,Tampa,FL,33610,solicitor,GooglePlaces,68,1
+US,Tampa,FL,33610,barber,Yelp,69,1
+US,Tampa,FL,33610,barber,YellowPages,67,1
+US,Tampa,FL,33610,barber,OSM,4839,1
+US,Tampa,FL,33610,barber,GooglePlaces,84,1
+US,Tampa,FL,33610,restaurant,Yelp,96,1
+US,Tampa,FL,33610,restaurant,YellowPages,71,1
+US,Tampa,FL,33610,restaurant,OSM,5460,1
+US,Tampa,FL,33610,restaurant,GooglePlaces,69,1
+US,Tampa,FL,33610,auto repair,Yelp,71,1
+US,Tampa,FL,33610,auto repair,YellowPages,58,1
+US,Tampa,FL,33610,auto repair,OSM,10154,1
+US,Tampa,FL,33610,auto repair,GooglePlaces,92,1
+US,Tampa,FL,33611,plumber,Yelp,82,1
+US,Tampa,FL,33611,plumber,YellowPages,62,1
+US,Tampa,FL,33611,plumber,OSM,5588,1
+US,Tampa,FL,33611,plumber,GooglePlaces,101,1
+US,Tampa,FL,33611,roofer,Yelp,107,1
+US,Tampa,FL,33611,roofer,YellowPages,67,1
+US,Tampa,FL,33611,roofer,OSM,2534,1
+US,Tampa,FL,33611,roofer,GooglePlaces,33,1
+US,Tampa,FL,33611,electrician,Yelp,29,1
+US,Tampa,FL,33611,electrician,YellowPages,16,1
+US,Tampa,FL,33611,electrician,OSM,3050,1
+US,Tampa,FL,33611,electrician,GooglePlaces,32,1
+US,Tampa,FL,33611,dentist,Yelp,28,1
+US,Tampa,FL,33611,dentist,YellowPages,15,1
+US,Tampa,FL,33611,dentist,OSM,4870,1
+US,Tampa,FL,33611,dentist,GooglePlaces,149,1
+US,Tampa,FL,33611,hvac,Yelp,72,1
+US,Tampa,FL,33611,hvac,YellowPages,78,1
+US,Tampa,FL,33611,hvac,OSM,5831,1
+US,Tampa,FL,33611,hvac,GooglePlaces,137,1
+US,Tampa,FL,33611,landscaping,Yelp,81,1
+US,Tampa,FL,33611,landscaping,YellowPages,73,1
+US,Tampa,FL,33611,landscaping,OSM,6081,1
+US,Tampa,FL,33611,landscaping,GooglePlaces,72,1
+US,Tampa,FL,33611,cleaning service,Yelp,82,1
+US,Tampa,FL,33611,cleaning service,YellowPages,67,1
+US,Tampa,FL,33611,cleaning service,OSM,5122,1
+US,Tampa,FL,33611,cleaning service,GooglePlaces,67,1
+US,Tampa,FL,33611,accountant,Yelp,84,1
+US,Tampa,FL,33611,accountant,YellowPages,86,1
+US,Tampa,FL,33611,accountant,OSM,9599,1
+US,Tampa,FL,33611,accountant,GooglePlaces,82,1
+US,Tampa,FL,33611,solicitor,Yelp,80,1
+US,Tampa,FL,33611,solicitor,YellowPages,64,1
+US,Tampa,FL,33611,solicitor,OSM,6142,1
+US,Tampa,FL,33611,solicitor,GooglePlaces,146,1
+US,Tampa,FL,33611,barber,Yelp,68,1
+US,Tampa,FL,33611,barber,YellowPages,75,1
+US,Tampa,FL,33611,barber,OSM,5546,1
+US,Tampa,FL,33611,barber,GooglePlaces,126,1
+US,Tampa,FL,33611,restaurant,Yelp,83,1
+US,Tampa,FL,33611,restaurant,YellowPages,65,1
+US,Tampa,FL,33611,restaurant,OSM,4846,1
+US,Tampa,FL,33611,restaurant,GooglePlaces,138,1
+US,Tampa,FL,33611,auto repair,Yelp,77,1
+US,Tampa,FL,33611,auto repair,YellowPages,77,1
+US,Tampa,FL,33611,auto repair,OSM,2394,1
+US,Tampa,FL,33611,auto repair,GooglePlaces,32,1
+US,Tampa,FL,33612,plumber,Yelp,30,1
+US,Tampa,FL,33612,plumber,YellowPages,18,1
+US,Tampa,FL,33612,plumber,OSM,5138,1
+US,Tampa,FL,33612,plumber,GooglePlaces,74,1
+US,Tampa,FL,33612,roofer,Yelp,98,1
+US,Tampa,FL,33612,roofer,YellowPages,70,1
+US,Tampa,FL,33612,roofer,OSM,6069,1
+US,Tampa,FL,33612,roofer,GooglePlaces,85,1
+US,Tampa,FL,33612,electrician,Yelp,85,1
+US,Tampa,FL,33612,electrician,YellowPages,67,1
+US,Tampa,FL,33612,electrician,OSM,5453,1
+US,Tampa,FL,33612,electrician,GooglePlaces,84,1
+US,Tampa,FL,33612,dentist,Yelp,83,1
+US,Tampa,FL,33612,dentist,YellowPages,85,1
+US,Tampa,FL,33612,dentist,OSM,7147,1
+US,Tampa,FL,33612,dentist,GooglePlaces,141,1
+US,Tampa,FL,33612,hvac,Yelp,84,1
+US,Tampa,FL,33612,hvac,YellowPages,72,1
+US,Tampa,FL,33612,hvac,OSM,5168,1
+US,Tampa,FL,33612,hvac,GooglePlaces,171,1
+US,Tampa,FL,33612,landscaping,Yelp,106,1
+US,Tampa,FL,33612,landscaping,YellowPages,93,1
+US,Tampa,FL,33612,landscaping,OSM,12642,1
+US,Tampa,FL,33612,landscaping,GooglePlaces,113,1
+US,Tampa,FL,33612,cleaning service,Yelp,86,1
+US,Tampa,FL,33612,cleaning service,YellowPages,74,1
+US,Tampa,FL,33612,cleaning service,OSM,5767,1
+US,Tampa,FL,33612,cleaning service,GooglePlaces,75,1
+US,Tampa,FL,33612,accountant,Yelp,76,1
+US,Tampa,FL,33612,accountant,YellowPages,80,1
+US,Tampa,FL,33612,accountant,OSM,6153,1
+US,Tampa,FL,33612,accountant,GooglePlaces,150,1
+US,Tampa,FL,33612,solicitor,Yelp,88,1
+US,Tampa,FL,33612,solicitor,YellowPages,64,1
+US,Tampa,FL,33612,solicitor,OSM,5360,1
+US,Tampa,FL,33612,solicitor,GooglePlaces,82,1
+US,Tampa,FL,33612,barber,Yelp,75,1
+US,Tampa,FL,33612,barber,YellowPages,88,1
+US,Tampa,FL,33612,barber,OSM,6121,1
+US,Tampa,FL,33612,barber,GooglePlaces,128,1
+US,Tampa,FL,33612,restaurant,Yelp,101,1
+US,Tampa,FL,33612,restaurant,YellowPages,64,1
+US,Tampa,FL,33612,restaurant,OSM,6178,1
+US,Tampa,FL,33612,restaurant,GooglePlaces,88,1
+US,Tampa,FL,33612,auto repair,Yelp,82,1
+US,Tampa,FL,33612,auto repair,YellowPages,77,1
+US,Tampa,FL,33612,auto repair,OSM,4816,1
+US,Tampa,FL,33612,auto repair,GooglePlaces,80,1
+US,Tampa,FL,33613,plumber,Yelp,86,1
+US,Tampa,FL,33613,plumber,YellowPages,86,1
+US,Tampa,FL,33613,plumber,OSM,5737,1
+US,Tampa,FL,33613,plumber,GooglePlaces,65,1
+US,Tampa,FL,33613,roofer,Yelp,66,1
+US,Tampa,FL,33613,roofer,YellowPages,83,1
+US,Tampa,FL,33613,roofer,OSM,7696,1
+US,Tampa,FL,33613,roofer,GooglePlaces,142,1
+US,Tampa,FL,33613,electrician,Yelp,82,1
+US,Tampa,FL,33613,electrician,YellowPages,64,1
+US,Tampa,FL,33613,electrician,OSM,5779,1
+US,Tampa,FL,33613,electrician,GooglePlaces,82,1
+US,Tampa,FL,33613,dentist,Yelp,76,1
+US,Tampa,FL,33613,dentist,YellowPages,75,1
+US,Tampa,FL,33613,dentist,OSM,6372,1
+US,Tampa,FL,33613,dentist,GooglePlaces,69,1
+US,Tampa,FL,33613,hvac,Yelp,80,1
+US,Tampa,FL,33613,hvac,YellowPages,123,1
+US,Tampa,FL,33613,hvac,OSM,4850,1
+US,Tampa,FL,33613,hvac,GooglePlaces,77,1
+US,Tampa,FL,33613,landscaping,Yelp,87,1
+US,Tampa,FL,33613,landscaping,YellowPages,74,1
+US,Tampa,FL,33613,landscaping,OSM,4898,1
+US,Tampa,FL,33613,landscaping,GooglePlaces,82,1
+US,Tampa,FL,33613,cleaning service,Yelp,83,1
+US,Tampa,FL,33613,cleaning service,YellowPages,68,1
+US,Tampa,FL,33613,cleaning service,OSM,9762,1
+US,Tampa,FL,33613,cleaning service,GooglePlaces,132,1
+US,Tampa,FL,33613,accountant,Yelp,79,1
+US,Tampa,FL,33613,accountant,YellowPages,64,1
+US,Tampa,FL,33613,accountant,OSM,5793,1
+US,Tampa,FL,33613,accountant,GooglePlaces,80,1
+US,Tampa,FL,33613,solicitor,Yelp,93,1
+US,Tampa,FL,33613,solicitor,YellowPages,65,1
+US,Tampa,FL,33613,solicitor,OSM,5757,1
+US,Tampa,FL,33613,solicitor,GooglePlaces,73,1
+US,Tampa,FL,33613,barber,Yelp,74,1
+US,Tampa,FL,33613,barber,YellowPages,65,1
+US,Tampa,FL,33613,barber,OSM,5764,1
+US,Tampa,FL,33613,barber,GooglePlaces,119,1
+US,Tampa,FL,33613,restaurant,Yelp,77,1
+US,Tampa,FL,33613,restaurant,YellowPages,78,1
+US,Tampa,FL,33613,restaurant,OSM,5746,1
+US,Tampa,FL,33613,restaurant,GooglePlaces,82,1
+US,Tampa,FL,33613,auto repair,Yelp,74,1
+US,Tampa,FL,33613,auto repair,YellowPages,79,1
+US,Tampa,FL,33613,auto repair,OSM,5742,1
+US,Tampa,FL,33613,auto repair,GooglePlaces,150,1
+US,Tampa,FL,33614,plumber,Yelp,71,1
+US,Tampa,FL,33614,plumber,YellowPages,68,1
+US,Tampa,FL,33614,plumber,OSM,12202,1
+US,Tampa,FL,33614,plumber,GooglePlaces,73,1
+US,Tampa,FL,33614,roofer,Yelp,77,1
+US,Tampa,FL,33614,roofer,YellowPages,57,1
+US,Tampa,FL,33614,roofer,OSM,2949,1
+US,Tampa,FL,33614,roofer,GooglePlaces,31,1
+US,Tampa,FL,33614,electrician,Yelp,32,1
+US,Tampa,FL,33614,electrician,YellowPages,14,1
+US,Tampa,FL,33614,electrician,OSM,5113,1
+US,Tampa,FL,33614,electrician,GooglePlaces,77,1
+US,Tampa,FL,33614,dentist,Yelp,74,1
+US,Tampa,FL,33614,dentist,YellowPages,71,1
+US,Tampa,FL,33614,dentist,OSM,4750,1
+US,Tampa,FL,33614,dentist,GooglePlaces,134,1
+US,Tampa,FL,33614,hvac,Yelp,79,1
+US,Tampa,FL,33614,hvac,YellowPages,52,1
+US,Tampa,FL,33614,hvac,OSM,4883,1
+US,Tampa,FL,33614,hvac,GooglePlaces,142,1
+US,Tampa,FL,33614,landscaping,Yelp,71,1
+US,Tampa,FL,33614,landscaping,YellowPages,63,1
+US,Tampa,FL,33614,landscaping,OSM,5490,1
+US,Tampa,FL,33614,landscaping,GooglePlaces,91,1
+US,Tampa,FL,33614,cleaning service,Yelp,79,1
+US,Tampa,FL,33614,cleaning service,YellowPages,71,1
+US,Tampa,FL,33614,cleaning service,OSM,5825,1
+US,Tampa,FL,33614,cleaning service,GooglePlaces,75,1
+US,Tampa,FL,33614,accountant,Yelp,72,1
+US,Tampa,FL,33614,accountant,YellowPages,60,1
+US,Tampa,FL,33614,accountant,OSM,4876,1
+US,Tampa,FL,33614,accountant,GooglePlaces,144,1
+US,Tampa,FL,33614,solicitor,Yelp,80,1
+US,Tampa,FL,33614,solicitor,YellowPages,79,1
+US,Tampa,FL,33614,solicitor,OSM,5517,1
+US,Tampa,FL,33614,solicitor,GooglePlaces,72,1
+US,Tampa,FL,33614,barber,Yelp,70,1
+US,Tampa,FL,33614,barber,YellowPages,58,1
+US,Tampa,FL,33614,barber,OSM,4882,1
+US,Tampa,FL,33614,barber,GooglePlaces,75,1
+US,Tampa,FL,33614,restaurant,Yelp,96,1
+US,Tampa,FL,33614,restaurant,YellowPages,66,1
+US,Tampa,FL,33614,restaurant,OSM,4801,1
+US,Tampa,FL,33614,restaurant,GooglePlaces,78,1
+US,Tampa,FL,33614,auto repair,Yelp,105,1
+US,Tampa,FL,33614,auto repair,YellowPages,71,1
+US,Tampa,FL,33614,auto repair,OSM,12093,1
+US,Tampa,FL,33614,auto repair,GooglePlaces,140,1
+US,Tampa,FL,33615,plumber,Yelp,67,1
+US,Tampa,FL,33615,plumber,YellowPages,59,1
+US,Tampa,FL,33615,plumber,OSM,2444,1
+US,Tampa,FL,33615,plumber,GooglePlaces,39,1
+US,Tampa,FL,33615,roofer,Yelp,35,1
+US,Tampa,FL,33615,roofer,YellowPages,15,1
+US,Tampa,FL,33615,roofer,OSM,4811,1
+US,Tampa,FL,33615,roofer,GooglePlaces,84,1
+US,Tampa,FL,33615,electrician,Yelp,77,1
+US,Tampa,FL,33615,electrician,YellowPages,61,1
+US,Tampa,FL,33615,electrician,OSM,4725,1
+US,Tampa,FL,33615,electrician,GooglePlaces,76,1
+US,Tampa,FL,33615,dentist,Yelp,75,1
+US,Tampa,FL,33615,dentist,YellowPages,59,1
+US,Tampa,FL,33615,dentist,OSM,4904,1
+US,Tampa,FL,33615,dentist,GooglePlaces,134,1
+US,Tampa,FL,33615,hvac,Yelp,82,1
+US,Tampa,FL,33615,hvac,YellowPages,62,1
+US,Tampa,FL,33615,hvac,OSM,5511,1
+US,Tampa,FL,33615,hvac,GooglePlaces,78,1
+US,Tampa,FL,33615,landscaping,Yelp,78,1
+US,Tampa,FL,33615,landscaping,YellowPages,67,1
+US,Tampa,FL,33615,landscaping,OSM,5791,1
+US,Tampa,FL,33615,landscaping,GooglePlaces,82,1
+US,Tampa,FL,33615,cleaning service,Yelp,74,1
+US,Tampa,FL,33615,cleaning service,YellowPages,71,1
+US,Tampa,FL,33615,cleaning service,OSM,4832,1
+US,Tampa,FL,33615,cleaning service,GooglePlaces,128,1
+US,Tampa,FL,33615,accountant,Yelp,100,1
+US,Tampa,FL,33615,accountant,YellowPages,54,1
+US,Tampa,FL,33615,accountant,OSM,5537,1
+US,Tampa,FL,33615,accountant,GooglePlaces,65,1
+US,Tampa,FL,33615,solicitor,Yelp,75,1
+US,Tampa,FL,33615,solicitor,YellowPages,68,1
+US,Tampa,FL,33615,solicitor,OSM,6897,1
+US,Tampa,FL,33615,solicitor,GooglePlaces,68,1
+US,Tampa,FL,33615,barber,Yelp,75,1
+US,Tampa,FL,33615,barber,YellowPages,71,1
+US,Tampa,FL,33615,barber,OSM,9755,1
+US,Tampa,FL,33615,barber,GooglePlaces,135,1
+US,Tampa,FL,33615,restaurant,Yelp,89,1
+US,Tampa,FL,33615,restaurant,YellowPages,69,1
+US,Tampa,FL,33615,restaurant,OSM,2704,1
+US,Tampa,FL,33615,restaurant,GooglePlaces,36,1
+US,Tampa,FL,33615,auto repair,Yelp,30,1
+US,Tampa,FL,33615,auto repair,YellowPages,23,1
+US,Tampa,FL,33615,auto repair,OSM,2922,1
+US,Tampa,FL,33615,auto repair,GooglePlaces,27,1
+US,Tampa,FL,33616,plumber,Yelp,29,1
+US,Tampa,FL,33616,plumber,YellowPages,17,1
+US,Tampa,FL,33616,plumber,OSM,5954,1
+US,Tampa,FL,33616,plumber,GooglePlaces,82,1
+US,Tampa,FL,33616,roofer,Yelp,73,1
+US,Tampa,FL,33616,roofer,YellowPages,60,1
+US,Tampa,FL,33616,roofer,OSM,4674,1
+US,Tampa,FL,33616,roofer,GooglePlaces,74,1
+US,Tampa,FL,33616,electrician,Yelp,79,1
+US,Tampa,FL,33616,electrician,YellowPages,70,1
+US,Tampa,FL,33616,electrician,OSM,4679,1
+US,Tampa,FL,33616,electrician,GooglePlaces,100,1
+US,Tampa,FL,33616,dentist,Yelp,59,1
+US,Tampa,FL,33616,dentist,YellowPages,64,1
+US,Tampa,FL,33616,dentist,OSM,4868,1
+US,Tampa,FL,33616,dentist,GooglePlaces,82,1
+US,Tampa,FL,33616,hvac,Yelp,75,1
+US,Tampa,FL,33616,hvac,YellowPages,66,1
+US,Tampa,FL,33616,hvac,OSM,4837,1
+US,Tampa,FL,33616,hvac,GooglePlaces,73,1
+US,Tampa,FL,33616,landscaping,Yelp,81,1
+US,Tampa,FL,33616,landscaping,YellowPages,68,1
+US,Tampa,FL,33616,landscaping,OSM,4680,1
+US,Tampa,FL,33616,landscaping,GooglePlaces,80,1
+US,Tampa,FL,33616,cleaning service,Yelp,65,1
+US,Tampa,FL,33616,cleaning service,YellowPages,59,1
+US,Tampa,FL,33616,cleaning service,OSM,2714,1
+US,Tampa,FL,33616,cleaning service,GooglePlaces,32,1
+US,Tampa,FL,33616,accountant,Yelp,26,1
+US,Tampa,FL,33616,accountant,YellowPages,15,1
+US,Tampa,FL,33616,accountant,OSM,5176,1
+US,Tampa,FL,33616,accountant,GooglePlaces,137,1
+US,Tampa,FL,33616,solicitor,Yelp,70,1
+US,Tampa,FL,33616,solicitor,YellowPages,63,1
+US,Tampa,FL,33616,solicitor,OSM,2397,1
+US,Tampa,FL,33616,solicitor,GooglePlaces,34,1
+US,Tampa,FL,33616,barber,Yelp,28,1
+US,Tampa,FL,33616,barber,YellowPages,16,1
+US,Tampa,FL,33616,barber,OSM,5226,1
+US,Tampa,FL,33616,barber,GooglePlaces,148,1
+US,Tampa,FL,33616,restaurant,Yelp,112,1
+US,Tampa,FL,33616,restaurant,YellowPages,65,1
+US,Tampa,FL,33616,restaurant,OSM,5489,1
+US,Tampa,FL,33616,restaurant,GooglePlaces,77,1
+US,Tampa,FL,33616,auto repair,Yelp,77,1
+US,Tampa,FL,33616,auto repair,YellowPages,67,1
+US,Tampa,FL,33616,auto repair,OSM,4844,1
+US,Tampa,FL,33616,auto repair,GooglePlaces,77,1
+US,Tampa,FL,33617,plumber,Yelp,78,1
+US,Tampa,FL,33617,plumber,YellowPages,70,1
+US,Tampa,FL,33617,plumber,OSM,4603,1
+US,Tampa,FL,33617,plumber,GooglePlaces,133,1
+US,Tampa,FL,33617,roofer,Yelp,84,1
+US,Tampa,FL,33617,roofer,YellowPages,64,1
+US,Tampa,FL,33617,roofer,OSM,6447,1
+US,Tampa,FL,33617,roofer,GooglePlaces,67,1
+US,Tampa,FL,33617,electrician,Yelp,75,1
+US,Tampa,FL,33617,electrician,YellowPages,56,1
+US,Tampa,FL,33617,electrician,OSM,6285,1
+US,Tampa,FL,33617,electrician,GooglePlaces,124,1
+US,Tampa,FL,33617,dentist,Yelp,75,1
+US,Tampa,FL,33617,dentist,YellowPages,74,1
+US,Tampa,FL,33617,dentist,OSM,5828,1
+US,Tampa,FL,33617,dentist,GooglePlaces,71,1
+US,Tampa,FL,33617,hvac,Yelp,65,1
+US,Tampa,FL,33617,hvac,YellowPages,56,1
+US,Tampa,FL,33617,hvac,OSM,5644,1
+US,Tampa,FL,33617,hvac,GooglePlaces,67,1
+US,Tampa,FL,33617,landscaping,Yelp,68,1
+US,Tampa,FL,33617,landscaping,YellowPages,65,1
+US,Tampa,FL,33617,landscaping,OSM,5021,1
+US,Tampa,FL,33617,landscaping,GooglePlaces,71,1
+US,Tampa,FL,33617,cleaning service,Yelp,65,1
+US,Tampa,FL,33617,cleaning service,YellowPages,61,1
+US,Tampa,FL,33617,cleaning service,OSM,5038,1
+US,Tampa,FL,33617,cleaning service,GooglePlaces,141,1
+US,Tampa,FL,33617,accountant,Yelp,69,1
+US,Tampa,FL,33617,accountant,YellowPages,63,1
+US,Tampa,FL,33617,accountant,OSM,5203,1
+US,Tampa,FL,33617,accountant,GooglePlaces,66,1
+US,Tampa,FL,33617,solicitor,Yelp,73,1
+US,Tampa,FL,33617,solicitor,YellowPages,57,1
+US,Tampa,FL,33617,solicitor,OSM,4905,1
+US,Tampa,FL,33617,solicitor,GooglePlaces,80,1
+US,Tampa,FL,33617,barber,Yelp,89,1
+US,Tampa,FL,33617,barber,YellowPages,74,1
+US,Tampa,FL,33617,barber,OSM,5506,1
+US,Tampa,FL,33617,barber,GooglePlaces,136,1
+US,Tampa,FL,33617,restaurant,Yelp,81,1
+US,Tampa,FL,33617,restaurant,YellowPages,55,1
+US,Tampa,FL,33617,restaurant,OSM,4953,1
+US,Tampa,FL,33617,restaurant,GooglePlaces,72,1
+US,Tampa,FL,33617,auto repair,Yelp,75,1
+US,Tampa,FL,33617,auto repair,YellowPages,65,1
+US,Tampa,FL,33617,auto repair,OSM,13648,1
+US,Tampa,FL,33617,auto repair,GooglePlaces,134,1
+US,Tampa,FL,33618,plumber,Yelp,71,1
+US,Tampa,FL,33618,plumber,YellowPages,69,1
+US,Tampa,FL,33618,plumber,OSM,5790,1
+US,Tampa,FL,33618,plumber,GooglePlaces,65,1
+US,Tampa,FL,33618,roofer,Yelp,75,1
+US,Tampa,FL,33618,roofer,YellowPages,55,1
+US,Tampa,FL,33618,roofer,OSM,5581,1
+US,Tampa,FL,33618,roofer,GooglePlaces,77,1
+US,Tampa,FL,33618,electrician,Yelp,76,1
+US,Tampa,FL,33618,electrician,YellowPages,62,1
+US,Tampa,FL,33618,electrician,OSM,4940,1
+US,Tampa,FL,33618,electrician,GooglePlaces,137,1
+US,Tampa,FL,33618,dentist,Yelp,78,1
+US,Tampa,FL,33618,dentist,YellowPages,62,1
+US,Tampa,FL,33618,dentist,OSM,3001,1
+US,Tampa,FL,33618,dentist,GooglePlaces,36,1
+US,Tampa,FL,33618,hvac,Yelp,28,1
+US,Tampa,FL,33618,hvac,YellowPages,15,1
+US,Tampa,FL,33618,hvac,OSM,5544,1
+US,Tampa,FL,33618,hvac,GooglePlaces,134,1
+US,Tampa,FL,33618,landscaping,Yelp,70,1
+US,Tampa,FL,33618,landscaping,YellowPages,67,1
+US,Tampa,FL,33618,landscaping,OSM,4790,1
+US,Tampa,FL,33618,landscaping,GooglePlaces,136,1
+US,Tampa,FL,33618,cleaning service,Yelp,102,1
+US,Tampa,FL,33618,cleaning service,YellowPages,65,1
+US,Tampa,FL,33618,cleaning service,OSM,5799,1
+US,Tampa,FL,33618,cleaning service,GooglePlaces,142,1
+US,Tampa,FL,33618,accountant,Yelp,80,1
+US,Tampa,FL,33618,accountant,YellowPages,74,1
+US,Tampa,FL,33618,accountant,OSM,5534,1
+US,Tampa,FL,33618,accountant,GooglePlaces,77,1
+US,Tampa,FL,33618,solicitor,Yelp,76,1
+US,Tampa,FL,33618,solicitor,YellowPages,77,1
+US,Tampa,FL,33618,solicitor,OSM,366553,0
+US,Tampa,FL,33618,solicitor,GooglePlaces,253,1
+US,Tampa,FL,33618,barber,Yelp,125,1
+US,Tampa,FL,33618,barber,YellowPages,224,1
+US,Tampa,FL,33618,barber,OSM,9834,1
+US,Tampa,FL,33618,barber,GooglePlaces,142,1
+US,Tampa,FL,33618,restaurant,Yelp,88,1
+US,Tampa,FL,33618,restaurant,YellowPages,58,1
+US,Tampa,FL,33618,restaurant,OSM,2405,1
+US,Tampa,FL,33618,restaurant,GooglePlaces,30,1
+US,Tampa,FL,33618,auto repair,Yelp,29,1
+US,Tampa,FL,33618,auto repair,YellowPages,15,1
+US,Tampa,FL,33618,auto repair,OSM,3410,1
+US,Tampa,FL,33618,auto repair,GooglePlaces,33,1
+US,Tampa,FL,33619,plumber,Yelp,32,1
+US,Tampa,FL,33619,plumber,YellowPages,14,1
+US,Tampa,FL,33619,plumber,OSM,5474,1
+US,Tampa,FL,33619,plumber,GooglePlaces,139,1
+US,Tampa,FL,33619,roofer,Yelp,98,1
+US,Tampa,FL,33619,roofer,YellowPages,71,1
+US,Tampa,FL,33619,roofer,OSM,5701,1
+US,Tampa,FL,33619,roofer,GooglePlaces,80,1
+US,Tampa,FL,33619,electrician,Yelp,72,1
+US,Tampa,FL,33619,electrician,YellowPages,74,1
+US,Tampa,FL,33619,electrician,OSM,5784,1
+US,Tampa,FL,33619,electrician,GooglePlaces,141,1
+US,Tampa,FL,33619,dentist,Yelp,104,1
+US,Tampa,FL,33619,dentist,YellowPages,74,1
+US,Tampa,FL,33619,dentist,OSM,6586,1
+US,Tampa,FL,33619,dentist,GooglePlaces,74,1
+US,Tampa,FL,33619,hvac,Yelp,89,1
+US,Tampa,FL,33619,hvac,YellowPages,76,1
+US,Tampa,FL,33619,hvac,OSM,4859,1
+US,Tampa,FL,33619,hvac,GooglePlaces,68,1
+US,Tampa,FL,33619,landscaping,Yelp,113,1
+US,Tampa,FL,33619,landscaping,YellowPages,72,1
+US,Tampa,FL,33619,landscaping,OSM,5768,1
+US,Tampa,FL,33619,landscaping,GooglePlaces,88,1
+US,Tampa,FL,33619,cleaning service,Yelp,81,1
+US,Tampa,FL,33619,cleaning service,YellowPages,69,1
+US,Tampa,FL,33619,cleaning service,OSM,6500,1
+US,Tampa,FL,33619,cleaning service,GooglePlaces,74,1
+US,Tampa,FL,33619,accountant,Yelp,66,1
+US,Tampa,FL,33619,accountant,YellowPages,74,1
+US,Tampa,FL,33619,accountant,OSM,4908,1
+US,Tampa,FL,33619,accountant,GooglePlaces,89,1
+US,Tampa,FL,33619,solicitor,Yelp,97,1
+US,Tampa,FL,33619,solicitor,YellowPages,76,1
+US,Tampa,FL,33619,solicitor,OSM,2283,1
+US,Tampa,FL,33619,solicitor,GooglePlaces,33,1
+US,Tampa,FL,33619,barber,Yelp,31,1
+US,Tampa,FL,33619,barber,YellowPages,19,1
+US,Tampa,FL,33619,barber,OSM,2438,1
+US,Tampa,FL,33619,barber,GooglePlaces,30,1
+US,Tampa,FL,33619,restaurant,Yelp,27,1
+US,Tampa,FL,33619,restaurant,YellowPages,18,1
+US,Tampa,FL,33619,restaurant,OSM,4779,1
+US,Tampa,FL,33619,restaurant,GooglePlaces,78,1
+US,Tampa,FL,33619,auto repair,Yelp,77,1
+US,Tampa,FL,33619,auto repair,YellowPages,64,1
+US,Tampa,FL,33619,auto repair,OSM,8833,1
+US,Tampa,FL,33619,auto repair,GooglePlaces,78,1
+US,Tampa,FL,33624,plumber,Yelp,105,1
+US,Tampa,FL,33624,plumber,YellowPages,77,1
+US,Tampa,FL,33624,plumber,OSM,5796,1
+US,Tampa,FL,33624,plumber,GooglePlaces,97,1
+US,Tampa,FL,33624,roofer,Yelp,76,1
+US,Tampa,FL,33624,roofer,YellowPages,63,1
+US,Tampa,FL,33624,roofer,OSM,5566,1
+US,Tampa,FL,33624,roofer,GooglePlaces,93,1
+US,Tampa,FL,33624,electrician,Yelp,79,1
+US,Tampa,FL,33624,electrician,YellowPages,80,1
+US,Tampa,FL,33624,electrician,OSM,5428,1
+US,Tampa,FL,33624,electrician,GooglePlaces,77,1
+US,Tampa,FL,33624,dentist,Yelp,109,1
+US,Tampa,FL,33624,dentist,YellowPages,74,1
+US,Tampa,FL,33624,dentist,OSM,4852,1
+US,Tampa,FL,33624,dentist,GooglePlaces,145,1
+US,Tampa,FL,33624,hvac,Yelp,88,1
+US,Tampa,FL,33624,hvac,YellowPages,63,1
+US,Tampa,FL,33624,hvac,OSM,4816,1
+US,Tampa,FL,33624,hvac,GooglePlaces,77,1
+US,Tampa,FL,33624,landscaping,Yelp,70,1
+US,Tampa,FL,33624,landscaping,YellowPages,58,1
+US,Tampa,FL,33624,landscaping,OSM,3668,1
+US,Tampa,FL,33624,landscaping,GooglePlaces,29,1
+US,Tampa,FL,33624,cleaning service,Yelp,28,1
+US,Tampa,FL,33624,cleaning service,YellowPages,14,1
+US,Tampa,FL,33624,cleaning service,OSM,5184,1
+US,Tampa,FL,33624,cleaning service,GooglePlaces,68,1
+US,Tampa,FL,33624,accountant,Yelp,80,1
+US,Tampa,FL,33624,accountant,YellowPages,71,1
+US,Tampa,FL,33624,accountant,OSM,4845,1
+US,Tampa,FL,33624,accountant,GooglePlaces,79,1
+US,Tampa,FL,33624,solicitor,Yelp,87,1
+US,Tampa,FL,33624,solicitor,YellowPages,63,1
+US,Tampa,FL,33624,solicitor,OSM,7151,1
+US,Tampa,FL,33624,solicitor,GooglePlaces,72,1
+US,Tampa,FL,33624,barber,Yelp,73,1
+US,Tampa,FL,33624,barber,YellowPages,64,1
+US,Tampa,FL,33624,barber,OSM,2551,1
+US,Tampa,FL,33624,barber,GooglePlaces,29,1
+US,Tampa,FL,33624,restaurant,Yelp,28,1
+US,Tampa,FL,33624,restaurant,YellowPages,16,1
+US,Tampa,FL,33624,restaurant,OSM,6498,1
+US,Tampa,FL,33624,restaurant,GooglePlaces,72,1
+US,Tampa,FL,33624,auto repair,Yelp,91,1
+US,Tampa,FL,33624,auto repair,YellowPages,65,1
+US,Tampa,FL,33624,auto repair,OSM,3926,1
+US,Tampa,FL,33624,auto repair,GooglePlaces,128,1
+US,Tampa,FL,33625,plumber,Yelp,87,1
+US,Tampa,FL,33625,plumber,YellowPages,53,1
+US,Tampa,FL,33625,plumber,OSM,6552,1
+US,Tampa,FL,33625,plumber,GooglePlaces,136,1
+US,Tampa,FL,33625,roofer,Yelp,78,1
+US,Tampa,FL,33625,roofer,YellowPages,62,1
+US,Tampa,FL,33625,roofer,OSM,4923,1
+US,Tampa,FL,33625,roofer,GooglePlaces,99,1
+US,Tampa,FL,33625,electrician,Yelp,74,1
+US,Tampa,FL,33625,electrician,YellowPages,67,1
+US,Tampa,FL,33625,electrician,OSM,5542,1
+US,Tampa,FL,33625,electrician,GooglePlaces,127,1
+US,Tampa,FL,33625,dentist,Yelp,69,1
+US,Tampa,FL,33625,dentist,YellowPages,71,1
+US,Tampa,FL,33625,dentist,OSM,4845,1
+US,Tampa,FL,33625,dentist,GooglePlaces,141,1
+US,Tampa,FL,33625,hvac,Yelp,82,1
+US,Tampa,FL,33625,hvac,YellowPages,69,1
+US,Tampa,FL,33625,hvac,OSM,5775,1
+US,Tampa,FL,33625,hvac,GooglePlaces,71,1
+US,Tampa,FL,33625,landscaping,Yelp,74,1
+US,Tampa,FL,33625,landscaping,YellowPages,67,1
+US,Tampa,FL,33625,landscaping,OSM,5763,1
+US,Tampa,FL,33625,landscaping,GooglePlaces,90,1
+US,Tampa,FL,33625,cleaning service,Yelp,76,1
+US,Tampa,FL,33625,cleaning service,YellowPages,69,1
+US,Tampa,FL,33625,cleaning service,OSM,5750,1
+US,Tampa,FL,33625,cleaning service,GooglePlaces,74,1
+US,Tampa,FL,33625,accountant,Yelp,70,1
+US,Tampa,FL,33625,accountant,YellowPages,69,1
+US,Tampa,FL,33625,accountant,OSM,8226,1
+US,Tampa,FL,33625,accountant,GooglePlaces,69,1
+US,Tampa,FL,33625,solicitor,Yelp,70,1
+US,Tampa,FL,33625,solicitor,YellowPages,62,1
+US,Tampa,FL,33625,solicitor,OSM,2751,1
+US,Tampa,FL,33625,solicitor,GooglePlaces,28,1
+US,Tampa,FL,33625,barber,Yelp,28,1
+US,Tampa,FL,33625,barber,YellowPages,15,1
+US,Tampa,FL,33625,barber,OSM,5457,1
+US,Tampa,FL,33625,barber,GooglePlaces,82,1
+US,Tampa,FL,33625,restaurant,Yelp,70,1
+US,Tampa,FL,33625,restaurant,YellowPages,58,1
+US,Tampa,FL,33625,restaurant,OSM,4785,1
+US,Tampa,FL,33625,restaurant,GooglePlaces,77,1
+US,Tampa,FL,33625,auto repair,Yelp,69,1
+US,Tampa,FL,33625,auto repair,YellowPages,60,1
+US,Tampa,FL,33625,auto repair,OSM,4882,1
+US,Tampa,FL,33625,auto repair,GooglePlaces,77,1
+US,Tampa,FL,33626,plumber,Yelp,76,1
+US,Tampa,FL,33626,plumber,YellowPages,63,1
+US,Tampa,FL,33626,plumber,OSM,5533,1
+US,Tampa,FL,33626,plumber,GooglePlaces,75,1
+US,Tampa,FL,33626,roofer,Yelp,76,1
+US,Tampa,FL,33626,roofer,YellowPages,71,1
+US,Tampa,FL,33626,roofer,OSM,4890,1
+US,Tampa,FL,33626,roofer,GooglePlaces,75,1
+US,Tampa,FL,33626,electrician,Yelp,106,1
+US,Tampa,FL,33626,electrician,YellowPages,61,1
+US,Tampa,FL,33626,electrician,OSM,5641,1
+US,Tampa,FL,33626,electrician,GooglePlaces,64,1
+US,Tampa,FL,33626,dentist,Yelp,67,1
+US,Tampa,FL,33626,dentist,YellowPages,59,1
+US,Tampa,FL,33626,dentist,OSM,4884,1
+US,Tampa,FL,33626,dentist,GooglePlaces,77,1
+US,Tampa,FL,33626,hvac,Yelp,77,1
+US,Tampa,FL,33626,hvac,YellowPages,61,1
+US,Tampa,FL,33626,hvac,OSM,4862,1
+US,Tampa,FL,33626,hvac,GooglePlaces,94,1
+US,Tampa,FL,33626,landscaping,Yelp,79,1
+US,Tampa,FL,33626,landscaping,YellowPages,66,1
+US,Tampa,FL,33626,landscaping,OSM,5768,1
+US,Tampa,FL,33626,landscaping,GooglePlaces,77,1
+US,Tampa,FL,33626,cleaning service,Yelp,78,1
+US,Tampa,FL,33626,cleaning service,YellowPages,68,1
+US,Tampa,FL,33626,cleaning service,OSM,5787,1
+US,Tampa,FL,33626,cleaning service,GooglePlaces,78,1
+US,Tampa,FL,33626,accountant,Yelp,75,1
+US,Tampa,FL,33626,accountant,YellowPages,64,1
+US,Tampa,FL,33626,accountant,OSM,5744,1
+US,Tampa,FL,33626,accountant,GooglePlaces,144,1
+US,Tampa,FL,33626,solicitor,Yelp,79,1
+US,Tampa,FL,33626,solicitor,YellowPages,64,1
+US,Tampa,FL,33626,solicitor,OSM,3809,1
+US,Tampa,FL,33626,solicitor,GooglePlaces,35,1
+US,Tampa,FL,33626,barber,Yelp,32,1
+US,Tampa,FL,33626,barber,YellowPages,15,1
+US,Tampa,FL,33626,barber,OSM,7650,1
+US,Tampa,FL,33626,barber,GooglePlaces,153,1
+US,Tampa,FL,33626,restaurant,Yelp,111,1
+US,Tampa,FL,33626,restaurant,YellowPages,63,1
+US,Tampa,FL,33626,restaurant,OSM,2355,1
+US,Tampa,FL,33626,restaurant,GooglePlaces,36,1
+US,Tampa,FL,33626,auto repair,Yelp,28,1
+US,Tampa,FL,33626,auto repair,YellowPages,16,1
+US,Tampa,FL,33626,auto repair,OSM,5110,1
+US,Tampa,FL,33626,auto repair,GooglePlaces,83,1
+US,Tampa,FL,33629,plumber,Yelp,75,1
+US,Tampa,FL,33629,plumber,YellowPages,61,1
+US,Tampa,FL,33629,plumber,OSM,4877,1
+US,Tampa,FL,33629,plumber,GooglePlaces,136,1
+US,Tampa,FL,33629,roofer,Yelp,74,1
+US,Tampa,FL,33629,roofer,YellowPages,75,1
+US,Tampa,FL,33629,roofer,OSM,4795,1
+US,Tampa,FL,33629,roofer,GooglePlaces,94,1
+US,Tampa,FL,33629,electrician,Yelp,73,1
+US,Tampa,FL,33629,electrician,YellowPages,66,1
+US,Tampa,FL,33629,electrician,OSM,4561,1
+US,Tampa,FL,33629,electrician,GooglePlaces,79,1
+US,Tampa,FL,33629,dentist,Yelp,67,1
+US,Tampa,FL,33629,dentist,YellowPages,61,1
+US,Tampa,FL,33629,dentist,OSM,4870,1
+US,Tampa,FL,33629,dentist,GooglePlaces,71,1
+US,Tampa,FL,33629,hvac,Yelp,75,1
+US,Tampa,FL,33629,hvac,YellowPages,70,1
+US,Tampa,FL,33629,hvac,OSM,4830,1
+US,Tampa,FL,33629,hvac,GooglePlaces,76,1
+US,Tampa,FL,33629,landscaping,Yelp,77,1
+US,Tampa,FL,33629,landscaping,YellowPages,72,1
+US,Tampa,FL,33629,landscaping,OSM,4872,1
+US,Tampa,FL,33629,landscaping,GooglePlaces,147,1
+US,Tampa,FL,33629,cleaning service,Yelp,62,1
+US,Tampa,FL,33629,cleaning service,YellowPages,66,1
+US,Tampa,FL,33629,cleaning service,OSM,11021,1
+US,Tampa,FL,33629,cleaning service,GooglePlaces,89,1
+US,Tampa,FL,33629,accountant,Yelp,77,1
+US,Tampa,FL,33629,accountant,YellowPages,57,1
+US,Tampa,FL,33629,accountant,OSM,6493,1
+US,Tampa,FL,33629,accountant,GooglePlaces,71,1
+US,Tampa,FL,33629,solicitor,Yelp,102,1
+US,Tampa,FL,33629,solicitor,YellowPages,65,1
+US,Tampa,FL,33629,solicitor,OSM,6095,1
+US,Tampa,FL,33629,solicitor,GooglePlaces,121,1
+US,Tampa,FL,33629,barber,Yelp,70,1
+US,Tampa,FL,33629,barber,YellowPages,60,1
+US,Tampa,FL,33629,barber,OSM,5701,1
+US,Tampa,FL,33629,barber,GooglePlaces,72,1
+US,Tampa,FL,33629,restaurant,Yelp,92,1
+US,Tampa,FL,33629,restaurant,YellowPages,67,1
+US,Tampa,FL,33629,restaurant,OSM,5329,1
+US,Tampa,FL,33629,restaurant,GooglePlaces,76,1
+US,Tampa,FL,33629,auto repair,Yelp,78,1
+US,Tampa,FL,33629,auto repair,YellowPages,63,1
+US,Tampa,FL,33629,auto repair,OSM,4827,1
+US,Tampa,FL,33629,auto repair,GooglePlaces,71,1
+US,Tampa,FL,33634,plumber,Yelp,78,1
+US,Tampa,FL,33634,plumber,YellowPages,64,1
+US,Tampa,FL,33634,plumber,OSM,5795,1
+US,Tampa,FL,33634,plumber,GooglePlaces,65,1
+US,Tampa,FL,33634,roofer,Yelp,71,1
+US,Tampa,FL,33634,roofer,YellowPages,63,1
+US,Tampa,FL,33634,roofer,OSM,4573,1
+US,Tampa,FL,33634,roofer,GooglePlaces,74,1
+US,Tampa,FL,33634,electrician,Yelp,63,1
+US,Tampa,FL,33634,electrician,YellowPages,68,1
+US,Tampa,FL,33634,electrician,OSM,4876,1
+US,Tampa,FL,33634,electrician,GooglePlaces,78,1
+US,Tampa,FL,33634,dentist,Yelp,72,1
+US,Tampa,FL,33634,dentist,YellowPages,70,1
+US,Tampa,FL,33634,dentist,OSM,4826,1
+US,Tampa,FL,33634,dentist,GooglePlaces,75,1
+US,Tampa,FL,33634,hvac,Yelp,77,1
+US,Tampa,FL,33634,hvac,YellowPages,58,1
+US,Tampa,FL,33634,hvac,OSM,10849,1
+US,Tampa,FL,33634,hvac,GooglePlaces,71,1
+US,Tampa,FL,33634,landscaping,Yelp,72,1
+US,Tampa,FL,33634,landscaping,YellowPages,61,1
+US,Tampa,FL,33634,landscaping,OSM,2585,1
+US,Tampa,FL,33634,landscaping,GooglePlaces,42,1
+US,Tampa,FL,33634,cleaning service,Yelp,33,1
+US,Tampa,FL,33634,cleaning service,YellowPages,15,1
+US,Tampa,FL,33634,cleaning service,OSM,3892,1
+US,Tampa,FL,33634,cleaning service,GooglePlaces,35,1
+US,Tampa,FL,33634,accountant,Yelp,29,1
+US,Tampa,FL,33634,accountant,YellowPages,16,1
+US,Tampa,FL,33634,accountant,OSM,4222,1
+US,Tampa,FL,33634,accountant,GooglePlaces,148,1
+US,Tampa,FL,33634,solicitor,Yelp,76,1
+US,Tampa,FL,33634,solicitor,YellowPages,54,1
+US,Tampa,FL,33634,solicitor,OSM,4563,1
+US,Tampa,FL,33634,solicitor,GooglePlaces,73,1
+US,Tampa,FL,33634,barber,Yelp,67,1
+US,Tampa,FL,33634,barber,YellowPages,65,1
+US,Tampa,FL,33634,barber,OSM,3650,1
+US,Tampa,FL,33634,barber,GooglePlaces,30,1
+US,Tampa,FL,33634,restaurant,Yelp,28,1
+US,Tampa,FL,33634,restaurant,YellowPages,16,1
+US,Tampa,FL,33634,restaurant,OSM,3854,1
+US,Tampa,FL,33634,restaurant,GooglePlaces,35,1
+US,Tampa,FL,33634,auto repair,Yelp,26,1
+US,Tampa,FL,33634,auto repair,YellowPages,22,1
+US,Tampa,FL,33634,auto repair,OSM,3868,1
+US,Tampa,FL,33634,auto repair,GooglePlaces,32,1
+US,Tampa,FL,33635,plumber,Yelp,28,1
+US,Tampa,FL,33635,plumber,YellowPages,15,1
+US,Tampa,FL,33635,plumber,OSM,3772491,0
+US,Tampa,FL,33635,plumber,GooglePlaces,3474,1
+US,Tampa,FL,33635,roofer,Yelp,379,1
+US,Tampa,FL,33635,roofer,YellowPages,543,1
+US,Tampa,FL,33635,roofer,OSM,8741,1
+US,Tampa,FL,33635,roofer,GooglePlaces,162,1
+US,Tampa,FL,33635,electrician,Yelp,345,1
+US,Tampa,FL,33635,electrician,YellowPages,888,1
+US,Tampa,FL,33635,electrician,OSM,6310,1
+US,Tampa,FL,33635,electrician,GooglePlaces,173,1
+US,Tampa,FL,33635,dentist,Yelp,246,1
+US,Tampa,FL,33635,dentist,YellowPages,159,1
+US,Tampa,FL,33635,dentist,OSM,5682,1
+US,Tampa,FL,33635,dentist,GooglePlaces,292,1
+US,Tampa,FL,33635,hvac,Yelp,405,1
+US,Tampa,FL,33635,hvac,YellowPages,247,1
+US,Tampa,FL,33635,hvac,OSM,6077,1
+US,Tampa,FL,33635,hvac,GooglePlaces,1263,1
+US,Tampa,FL,33635,landscaping,Yelp,571,1
+US,Tampa,FL,33635,landscaping,YellowPages,336,1
+US,Tampa,FL,33635,landscaping,OSM,5538,1
+US,Tampa,FL,33635,landscaping,GooglePlaces,153,1
+US,Tampa,FL,33635,cleaning service,Yelp,146,1
+US,Tampa,FL,33635,cleaning service,YellowPages,156,1
+US,Tampa,FL,33635,cleaning service,OSM,5532,1
+US,Tampa,FL,33635,cleaning service,GooglePlaces,160,1
+US,Tampa,FL,33635,accountant,Yelp,219,1
+US,Tampa,FL,33635,accountant,YellowPages,152,1
+US,Tampa,FL,33635,accountant,OSM,5537,1
+US,Tampa,FL,33635,accountant,GooglePlaces,523,1
+US,Tampa,FL,33635,solicitor,Yelp,153,1
+US,Tampa,FL,33635,solicitor,YellowPages,418,1
+US,Tampa,FL,33635,solicitor,OSM,5968,1
+US,Tampa,FL,33635,solicitor,GooglePlaces,304,1
+US,Tampa,FL,33635,barber,Yelp,308,1
+US,Tampa,FL,33635,barber,YellowPages,155,1
+US,Tampa,FL,33635,barber,OSM,4981,1
+US,Tampa,FL,33635,barber,GooglePlaces,83,1
+US,Tampa,FL,33635,restaurant,Yelp,131,1
+US,Tampa,FL,33635,restaurant,YellowPages,112,1
+US,Tampa,FL,33635,restaurant,OSM,7481,1
+US,Tampa,FL,33635,restaurant,GooglePlaces,965,1
+US,Tampa,FL,33635,auto repair,Yelp,76,1
+US,Tampa,FL,33635,auto repair,YellowPages,104,1
+US,Tampa,FL,33635,auto repair,OSM,4811,1
+US,Tampa,FL,33635,auto repair,GooglePlaces,89,1
+US,Tampa,FL,33647,plumber,Yelp,98,1
+US,Tampa,FL,33647,plumber,YellowPages,84,1
+US,Tampa,FL,33647,plumber,OSM,3854,1
+US,Tampa,FL,33647,plumber,GooglePlaces,84,1
+US,Tampa,FL,33647,roofer,Yelp,62,1
+US,Tampa,FL,33647,roofer,YellowPages,52,1
+US,Tampa,FL,33647,roofer,OSM,3970,1
+US,Tampa,FL,33647,roofer,GooglePlaces,109,1
+US,Tampa,FL,33647,electrician,Yelp,105,1
+US,Tampa,FL,33647,electrician,YellowPages,70,1
+US,Tampa,FL,33647,electrician,OSM,2315,1
+US,Tampa,FL,33647,electrician,GooglePlaces,53,1
+US,Tampa,FL,33647,dentist,Yelp,38,1
+US,Tampa,FL,33647,dentist,YellowPages,15,1
+US,Tampa,FL,33647,dentist,OSM,3977,1
+US,Tampa,FL,33647,dentist,GooglePlaces,318,1
+US,Tampa,FL,33647,hvac,Yelp,80,1
+US,Tampa,FL,33647,hvac,YellowPages,79,1
+US,Tampa,FL,33647,hvac,OSM,4588,1
+US,Tampa,FL,33647,hvac,GooglePlaces,187,1
+US,Tampa,FL,33647,landscaping,Yelp,77,1
+US,Tampa,FL,33647,landscaping,YellowPages,66,1
+US,Tampa,FL,33647,landscaping,OSM,4513,1
+US,Tampa,FL,33647,landscaping,GooglePlaces,76,1
+US,Tampa,FL,33647,cleaning service,Yelp,75,1
+US,Tampa,FL,33647,cleaning service,YellowPages,75,1
+US,Tampa,FL,33647,cleaning service,OSM,3887,1
+US,Tampa,FL,33647,cleaning service,GooglePlaces,87,1
+US,Tampa,FL,33647,accountant,Yelp,87,1
+US,Tampa,FL,33647,accountant,YellowPages,50,1
+US,Tampa,FL,33647,accountant,OSM,4670,1
+US,Tampa,FL,33647,accountant,GooglePlaces,202,1
+US,Tampa,FL,33647,solicitor,Yelp,79,1
+US,Tampa,FL,33647,solicitor,YellowPages,60,1
+US,Tampa,FL,33647,solicitor,OSM,5827,1
+US,Tampa,FL,33647,solicitor,GooglePlaces,178,1
+US,Tampa,FL,33647,barber,Yelp,76,1
+US,Tampa,FL,33647,barber,YellowPages,69,1
+US,Tampa,FL,33647,barber,OSM,5430,1
+US,Tampa,FL,33647,barber,GooglePlaces,79,1
+US,Tampa,FL,33647,restaurant,Yelp,78,1
+US,Tampa,FL,33647,restaurant,YellowPages,69,1
+US,Tampa,FL,33647,restaurant,OSM,8939,1
+US,Tampa,FL,33647,restaurant,GooglePlaces,92,1
+US,Tampa,FL,33647,auto repair,Yelp,85,1
+US,Tampa,FL,33647,auto repair,YellowPages,63,1
+US,Tampa,FL,33647,auto repair,OSM,4820,1
+US,Tampa,FL,33647,auto repair,GooglePlaces,91,1
+UK,London,,E1,plumber,OSM,5800,1
+UK,London,,E1,plumber,GooglePlaces,159,1
+UK,London,,E1,roofer,OSM,4345,1
+UK,London,,E1,roofer,GooglePlaces,85,1
+UK,London,,E1,electrician,OSM,10184,1
+UK,London,,E1,electrician,GooglePlaces,83,1
+UK,London,,E1,dentist,OSM,8343,1
+UK,London,,E1,dentist,GooglePlaces,149,1
+UK,London,,E1,hvac,OSM,5476,1
+UK,London,,E1,hvac,GooglePlaces,101,1
+UK,London,,E1,landscaping,OSM,4863,1
+UK,London,,E1,landscaping,GooglePlaces,80,1
+UK,London,,E1,cleaning service,OSM,5156,1
+UK,London,,E1,cleaning service,GooglePlaces,83,1
+UK,London,,E1,accountant,OSM,8207,1
+UK,London,,E1,accountant,GooglePlaces,99,1
+UK,London,,E1,solicitor,OSM,6403,1
+UK,London,,E1,solicitor,GooglePlaces,130,1
+UK,London,,E1,barber,OSM,6090,1
+UK,London,,E1,barber,GooglePlaces,84,1
+UK,London,,E1,restaurant,OSM,4729,1
+UK,London,,E1,restaurant,GooglePlaces,94,1
+UK,London,,E1,auto repair,OSM,4840,1
+UK,London,,E1,auto repair,GooglePlaces,78,1
+UK,London,,E2,plumber,OSM,5164,1
+UK,London,,E2,plumber,GooglePlaces,92,1
+UK,London,,E2,roofer,OSM,7542,1
+UK,London,,E2,roofer,GooglePlaces,82,1
+UK,London,,E2,electrician,OSM,5143,1
+UK,London,,E2,electrician,GooglePlaces,83,1
+UK,London,,E2,dentist,OSM,6741,1
+UK,London,,E2,dentist,GooglePlaces,89,1
+UK,London,,E2,hvac,OSM,5075,1
+UK,London,,E2,hvac,GooglePlaces,93,1
+UK,London,,E2,landscaping,OSM,4804,1
+UK,London,,E2,landscaping,GooglePlaces,79,1
+UK,London,,E2,cleaning service,OSM,8091,1
+UK,London,,E2,cleaning service,GooglePlaces,135,1
+UK,London,,E2,accountant,OSM,4912,1
+UK,London,,E2,accountant,GooglePlaces,95,1
+UK,London,,E2,solicitor,OSM,4818,1
+UK,London,,E2,solicitor,GooglePlaces,88,1
+UK,London,,E2,barber,OSM,4846,1
+UK,London,,E2,barber,GooglePlaces,95,1
+UK,London,,E2,restaurant,OSM,4827,1
+UK,London,,E2,restaurant,GooglePlaces,79,1
+UK,London,,E2,auto repair,OSM,4853,1
+UK,London,,E2,auto repair,GooglePlaces,76,1
+UK,London,,E3,plumber,OSM,5090,1
+UK,London,,E3,plumber,GooglePlaces,84,1
+UK,London,,E3,roofer,OSM,4814,1
+UK,London,,E3,roofer,GooglePlaces,94,1
+UK,London,,E3,electrician,OSM,4892,1
+UK,London,,E3,electrician,GooglePlaces,166,1
+UK,London,,E3,dentist,OSM,9317,1
+UK,London,,E3,dentist,GooglePlaces,80,1
+UK,London,,E3,hvac,OSM,8705,1
+UK,London,,E3,hvac,GooglePlaces,87,1
+UK,London,,E3,landscaping,OSM,7775,1
+UK,London,,E3,landscaping,GooglePlaces,84,1
+UK,London,,E3,cleaning service,OSM,4622,1
+UK,London,,E3,cleaning service,GooglePlaces,91,1
+UK,London,,E3,accountant,OSM,5173,1
+UK,London,,E3,accountant,GooglePlaces,86,1
+UK,London,,E3,solicitor,OSM,4822,1
+UK,London,,E3,solicitor,GooglePlaces,78,1
+UK,London,,E3,barber,OSM,4791,1
+UK,London,,E3,barber,GooglePlaces,82,1
+UK,London,,E3,restaurant,OSM,5139,1
+UK,London,,E3,restaurant,GooglePlaces,149,1
+UK,London,,E3,auto repair,OSM,4835,1
+UK,London,,E3,auto repair,GooglePlaces,75,1
+UK,London,,E14,plumber,OSM,4795,1
+UK,London,,E14,plumber,GooglePlaces,135,1
+UK,London,,E14,roofer,OSM,4860,1
+UK,London,,E14,roofer,GooglePlaces,139,1
+UK,London,,E14,electrician,OSM,4806,1
+UK,London,,E14,electrician,GooglePlaces,86,1
+UK,London,,E14,dentist,OSM,14349,1
+UK,London,,E14,dentist,GooglePlaces,103,1
+UK,London,,E14,hvac,OSM,10026,1
+UK,London,,E14,hvac,GooglePlaces,82,1
+UK,London,,E14,landscaping,OSM,5202,1
+UK,London,,E14,landscaping,GooglePlaces,79,1
+UK,London,,E14,cleaning service,OSM,3964,1
+UK,London,,E14,cleaning service,GooglePlaces,34,1
+UK,London,,E14,accountant,OSM,4749,1
+UK,London,,E14,accountant,GooglePlaces,81,1
+UK,London,,E14,solicitor,OSM,5109,1
+UK,London,,E14,solicitor,GooglePlaces,115,1
+UK,London,,E14,barber,OSM,3888,1
+UK,London,,E14,barber,GooglePlaces,41,1
+UK,London,,E14,restaurant,OSM,4222,1
+UK,London,,E14,restaurant,GooglePlaces,712,1
+UK,London,,E14,auto repair,OSM,6986,1
+UK,London,,E14,auto repair,GooglePlaces,84,1
+UK,London,,N1,plumber,OSM,3958,1
+UK,London,,N1,plumber,GooglePlaces,42,1
+UK,London,,N1,roofer,OSM,5624,1
+UK,London,,N1,roofer,GooglePlaces,153,1
+UK,London,,N1,electrician,OSM,11124,1
+UK,London,,N1,electrician,GooglePlaces,76,1
+UK,London,,N1,dentist,OSM,5056,1
+UK,London,,N1,dentist,GooglePlaces,76,1
+UK,London,,N1,hvac,OSM,7404,1
+UK,London,,N1,hvac,GooglePlaces,77,1
+UK,London,,N1,landscaping,OSM,5446,1
+UK,London,,N1,landscaping,GooglePlaces,154,1
+UK,London,,N1,cleaning service,OSM,4861,1
+UK,London,,N1,cleaning service,GooglePlaces,102,1
+UK,London,,N1,accountant,OSM,4817,1
+UK,London,,N1,accountant,GooglePlaces,163,1
+UK,London,,N1,solicitor,OSM,4843,1
+UK,London,,N1,solicitor,GooglePlaces,82,1
+UK,London,,N1,barber,OSM,4831,1
+UK,London,,N1,barber,GooglePlaces,79,1
+UK,London,,N1,restaurant,OSM,5162,1
+UK,London,,N1,restaurant,GooglePlaces,92,1
+UK,London,,N1,auto repair,OSM,7790,1
+UK,London,,N1,auto repair,GooglePlaces,81,1
+UK,London,,N7,plumber,OSM,3893,1
+UK,London,,N7,plumber,GooglePlaces,37,1
+UK,London,,N7,roofer,OSM,5073,1
+UK,London,,N7,roofer,GooglePlaces,126,1
+UK,London,,N7,electrician,OSM,5821,1
+UK,London,,N7,electrician,GooglePlaces,133,1
+UK,London,,N7,dentist,OSM,6713,1
+UK,London,,N7,dentist,GooglePlaces,102,1
+UK,London,,N7,hvac,OSM,8337,1
+UK,London,,N7,hvac,GooglePlaces,82,1
+UK,London,,N7,landscaping,OSM,5430,1
+UK,London,,N7,landscaping,GooglePlaces,145,1
+UK,London,,N7,cleaning service,OSM,4836,1
+UK,London,,N7,cleaning service,GooglePlaces,94,1
+UK,London,,N7,accountant,OSM,5161,1
+UK,London,,N7,accountant,GooglePlaces,80,1
+UK,London,,N7,solicitor,OSM,4854,1
+UK,London,,N7,solicitor,GooglePlaces,95,1
+UK,London,,N7,barber,OSM,9933,1
+UK,London,,N7,barber,GooglePlaces,71,1
+UK,London,,N7,restaurant,OSM,3911,1
+UK,London,,N7,restaurant,GooglePlaces,36,1
+UK,London,,N7,auto repair,OSM,4798,1
+UK,London,,N7,auto repair,GooglePlaces,91,1
+UK,London,,NW1,plumber,OSM,4819,1
+UK,London,,NW1,plumber,GooglePlaces,78,1
+UK,London,,NW1,roofer,OSM,5118,1
+UK,London,,NW1,roofer,GooglePlaces,66,1
+UK,London,,NW1,electrician,OSM,8665,1
+UK,London,,NW1,electrician,GooglePlaces,85,1
+UK,London,,NW1,dentist,OSM,5150,1
+UK,London,,NW1,dentist,GooglePlaces,71,1
+UK,London,,NW1,hvac,OSM,8332,1
+UK,London,,NW1,hvac,GooglePlaces,95,1
+UK,London,,NW1,landscaping,OSM,5571,1
+UK,London,,NW1,landscaping,GooglePlaces,94,1
+UK,London,,NW1,cleaning service,OSM,4808,1
+UK,London,,NW1,cleaning service,GooglePlaces,82,1
+UK,London,,NW1,accountant,OSM,4830,1
+UK,London,,NW1,accountant,GooglePlaces,151,1
+UK,London,,NW1,solicitor,OSM,6251,1
+UK,London,,NW1,solicitor,GooglePlaces,72,1
+UK,London,,NW1,barber,OSM,5447,1
+UK,London,,NW1,barber,GooglePlaces,152,1
+UK,London,,NW1,restaurant,OSM,6055,1
+UK,London,,NW1,restaurant,GooglePlaces,116,1
+UK,London,,NW1,auto repair,OSM,4847,1
+UK,London,,NW1,auto repair,GooglePlaces,84,1
+UK,London,,SE1,plumber,OSM,4929,1
+UK,London,,SE1,plumber,GooglePlaces,86,1
+UK,London,,SE1,roofer,OSM,11103,1
+UK,London,,SE1,roofer,GooglePlaces,152,1
+UK,London,,SE1,electrician,OSM,5437,1
+UK,London,,SE1,electrician,GooglePlaces,75,1
+UK,London,,SE1,dentist,OSM,4904,1
+UK,London,,SE1,dentist,GooglePlaces,121,1
+UK,London,,SE1,hvac,OSM,5114,1
+UK,London,,SE1,hvac,GooglePlaces,77,1
+UK,London,,SE1,landscaping,OSM,13137,1
+UK,London,,SE1,landscaping,GooglePlaces,88,1
+UK,London,,SE1,cleaning service,OSM,5455,1
+UK,London,,SE1,cleaning service,GooglePlaces,85,1
+UK,London,,SE1,accountant,OSM,3941,1
+UK,London,,SE1,accountant,GooglePlaces,43,1
+UK,London,,SE1,solicitor,OSM,3883,1
+UK,London,,SE1,solicitor,GooglePlaces,40,1
+UK,London,,SE1,barber,OSM,4347,1
+UK,London,,SE1,barber,GooglePlaces,85,1
+UK,London,,SE1,restaurant,OSM,4561,1
+UK,London,,SE1,restaurant,GooglePlaces,105,1
+UK,London,,SE1,auto repair,OSM,4204,1
+UK,London,,SE1,auto repair,GooglePlaces,98,1
+UK,London,,SW1,plumber,OSM,3915,1
+UK,London,,SW1,plumber,GooglePlaces,33,1
+UK,London,,SW1,roofer,OSM,3863,1
+UK,London,,SW1,roofer,GooglePlaces,32,1
+UK,London,,SW1,electrician,OSM,3875,1
+UK,London,,SW1,electrician,GooglePlaces,35,1
+UK,London,,SW1,dentist,OSM,4187,1
+UK,London,,SW1,dentist,GooglePlaces,142,1
+UK,London,,SW1,hvac,OSM,11151,1
+UK,London,,SW1,hvac,GooglePlaces,151,1
+UK,London,,SW1,landscaping,OSM,9065,1
+UK,London,,SW1,landscaping,GooglePlaces,94,1
+UK,London,,SW1,cleaning service,OSM,8829,1
+UK,London,,SW1,cleaning service,GooglePlaces,84,1
+UK,London,,SW1,accountant,OSM,5134,1
+UK,London,,SW1,accountant,GooglePlaces,77,1
+UK,London,,SW1,solicitor,OSM,4843,1
+UK,London,,SW1,solicitor,GooglePlaces,85,1
+UK,London,,SW1,barber,OSM,5144,1
+UK,London,,SW1,barber,GooglePlaces,100,1
+UK,London,,SW1,restaurant,OSM,3901,1
+UK,London,,SW1,restaurant,GooglePlaces,39,1
+UK,London,,SW1,auto repair,OSM,3878,1
+UK,London,,SW1,auto repair,GooglePlaces,35,1
+UK,London,,W1,plumber,OSM,4798,1
+UK,London,,W1,plumber,GooglePlaces,107,1
+UK,London,,W1,roofer,OSM,4864,1
+UK,London,,W1,roofer,GooglePlaces,78,1
+UK,London,,W1,electrician,OSM,4845,1
+UK,London,,W1,electrician,GooglePlaces,111,1
+UK,London,,W1,dentist,OSM,4270,1
+UK,London,,W1,dentist,GooglePlaces,87,1
+UK,London,,W1,hvac,OSM,8676,1
+UK,London,,W1,hvac,GooglePlaces,163,1
+UK,London,,W1,landscaping,OSM,4843,1
+UK,London,,W1,landscaping,GooglePlaces,83,1
+UK,London,,W1,cleaning service,OSM,7881,1
+UK,London,,W1,cleaning service,GooglePlaces,72,1
+UK,London,,W1,accountant,OSM,7493,1
+UK,London,,W1,accountant,GooglePlaces,76,1
+UK,London,,W1,solicitor,OSM,5485,1
+UK,London,,W1,solicitor,GooglePlaces,79,1
+UK,London,,W1,barber,OSM,4841,1
+UK,London,,W1,barber,GooglePlaces,72,1
+UK,London,,W1,restaurant,OSM,4822,1
+UK,London,,W1,restaurant,GooglePlaces,83,1
+UK,London,,W1,auto repair,OSM,4513,1
+UK,London,,W1,auto repair,GooglePlaces,74,1
+UK,London,,W2,plumber,OSM,5419,1
+UK,London,,W2,plumber,GooglePlaces,80,1
+UK,London,,W2,roofer,OSM,4501,1
+UK,London,,W2,roofer,GooglePlaces,74,1
+UK,London,,W2,electrician,OSM,8609,1
+UK,London,,W2,electrician,GooglePlaces,107,1
+UK,London,,W2,dentist,OSM,5713,1
+UK,London,,W2,dentist,GooglePlaces,83,1
+UK,London,,W2,hvac,OSM,4517,1
+UK,London,,W2,hvac,GooglePlaces,81,1
+UK,London,,W2,landscaping,OSM,4093,1
+UK,London,,W2,landscaping,GooglePlaces,159,1
+UK,London,,W2,cleaning service,OSM,8202,1
+UK,London,,W2,cleaning service,GooglePlaces,90,1
+UK,London,,W2,accountant,OSM,8084,1
+UK,London,,W2,accountant,GooglePlaces,89,1
+UK,London,,W2,solicitor,OSM,4784,1
+UK,London,,W2,solicitor,GooglePlaces,73,1
+UK,London,,W2,barber,OSM,5082,1
+UK,London,,W2,barber,GooglePlaces,75,1
+UK,London,,W2,restaurant,OSM,5096,1
+UK,London,,W2,restaurant,GooglePlaces,97,1
+UK,London,,W2,auto repair,OSM,4839,1
+UK,London,,W2,auto repair,GooglePlaces,85,1
+UK,London,,W8,plumber,OSM,4501,1
+UK,London,,W8,plumber,GooglePlaces,91,1
+UK,London,,W8,roofer,OSM,3655,1
+UK,London,,W8,roofer,GooglePlaces,40,1
+UK,London,,W8,electrician,OSM,9116,1
+UK,London,,W8,electrician,GooglePlaces,78,1
+UK,London,,W8,dentist,OSM,4804,1
+UK,London,,W8,dentist,GooglePlaces,135,1
+UK,London,,W8,hvac,OSM,4774,1
+UK,London,,W8,hvac,GooglePlaces,85,1
+UK,London,,W8,landscaping,OSM,4846,1
+UK,London,,W8,landscaping,GooglePlaces,83,1
+UK,London,,W8,cleaning service,OSM,4227,1
+UK,London,,W8,cleaning service,GooglePlaces,145,1
+UK,London,,W8,accountant,OSM,4801,1
+UK,London,,W8,accountant,GooglePlaces,100,1
+UK,London,,W8,solicitor,OSM,7817,1
+UK,London,,W8,solicitor,GooglePlaces,100,1
+UK,London,,W8,barber,OSM,7462,1
+UK,London,,W8,barber,GooglePlaces,88,1
+UK,London,,W8,restaurant,OSM,4544,1
+UK,London,,W8,restaurant,GooglePlaces,137,1
+UK,London,,W8,auto repair,OSM,4823,1
+UK,London,,W8,auto repair,GooglePlaces,98,1

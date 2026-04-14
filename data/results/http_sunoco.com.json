@@ -1,0 +1,37 @@
+{
+  "url": "http://sunoco.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": "1.11.0",
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": "1.11.0",
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "/admin/assets/js/vendor/jquery-1.11.0.min.js",
+      "/admin/assets/js/vendor/bootstrap/js/bootstrap.min.js",
+      "/admin/assets/js/vendor/slick/slick.custom.js",
+      "/admin/assets/js/vendor/aos/aos.js",
+      "/admin/assets/js/vendor/jarallax/jarallax.min.js",
+      "/admin/assets/js/vendor/validate/jquery.validate.min.js",
+      "/js/main.js?v=1.45"
+    ],
+    "stylesheets": [
+      "https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@300;400;700&display=swap",
+      "/admin/assets/js/vendor/bootstrap/css/bootstrap.min.css",
+      "/admin/assets/js/vendor/slick/slick.css",
+      "/css/main.css?v=1.37",
+      "/admin/assets/js/vendor/aos/aos.css",
+      "/admin/assets/css/animate.min.css",
+      "/admin/assets/css/fontawesome/css/all.min.css"
+    ],
+    "meta_generator": "Third Wave Digital CMS v7.0.1713"
+  }
+}

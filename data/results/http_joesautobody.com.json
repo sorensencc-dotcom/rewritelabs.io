@@ -1,0 +1,30 @@
+{
+  "url": "http://joesautobody.com",
+  "isWordPress": true,
+  "wordpressVersion": "6.9.4",
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": true,
+    "wordpress_version": "6.9.4",
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/main.js?ver=1.0.2",
+      "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/swiper-bundle.min.js?ver=11.1.4",
+      "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/hybridmag-swiper.js?ver=1.0.2",
+      "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/js/tab-widget.js?ver=1.0.2"
+    ],
+    "stylesheets": [
+      "https://www.joesautobody.com/wp-content/themes/hybridmag/style.css?ver=1.0.2",
+      "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/css/swiper-bundle.css?ver=11.1.4",
+      "https://www.joesautobody.com/wp-content/themes/hybridmag/assets/css/font-figtree.css"
+    ],
+    "meta_generator": "WordPress 6.9.4"
+  }
+}

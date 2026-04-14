@@ -1,0 +1,26 @@
+{
+  "url": "http://pizza.dominos.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "//assets.adobedtm.com/0d0617bb44f3/d9b228c8652d/launch-016321e30689.min.js"
+    ],
+    "stylesheets": [
+      "/assets/static/useBreakpoints-2d1b9b9a.css",
+      "/assets/static/GeolocateButton-d658f9dd.css"
+    ],
+    "meta_generator": null
+  }
+}

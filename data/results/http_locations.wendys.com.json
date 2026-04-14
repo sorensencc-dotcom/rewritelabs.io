@@ -1,0 +1,26 @@
+{
+  "url": "http://locations.wendys.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "permanent-b0b701/locations.wendys.com/countryList/main.1ab80eca.js",
+      "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+    ],
+    "stylesheets": [
+      "permanent-b0b701/locations.wendys.com/countryList/main.1ab80eca.css"
+    ],
+    "meta_generator": null
+  }
+}

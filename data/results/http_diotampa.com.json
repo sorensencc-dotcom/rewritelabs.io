@@ -1,0 +1,41 @@
+{
+  "url": "http://diotampa.com",
+  "isWordPress": true,
+  "wordpressVersion": "6.4.8",
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": true,
+    "wordpress_version": "6.4.8",
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://diotampa.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://diotampa.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+      "https://www.sevenrooms.com/widget/embed.js",
+      "https://diotampa.com/wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js?ver=3.17.1",
+      "https://diotampa.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2",
+      "https://diotampa.com/wp-content/themes/flatsome/assets/js/flatsome.js?ver=f2c57559524d9813afd4",
+      "https://diotampa.com/wp-content/plugins/instagram-feed/js/sbi-scripts.min.js?ver=6.2",
+      "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/lib/jquery.validate.min.js?ver=1.19.5",
+      "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/lib/mailcheck.min.js?ver=1.1.2",
+      "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/lib/punycode.min.js?ver=1.0.0",
+      "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/js/utils.min.js?ver=1.8.3.1",
+      "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/js/wpforms.min.js?ver=1.8.3.1",
+      "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/js/wpforms-modern.min.js?ver=1.8.3.1",
+      "https://www.sevenrooms.com/widget/embed.js"
+    ],
+    "stylesheets": [
+      "https://diotampa.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.2",
+      "https://diotampa.com/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.17.1",
+      "https://diotampa.com/wp-content/themes/flatsome-child/style.css?ver=3.0",
+      "https://diotampa.com/wp-content/plugins/wpforms-lite/assets/css/frontend/modern/wpforms-full.min.css?ver=1.8.3.1"
+    ],
+    "meta_generator": "WordPress 6.4.8"
+  }
+}

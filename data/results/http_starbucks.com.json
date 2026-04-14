@@ -1,0 +1,38 @@
+{
+  "url": "http://starbucks.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://cdn.optimizely.com/js/13849340212.js",
+      "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "/_next/static/chunks/webpack-a339f4a57035852b.js",
+      "/_next/static/chunks/framework-4c8e7e593a0ef696.js",
+      "/_next/static/chunks/main-c55ed56afb511107.js",
+      "/_next/static/chunks/pages/_app-36b854eca122cc10.js",
+      "/_next/static/chunks/8-4cb85718db2280f9.js",
+      "/_next/static/chunks/153-db6cf0a8a1347aa5.js",
+      "/_next/static/chunks/pages/%5B%5B...page%5D%5D-7e1584ddbee8de10.js",
+      "/_next/static/jq3YoW9OPSLg0JmxS5LPP/_buildManifest.js",
+      "/_next/static/jq3YoW9OPSLg0JmxS5LPP/_ssgManifest.js",
+      "//consent.trustarc.com/notice?domain=app.starbucks.com&gtm=1&ostype=mobile&pcookie&oc=1&c=teconsent&text=true&js=nj&noticeType=bb&pn=1&country=us&language=en_us"
+    ],
+    "stylesheets": [
+      "/_next/static/css/a238819714180add.css",
+      "/_next/static/css/2106d8714ee3f9ec.css",
+      "/_next/static/css/6d556b2302d130d1.css"
+    ],
+    "meta_generator": null
+  }
+}

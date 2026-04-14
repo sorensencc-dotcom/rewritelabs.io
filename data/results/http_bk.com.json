@@ -1,0 +1,26 @@
+{
+  "url": "http://bk.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://cdn.cookielaw.org/consent/1aad1bfb-17b6-4023-aa99-6f60a365e4b5/OtAutoBlock.js",
+      "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "/oneTrust.js",
+      "/_expo/static/js/web/index-e082dd064ad4e949b8749efa191d55b5.js"
+    ],
+    "stylesheets": [],
+    "meta_generator": null
+  }
+}

@@ -1,0 +1,6 @@
+[
+  { "name": "restaurants", "aliases": ["food", "dining"] },
+  { "name": "plumbers", "aliases": ["plumbing", "pipe repair"] },
+  { "name": "lawyers", "aliases": ["attorneys", "legal"] },
+  { "name": "electricians", "aliases": ["electrical", "wiring"] }
+]

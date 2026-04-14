@@ -1,0 +1,35 @@
+{
+  "url": "http://locators.bankofamerica.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://assets.bankofamerica.com/js/pollyfill.min.js",
+      "https://assets.bankofamerica.com/js/vendor/leaflet.js?v=123",
+      "https://assets.bankofamerica.com/js/vendor/leaflet.plugins.js?v=123",
+      "https://assets.bankofamerica.com/js/vendor/leaflet.markercluster.js?v=123",
+      "https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDErZdm6p3XF6hcBbj79xDVLngA420Nb8s&callback=googleInitalized",
+      "https://assets.bankofamerica.com/js/vendor/Leaflet.GoogleMutant.js?v=12345",
+      "https://assets.bankofamerica.com/min/scripts.min.js?v=a86d4752c8cc53c15c796233a0faf4aa)",
+      "https://assets.bankofamerica.com/js/babel/module/page.js?v=980a690f12dde91f81f1717f57870526)",
+      "https://assets.bankofamerica.com/js/babel/module/locator.js?v=6f49b141961eed43e257a855339545a6)"
+    ],
+    "stylesheets": [
+      "https://assets.bankofamerica.com/min/styles.min.css?v=fa244542e76ffd3ab5eb2c26232e7ad4",
+      "https://assets.bankofamerica.com/css/leaflet.css",
+      "https://assets.bankofamerica.com/css/print.css"
+    ],
+    "meta_generator": null
+  }
+}

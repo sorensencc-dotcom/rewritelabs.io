@@ -1,0 +1,46 @@
+{
+  "url": "http://hillsboroughschools.org",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [
+      "https://www.googletagmanager.com/gtag/js?id=G-E1B2CKV7RB",
+      "https://www.googletagmanager.com/gtag/js?id=G-E1B2CKV7RB",
+      "https://cmsv2-static-cdn-prod.apptegy.net/static_js/d88b0e054773d6aedb651456aeb2320e6efab63d/_nuxt/B6o11378.js",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/cms-page-plugins/hero-image.js",
+      "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/Custom-Classes/helpers.js",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/Extended-Schools-Dropdown/extended-schools-dropdown.js",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/Animated-Numbers/countup-numbers.js",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/infinite-scroller/infinite-scroller-2.js",
+      "https://cmsv2-shared-assets.apptegy.net/Schools/Hillsborough-County-Public-Schools-5557/hillsboroughcountypsfl-district-js.js"
+    ],
+    "stylesheets": [
+      "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&family=Roboto+Slab:wght@300;400;500;700;900&display=swap",
+      "/alias_font_faces.css",
+      "https://use.typekit.net/hbz2uvz.css",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/cms-page-plugins/hero-image.css",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/Custom-Styles/helpers.css",
+      "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/Extended-Schools-Dropdown/extended-schools-dropdown-v2.min.css",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/Animated-Numbers/countup-numbers.css",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/infinite-scroller/infinite-scroller-2.css",
+      "https://cmsv2-shared-assets.apptegy.net/Global/Components/custom-social-icons/social-simple-icons-p1.css",
+      "https://cmsv2-shared-assets.apptegy.net/Schools/Hillsborough-County-Public-Schools-5557/hillsboroughcountypsfl-district-css.css",
+      "https://cmsv2-static-cdn-prod.apptegy.net/static_js/d88b0e054773d6aedb651456aeb2320e6efab63d/_nuxt/entry.BA50bAqL.css",
+      "https://cmsv2-static-cdn-prod.apptegy.net/static_js/d88b0e054773d6aedb651456aeb2320e6efab63d/_nuxt/ViewHomepage.BmOyg8CL.css"
+    ],
+    "meta_generator": null
+  }
+}

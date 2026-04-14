@@ -1,0 +1,23 @@
+{
+  "url": "http://locations.qdoba.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [],
+    "scripts": [],
+    "stylesheets": [
+      "/assets/static/config-ClNN44EY.css"
+    ],
+    "meta_generator": null
+  }
+}

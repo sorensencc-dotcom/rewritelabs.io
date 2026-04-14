@@ -1,0 +1,21 @@
+{
+  "url": "http://thehubbartampa.com",
+  "isWordPress": false,
+  "wordpressVersion": null,
+  "isOutdated": false,
+  "responsive": false,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [],
+  "tech": {
+    "wordpress": false,
+    "wordpress_version": null,
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": false,
+    "deprecated_tags": [],
+    "scripts": [],
+    "stylesheets": [],
+    "meta_generator": null
+  }
+}

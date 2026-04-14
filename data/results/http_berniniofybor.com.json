@@ -1,0 +1,57 @@
+{
+  "url": "http://berniniofybor.com",
+  "isWordPress": true,
+  "wordpressVersion": "6.9.4",
+  "isOutdated": false,
+  "responsive": true,
+  "jqueryVersion": null,
+  "bootstrapVersion": null,
+  "deprecatedTags": [
+    "center"
+  ],
+  "tech": {
+    "wordpress": true,
+    "wordpress_version": "6.9.4",
+    "jquery_version": null,
+    "bootstrap_version": null,
+    "responsive": true,
+    "deprecated_tags": [
+      "center"
+    ],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js",
+      "https://berniniofybor.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "https://berniniofybor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+      "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js",
+      "https://berniniofybor.com/wp-content/themes/bernini-restaurant-theme/js/bootstrap.min.js",
+      "https://berniniofybor.com/wp-content/themes/bernini-restaurant-theme/js/ie10-viewport-bug-workaround.js",
+      "https://berniniofybor.com/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1",
+      "https://berniniofybor.com/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375",
+      "https://berniniofybor.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.5",
+      "https://berniniofybor.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.5",
+      "https://berniniofybor.com/wp-content/plugins/foodpress/assets/js/foodpress_frontend.js?ver=1.0",
+      "https://berniniofybor.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3",
+      "https://berniniofybor.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.3",
+      "https://berniniofybor.com/wp-content/plugins/foodpress/assets/js/jquery.timepicker.js?ver=1.0",
+      "https://berniniofybor.com/wp-content/plugins/foodpress/assets/js/jquery-ui-1.10.4.custom.min.js?ver=1.0",
+      "https://www.google.com/recaptcha/api.js?render=6LfNMnQmAAAAAOVUa_ifWSF_NAYUHeemclN51cTI&ver=3.0",
+      "https://berniniofybor.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0",
+      "https://berniniofybor.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.1.5"
+    ],
+    "stylesheets": [
+      "https://berniniofybor.com/wp-content/themes/bernini-restaurant-theme/css/bootstrap.min.css",
+      "https://berniniofybor.com/wp-content/themes/bernini-restaurant-theme/styles.css",
+      "https://fast.fonts.net/cssapi/e561249f-25e5-438f-b753-3f41f1b496d7.css",
+      "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
+      "https://berniniofybor.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.5",
+      "https://berniniofybor.com/wp-content/plugins/foodpress/assets/fonts/font-awesome.css?ver=6.9.4",
+      "https://berniniofybor.com/wp-content/plugins/foodpress/assets/fonts/fp_fonts.css?ver=6.9.4",
+      "https://berniniofybor.com/wp-content/plugins/foodpress/assets/css/foodpress_styles.css?ver=6.9.4",
+      "//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C600%2C700%2C400%2C300&ver=6.9.4",
+      "https://berniniofybor.com/wp-content/plugins/foodpress/assets/css/foodpress_dynamic_styles.css?ver=6.9.4",
+      "https://berniniofybor.com/wp-content/plugins/foodpress/assets/css/jquery.timepicker.css?ver=6.9.4",
+      "https://berniniofybor.com/wp-content/plugins/foodpress/assets/css/jquery-ui.min.css?ver=6.9.4"
+    ],
+    "meta_generator": "WordPress 6.9.4"
+  }
+}

@@ -1,0 +1,11 @@
+﻿:root {
+  --rl-bg: #0b0f19;
+  --rl-bg-panel: #111726;
+  --rl-border: #1b2337;
+  --rl-text: #e6ecff;
+  --rl-text-dim: #9aa4c8;
+  --rl-accent: #3b82f6;
+  --rl-accent-glow: rgba(59, 130, 246, 0.35);
+  --rl-radius: 12px;
+  --rl-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+}
