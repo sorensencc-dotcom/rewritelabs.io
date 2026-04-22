@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rewrite Labs — AI-Powered Website Redesign</title>
+  <meta name="description" content="Rewrite Labs finds outdated websites, generates modern redesigns automatically, and delivers production-ready sites to business owners." />
+  <meta property="og:title" content="Rewrite Labs — AI-Powered Website Redesign" />
+  <meta property="og:description" content="We find outdated websites. We redesign them automatically. We deliver." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── Reset & Base ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #07071a;
+      --bg2:        #0d0d2b;
+      --cyan:       #00e5ff;
+      --violet:     #8b5cf6;
+      --pink:       #f472b6;
+      --text:       #e2e8f0;
+      --muted:      #64748b;
+      --border:     rgba(255,255,255,0.08);
+      --glass:      rgba(255,255,255,0.04);
+      --glow-cyan:  0 0 40px rgba(0,229,255,0.25);
+      --glow-v:     0 0 40px rgba(139,92,246,0.3);
+      --radius:     14px;
+      --font:       'Inter', sans-serif;
+      --mono:       'JetBrains Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Dot-grid background ──────────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Noise overlay ────────────────────────────────────────── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    section, nav, footer { position: relative; z-index: 1; }
+
+    /* ── Nav ──────────────────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 48px;
+      background: rgba(7, 7, 26, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.3s;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--cyan), var(--violet));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+      color: #000;
+    }
+
+    .nav-logo-text {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-logo-text span {
+      color: var(--cyan);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
+      color: #000;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .nav-cta:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    /* ── Hero ─────────────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Glow orbs */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .orb-1 {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0,229,255,0.12) 0%, transparent 70%);
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: orbFloat 8s ease-in-out infinite;
+    }
+
+    .orb-2 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 70%);
+      bottom: 0;
+      left: -100px;
+      animation: orbFloat 10s ease-in-out infinite reverse;
+    }
+
+    .orb-3 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(244,114,182,0.08) 0%, transparent 70%);
+      bottom: 100px;
+      right: -50px;
+      animation: orbFloat 12s ease-in-out infinite;
+    }
+
+    @keyframes orbFloat {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-30px) scale(1.05); }
+    }
+
+    .orb-1 { animation: orbFloat1 8s ease-in-out infinite; }
+    @keyframes orbFloat1 {
+      0%, 100% { top: -100px; left: 50%; transform: translateX(-50%); }
+      50% { top: -70px; left: 50%; transform: translateX(-48%) scale(1.05); }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border: 1px solid rgba(0,229,255,0.3);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--cyan);
+      background: rgba(0,229,255,0.06);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 8px var(--cyan);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .hero-h1 {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(40px, 7vw, 80px);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      color: #fff;
+      max-width: 900px;
+      margin-bottom: 28px;
+      animation: fadeUp 0.7s 0.1s ease both;
+    }
+
+    .hero-h1 .gradient-text {
+      background: linear-gradient(90deg, var(--cyan) 0%, var(--violet) 50%, var(--pink) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(16px, 2.2vw, 20px);
+      color: var(--muted);
+      max-width: 580px;
+      line-height: 1.7;
+      margin-bottom: 48px;
+      font-weight: 400;
+      animation: fadeUp 0.7s 0.2s ease both;
+    }
+
+    .hero-actions {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      animation: fadeUp 0.7s 0.3s ease both;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.25s;
+      box-shadow: 0 0 0 0 rgba(0,229,255,0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,229,255,0.35);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      background: var(--glass);
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      transition: all 0.25s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.15);
+      transform: translateY(-2px);
+    }
+
+    /* Scan preview bar */
+    .hero-scan-preview {
+      position: relative;
+      z-index: 1;
+      margin-top: 80px;
+      width: 100%;
+      max-width: 760px;
+      background: rgba(13,13,43,0.8);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(12px);
+      overflow: hidden;
+      animation: fadeUp 0.7s 0.5s ease both;
+      box-shadow: 0 0 60px rgba(0,229,255,0.07), inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+
+    .scan-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(0,0,0,0.2);
+    }
+
+    .scan-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .scan-dot.red { background: #ff5f57; }
+    .scan-dot.yellow { background: #ffbd2e; }
+    .scan-dot.green { background: #28ca41; }
+
+    .scan-url {
+      flex: 1;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .scan-body {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    .scan-metric {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .scan-metric-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .scan-metric-value {
+      font-family: var(--mono);
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .scan-metric-value.bad { color: #f87171; }
+    .scan-metric-value.warn { color: #fbbf24; }
+    .scan-metric-value.ok { color: #34d399; }
+
+    .scan-bar-fill {
+      height: 4px;
+      border-radius: 2px;
+      background: var(--border);
+      overflow: hidden;
+      margin-top: 4px;
+    }
+
+    .scan-bar-fill-inner {
+      height: 100%;
+      border-radius: 2px;
+      animation: fillBar 2s 1s ease both;
+    }
+
+    @keyframes fillBar {
+      from { width: 0; }
+    }
+
+    .bar-red { background: #f87171; }
+    .bar-yellow { background: #fbbf24; }
+    .bar-green { background: #34d399; }
+    .bar-cyan { background: var(--cyan); }
+
+    .scan-tag {
+      margin-top: 8px;
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .tag-red { background: rgba(248,113,113,0.15); color: #f87171; }
+    .tag-yellow { background: rgba(251,191,36,0.15); color: #fbbf24; }
+
+    .scan-score-ring {
+      grid-column: 4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    /* ── Section shared ───────────────────────────────────────── */
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 16px;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: var(--cyan);
+    }
+
+    .section-title {
+      font-size: clamp(30px, 4vw, 52px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      font-size: 18px;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 540px;
+    }
+
+    /* ── How it works ─────────────────────────────────────────── */
+    #how {
+      padding: 120px 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .how-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .how-header .section-sub { margin: 0 auto; }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .step-card {
+      position: relative;
+      padding: 36px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s;
+      overflow: hidden;
+    }
+
+    .step-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(0,229,255,0.04) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .step-card:hover::before { opacity: 1; }
+    .step-card:hover { border-color: rgba(0,229,255,0.2); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 0 1px rgba(0,229,255,0.08); }
+
+    .step-number {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .step-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .step-icon.cyan { background: rgba(0,229,255,0.1); box-shadow: 0 0 20px rgba(0,229,255,0.1); }
+    .step-icon.violet { background: rgba(139,92,246,0.1); box-shadow: 0 0 20px rgba(139,92,246,0.1); }
+    .step-icon.pink { background: rgba(244,114,182,0.1); box-shadow: 0 0 20px rgba(244,114,182,0.1); }
+    .step-icon.green { background: rgba(52,211,153,0.1); box-shadow: 0 0 20px rgba(52,211,153,0.1); }
+
+    .step-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .step-tag.cyan { color: var(--cyan); }
+    .step-tag.violet { color: var(--violet); }
+    .step-tag.pink { color: var(--pink); }
+    .step-tag.green { color: #34d399; }
+
+    .step-h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .step-p {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .step-connector {
+      position: absolute;
+      top: 36px;
+      right: -12px;
+      width: 24px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--border), transparent);
+      z-index: 2;
+    }
+
+    /* Pill stat inside cards */
+    .step-stat {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 20px;
+      border: 1px solid;
+    }
+
+    .step-stat.cyan { color: var(--cyan); border-color: rgba(0,229,255,0.2); background: rgba(0,229,255,0.05); }
+    .step-stat.violet { color: var(--violet); border-color: rgba(139,92,246,0.2); background: rgba(139,92,246,0.05); }
+    .step-stat.pink { color: var(--pink); border-color: rgba(244,114,182,0.2); background: rgba(244,114,182,0.05); }
+    .step-stat.green { color: #34d399; border-color: rgba(52,211,153,0.2); background: rgba(52,211,153,0.05); }
+
+    /* ── Divider ──────────────────────────────────────────────── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border) 30%, var(--border) 70%, transparent);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ── Stats bar ────────────────────────────────────────────── */
+    #stats {
+      padding: 80px 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .stat-item {
+      padding: 40px 32px;
+      background: var(--bg);
+      text-align: center;
+      transition: background 0.2s;
+    }
+
+    .stat-item:hover { background: var(--glass); }
+
+    .stat-number {
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: -2px;
+      background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* ── Waitlist ─────────────────────────────────────────────── */
+    #waitlist {
+      padding: 120px 24px;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .waitlist-card {
+      position: relative;
+      padding: 64px;
+      background: rgba(13,13,43,0.6);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      backdrop-filter: blur(16px);
+      overflow: hidden;
+    }
+
+    .waitlist-card::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+      height: 200px;
+      background: radial-gradient(ellipse, rgba(0,229,255,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .waitlist-card::after {
+      content: '';
+      position: absolute;
+      bottom: -60px;
+      right: -60px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .waitlist-card .section-label { justify-content: center; }
+
+    .waitlist-card .section-title { font-size: clamp(28px, 4vw, 44px); }
+
+    .waitlist-card .section-sub {
+      font-size: 16px;
+      margin: 0 auto 40px;
+    }
+
+    .waitlist-form {
+      display: flex;
+      gap: 12px;
+      max-width: 480px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .waitlist-input {
+      flex: 1;
+      padding: 16px 20px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: #fff;
+      font-size: 15px;
+      font-family: var(--font);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .waitlist-input::placeholder { color: var(--muted); }
+
+    .waitlist-input:focus {
+      border-color: rgba(0,229,255,0.4);
+      box-shadow: 0 0 0 3px rgba(0,229,255,0.08);
+    }
+
+    .waitlist-btn {
+      padding: 16px 28px;
+      background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
+      color: #000;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: var(--font);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.25s;
+    }
+
+    .waitlist-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 25px rgba(0,229,255,0.3);
+    }
+
+    .waitlist-btn:active { transform: translateY(0); }
+
+    .waitlist-note {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+    }
+
+    .waitlist-success {
+      display: none;
+      padding: 20px 32px;
+      background: rgba(52,211,153,0.1);
+      border: 1px solid rgba(52,211,153,0.25);
+      border-radius: 10px;
+      color: #34d399;
+      font-size: 15px;
+      font-weight: 600;
+      max-width: 480px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Footer ───────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: gap;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .footer-logo-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      background: linear-gradient(135deg, var(--cyan), var(--violet));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      color: #000;
+    }
+
+    .footer-logo-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .footer-logo-text span { color: var(--cyan); }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ── Scroll-in animations ─────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* stagger children */
+    .reveal-stagger > * {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal-stagger.visible > *:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0s; }
+    .reveal-stagger.visible > *:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.1s; }
+    .reveal-stagger.visible > *:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.2s; }
+    .reveal-stagger.visible > *:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
+
+    /* ── Responsive ───────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      nav { padding: 16px 20px; }
+      .nav-cta { padding: 8px 16px; font-size: 13px; }
+      .steps-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr; }
+      .scan-body { grid-template-columns: 1fr 1fr; }
+      .scan-score-ring { grid-column: auto; }
+      .waitlist-form { flex-direction: column; }
+      .waitlist-card { padding: 36px 24px; }
+      footer { flex-direction: column; gap: 16px; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ── Nav ──────────────────────────────────────────────────────── -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">R</div>
+    <span class="nav-logo-text">Rewrite<span>Labs</span></span>
+  </a>
+  <a href="#waitlist" class="nav-cta">Get Early Access →</a>
+</nav>
+
+<!-- ── Hero ─────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hero-badge">
+    <span class="badge-dot"></span>
+    AI-Powered Website Redesign
+  </div>
+
+  <h1 class="hero-h1">
+    The Internet Is Full of<br />
+    <span class="gradient-text">Outdated Websites.</span><br />
+    We Fix That.
+  </h1>
+
+  <p class="hero-sub">
+    Rewrite Labs scans the web for businesses losing customers to broken,
+    slow, and outdated sites — then delivers a modern redesign,
+    automatically.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#waitlist" class="btn-primary">Get Early Access →</a>
+    <a href="#how" class="btn-secondary">See How It Works ↓</a>
+  </div>
+
+  <!-- Mock scan preview -->
+  <div class="hero-scan-preview">
+    <div class="scan-bar">
+      <div class="scan-dot red"></div>
+      <div class="scan-dot yellow"></div>
+      <div class="scan-dot green"></div>
+      <div class="scan-url">rewritelabs.io — scanning joesbakery1998.com</div>
+    </div>
+    <div class="scan-body">
+      <div class="scan-metric">
+        <div class="scan-metric-label">Design Age</div>
+        <div class="scan-metric-value bad">2009</div>
+        <div class="scan-bar-fill">
+          <div class="scan-bar-fill-inner bar-red" style="width:90%"></div>
+        </div>
+        <span class="scan-tag tag-red">Outdated</span>
+      </div>
+      <div class="scan-metric">
+        <div class="scan-metric-label">Mobile Ready</div>
+        <div class="scan-metric-value bad">No</div>
+        <div class="scan-bar-fill">
+          <div class="scan-bar-fill-inner bar-red" style="width:10%"></div>
+        </div>
+        <span class="scan-tag tag-red">Fails</span>
+      </div>
+      <div class="scan-metric">
+        <div class="scan-metric-label">Page Speed</div>
+        <div class="scan-metric-value warn">38</div>
+        <div class="scan-bar-fill">
+          <div class="scan-bar-fill-inner bar-yellow" style="width:38%"></div>
+        </div>
+        <span class="scan-tag tag-yellow">Slow</span>
+      </div>
+      <div class="scan-metric">
+        <div class="scan-metric-label">Redesign Score</div>
+        <div class="scan-metric-value" style="color:var(--cyan)">94</div>
+        <div class="scan-bar-fill">
+          <div class="scan-bar-fill-inner bar-cyan" style="width:94%"></div>
+        </div>
+        <span class="scan-tag" style="background:rgba(0,229,255,0.1);color:var(--cyan)">High Priority</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Stats ─────────────────────────────────────────────────────── -->
+<div class="divider"></div>
+<section id="stats">
+  <div class="stats-grid reveal-stagger">
+    <div class="stat-item">
+      <div class="stat-number">200M+</div>
+      <div class="stat-label">Outdated websites on the internet</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">94%</div>
+      <div class="stat-label">Of first impressions are design-related</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">3s</div>
+      <div class="stat-label">Time before users abandon a slow site</div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ── How it works ──────────────────────────────────────────────── -->
+<section id="how">
+  <div class="how-header reveal">
+    <div class="section-label">The Process</div>
+    <h2 class="section-title">From scan to shipped,<br />fully automated.</h2>
+    <p class="section-sub">
+      Our AI pipeline handles every step of the redesign process — from
+      finding candidates to delivering production-ready code.
+    </p>
+  </div>
+
+  <div class="steps-grid reveal-stagger">
+
+    <!-- Step 1: Discover -->
+    <div class="step-card">
+      <div class="step-number">01 / 04</div>
+      <div class="step-icon cyan">🔍</div>
+      <div class="step-tag cyan">Discover</div>
+      <h3 class="step-h3">AI Crawler Finds the Worst Offenders</h3>
+      <p class="step-p">
+        Our crawler scans thousands of websites daily, scoring each one on
+        design age, mobile responsiveness, page speed, and accessibility.
+        No manual prospecting required.
+      </p>
+      <span class="step-stat cyan">↑ Thousands scanned daily</span>
+    </div>
+
+    <!-- Step 2: Redesign -->
+    <div class="step-card">
+      <div class="step-number">02 / 04</div>
+      <div class="step-icon violet">✦</div>
+      <div class="step-tag violet">Redesign</div>
+      <h3 class="step-h3">AI Generates a Modern Mockup — Instantly</h3>
+      <p class="step-p">
+        Using the site's existing content and branding, our AI engine
+        generates a polished, modern redesign. Same business, new look —
+        automatically tailored to each owner.
+      </p>
+      <span class="step-stat violet">↑ Before & after in seconds</span>
+    </div>
+
+    <!-- Step 3: Outreach -->
+    <div class="step-card">
+      <div class="step-number">03 / 04</div>
+      <div class="step-icon pink">📬</div>
+      <div class="step-tag pink">Outreach</div>
+      <h3 class="step-h3">Personalized Outreach with a Compelling Preview</h3>
+      <p class="step-p">
+        Business owners receive a personalized message with a before &
+        after preview of their site. The offer sells itself. No cold calls,
+        no spray-and-pray.
+      </p>
+      <span class="step-stat pink">↑ Hyper-personalized at scale</span>
+    </div>
+
+    <!-- Step 4: Deliver -->
+    <div class="step-card">
+      <div class="step-number">04 / 04</div>
+      <div class="step-icon green">🚀</div>
+      <div class="step-tag green">Deliver</div>
+      <h3 class="step-h3">Convert Interest into Production-Ready Websites</h3>
+      <p class="step-p">
+        Interested owners become paying clients. Our team refines the
+        AI-generated design into a production-ready site and handles
+        delivery — end to end.
+      </p>
+      <span class="step-stat green">↑ Human-refined, client-approved</span>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── Waitlist ───────────────────────────────────────────────────── -->
+<section id="waitlist">
+  <div class="waitlist-card reveal">
+    <div class="section-label">Early Access</div>
+    <h2 class="section-title">Be first in line.</h2>
+    <p class="section-sub">
+      We're opening access to a limited group of early users. Drop your
+      email and we'll reach out when we're ready for you.
+    </p>
+
+    <form class="waitlist-form" id="waitlistForm">
+      <input
+        type="email"
+        class="waitlist-input"
+        placeholder="you@yourcompany.com"
+        required
+        id="waitlistEmail"
+      />
+      <button type="submit" class="waitlist-btn">Join Waitlist →</button>
+    </form>
+
+    <div class="waitlist-success" id="waitlistSuccess">
+      ✓ You're on the list! We'll be in touch soon.
+    </div>
+
+    <p class="waitlist-note">No spam. No sharing. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────────────── -->
+<footer>
+  <a href="#" class="footer-logo">
+    <div class="footer-logo-icon">R</div>
+    <span class="footer-logo-text">Rewrite<span>Labs</span></span>
+  </a>
+  <span class="footer-copy">© 2026 Rewrite Labs, LLC · Tampa, FL</span>
+</footer>
+
+<!-- ── Scripts ────────────────────────────────────────────────────── -->
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => observer.observe(el));
+
+  // Waitlist form
+  const form = document.getElementById('waitlistForm');
+  const success = document.getElementById('waitlistSuccess');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('waitlistEmail').value;
+    // TODO: Replace with your actual form endpoint (Formspree, Cloudflare Worker, etc.)
+    // fetch('/api/waitlist', { method: 'POST', body: JSON.stringify({ email }), headers: {'Content-Type':'application/json'} })
+    form.style.display = 'none';
+    success.style.display = 'block';
+    console.log('Waitlist signup:', email);
+  });
+
+  // Nav scroll shadow
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.background = window.scrollY > 20
+      ? 'rgba(7, 7, 26, 0.92)'
+      : 'rgba(7, 7, 26, 0.7)';
+  });
+
+  // Animated scan counter (for fun)
+  let count = 1247;
+  setInterval(() => {
+    count += Math.floor(Math.random() * 3) + 1;
+    const el = document.querySelector('.scan-url');
+    if (el) el.textContent = `rewritelabs.io — ${count.toLocaleString()} sites scanned today`;
+  }, 3000);
+</script>
+
+</body>
+</html>
