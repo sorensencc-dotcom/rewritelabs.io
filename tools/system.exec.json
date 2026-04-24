@@ -1,0 +1,19 @@
+{
+  "name": "system.exec",
+  "description": "Execute a whitelisted system command.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "command": { "type": "string" }
+    },
+    "required": ["command"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "exit_code": { "type": "number" },
+      "stdout": { "type": "string" },
+      "stderr": { "type": "string" }
+    }
+  }
+}

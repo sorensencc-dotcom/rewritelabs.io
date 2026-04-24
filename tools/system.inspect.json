@@ -1,0 +1,24 @@
+{
+  "name": "system.inspect",
+  "description": "Inspect running tasks.",
+  "input_schema": {
+    "type": "object",
+    "properties": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "tasks": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "status": { "type": "string" },
+            "details": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

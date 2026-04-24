@@ -1,0 +1,178 @@
+Rewrite Labs - Outreach Automation Playbook
+==================================================
+
+1. Title Page
+-------------
+Rewrite Labs  
+Outreach Automation Playbook  
+Version 1.0  
+Last Updated: April 24, 2026
+
+2. Table of Contents
+---------------------
+1. Title Page  
+2. Table of Contents  
+3. System Overview  
+4. Architecture Breakdown  
+5. Component Specifications  
+   - Lead Research Engine  
+   - Personalization Engine  
+   - Outreach Sequencer  
+   - CRM Sync Layer  
+   - Operator Console Integration  
+6. SOPs  
+   - Daily Ops  
+   - Weekly Ops  
+   - Monthly Ops  
+7. Cadence Logic  
+   - Day 1 → Day 3 → Day 7 → Day 14  
+   - Pause/Stop Conditions  
+   - Engagement Triggers  
+8. Templates  
+   - Email Sequence Templates  
+   - Value Gap Summary Template  
+   - Lead Profile Template  
+9. Operator Responsibilities  
+10. KPIs  
+11. Failure Modes & Recovery Procedures  
+12. Appendix
+
+3. System Overview
+-------------------
+The Outreach Automation System is a deterministic, AI-driven subsystem that activates post-Redesign. It automates lead engagement using personalized messaging, structured cadences, and CRM-integrated tracking. The system ensures high-throughput, low-latency outreach with full operator visibility and override capability.
+
+4. Architecture Breakdown
+--------------------------
+- Input: Redesign diffs, Lighthouse data, brand-tone profiles  
+- Processing: AI engines generate personalized messaging and cadence logic  
+- Output: Multi-step outreach sequences, CRM updates, engagement logs  
+- Interfaces: Operator Console, CRM Sync Layer, Email Delivery System
+
+5. Component Specifications
+----------------------------
+
+Lead Research Engine  
+- Extracts metadata, contact info, and social signals  
+- Scores leads using traffic, industry, redesign delta, and responsiveness  
+- Outputs structured lead profiles
+
+Personalization Engine  
+- Generates multi-step email sequences  
+- Uses redesign diffs and brand-tone alignment  
+- Supports A/B variants and value-gap summaries
+
+Outreach Sequencer  
+- Executes deterministic cadence: Day 1 → Day 3 → Day 7 → Day 14  
+- Tracks opens, clicks, replies, and bounces  
+- Auto-pauses on engagement or conversion
+
+CRM Sync Layer  
+- Bi-directional sync with Airtable, HubSpot, or Sheets  
+- Logs lead status, outreach stage, and engagement metrics  
+- Ensures single source of truth
+
+Operator Console Integration  
+- Real-time visibility into outreach status  
+- Manual override tools for pausing, editing, or re-sequencing  
+- Error logs and deliverability metrics
+
+6. SOPs
+--------
+
+Daily Ops  
+- Review new leads and approve high-value targets  
+- Monitor active sequences and engagement logs  
+- Resolve errors and bouncebacks  
+- Validate CRM sync integrity
+
+Weekly Ops  
+- Audit personalization accuracy and tone alignment  
+- Review deliverability metrics and adjust templates  
+- Conduct A/B test analysis  
+- Update lead scoring thresholds
+
+Monthly Ops  
+- Evaluate KPIs and system throughput  
+- Run deliverability diagnostics  
+- Refresh value-gap templates  
+- Submit system improvement proposals
+
+7. Cadence Logic
+-----------------
+
+Day 1 → Day 3 → Day 7 → Day 14  
+- Four-step deterministic sequence  
+- Each step includes personalized messaging and visual diff
+
+Pause/Stop Conditions  
+- Lead replies  
+- Lead converts  
+- Hard bounce or unsubscribe  
+- Manual operator override
+
+Engagement Triggers  
+- Open → escalate to next step  
+- Click → flag for operator review  
+- Reply → auto-pause and notify operator
+
+8. Templates
+-------------
+
+Email Sequence Templates  
+- Subject: “Quick idea for [CompanyName]”  
+- Body: Personalized intro → value gap → visual diff → CTA  
+- Variants: A/B tested for tone and CTA style
+
+Value Gap Summary Template  
+- Header: “What you’re missing”  
+- Bullet points:  
+  - Missed performance opportunities  
+  - UX friction points  
+  - SEO or accessibility gaps  
+- Footer: Link to visual diff
+
+Lead Profile Template  
+- Company Name  
+- Website  
+- Industry  
+- Traffic Tier  
+- Redesign Delta Score  
+- Contact Info  
+- Social Links  
+- Notes
+
+9. Operator Responsibilities
+-----------------------------
+- Approve/reject lead profiles  
+- Validate personalization output  
+- Monitor and manage active sequences  
+- Investigate errors and bouncebacks  
+- Maintain CRM data integrity  
+- Report weekly metrics
+
+10. KPIs
+---------
+- Lead-to-response rate  
+- Response-to-conversion rate  
+- Deliverability score  
+- Personalization accuracy  
+- Time-to-first-response  
+- Outreach throughput per day
+
+11. Failure Modes & Recovery Procedures
+----------------------------------------
+- Email Bounce → Auto-pause + log error + alert operator  
+- CRM Sync Failure → Retry logic + manual override  
+- Personalization Error → Flag for operator review  
+- Sequence Stuck → Escalate to engineering  
+- Low Engagement → Trigger template refresh and A/B test
+
+12. Appendix
+-------------
+- Glossary of Terms  
+- Sample Lead Profiles  
+- Sample Email Sequences  
+- CRM Field Mapping  
+- Operator Console Shortcuts  
+- System Diagram
+

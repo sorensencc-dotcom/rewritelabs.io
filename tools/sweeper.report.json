@@ -1,0 +1,22 @@
+{
+  "name": "sweeper.report",
+  "description": "Report results of the last sweeper run.",
+  "input_schema": {
+    "type": "object",
+    "properties": {}
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "summary": { "type": "string" },
+      "stats": {
+        "type": "object",
+        "properties": {
+          "processed": { "type": "number" },
+          "changed": { "type": "number" },
+          "errors": { "type": "number" }
+        }
+      }
+    }
+  }
+}

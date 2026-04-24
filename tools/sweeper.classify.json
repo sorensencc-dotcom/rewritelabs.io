@@ -1,0 +1,27 @@
+{
+  "name": "sweeper.classify",
+  "description": "Classify files for sweeper actions.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "paths": { "type": "array", "items": { "type": "string" } }
+    },
+    "required": ["paths"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "classes": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "path": { "type": "string" },
+            "type": { "type": "string" },
+            "recommended_action": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

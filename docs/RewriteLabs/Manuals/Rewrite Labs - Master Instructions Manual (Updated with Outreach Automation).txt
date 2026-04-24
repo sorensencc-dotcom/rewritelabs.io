@@ -1,0 +1,213 @@
+Rewrite Labs - Master Instructions Manual (Updated with Outreach Automation)
+
+============================================================================
+
+
+
+Table of Contents
+------------------
+
+1. 1. Introduction
+2. 2. Core Values
+3. 3. Team Structure
+4. 4. Communication Protocols
+5. 5. Tooling Stack
+6. 6. Client Lifecycle
+7. 7. Core Pipeline + SOPs
+8. 8. Design Guidelines
+9. 9. Engineering Standards
+10. 10. Data & Analytics
+11. 11. Security & Compliance
+12. 12. Client Communication
+13. 13. Quality Assurance
+14. 14. Training & Onboarding
+15. 15. Appendix
+
+
+
+1. Introduction
+---------------
+This section provides an overview of the Rewrite Labs mission, vision, and operational philosophy.
+
+
+2. Core Values
+--------------
+Defines the foundational principles guiding all decisions and interactions at Rewrite Labs.
+
+
+3. Team Structure
+-----------------
+Outlines roles, responsibilities, and reporting lines within the organization.
+
+
+4. Communication Protocols
+--------------------------
+Standards for internal and external communication, including tools and cadences.
+
+
+5. Tooling Stack
+----------------
+List and description of all tools used across the organization, including access and usage guidelines.
+
+
+6. Client Lifecycle
+-------------------
+Describes the stages of client engagement from initial contact to final delivery and follow-up.
+
+
+7. Core Pipeline + SOPs
+-----------------------
+### 7. Core Pipeline + SOPs
+
+The Rewrite Labs core pipeline follows a deterministic 4-phase process:
+
+1. Discover
+2. Redesign
+3. Outreach
+4. Deliver
+
+Each phase includes specific SOPs, tools, and operator responsibilities.
+
+---
+
+#### 7.1 Discover Phase
+- Identify potential leads via scraping, referrals, or inbound.
+- Validate lead quality using scoring rubric.
+- Enrich leads with metadata and contact info.
+
+#### 7.2 Redesign Phase
+- Run automated Lighthouse audits.
+- Generate redesigns using AI design engine.
+- Produce before/after visual diffs.
+- Store redesigns in client folders.
+
+#### 7.3 Outreach Phase
+- Generate personalized messaging.
+- Send outreach emails in deterministic cadence.
+- Track engagement and responses.
+
+#### 7.4 Deliver Phase
+- Onboard converted clients.
+- Deliver final assets and documentation.
+- Collect feedback and testimonials.
+
+#### 7.5 SOPs
+- Daily standup at 9:00 AM EST.
+- Weekly roadmap review on Fridays.
+- All client data stored in Notion + Google Drive.
+
+---
+
+### 7.6 Outreach Automation System — End‑to‑End Specification
+
+**Purpose**  
+Automate the full Outreach phase of the Rewrite Labs pipeline using deterministic, AI‑driven systems that generate personalized messaging, manage multi‑step cadences, and sync with CRM infrastructure.
+
+**Scope**  
+This subsystem activates after Redesign output is finalized and approved. It consumes redesign diffs, Lighthouse data, and brand‑tone profiles to generate personalized outreach sequences and manage delivery.
+
+---
+
+#### 7.6.1 System Components
+
+**Lead Research Engine**  
+- Extracts business metadata, site structure, social presence, and contact info.  
+- Produces structured lead profiles with scoring attributes.  
+- Flags high‑value targets based on rubric (traffic, industry, redesign delta, responsiveness).
+
+**Personalization Engine**  
+- Generates personalized email sequences using redesign diffs, value‑gap summaries, and brand‑tone alignment.  
+- Produces before/after visual diffs and tailored value propositions.  
+- Supports multi‑variant generation for A/B testing.
+
+**Outreach Sequencer**  
+- Deterministic cadence: Day 1 → Day 3 → Day 7 → Day 14.  
+- Tracks opens, clicks, replies, and bounce events.  
+- Auto‑pauses when a lead responds or converts.
+
+**CRM Sync Layer**  
+- Bi‑directional sync with HubSpot/Airtable/Sheets.  
+- Logs lead status, outreach stage, engagement metrics, and conversion events.  
+- Ensures a single source of truth across operator tools.
+
+**Operator Console Integration**  
+- Real‑time visibility into:  
+  - Pending outreach  
+  - Active sequences  
+  - Errors  
+  - Deliverability metrics  
+- Manual override tools for pausing, editing, or re‑sequencing leads.
+
+---
+
+#### 7.6.2 Operational Flow
+
+1. **Lead enters pipeline** (from Discover or manual import).  
+2. **Lead Research Engine** generates structured profile.  
+3. **Personalization Engine** produces outreach assets.  
+4. **Outreach Sequencer** deploys cadence.  
+5. **CRM Sync Layer** updates lead status continuously.  
+6. **Operator Console** provides oversight and manual controls.  
+7. **Conversion event** triggers handoff to Deliver phase.
+
+---
+
+#### 7.6.3 Operator Responsibilities
+
+- Review high‑value leads flagged by scoring engine.  
+- Approve or adjust personalized messaging when needed.  
+- Monitor deliverability and error logs.  
+- Trigger manual overrides for sensitive accounts.  
+- Validate CRM sync integrity weekly.
+
+---
+
+#### 7.6.4 KPIs
+
+- Lead‑to‑response rate  
+- Response‑to‑conversion rate  
+- Deliverability score  
+- Personalization accuracy  
+- Time‑to‑first‑response  
+- Outreach throughput per day
+
+
+
+8. Design Guidelines
+--------------------
+Design principles, brand assets, and UI/UX standards for all redesigns.
+
+
+9. Engineering Standards
+------------------------
+Code quality, version control, deployment, and testing practices.
+
+
+10. Data & Analytics
+--------------------
+Tracking, metrics, dashboards, and reporting standards.
+
+
+11. Security & Compliance
+-------------------------
+Data privacy, access control, and compliance with relevant regulations.
+
+
+12. Client Communication
+------------------------
+Email templates, meeting cadences, and feedback loops.
+
+
+13. Quality Assurance
+---------------------
+Review processes, checklists, and approval workflows.
+
+
+14. Training & Onboarding
+-------------------------
+New hire onboarding, training materials, and knowledge base.
+
+
+15. Appendix
+------------
+Glossary, templates, and reference materials.

@@ -1,0 +1,19 @@
+{
+  "name": "docs.save",
+  "description": "Save updated content to a file.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "path": { "type": "string" },
+      "content": { "type": "string" }
+    },
+    "required": ["path", "content"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "path": { "type": "string" },
+      "status": { "type": "string" }
+    }
+  }
+}

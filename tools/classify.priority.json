@@ -1,0 +1,17 @@
+{
+  "name": "classify.priority",
+  "description": "Prioritize a list of items.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "items": { "type": "array", "items": { "type": "string" } }
+    },
+    "required": ["items"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "prioritized": { "type": "array", "items": { "type": "string" } }
+    }
+  }
+}

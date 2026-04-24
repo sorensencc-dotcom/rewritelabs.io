@@ -1,0 +1,85 @@
+name: Backend CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  ci:
+    name: CI - Install, Test, Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Use Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: backend
+        run: npm install
+
+      - name: Run tests
+        working-directory: backend
+        run: npm test
+
+      - name: Build (if needed)
+        working-directory: backend
+        run: npm run build || echo "no build step"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-build
+          path: backend
+          retention-days: 3
+
+  deploy_preview:
+    name: Deploy Preview (PR)
+    needs: ci
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: backend-build
+          path: backend
+
+      - name: Deploy to Preview Environment
+        run: |
+          echo "Deploying preview build..."
+          # your preview deploy script here
+          # e.g. scp, rsync, API call, etc.
+
+  deploy_prod:
+    name: Deploy to Production
+    needs: ci
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://your-production-url-here
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: backend-build
+          path: backend
+
+      - name: Deploy to Production Server
+        run: |
+          echo "Deploying to production..."
+          # your production deploy script here
+          # e.g. ssh into server and restart pm2:
+          # ssh ${{ secrets.PROD_HOST }} "cd /path && pm2 restart server"

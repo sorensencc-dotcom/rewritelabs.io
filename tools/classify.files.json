@@ -1,0 +1,26 @@
+{
+  "name": "classify.files",
+  "description": "Classify files by type.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "paths": { "type": "array", "items": { "type": "string" } }
+    },
+    "required": ["paths"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "classes": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "path": { "type": "string" },
+            "type": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

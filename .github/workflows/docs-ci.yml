@@ -1,0 +1,37 @@
+name: Rewrite Labs Docs CI
+
+on:
+  push:
+    paths:
+      - "docs/RewriteLabs/**"
+      - "scripts/**"
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Run Docs Linter
+        run: node scripts/docs-linter.js
+
+      - name: Generate Search Index
+        run: node scripts/generate-search-index.js
+
+      - name: Validate Manifest
+        run: |
+          if [ ! -f docs/RewriteLabs/version-manifest.json ]; then
+            echo "Manifest missing"
+            exit 1
+          fi
+
+      - name: Upload Search Index
+        uses: actions/upload-artifact@v3
+        with:
+          name: search-index
+          path: docs/RewriteLabs/search-index.json

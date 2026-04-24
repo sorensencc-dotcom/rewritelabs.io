@@ -1,0 +1,16 @@
+{
+  "name": "system.logs",
+  "description": "Retrieve system logs.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "limit": { "type": "number", "default": 200 }
+    }
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "entries": { "type": "array", "items": { "type": "string" } }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+site_name: Rewrite Labs Documentation
+nav:
+  - Home: Docs Home.md
+  - Manuals:
+      - Master Instructions Manual: Manuals/Master Instructions Manual/Rewrite Labs - Master Instructions Manual (v1.1).txt
+  - Roadmaps:
+      - Master Roadmap: Roadmaps/Rewrite Labs - Master Roadmap (v1.1).txt
+  - Playbooks:
+      - Outreach Automation: Playbooks/Outreach/Outreach Automation Playbook (v1.0).txt
+  - Versioning:
+      - Version Policy: VERSIONING.md
+      - Manifest: version-manifest.json

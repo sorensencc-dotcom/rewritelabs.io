@@ -1,0 +1,28 @@
+{
+  "name": "sweeper.run_pipeline",
+  "description": "Run a sweeper pipeline on target files.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "pipeline": { "type": "array", "items": { "type": "string" } },
+      "targets": { "type": "array", "items": { "type": "string" } }
+    },
+    "required": ["pipeline", "targets"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "path": { "type": "string" },
+            "status": { "type": "string" },
+            "changes": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}

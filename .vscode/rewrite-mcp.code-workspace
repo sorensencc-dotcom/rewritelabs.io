@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "dist": true,
+      "node_modules": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "github.copilot.chat.copilotMemory.enabled": true,
+    "chat.extensionUnification.enabled": true
+  },
+  "launch": {
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug MCP Server",
+        "program": "${workspaceFolder}/src/index.ts",
+        "runtimeArgs": ["-r", "ts-node/register"],
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "TS_NODE_TRANSPILE_ONLY": "true"
+        }
+      }
+    ]
+  }
+}
