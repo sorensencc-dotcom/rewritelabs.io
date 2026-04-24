@@ -43,19 +43,34 @@
 - RELEASE_PIPELINE.md
 - **RewriteLabs/**
   - **AI/**
+    - CHANGELOG.md
   - **API/**
+    - CHANGELOG.md
   - **ARCHITECTURE/**
+    - CHANGELOG.md
+  - CHANGELOG.md
   - **DASHBOARD/**
+    - CHANGELOG.md
   - **LINTER/**
+    - CHANGELOG.md
   - **Manuals/**
+    - CHANGELOG.md
   - **OPERATOR_CONSOLE/**
+    - CHANGELOG.md
   - **Outreach/**
+    - CHANGELOG.md
   - **PLATFORM/**
+    - CHANGELOG.md
   - **PORTAL/**
+    - CHANGELOG.md
   - **QA/**
+    - CHANGELOG.md
   - **Roadmaps/**
+    - CHANGELOG.md
   - **SEARCH/**
+    - CHANGELOG.md
   - **UI/**
+    - CHANGELOG.md
 - **Roadmaps/**
   - CHANGELOG.md
   - Docs Automation Roadmap.md

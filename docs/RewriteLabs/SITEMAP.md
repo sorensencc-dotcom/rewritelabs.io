@@ -30,6 +30,21 @@
 - QA/Docs QA Checklist.md
 - README.md
 - RELEASE_PIPELINE.md
+- RewriteLabs/AI/CHANGELOG.md
+- RewriteLabs/API/CHANGELOG.md
+- RewriteLabs/ARCHITECTURE/CHANGELOG.md
+- RewriteLabs/CHANGELOG.md
+- RewriteLabs/DASHBOARD/CHANGELOG.md
+- RewriteLabs/LINTER/CHANGELOG.md
+- RewriteLabs/Manuals/CHANGELOG.md
+- RewriteLabs/OPERATOR_CONSOLE/CHANGELOG.md
+- RewriteLabs/Outreach/CHANGELOG.md
+- RewriteLabs/PLATFORM/CHANGELOG.md
+- RewriteLabs/PORTAL/CHANGELOG.md
+- RewriteLabs/QA/CHANGELOG.md
+- RewriteLabs/Roadmaps/CHANGELOG.md
+- RewriteLabs/SEARCH/CHANGELOG.md
+- RewriteLabs/UI/CHANGELOG.md
 - Roadmaps/CHANGELOG.md
 - Roadmaps/Docs Automation Roadmap.md
 - Roadmaps/ROADMAP.md
