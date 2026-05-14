@@ -11,7 +11,8 @@ import {
   integrityCheck
 } from "./docs.service.js";
 
-const DOCS_ROOT = path.join(process.cwd(), "docs");
+const ROOT = path.resolve(__dirname, "..", "..");
+const DOCS_ROOT = path.join(ROOT, "docs");
 
 export async function initDocs(req, res) {
   await initDocsEngine();

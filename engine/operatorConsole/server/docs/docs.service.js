@@ -7,7 +7,8 @@ import lunr from "lunr";
 import * as use from "@tensorflow-models/universal-sentence-encoder";
 import * as tf from "@tensorflow/tfjs-node";
 
-const DOCS_ROOT = path.join(process.cwd(), "docs");
+const ROOT = path.resolve(__dirname, "..", "..");
+const DOCS_ROOT = path.join(ROOT, "docs");
 
 let semanticModel = null;
 let vectorStore = [];

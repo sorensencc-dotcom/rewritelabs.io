@@ -41,7 +41,8 @@ export function pushMetric(m) {
 // Log tail helper
 // ------------------------------
 
-const DAILY_LOG = path.join(process.cwd(), "logs", "daily.log");
+const ROOT = path.resolve(__dirname, "..");
+const DAILY_LOG = path.join(ROOT, "logs", "daily.log");
 
 function tailFile(filePath, lines = 200) {
   try {
