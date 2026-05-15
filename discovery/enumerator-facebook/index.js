@@ -6,11 +6,14 @@ import fs from "fs";
 import path from "path";
 import fetch from "node-fetch";
 import { queues } from "../shared/queue.js";
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
 const SERVICE_NAME = "enumerator-facebook";
-const configPath = path.join(process.cwd(), "config.json");
+const configPath = path.join(__dirname, "config.json");
 
 // -------------------------------
 // Config load + hot reload
