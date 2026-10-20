@@ -1,0 +1,29 @@
+website/screens.js
+  s_7e761c688e1d49::t_f2bae5e8836618 2
+website/functions/api/waitlist.js
+  s_e91c6ad94105d6::t_2ebe968ea5336e 1-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4ac8d3fae98d810d5f0fd3de088c50c0f8ef6632",
+  "prompts": {},
+  "sessions": {
+    "s_7e761c688e1d49": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15ac4-72c1-75a1-ab24-bdc44e1db759",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    },
+    "s_e91c6ad94105d6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_e91c6ad94105d6",
+        "model": "unknown"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
