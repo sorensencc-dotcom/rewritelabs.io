@@ -1,0 +1,23 @@
+.github/workflows/bootstrap.yml
+  s_8ff75bf40ceba1::t_f0281fbbfb899a 7
+.github/workflows/dashboard.yml
+  s_8ff75bf40ceba1::t_f0281fbbfb899a 10
+.github/workflows/nightly-validate.yml
+  s_8ff75bf40ceba1::t_f0281fbbfb899a 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c327156b1686c82c999df23bfbf8152445c6913e",
+  "prompts": {},
+  "sessions": {
+    "s_8ff75bf40ceba1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "77e63bc4-4500-4ae0-8135-7bc4b36b942b",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
