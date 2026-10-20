@@ -1,0 +1,23 @@
+website/case-study.html
+  s_8ff75bf40ceba1::t_55438503db6db1 2
+website/screens.js
+  s_8ff75bf40ceba1::t_55438503db6db1 2
+website/casestudy.js
+  s_8ff75bf40ceba1::t_d1c02f2affa6ba 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "aa6354b1d178e2c64f259f291db2de8512583269",
+  "prompts": {},
+  "sessions": {
+    "s_8ff75bf40ceba1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "77e63bc4-4500-4ae0-8135-7bc4b36b942b",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
