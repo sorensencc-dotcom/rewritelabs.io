@@ -1,0 +1,19 @@
+website/screens.js
+  s_7e761c688e1d49::t_c5d54b2a2ca3bb 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "abc1f419c4ca6aa8413d06e9548de6e50e9b784b",
+  "prompts": {},
+  "sessions": {
+    "s_7e761c688e1d49": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15ac4-72c1-75a1-ab24-bdc44e1db759",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
