@@ -1,0 +1,11 @@
+:root{
+--shadow-card:0 1px 0 rgba(255,255,255,0.04) inset,0 8px 24px rgba(0,0,0,0.45);
+--shadow-raised:0 1px 0 rgba(255,255,255,0.05) inset,0 20px 48px rgba(0,0,0,0.55);
+--glow-brand:0 0 0 1px var(--pink-400),0 0 32px var(--brand-glow);
+--glow-brand-lg:0 0 0 1px var(--pink-400),0 0 64px var(--brand-glow);
+--ease-standard:cubic-bezier(0.22,1,0.36,1); /* @kind other */
+--ease-out:cubic-bezier(0.16,1,0.3,1); /* @kind other */
+--duration-fast:120ms; /* @kind other */
+--duration-normal:220ms; /* @kind other */
+--duration-slow:360ms; /* @kind other */
+}
