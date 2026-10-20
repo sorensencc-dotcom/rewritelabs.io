@@ -1,0 +1,24 @@
+website/privacy.html
+  s_5758d4d6a92462::t_47f15418b89df6 1-17
+  s_5758d4d6a92462::t_bc255536f569ca 18-59
+website/_redirects
+  s_5758d4d6a92462::t_e322a083204dfb 2
+website/screens.js
+  s_5758d4d6a92462::t_47f15418b89df6 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7cf4e510bc8090a84dc6e446a977b7c454ebfa6d",
+  "prompts": {},
+  "sessions": {
+    "s_5758d4d6a92462": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3c664842-6de2-4bf6-bc14-9849bd94f95e",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
