@@ -1,0 +1,51 @@
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/_adherence.oxlintrc.json
+  s_2e5995a032d0a3::t_4c230124ee86d5 1-315
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/_ds_bundle.js
+  s_2e5995a032d0a3::t_fd0d284e020389 1-723
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/_ds_manifest.json
+  s_2e5995a032d0a3::t_28d4988ba5835d 1
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/readme.md
+  s_2e5995a032d0a3::t_b40d699f6b8cae 1-73
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/styles.css
+  s_2e5995a032d0a3::t_e12b841a9cb0c9 1-7
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/base.css
+  s_2e5995a032d0a3::t_6969051834f158 1-4
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/colors.css
+  s_2e5995a032d0a3::t_f0f1ba2b55c665 1-15
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/fonts.css
+  s_2e5995a032d0a3::t_98904ed2f28dae 1
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/radius.css
+  s_2e5995a032d0a3::t_b67a5407dfcbb6 1-3
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/shadows.css
+  s_2e5995a032d0a3::t_afede74dfb2b17 1-11
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/spacing.css
+  s_2e5995a032d0a3::t_4f7eb5d090af4d 1-4
+website/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/typography.css
+  s_2e5995a032d0a3::t_444f13ce8eca29 1-12
+website/_redirects
+  s_2e5995a032d0a3::t_68a01a8ea5b0ab 1
+website/case-study.html
+  s_2e5995a032d0a3::t_64834e293bf84a 1-20
+website/casestudy.js
+  s_2e5995a032d0a3::t_725d8bae435dc5 1-3
+website/index.html
+  s_2e5995a032d0a3::t_1705f67a53a857 2-19
+website/screens.js
+  s_2e5995a032d0a3::t_71f7e85ab45e84 1-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "31c1a463475e962da9d3ba938e4b505edc915542",
+  "prompts": {},
+  "sessions": {
+    "s_2e5995a032d0a3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_2e5995a032d0a3",
+        "model": "unknown"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
