@@ -162,6 +162,7 @@ a:hover { color: var(--pink-500); }
   :root { --page-pad: 16px; --text-display-lg: 34px; --text-display-md: 28px; --text-body-lg: 17px; }
   .nav { padding: 12px 16px; }
   .nav__actions { gap: 14px; }
+  .nav__link--wide { display: none; }
   .hero { padding-top: 40px; padding-bottom: 40px; gap: 32px; }
   .hero__cta > * { flex: 1 1 100%; }
   .hero__card { padding: 16px; }

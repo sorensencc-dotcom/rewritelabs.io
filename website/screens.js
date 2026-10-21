@@ -15,6 +15,8 @@ function Nav(){
     h("a",{href:"/",className:"nav__brand"},h(Wordmark,null)),
     h("div",{className:"nav__actions"},
       h("a",{href:"/case-study",className:"nav__link"},"Case Study"),
+      h("a",{href:"/blog/",className:"nav__link nav__link--wide"},"Blog"),
+      h("a",{href:"/ai-news-feed/",className:"nav__link nav__link--wide"},"AI News"),
       h(Button,{variant:"primary",size:"sm",onClick:function(){goTo("waitlist");}},"Get Early Access →")));
 }
 
@@ -115,6 +117,7 @@ function Footer(){
   return h("div",{className:"footer"},
     h(Wordmark,{small:true}),
     h("div",{className:"footer__legal"},"\xA9 2026 Cast Iron Productions LLC \xB7 Rewrite Labs",h("br"),"7901 4th St N, Ste 300, St. Petersburg, FL 33702",h("br"),
+      h("a",{href:"/blog/",className:"muted-link"},"Blog")," · ",h("a",{href:"/ai-news-feed/",className:"muted-link"},"AI News Feed")," · ",
       h("a",{href:"/privacy",className:"muted-link"},"Privacy")," \xB7 ",h("a",{href:"mailto:info@rewritelabs.io",className:"muted-link"},"info@rewritelabs.io")));
 }
 
