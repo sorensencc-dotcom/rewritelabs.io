@@ -75,6 +75,18 @@ a:hover { color: var(--pink-500); }
 .process__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .process__grid > * { min-width: 0; }
 
+/* Platform */
+.platform { padding: 40px var(--page-pad) 96px; }
+.platform__title { margin: 10px 0 16px; }
+.platform__lede { margin: 0 0 40px; max-width: 680px; }
+.platform__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.platform__card { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.platform__tag { font-family: var(--font-mono); font-size: 12px; color: var(--fg-3); letter-spacing: var(--tracking-wide); text-transform: uppercase; }
+.platform__name { font-family: var(--font-display); font-size: 22px; color: var(--fg-1); margin: 0; }
+.platform__body { font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: var(--fg-2); margin: 0; flex: 1; }
+.platform__status { font-family: var(--font-mono); font-size: 12px; color: var(--pink-400); }
+.platform__link { color: var(--pink-400); text-decoration: none; }
+
 /* Waitlist */
 .waitlist { max-width: 640px; margin: 0 auto; padding: 40px var(--page-pad) 120px; text-align: center; }
 .waitlist__title { margin: 10px 0 12px; }
@@ -139,7 +151,7 @@ a:hover { color: var(--pink-500); }
 /* Tablet */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 40px; padding-top: 64px; }
-  .process__grid { grid-template-columns: repeat(2, 1fr); }
+  .process__grid, .platform__grid { grid-template-columns: repeat(2, 1fr); }
   .cs-compare { grid-template-columns: 1fr; gap: 40px; }
   .cs-header { padding-top: 48px; }
   .display-lg { font-size: 40px; }
@@ -158,7 +170,8 @@ a:hover { color: var(--pink-500); }
   .stat-strip__value { font-size: 32px; }
   .process { padding-top: 24px; padding-bottom: 56px; }
   .process__title { margin-bottom: 24px; }
-  .process__grid { grid-template-columns: 1fr; }
+  .process__grid, .platform__grid { grid-template-columns: 1fr; }
+  .platform { padding-top: 24px; padding-bottom: 56px; }
   .waitlist { padding-bottom: 64px; }
   .waitlist__form { flex-direction: column; }
   .waitlist__form > button { width: 100%; }
