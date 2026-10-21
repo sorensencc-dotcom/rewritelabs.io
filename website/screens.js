@@ -10,13 +10,21 @@ function Wordmark({small}){
 function goTo(id){var el=document.getElementById(id);if(el){el.scrollIntoView({behavior:"smooth",block:"start"});}else{window.location.href="/#"+id;}}
 window.addEventListener("load",function(){if(window.location.hash){setTimeout(function(){var el=document.getElementById(window.location.hash.slice(1));if(el)el.scrollIntoView();},50);}});
 
+function ThemeToggle(){
+  const icon={viewBox:"0 0 24 24",width:18,height:18,fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round","aria-hidden":"true",focusable:"false"};
+  return h("button",{type:"button",className:"theme-toggle","aria-label":"Switch color theme"},
+    h("svg",_extends({className:"theme-toggle__sun"},icon),h("circle",{cx:12,cy:12,r:4}),h("path",{d:"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"})),
+    h("svg",_extends({className:"theme-toggle__moon"},icon),h("path",{d:"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"})));
+}
+
 function Nav(){
-  return h("div",{className:"nav"},
+  return h("nav",{className:"nav","aria-label":"Primary"},
     h("a",{href:"/",className:"nav__brand"},h(Wordmark,null)),
     h("div",{className:"nav__actions"},
       h("a",{href:"/case-study",className:"nav__link"},"Case Study"),
       h("a",{href:"/blog/",className:"nav__link nav__link--wide"},"Blog"),
       h("a",{href:"/ai-news-feed/",className:"nav__link nav__link--wide"},"AI News"),
+      h(ThemeToggle,null),
       h(Button,{variant:"primary",size:"sm",onClick:function(){goTo("waitlist");}},"Get Early Access →")));
 }
 
@@ -114,7 +122,7 @@ function WaitlistSection(){
 }
 
 function Footer(){
-  return h("div",{className:"footer"},
+  return h("footer",{className:"footer"},
     h(Wordmark,{small:true}),
     h("div",{className:"footer__legal"},"\xA9 2026 Cast Iron Productions LLC \xB7 Rewrite Labs",h("br"),"7901 4th St N, Ste 300, St. Petersburg, FL 33702",h("br"),
       h("a",{href:"/blog/",className:"muted-link"},"Blog")," · ",h("a",{href:"/ai-news-feed/",className:"muted-link"},"AI News Feed")," · ",

@@ -43,4 +43,9 @@ export function formatDate(date: Date): string {
   });
 }
 
+export function readingMinutes(body: string): number {
+  const words = body.split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.ceil(words / 225));
+}
+
 export const deltaGlyph = { accelerating: '▲', decelerating: '▼', stable: '●' } as const;

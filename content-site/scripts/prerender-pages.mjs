@@ -42,6 +42,7 @@ export function prerender(html, dir = website) {
   ctx.window = ctx;
   vm.createContext(ctx);
   for (const m of scripts) {
+    if (/\sdefer\b/.test(m[1])) continue; // browser-only scripts such as theme.js
     const src = /\ssrc="([^"]+)"/.exec(m[1])?.[1];
     if (!src || /^https?:/.test(src) || src.startsWith('vendor/')) continue;
     vm.runInContext(fs.readFileSync(path.join(dir, src), 'utf8'), ctx, { filename: src });

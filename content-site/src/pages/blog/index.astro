@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { publishedPosts, formatDate } from '../../lib/content';
+import { publishedPosts, formatDate, readingMinutes } from '../../lib/content';
 const posts = await publishedPosts();
+const [latest, ...older] = posts;
 ---
 
 <Base
@@ -9,23 +10,54 @@ const posts = await publishedPosts();
   description="Market research and notes from Rewrite Labs on AI, automation, and small-business websites."
   rss={{ href: '/blog/rss.xml', title: 'Rewrite Labs Blog' }}
 >
-  <div class="container feed">
-    <div class="eyebrow">Blog</div>
-    <h1 class="display-lg feed__title">Market research and field notes.</h1>
-    <p class="lede feed__lede">What we are learning about AI, automation, and the websites small businesses depend on.</p>
-    {posts.length === 0 ? (
+  <div class="container blog">
+    <header class="blog__head">
+      <div class="eyebrow">Blog</div>
+      <h1 class="display-lg blog__title">Market research and field notes.</h1>
+      <p class="lede blog__lede">What we are learning about AI, automation, and the websites small businesses depend on.</p>
+    </header>
+
+    {!latest ? (
       <p class="feed__empty">First posts coming soon.</p>
     ) : (
-      <div class="feed__list">
-        {posts.map((p) => (
-          <article class="feed__card">
-            <time class="feed__meta" datetime={p.data.date.toISOString()}>{formatDate(p.data.date)}</time>
-            <h2 class="feed__card-title"><a href={`/blog/${p.slug}/`}>{p.data.title}</a></h2>
-            <p class="feed__summary">{p.data.description}</p>
-          </article>
-        ))}
-      </div>
+      <>
+        <article class="blog-feature">
+          <p class="blog-feature__label">Latest</p>
+          <p class="blog-feature__meta">
+            <time datetime={latest.data.date.toISOString()}>{formatDate(latest.data.date)}</time>
+            <span aria-hidden="true">&middot;</span>
+            <span>{readingMinutes(latest.body)} min read</span>
+          </p>
+          <h2 class="blog-feature__title"><a href={`/blog/${latest.slug}/`} class="blog-feature__link">{latest.data.title}</a></h2>
+          <p class="blog-feature__summary">{latest.data.description}</p>
+          <div class="blog-feature__foot">
+            {latest.data.topics.length > 0 && (
+              <ul class="chips" aria-label="Topics">
+                {latest.data.topics.map((t) => <li class="chip">{t}</li>)}
+              </ul>
+            )}
+            <span class="blog-feature__more" aria-hidden="true">Read the post &rarr;</span>
+          </div>
+        </article>
+
+        {older.length > 0 && (
+          <ol class="blog-list" aria-label="Earlier posts">
+            {older.map((p) => (
+              <li class="blog-row">
+                <time class="blog-row__date" datetime={p.data.date.toISOString()}>{formatDate(p.data.date)}</time>
+                <div>
+                  <h2 class="blog-row__title"><a href={`/blog/${p.slug}/`} class="blog-row__link">{p.data.title}</a></h2>
+                  <p class="blog-row__summary">{p.data.description}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        )}
+      </>
     )}
-    <p class="feed__cross">Looking for daily signals? See the <a href="/ai-news-feed/">AI News Feed</a>.</p>
+
+    <p class="blog__more">
+      Daily signals: <a href="/ai-news-feed/">AI News Feed</a> &middot; Subscribe: <a href="/blog/rss.xml">RSS</a>
+    </p>
   </div>
 </Base>

@@ -30,6 +30,16 @@ npm test            # fails if the committed pages are stale, or if a third-part
 
 To preview locally, serve `website/` with any static server after running the build, for example `npx serve website`.
 
+## Themes and contrast
+
+Dark is the default. Light follows the system setting, and the nav toggle (`website/theme.js`) forces either one and remembers the choice in `localStorage`. The tokens live at the top of `website/site.css`: a dark block, a `[data-theme="light"]` block, and an identical `prefers-color-scheme: light` block. Edit the two light blocks together; a test checks they match, and that every text token is at least 4.5:1 on the page and card backgrounds in both themes.
+
+Use `--accent-text` for text in the brand color. The crimson `--pink-400` is 3.8:1 on the dark page, so keep it to fills and large display text.
+
+## Email signup on posts
+
+Posts end with a signup form (`website/signup.js`) that posts to the same `/api/waitlist` function as the landing page, tagged with `source: "blog:<slug>"`. Tests for the function are in `content-site/tests/waitlist.test.mjs`.
+
 ## Deploying
 
 Cloudflare Pages settings:
