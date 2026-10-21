@@ -1,0 +1,25 @@
+website/site.css
+  s_3393102e819c4f::t_1072471f9fe548 82,88
+  s_3393102e819c4f::t_19549d64e19125 78-81,83-87,89,154,173-174
+website/screens.js
+  s_3393102e819c4f::t_1072471f9fe548 31-33,35-36,38,49-50,64,71,78-80,85,121
+  s_3393102e819c4f::t_19549d64e19125 69-70,72-77,81-84,86-87
+website/index.html
+  s_3393102e819c4f::t_1072471f9fe548 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cba2e45b1795e6f8b71f9721813ac4c5e5bb09de",
+  "prompts": {},
+  "sessions": {
+    "s_3393102e819c4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1b790d3a-44b6-4579-a418-e3c2237b9f7f",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
