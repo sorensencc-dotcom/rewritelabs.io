@@ -395,3 +395,11 @@ button.btn-cta:disabled { opacity: 0.6; cursor: default; }
   .nav .wordmark__labs { display: none; }
   .nav__cta { padding: 8px 10px; }
 }
+
+/* The design system's Input draws its resting border with --border-subtle (about 1.2:1 against the page), so the field is
+   hard to see. Use --fg-3 (at least 5:1 in both themes). Inline style, so !important; the focus state keeps its own border. */
+.waitlist__field > input:not(:focus) { border-color: var(--fg-3) !important; }
+.waitlist__field > input::placeholder { color: var(--fg-3); opacity: 1; }
+
+/* Honeypot field for the signup forms: off screen rather than display:none, which bots detect. People never see or reach it. */
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

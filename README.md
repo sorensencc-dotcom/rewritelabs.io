@@ -40,6 +40,8 @@ Use `--accent-text` for text in the brand color. The crimson `--pink-400` is 3.8
 
 Posts end with a signup form (`website/signup.js`) that posts to the same `/api/waitlist` function as the landing page, tagged with `source: "blog:<slug>"`. Tests for the function are in `content-site/tests/waitlist.test.mjs`.
 
+The function is hardened against abuse: same-origin and JSON-only requests, a 2 KB body cap, a hidden honeypot field (`website`) that people never fill, and a limit of 5 new signups per visitor per hour (429 with `Retry-After`). The limit is keyed by a hash of the IP, so no raw address is stored, and it counts only new entries, so repeats and bad input cost nothing. An email already on the list gets the same answer as a new one. KV is eventually consistent, so the limit is approximate under a burst; add a Cloudflare rate limiting rule on `/api/waitlist` (Security, WAF, Rate limiting rules) as the hard edge limit. KV writes are metered (the free plan allows 1,000 a day), which is the other reason to keep that rule in place.
+
 ## Deploying
 
 Cloudflare Pages settings:
