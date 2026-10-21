@@ -43,7 +43,7 @@ export function prerender(html, dir = website) {
   vm.createContext(ctx);
   for (const m of scripts) {
     const src = /\ssrc="([^"]+)"/.exec(m[1])?.[1];
-    if (!src || /^https?:/.test(src)) continue;
+    if (!src || /^https?:/.test(src) || src.startsWith('vendor/')) continue;
     vm.runInContext(fs.readFileSync(path.join(dir, src), 'utf8'), ctx, { filename: src });
   }
   vm.runInContext(inline[2], ctx, { filename: 'inline' });

@@ -16,3 +16,20 @@ for (const file of ['index.html', 'case-study.html', 'privacy.html']) {
     assert.match(html, /<link rel="canonical"/);
   });
 }
+
+test('self-hosted React is the installed React build', () => {
+  const nm = path.resolve(website, '..', 'content-site', 'node_modules');
+  const pairs = [
+    ['react.production.min.js', 'react/umd/react.production.min.js'],
+    ['react-dom.production.min.js', 'react-dom/umd/react-dom.production.min.js'],
+  ];
+  for (const [vendored, pkg] of pairs) {
+    assert.ok(
+      fs.readFileSync(path.join(website, 'vendor', vendored)).equals(fs.readFileSync(path.join(nm, pkg))),
+      `website/vendor/${vendored} differs from node_modules/${pkg}; copy it over after bumping React`,
+    );
+  }
+  for (const file of ['index.html', 'case-study.html', 'privacy.html']) {
+    assert.doesNotMatch(fs.readFileSync(path.join(website, file), 'utf8'), /unpkg\.com/);
+  }
+});
