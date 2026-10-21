@@ -10,10 +10,17 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
+
+# One run per briefing date at a time, so two dispatches for the same day cannot race on the branch.
+concurrency:
+  group: publish-briefing-${{ github.event.client_payload.date }}
+  cancel-in-progress: false
 
 jobs:
   create-briefing-pr:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
@@ -40,6 +47,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node content-site/scripts/publish-briefing.mjs "$RUNNER_TEMP/briefing-payload.json" | tee "$RUNNER_TEMP/pr-url.txt"
+
+      # A PR opened with GITHUB_TOKEN does not trigger the pull_request workflows, so start the site checks by hand.
+      # Their result shows on the PR, and a briefing that breaks the content schema turns it red before merge.
+      - name: Run site checks on the briefing branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          date=$(node -p "require(process.env.RUNNER_TEMP + '/briefing-payload.json').date")
+          gh workflow run site-checks.yml --ref "briefing/$date" || echo "::warning::Could not start the site checks for briefing/$date"
 
       - name: Summarize
         run: echo "Draft PR $(tail -n 1 "$RUNNER_TEMP/pr-url.txt")" >> "$GITHUB_STEP_SUMMARY"

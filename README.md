@@ -30,6 +30,10 @@ npm test            # fails if the committed pages are stale, or if a third-part
 
 To preview locally, serve `website/` with any static server after running the build, for example `npx serve website`.
 
+## Checks
+
+`.github/workflows/site-checks.yml` runs on every pull request and on pushes to `main`: the `content-site` tests, the pre-render freshness check, the production build, and a check that the build left the committed files unchanged. It runs on Node 20 like Cloudflare Pages. Run the same locally with `cd content-site && npm ci && npm test && npm run build`.
+
 ## Themes and contrast
 
 Dark is the default. Light follows the system setting, and the nav toggle (`website/theme.js`) forces either one and remembers the choice in `localStorage`. The tokens live at the top of `website/site.css`: a dark block, a `[data-theme="light"]` block, and an identical `prefers-color-scheme: light` block. Edit the two light blocks together; a test checks they match, and that every text token is at least 4.5:1 on the page and card backgrounds in both themes.

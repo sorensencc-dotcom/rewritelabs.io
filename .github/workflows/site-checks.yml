@@ -1,0 +1,45 @@
+name: Site checks
+
+# Runs the content-site tests and the production build. Cloudflare Pages builds the site on every push, but nothing
+# ran the tests before this. The Publish briefing workflow starts this run by hand for its PRs, because pull requests
+# opened with GITHUB_TOKEN do not trigger pull_request workflows.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: content-site
+    steps:
+      - uses: actions/checkout@v4
+
+      # Cloudflare Pages builds with NODE_VERSION=20.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: content-site/package-lock.json
+
+      - run: npm ci
+
+      - name: Tests
+        run: npm test
+
+      - name: Pre-rendered pages are up to date
+        run: node scripts/prerender-pages.mjs --check
+
+      # Catches a briefing or post that does not match the content schema.
+      - name: Build
+        run: npm run build
+
+      - name: Build left the committed files unchanged
+        run: git diff --exit-code -- ../website

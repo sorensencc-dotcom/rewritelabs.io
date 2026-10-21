@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { exportBriefing, validatePayload } from './export-briefing.mjs';
+import { briefingRepoPath, exportBriefing, validatePayload } from './export-briefing.mjs';
 
 const [payloadPath, ...flags] = process.argv.slice(2);
 const dryRun = flags.includes('--dry-run');
@@ -14,8 +14,14 @@ if (!payloadPath) {
   process.exit(2);
 }
 
-const payload = JSON.parse(fs.readFileSync(payloadPath, 'utf8'));
-validatePayload(payload);
+let payload;
+try {
+  payload = JSON.parse(fs.readFileSync(payloadPath, 'utf8'));
+  validatePayload(payload);
+} catch (err) {
+  console.error(err.message);
+  process.exit(2);
+}
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const run = (cmd, args, cwd) => execFileSync(cmd, args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'inherit'] }).trim();
@@ -44,9 +50,23 @@ try {
   run('git', ['branch', '-D', branch], repo);
 } catch {}
 
-const tmp =fs.mkdtempSync(path.join(os.tmpdir(), 'briefing-'));
-const work = path.join(tmp, 'wt');
 run('git', ['fetch', 'origin', 'main'], repo);
+// A second run for a date that is already published would otherwise replace that page. Refuse instead.
+const published = (() => {
+  try {
+    execFileSync('git', ['cat-file', '-e', `origin/main:${briefingRepoPath(payload.date)}`], { cwd: repo, stdio: 'ignore' });
+    return true;
+  } catch {
+    return false;
+  }
+})();
+if (published) {
+  console.error(`A briefing for ${payload.date} is already on main (${briefingRepoPath(payload.date)}). Use a different date, or edit that file by hand.`);
+  process.exit(1);
+}
+
+const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'briefing-'));
+const work = path.join(tmp, 'wt');
 run('git', ['worktree', 'add', '-b', branch, work, 'origin/main'], repo);
 try {
   const file = exportBriefing(payload, path.join(work, 'content-site/src/content/briefings'));
