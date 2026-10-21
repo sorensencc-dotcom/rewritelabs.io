@@ -6,7 +6,7 @@ interface Props {
 }
 const { title, description, rss } = Astro.props;
 const ds = '/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe';
-const tokens = ['fonts', 'colors', 'typography', 'spacing', 'radius', 'shadows', 'base'];
+const tokens = ['colors', 'typography', 'spacing', 'radius', 'shadows', 'base'];
 ---
 
 <!doctype html>
@@ -16,6 +16,8 @@ const tokens = ['fonts', 'colors', 'typography', 'spacing', 'radius', 'shadows',
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/fonts.css" />
     {tokens.map((t) => <link rel="stylesheet" href={`${ds}/tokens/${t}.css`} />)}
     <link rel="stylesheet" href={`${ds}/styles.css`} />
     <link rel="stylesheet" href="/site.css" />

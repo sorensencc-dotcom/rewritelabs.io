@@ -17,7 +17,7 @@ for (const file of ['index.html', 'case-study.html', 'privacy.html']) {
   });
 }
 
-test('self-hosted React is the installed React build', () => {
+test('self-hosted React is the installed React build and no third-party hosts remain', () => {
   const nm = path.resolve(website, '..', 'content-site', 'node_modules');
   const pairs = [
     ['react.production.min.js', 'react/umd/react.production.min.js'],
@@ -29,7 +29,11 @@ test('self-hosted React is the installed React build', () => {
       `website/vendor/${vendored} differs from node_modules/${pkg}; copy it over after bumping React`,
     );
   }
+  const ds = fs.readdirSync(path.join(website, '_ds'))[0];
+  const dsFonts = fs.readFileSync(path.join(website, '_ds', ds, 'tokens', 'fonts.css'), 'utf8');
+  assert.doesNotMatch(dsFonts, /googleapis|gstatic/, 'a design-system re-sync must keep fonts.css pointing at /fonts.css');
   for (const file of ['index.html', 'case-study.html', 'privacy.html']) {
-    assert.doesNotMatch(fs.readFileSync(path.join(website, file), 'utf8'), /unpkg\.com/);
+    const html = fs.readFileSync(path.join(website, file), 'utf8');
+    assert.doesNotMatch(html, /unpkg\.com|fonts\.googleapis\.com|fonts\.gstatic\.com/);
   }
 });
