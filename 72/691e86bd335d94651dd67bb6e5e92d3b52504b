@@ -1,0 +1,32 @@
+website/site.css
+  s_3393102e819c4f::t_c428993c4510ab 124
+  s_3393102e819c4f::t_04cdfa91a956e3 1-118,131-170,174-179,182
+  s_3393102e819c4f::t_ffabb44a266b5d 119-123,125-130,171-173,180-181
+website/case-study.html
+  s_3393102e819c4f::t_ffabb44a266b5d 11
+website/privacy.html
+  s_3393102e819c4f::t_ffabb44a266b5d 11
+  s_3393102e819c4f::t_63cacb8f177dcf 22-23,27-29,34
+website/casestudy.js
+  s_3393102e819c4f::t_1d2b72fbe2536c 2
+website/screens.js
+  s_3393102e819c4f::t_0bc84aaa60658f 2-100
+website/index.html
+  s_3393102e819c4f::t_ffabb44a266b5d 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "72691e86bd335d94651dd67bb6e5e92d3b52504b",
+  "prompts": {},
+  "sessions": {
+    "s_3393102e819c4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1b790d3a-44b6-4579-a418-e3c2237b9f7f",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
