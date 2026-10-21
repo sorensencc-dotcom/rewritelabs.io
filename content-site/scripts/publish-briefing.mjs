@@ -27,7 +27,24 @@ if (dryRun) {
 }
 
 const branch = `briefing/${payload.date}`;
-const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'briefing-'));
+const onOrigin = (() => {
+  try {
+    execFileSync('git', ['ls-remote', '--exit-code', '--heads', 'origin', branch], { cwd: repo, stdio: 'ignore' });
+    return true;
+  } catch {
+    return false;
+  }
+})();
+if (onOrigin) {
+  console.error(`${branch} already exists on origin. Close its PR and delete the remote branch, or use a different date.`);
+  process.exit(1);
+}
+// A local branch with no remote twin is debris from an aborted run of this script.
+try {
+  run('git', ['branch', '-D', branch], repo);
+} catch {}
+
+const tmp =fs.mkdtempSync(path.join(os.tmpdir(), 'briefing-'));
 const work = path.join(tmp, 'wt');
 run('git', ['fetch', 'origin', 'main'], repo);
 run('git', ['worktree', 'add', '-b', branch, work, 'origin/main'], repo);
