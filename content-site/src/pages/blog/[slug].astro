@@ -61,7 +61,16 @@ const jsonLd = {
     <aside class="article__cta" aria-labelledby="cta-title">
       <h2 id="cta-title" class="article__cta-title">Automation that runs on your own ground.</h2>
       <p>Rewrite Labs builds AI tools that keep your data and keys on your own machines. Early access is open.</p>
-      <a href="/#waitlist" class="btn-cta">Get early access &rarr;</a>
+      <form class="signup" data-source={`blog:${post.slug}`} novalidate>
+        <div class="signup__fields">
+          <label class="sr-only" for="signup-email">Email address</label>
+          <input id="signup-email" class="signup__input" name="email" type="email" autocomplete="email" placeholder="you@business.com" required />
+          <button type="submit" class="btn-cta">Join waitlist &rarr;</button>
+        </div>
+        <p class="signup__note" role="status" aria-live="polite">We'll only use your email to contact you about early access. <a href="/privacy">Privacy</a></p>
+      </form>
+      <noscript><p class="signup__note">Turn on JavaScript to join here, or email <a href="mailto:info@rewritelabs.io">info@rewritelabs.io</a>.</p></noscript>
+      <script is:inline src="/signup.js" defer></script>
     </aside>
 
     {related.length > 0 && (

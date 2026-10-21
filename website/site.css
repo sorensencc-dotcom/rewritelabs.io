@@ -1,8 +1,8 @@
 /* Layout and typography for rewritelabs.io. Breakpoints: 900px (tablet), 600px (phone). */
 
 body { background: var(--ink-1); margin: 0; overflow-x: hidden; }
-a { color: var(--pink-400); }
-a:hover { color: var(--pink-500); }
+a { color: var(--accent-text); }
+a:hover { color: var(--accent-text-hover); }
 :root {
   --pink-100: #F3C9CE;
   --pink-400: #DC143C;
@@ -12,12 +12,51 @@ a:hover { color: var(--pink-500); }
   --page-pad: 24px;
 }
 
+/* Themes. Dark is the design-system default. Light follows the system setting and can be forced either way with
+   [data-theme] on <html> (set by theme.js and remembered). Text accents use --accent-text, not the brand crimson,
+   which is 3.8:1 on the dark page; crimson stays on fills (white on it is 5:1). Every pair below is at least 4.5:1. */
+:root {
+  color-scheme: dark;
+  --fg-3: #9090B4;
+  --accent-text: #FF6B85;
+  --accent-text-hover: #FFA3B5;
+  --nav-bg: rgba(15, 15, 26, 0.85);
+}
+:root[data-theme="dark"] { color-scheme: dark; }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --ink-0: #E6E6F2; --ink-1: #F6F6FB; --ink-2: #FFFFFF; --ink-3: #ECECF5; --ink-4: #D8D8EA;
+  --fg-1: #12121F; --fg-2: #3B3B58; --fg-3: #55557A; --fg-inverse: #FFFFFF;
+  --border-subtle: rgba(18, 18, 31, 0.12); --border-strong: rgba(18, 18, 31, 0.28);
+  --pink-glow: rgba(220, 20, 60, 0.18);
+  --signal-bad: #B3261E; --signal-bad-bg: rgba(179, 38, 30, 0.1);
+  --signal-good: #0F6B3F; --signal-good-bg: rgba(15, 107, 63, 0.1);
+  --signal-warn: #7A4F00; --signal-warn-bg: rgba(122, 79, 0, 0.1);
+  --accent-text: #C8102E; --accent-text-hover: #8F0C22;
+  --nav-bg: rgba(246, 246, 251, 0.85);
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --ink-0: #E6E6F2; --ink-1: #F6F6FB; --ink-2: #FFFFFF; --ink-3: #ECECF5; --ink-4: #D8D8EA;
+    --fg-1: #12121F; --fg-2: #3B3B58; --fg-3: #55557A; --fg-inverse: #FFFFFF;
+    --border-subtle: rgba(18, 18, 31, 0.12); --border-strong: rgba(18, 18, 31, 0.28);
+    --pink-glow: rgba(220, 20, 60, 0.18);
+    --signal-bad: #B3261E; --signal-bad-bg: rgba(179, 38, 30, 0.1);
+    --signal-good: #0F6B3F; --signal-good-bg: rgba(15, 107, 63, 0.1);
+    --signal-warn: #7A4F00; --signal-warn-bg: rgba(122, 79, 0, 0.1);
+    --accent-text: #C8102E; --accent-text-hover: #8F0C22;
+    --nav-bg: rgba(246, 246, 251, 0.85);
+  }
+}
+
+
 .wordmark { display: flex; align-items: baseline; font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: var(--tracking-tight); color: var(--fg-1); }
 .wordmark--sm { font-size: 14px; }
 .wordmark__slash { color: var(--pink-400); }
 .wordmark__labs { font-family: var(--font-mono); font-weight: 500; font-size: 0.55em; letter-spacing: var(--tracking-widest); text-transform: uppercase; color: var(--fg-2); margin-left: 2px; }
 
-.eyebrow { font-family: var(--font-mono); font-size: 13px; color: var(--pink-400); letter-spacing: var(--tracking-wide); text-transform: uppercase; }
+.eyebrow { font-family: var(--font-mono); font-size: 13px; color: var(--accent-text); letter-spacing: var(--tracking-wide); text-transform: uppercase; }
 .display-lg { font-family: var(--font-display); font-size: var(--text-display-lg); font-weight: 700; color: var(--fg-1); margin: 0; }
 .display-md { font-family: var(--font-display); font-size: var(--text-display-md); font-weight: 700; color: var(--fg-1); }
 .lede { font-family: var(--font-body); font-size: var(--text-body-lg); color: var(--fg-2); line-height: var(--leading-relaxed); }
@@ -25,7 +64,7 @@ a:hover { color: var(--pink-500); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Nav */
-.nav { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 40px; border-bottom: 1px solid var(--border-subtle); background: rgba(15, 15, 26, 0.85); backdrop-filter: blur(8px); }
+.nav { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 40px; border-bottom: 1px solid var(--border-subtle); background: var(--nav-bg); backdrop-filter: blur(8px); }
 .nav__brand { text-decoration: none; }
 .nav__actions { display: flex; align-items: center; gap: 28px; }
 .nav__link { font-family: var(--font-body); font-size: 14px; color: var(--fg-2); text-decoration: none; white-space: nowrap; }
@@ -35,6 +74,8 @@ a:hover { color: var(--pink-500); }
 .hero__eyebrow { margin-bottom: 18px; }
 .hero__title { font-family: var(--font-display); font-size: var(--text-display-xl); font-weight: 700; line-height: var(--leading-tight); letter-spacing: var(--tracking-tight); color: var(--fg-1); margin: 0; }
 .hero__title-accent { color: var(--pink-400); text-shadow: 0 0 40px var(--brand-glow); }
+:root[data-theme="light"] .hero__title-accent { text-shadow: none; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .hero__title-accent { text-shadow: none; } }
 .hero__lede { margin: 22px 0 32px; max-width: 520px; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; }
 .hero__card { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-raised); min-width: 0; }
@@ -44,7 +85,7 @@ a:hover { color: var(--pink-500); }
 .hero__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .hero__stats > * { min-width: 0 !important; }
 .hero__badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.hero__more { display: block; margin-top: 16px; font-family: var(--font-mono); font-size: 13px; color: var(--pink-400); text-decoration: none; }
+.hero__more { display: block; margin-top: 16px; font-family: var(--font-mono); font-size: 13px; color: var(--accent-text); text-decoration: none; }
 
 .minisite { flex: 1; min-width: 0; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--pink-400); box-shadow: 0 0 24px var(--brand-glow); }
 .minisite--old { border-color: var(--border-subtle); box-shadow: none; }
@@ -60,8 +101,8 @@ a:hover { color: var(--pink-500); }
 .minisite__line--b { width: 70%; }
 .minisite--old .minisite__line { background: #a39c80; }
 .minisite--old .minisite__line--head { background: #8a8264; }
-.minisite__label { padding: 6px 8px; font-family: var(--font-mono); font-size: 10px; letter-spacing: var(--tracking-wide); text-transform: uppercase; text-align: center; color: var(--pink-400); background: var(--ink-2); }
-.minisite--old .minisite__label { color: #5a5540; background: #b5ad90; }
+.minisite__label { padding: 6px 8px; font-family: var(--font-mono); font-size: 10px; letter-spacing: var(--tracking-wide); text-transform: uppercase; text-align: center; color: var(--accent-text); background: var(--ink-2); }
+.minisite--old .minisite__label { color: #3d3a2a; background: #b5ad90; }
 
 /* Stat strip */
 .stat-strip { padding: 0 var(--page-pad) 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -84,8 +125,8 @@ a:hover { color: var(--pink-500); }
 .platform__tag { font-family: var(--font-mono); font-size: 12px; color: var(--fg-3); letter-spacing: var(--tracking-wide); text-transform: uppercase; }
 .platform__name { font-family: var(--font-display); font-size: 22px; color: var(--fg-1); margin: 0; }
 .platform__body { font-family: var(--font-body); font-size: 14px; line-height: 1.6; color: var(--fg-2); margin: 0; flex: 1; }
-.platform__status { font-family: var(--font-mono); font-size: 12px; color: var(--pink-400); }
-.platform__link { color: var(--pink-400); text-decoration: none; }
+.platform__status { font-family: var(--font-mono); font-size: 12px; color: var(--accent-text); }
+.platform__link { color: var(--accent-text); text-decoration: none; }
 
 /* Waitlist */
 .waitlist { max-width: 640px; margin: 0 auto; padding: 40px var(--page-pad) 120px; text-align: center; }
@@ -110,7 +151,7 @@ a:hover { color: var(--pink-500); }
 .cs-compare { padding: 0 var(--page-pad) 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
 .cs-compare > * { min-width: 0; }
 .cs-caption { text-align: center; margin-top: 14px; font-family: var(--font-mono); font-size: 12px; letter-spacing: var(--tracking-wide); text-transform: uppercase; color: var(--fg-3); }
-.cs-caption--after { color: var(--pink-400); }
+.cs-caption--after { color: var(--accent-text); }
 .chrome { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--pink-400); box-shadow: 0 0 40px var(--brand-glow); }
 .chrome--old { border-color: var(--border-subtle); box-shadow: none; }
 .chrome__bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: var(--ink-3); }
@@ -207,7 +248,7 @@ a:hover { color: var(--pink-500); }
 .feed__meta { font-family: var(--font-mono); font-size: 12px; color: var(--fg-3); letter-spacing: var(--tracking-wide); }
 .feed__card-title { font-family: var(--font-display); font-size: 24px; margin: 8px 0; color: var(--fg-1); }
 .feed__card-title a { color: inherit; text-decoration: none; }
-.feed__card-title a:hover { color: var(--pink-400); }
+.feed__card-title a:hover { color: var(--accent-text); }
 .feed__summary { font-family: var(--font-body); font-size: 15px; line-height: 1.6; color: var(--fg-2); margin: 0 0 12px; }
 .feed__empty { font-family: var(--font-body); color: var(--fg-3); }
 .feed__cross { margin-top: 40px; font-family: var(--font-body); font-size: 14px; color: var(--fg-3); }
@@ -235,10 +276,8 @@ a:hover { color: var(--pink-500); }
   .nav__actions { gap: 12px; }
 }
 
-/* Blog design: an editorial single column.
-   The brand crimson (#DC143C) is 3.8:1 on the page, too low for link-sized text, so text accents use
-   --accent-text (about 7:1). Crimson stays on fills, where white on it is 5:1. Meta text uses --fg-2, not --fg-3. */
-:root { --accent-text: #FF6B85; --measure: 66ch; }
+/* Blog design: an editorial single column. */
+:root { --measure: 66ch; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--fg-1); outline-offset: 3px; border-radius: 2px; }
 
 .blog, .article { padding: 72px var(--page-pad) 112px; }
@@ -286,7 +325,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--fg-1); outline-
 .prose--article h2 + *, .prose--article h3 + * { margin-top: 0.75em; }
 .prose--article strong { color: var(--fg-1); font-weight: 600; }
 .prose--article a { color: var(--accent-text); text-underline-offset: 3px; text-decoration-thickness: 1px; }
-.prose--article a:hover { color: var(--pink-100); }
+.prose--article a:hover { color: var(--accent-text-hover); }
 .prose--article ul, .prose--article ol { padding-left: 1.25em; }
 .prose--article li + li { margin-top: 0.6em; }
 .prose--article li::marker { color: var(--accent-text); }
@@ -298,7 +337,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--fg-1); outline-
 .article__source { max-width: var(--measure); margin: 40px 0 0; font-family: var(--font-body); font-size: 14px; color: var(--fg-2); }
 .article__cta { max-width: var(--measure); margin-top: 56px; padding: 32px; background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); }
 .article__cta-title { margin: 0 0 8px; font-family: var(--font-display); font-size: 24px; line-height: 1.2; color: var(--fg-1); }
-.article__cta p { margin: 0 0 20px; font-family: var(--font-body); font-size: 16px; line-height: 1.6; color: var(--fg-2); }
+.article__cta > p { margin: 0 0 20px; font-family: var(--font-body); font-size: 16px; line-height: 1.6; color: var(--fg-2); }
 .btn-cta { display: inline-block; background: var(--pink-400); color: #fff; font-family: var(--font-body); font-size: 15px; font-weight: 600; padding: 12px 20px; border-radius: var(--radius-md); text-decoration: none; }
 .btn-cta:hover { background: var(--pink-500); color: #fff; }
 .article .related { max-width: var(--measure); }
@@ -320,3 +359,39 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--fg-1); outline-
 
 .article__figure { margin: 0 0 48px; }
 .article__figure img { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); }
+
+/* Theme toggle: shows the sun in dark mode (switch to light) and the moon in light mode */
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 0; background: transparent; border: 1px solid var(--border-subtle); border-radius: var(--radius-md); color: var(--fg-2); cursor: pointer; transition: color 0.15s, border-color 0.15s; }
+.theme-toggle:hover { color: var(--fg-1); border-color: var(--border-strong); }
+.theme-toggle__moon { display: none; }
+:root[data-theme="light"] .theme-toggle__sun { display: none; }
+:root[data-theme="light"] .theme-toggle__moon { display: block; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .theme-toggle__sun { display: none; }
+  :root:not([data-theme="dark"]) .theme-toggle__moon { display: block; }
+}
+@media (prefers-reduced-motion: reduce) { .theme-toggle { transition: none; } }
+
+/* The design system's ProcessStep colors its footnote with the raw brand crimson (3.4:1 on the card). Inline style, so !important. */
+.process__grid > div > div:last-child { color: var(--accent-text) !important; }
+
+/* Email signup at the end of posts */
+button.btn-cta { border: 0; cursor: pointer; }
+button.btn-cta:disabled { opacity: 0.6; cursor: default; }
+.signup__fields { display: flex; flex-wrap: wrap; gap: 12px; }
+.signup__fields[hidden] { display: none; }
+.signup__input { flex: 1 1 240px; min-width: 0; padding: 12px 14px; background: var(--surface-page); color: var(--fg-1); border: 1px solid var(--fg-3); border-radius: var(--radius-md); font-family: var(--font-body); font-size: 16px; }
+.signup__input::placeholder { color: var(--fg-3); }
+.signup__note { margin: 14px 0 0; font-family: var(--font-body); font-size: 14px; line-height: 1.5; color: var(--fg-2); }
+.signup__note a { color: var(--accent-text); }
+.signup__note--error { color: var(--signal-bad); }
+.signup__note--done { margin: 0; font-size: 16px; font-weight: 600; color: var(--fg-1); }
+
+/* Keep the nav inside the viewport on phones now that it carries the theme toggle */
+@media (max-width: 600px) {
+  .theme-toggle { width: 32px; height: 32px; }
+}
+@media (max-width: 380px) {
+  .nav .wordmark__labs { display: none; }
+  .nav__cta { padding: 8px 10px; }
+}
