@@ -33,6 +33,25 @@ Paste this block into the `daily-ai-news-summary` skill after Step 8b (NotebookL
 
 Fair-use rule: link the primary source, credit the curators that surfaced it in the summary, and write the synthesis in your own words.
 
+## What the validator enforces
+
+Every field is written into frontmatter or a page, so a wrong type either fails the whole site build or changes what is published. The payload is rejected, with the reason, if:
+
+- `date` is not a real calendar day (`2026-13-45` is refused; JavaScript would otherwise read it as 14 February 2027).
+- `sourcesEvaluated` is not a whole number from 1 to 1000 (it is written into frontmatter as-is, so a string could add keys).
+- `topics`, `relatedPosts` or a theme's `tags` is not a list of short single-line text values, or a `relatedPosts` entry is not a slug.
+- a theme has no `primarySources`, or a source `url` is not a full `http://` or `https://` link.
+- `bodyMarkdown` contains raw HTML or a `javascript:`, `data:` or `vbscript:` link. Use Markdown. Autolinks such as `<https://example.org>` are fine.
+- text is over its limit: title 200, summary 1,500, theme name 120, theme summary 3,000, source title 300, body 30,000 characters, and at most 20 themes with 20 sources each.
+
+GitHub's `repository_dispatch` accepts at most **10 top-level properties** and 65,535 characters in `client_payload`. The contract above uses 9 top-level properties, so there is room for one more; do not add more than one without nesting them.
+
+## Publishing and CI
+
+`publish-briefing.mjs` refuses to run if `briefing/<date>` already exists on origin, and also if `content-site/src/content/briefings/<date>.md` is already on `main`, so a repeat run cannot replace a published briefing. Edit that file by hand instead.
+
+The Publish briefing workflow opens the draft PR and then starts the Site checks workflow on the branch. A PR opened with the default `GITHUB_TOKEN` does not trigger `pull_request` workflows, so without that step no tests or build would run on a briefing PR. A briefing that does not match the content schema turns the check red before it can be merged.
+
 ## Check a payload without touching git
 
 ```bash

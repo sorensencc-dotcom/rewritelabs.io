@@ -61,3 +61,10 @@ for (const file of ['index.html', 'case-study.html', 'privacy.html']) {
     assert.match(html, /<main[ >]/, 'page has a main landmark');
   });
 }
+
+test('the design system Input gets a visible resting border and the honeypot stays off screen', () => {
+  assert.match(site, /\.waitlist__field > input:not\(:focus\) \{ border-color: var\(--fg-3\) !important; \}/);
+  assert.match(site, /\.hp \{ position: absolute; left: -9999px;/);
+  const dsInput = fs.readFileSync(path.join(website, '_ds', ds, '_ds_bundle.js'), 'utf8');
+  assert.match(dsInput, /var\(--border-subtle\)/, 'if the design system changes its Input border, revisit the override in site.css');
+});

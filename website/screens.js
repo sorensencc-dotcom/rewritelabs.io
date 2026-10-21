@@ -100,14 +100,19 @@ function WaitlistSection(){
   const[sent,setSent]=React.useState(false);
   const[busy,setBusy]=React.useState(false);
   const[err,setErr]=React.useState('');
+  const[trap,setTrap]=React.useState('');
   function submit(e){
     e.preventDefault();
     if(busy)return;
     setBusy(true);setErr('');
-    fetch('/api/waitlist',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email})})
-      .then(r=>r.json().then(j=>({ok:r.ok&&j.ok})))
-      .catch(()=>({ok:false}))
-      .then(res=>{setBusy(false);if(res.ok)setSent(true);else setErr('Something went wrong. Check your email and try again.');});
+    fetch('/api/waitlist',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email,website:trap,source:'landing'})})
+      .then(r=>r.json().then(j=>r.ok&&j.ok?'ok':r.status===429?'limited':r.status>=500?'server':'invalid'))
+      .catch(()=>'server')
+      .then(res=>{
+        setBusy(false);
+        if(res==='ok')setSent(true);
+        else setErr(res==='limited'?'Too many attempts from this connection. Please try again later.':res==='server'?'Signup is unavailable right now. Please try again later or email info@rewritelabs.io.':'Check your email address and try again.');
+      });
   }
   return h("div",{id:"waitlist",className:"waitlist"},
     h("div",{className:"eyebrow"},"Early Access"),
@@ -116,6 +121,7 @@ function WaitlistSection(){
     !sent
       ?h("form",{onSubmit:submit,className:"waitlist__form"},
           h("label",{className:"waitlist__field"},h("span",{className:"sr-only"},"Email address"),h(Input,{type:"email",placeholder:"you@business.com",value:email,onChange:e=>setEmail(e.target.value)})),
+          h("div",{className:"hp","aria-hidden":"true"},h("label",null,"Leave this field empty",h("input",{type:"text",name:"website",tabIndex:-1,autoComplete:"off",value:trap,onChange:e=>setTrap(e.target.value)}))),
           h(Button,{variant:"primary",type:"submit",disabled:busy},busy?"Joining...":"Join Waitlist →"))
       :h("div",{role:"status",className:"waitlist__done"},"✓ You're on the list! We'll be in touch soon."),
     h("div",{role:"status","aria-live":"polite",className:"waitlist__note"},err||"We'll only use your email to contact you about early access."," ",h("a",{href:"/privacy",className:"muted-link"},"Privacy")));

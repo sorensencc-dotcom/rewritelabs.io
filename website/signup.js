@@ -24,7 +24,8 @@
       }
       button.disabled = true;
       button.textContent = 'Joining...';
-      var body = { email: email };
+      var trap = form.querySelector('input[name="website"]');
+      var body = { email: email, website: trap ? trap.value : '' };
       var source = form.getAttribute('data-source');
       if (source) body.source = source;
       fetch('/api/waitlist', {
@@ -32,7 +33,7 @@
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(body),
       })
-        .then(function (r) { return r.json().then(function (j) { return r.ok && j.ok ? 'ok' : r.status >= 500 ? 'server' : 'invalid'; }); })
+        .then(function (r) { return r.json().then(function (j) { return r.ok && j.ok ? 'ok' : r.status === 429 ? 'limited' : r.status >= 500 ? 'server' : 'invalid'; }); })
         .catch(function () { return 'server'; })
         .then(function (result) {
           if (result === 'ok') {
@@ -41,9 +42,14 @@
           } else {
             button.disabled = false;
             button.textContent = idle;
-            say(result === 'server'
-              ? 'Signup is unavailable right now. Please try again later or email info@rewritelabs.io.'
-              : 'Check your email address and try again.', 'error');
+            say(
+              result === 'limited'
+                ? 'Too many attempts from this connection. Please try again later.'
+                : result === 'server'
+                  ? 'Signup is unavailable right now. Please try again later or email info@rewritelabs.io.'
+                  : 'Check your email address and try again.',
+              'error',
+            );
             input.focus();
           }
         });
