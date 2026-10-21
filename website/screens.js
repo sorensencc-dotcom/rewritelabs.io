@@ -71,7 +71,7 @@ function PlatformSection(){
     {name:'Rewrite Labs Sites',tag:'Website redesign',body:"We scan for outdated small-business sites and deliver a modern, mobile-ready redesign automatically, with a before and after preview for the owner.",status:'Early access open',href:'#sites'},
     {name:'TRM',tag:'Research engine',body:"Research with an audit trail. TRM ingests sources, extracts facts, scores and crosslinks topics, and logs every change. If there is no evidence, there is no claim.",status:'In development'},
     {name:'Sigil',tag:'Agent relay',body:"A signed, auditable relay between AI agents such as Claude, Codex, Grok, and local models. Every message is cryptographically signed, and risky actions wait for a human to approve.",status:'In development'},
-    {name:'Toolforge',tag:'Agent skills',body:"Verified skills and plugins for AI coding agents. Each one is validated and version-pinned before it installs, and a public marketplace is on the way.",status:'Marketplace coming soon'},
+    {name:'Toolforge',tag:'Agent skills',body:"Verified skills and plugins for Claude Code. Each one is validated and version-pinned before it installs. Add the marketplace with claude plugin marketplace add sorensencc-dotcom/toolforge-marketplace.",status:'Live: browse the catalog',href:'https://github.com/sorensencc-dotcom/toolforge-marketplace'},
     {name:'kb-sync',tag:'Knowledge base',body:"A knowledge base that lives on your own machine, with full-text and semantic search that needs no network round trip.",status:'In development'}
   ];
   return h("div",{id:"platform",className:"container platform"},
