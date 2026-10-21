@@ -47,6 +47,18 @@ try {
   );
   console.log(url);
 } finally {
-  run('git', ['worktree', 'remove', '--force', work], repo);
-  fs.rmSync(tmp, { recursive: true, force: true });
+  // The PR is already open by now. On Windows, git or antivirus can briefly lock the
+  // temp directory, so cleanup is best-effort and must not turn success into a failure.
+  try {
+    run('git', ['worktree', 'remove', '--force', work], repo);
+  } catch {
+    try {
+      run('git', ['worktree', 'prune'], repo);
+    } catch {}
+  }
+  try {
+    fs.rmSync(tmp, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
+  } catch {
+    console.warn(`Notice: left temporary directory in place (file lock): ${tmp}`);
+  }
 }
