@@ -1,0 +1,21 @@
+content-site/payload.example.json
+  s_3393102e819c4f::t_1aed9c13cc7061 1-18
+content-site/STEP-8C.md
+  s_3393102e819c4f::t_d9fa528e3d19a0 1-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6ca09a8a9c23398b0b31da450c1fe0ea33782959",
+  "prompts": {},
+  "sessions": {
+    "s_3393102e819c4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1b790d3a-44b6-4579-a418-e3c2237b9f7f",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
