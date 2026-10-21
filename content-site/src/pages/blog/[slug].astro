@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import { publishedPosts, allBriefings, relatedBriefingsFor, formatDate } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const posts = await publishedPosts();
+  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const related = relatedBriefingsFor(post, await allBriefings());
+---
+
+<Base title={`${post.data.title} — Rewrite Labs`} description={post.data.description}>
+  <article class="container post">
+    <a href="/blog/" class="post__back">&larr; Blog</a>
+    <time class="feed__meta" datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+    <h1 class="display-lg post__title">{post.data.title}</h1>
+    <div class="prose"><Content /></div>
+    {related.length > 0 && (
+      <aside class="related">
+        <h2 class="related__title">Related briefings</h2>
+        <ul class="related__list">
+          {related.map((b) => (
+            <li><a href={`/ai-news-feed/${b.slug}/`}>{b.data.title}</a> <span class="feed__meta">{formatDate(b.data.date)}</span></li>
+          ))}
+        </ul>
+      </aside>
+    )}
+  </article>
+</Base>

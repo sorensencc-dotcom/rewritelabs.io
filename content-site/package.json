@@ -1,0 +1,16 @@
+{
+  "name": "rewritelabs-content-site",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/copy-to-website.mjs",
+    "test": "node --test",
+    "export:briefing": "node scripts/publish-briefing.mjs"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.11",
+    "astro": "^4.16.18"
+  }
+}

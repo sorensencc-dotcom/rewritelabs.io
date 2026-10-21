@@ -193,3 +193,43 @@ a:hover { color: var(--pink-500); }
   .nav__actions { gap: 10px; }
   .nav__link { font-size: 13px; }
 }
+
+/* Blog and AI news feed (Astro pages) */
+.nav__cta { background: var(--pink-400); color: #fff; font-family: var(--font-body); font-size: 13px; font-weight: 600; padding: 8px 14px; border-radius: var(--radius-md); text-decoration: none; white-space: nowrap; }
+.nav__cta:hover { background: var(--pink-500); color: #fff; }
+.feed, .post { padding: 72px var(--page-pad) 96px; }
+.feed__title { margin: 12px 0 0; max-width: 760px; }
+.feed__lede { margin: 18px 0 40px; max-width: 680px; }
+.feed__list { display: flex; flex-direction: column; gap: 20px; }
+.feed__card { background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 24px; }
+.feed__row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+.feed__meta { font-family: var(--font-mono); font-size: 12px; color: var(--fg-3); letter-spacing: var(--tracking-wide); }
+.feed__card-title { font-family: var(--font-display); font-size: 24px; margin: 8px 0; color: var(--fg-1); }
+.feed__card-title a { color: inherit; text-decoration: none; }
+.feed__card-title a:hover { color: var(--pink-400); }
+.feed__summary { font-family: var(--font-body); font-size: 15px; line-height: 1.6; color: var(--fg-2); margin: 0 0 12px; }
+.feed__empty { font-family: var(--font-body); color: var(--fg-3); }
+.feed__cross { margin-top: 40px; font-family: var(--font-body); font-size: 14px; color: var(--fg-3); }
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; }
+.chip { font-family: var(--font-mono); font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border-subtle); color: var(--fg-2); }
+.chip--accelerating, .delta--accelerating { color: var(--signal-good); }
+.chip--decelerating, .delta--decelerating { color: var(--signal-bad); }
+.chip--stable, .delta--stable { color: var(--fg-3); }
+.post { max-width: 760px; }
+.post__back { display: inline-block; margin-bottom: 20px; font-family: var(--font-mono); font-size: 13px; text-decoration: none; }
+.post__title { margin: 12px 0 20px; font-size: clamp(30px, 5vw, 44px); }
+.themes { display: flex; flex-direction: column; gap: 20px; margin: 32px 0; }
+.theme { border-top: 1px solid var(--border-subtle); padding-top: 20px; }
+.theme__name { font-family: var(--font-display); font-size: 22px; color: var(--fg-1); margin: 0 0 4px; }
+.sources { padding-left: 20px; margin: 0; font-family: var(--font-body); font-size: 14px; color: var(--fg-2); overflow-wrap: anywhere; }
+.prose { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--fg-2); overflow-wrap: anywhere; }
+.prose h2, .prose h3 { font-family: var(--font-display); color: var(--fg-1); margin: 32px 0 12px; }
+.prose img, .prose pre { max-width: 100%; overflow-x: auto; }
+.related { margin-top: 48px; border-top: 1px solid var(--border-subtle); padding-top: 24px; }
+.related__title { font-family: var(--font-display); font-size: 20px; color: var(--fg-1); margin: 0 0 12px; }
+.related__list { padding-left: 20px; margin: 0; font-family: var(--font-body); font-size: 15px; line-height: 1.8; }
+@media (max-width: 600px) {
+  .feed, .post { padding-top: 40px; padding-bottom: 56px; }
+  .feed__card { padding: 18px; }
+  .nav__actions { gap: 12px; }
+}

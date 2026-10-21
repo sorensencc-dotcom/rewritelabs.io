@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  rss?: { href: string; title: string };
+}
+const { title, description, rss } = Astro.props;
+const ds = '/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe';
+const tokens = ['fonts', 'colors', 'typography', 'spacing', 'radius', 'shadows', 'base'];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {tokens.map((t) => <link rel="stylesheet" href={`${ds}/tokens/${t}.css`} />)}
+    <link rel="stylesheet" href={`${ds}/styles.css`} />
+    <link rel="stylesheet" href="/site.css" />
+    {rss && <link rel="alternate" type="application/rss+xml" title={rss.title} href={rss.href} />}
+  </head>
+  <body>
+    <div class="nav">
+      <a href="/" class="nav__brand">
+        <div class="wordmark">Rewrite<span class="wordmark__slash">/</span><span class="wordmark__labs">Labs</span></div>
+      </a>
+      <div class="nav__actions">
+        <a href="/blog/" class="nav__link">Blog</a>
+        <a href="/ai-news-feed/" class="nav__link">AI News</a>
+        <a href="/#waitlist" class="nav__cta">Early Access &rarr;</a>
+      </div>
+    </div>
+    <main><slot /></main>
+    <div class="footer">
+      <div class="wordmark wordmark--sm">Rewrite<span class="wordmark__slash">/</span><span class="wordmark__labs">Labs</span></div>
+      <div class="footer__legal">
+        &copy; 2026 Cast Iron Productions LLC &middot; Rewrite Labs<br />
+        7901 4th St N, Ste 300, St. Petersburg, FL 33702<br />
+        <a href="/privacy" class="muted-link">Privacy</a> &middot; <a href="mailto:info@rewritelabs.io" class="muted-link">info@rewritelabs.io</a>
+      </div>
+    </div>
+  </body>
+</html>

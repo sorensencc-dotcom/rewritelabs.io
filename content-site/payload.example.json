@@ -1,0 +1,18 @@
+{
+  "title": "EXAMPLE ONLY: schema example, do not publish",
+  "date": "2026-01-01",
+  "confidenceScore": 0.8,
+  "sourcesEvaluated": 8,
+  "summary": "Schema example. Replace every field with the real synthesis.",
+  "topics": ["example-topic"],
+  "themes": [
+    {
+      "name": "Example theme",
+      "delta7d": "stable",
+      "summary": "Example summary written in your own words.",
+      "tags": ["MONITOR"],
+      "primarySources": [{ "title": "Example primary source", "url": "https://example.org/source" }]
+    }
+  ],
+  "bodyMarkdown": "Optional operator commentary."
+}
