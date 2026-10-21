@@ -14,6 +14,7 @@ for (const file of ['index.html', 'case-study.html', 'privacy.html']) {
     assert.match(html, /<h1[ >]/, 'crawlable <h1> present in the static HTML');
     assert.match(html, /hydrateRoot/, 'client hydrates instead of re-rendering');
     assert.match(html, /<link rel="canonical"/);
+    assert.match(html, /og:image" content="https:\/\/rewritelabs\.io\/og\.png/);
   });
 }
 

@@ -1,1 +1,49 @@
 # rewritelabs.io
+
+Source for [rewritelabs.io](https://rewritelabs.io) and the scan/redesign pipeline behind it.
+
+## Layout
+
+| Path | What it is |
+| --- | --- |
+| `website/` | The static site served by Cloudflare Pages: landing page, case study, privacy policy, the waitlist function, and the self-hosted React, fonts and design system. |
+| `content-site/` | Astro app that builds `/blog` and `/ai-news-feed` into `website/`. See [content-site/README.md](content-site/README.md). |
+| `engine/`, `scanner/`, `discovery/` | Site scanning, discovery and rewrite pipeline (Node). |
+| `data/`, `reports/` | Pipeline data (feeds, metrics, results) and generated reports. |
+| `setup/` | `validate.sh`, run by the bootstrap and nightly workflows. |
+| `.github/workflows/` | `bootstrap`, `nightly-validate`, `dashboard`, and `publish-briefing` (opens a draft PR for each daily briefing). |
+
+## Working on the website
+
+The site makes no third-party requests. React (`website/vendor/`) and fonts (`website/fonts/`) are served from the site itself.
+
+The landing, case study and privacy pages are React apps that are pre-rendered to static HTML and then hydrated, so crawlers see the content. The pre-rendered HTML is committed. After editing `website/screens.js`, `website/casestudy.js` or a page's inline script:
+
+```bash
+cd content-site
+npm ci
+npm run prerender   # regenerates the markup inside website/*.html
+npm test            # fails if the committed pages are stale, or if a third-party host creeps back in
+```
+
+`npm run build` in `content-site` builds the blog and news feed, copies them into `website/`, writes `website/sitemap.xml`, and re-runs the pre-render.
+
+To preview locally, serve `website/` with any static server after running the build, for example `npx serve website`.
+
+## Deploying
+
+Cloudflare Pages settings:
+
+- Build command: `cd content-site && npm ci && npm run build`
+- Build output directory: `website`
+- Environment variable: `NODE_VERSION=20`
+
+`website/blog/`, `website/ai-news-feed/`, `website/_cs/` and `website/sitemap.xml` are build output and stay out of git.
+
+The waitlist form posts to `website/functions/api/waitlist.js`, which stores emails in a Cloudflare KV namespace bound as `WAITLIST`.
+
+## Updating vendored assets
+
+- **React:** after bumping `react` or `react-dom` in `content-site/package.json`, copy `node_modules/{react,react-dom}/umd/*.production.min.js` into `website/vendor/`. The test compares them byte for byte.
+- **Design system:** `website/_ds/` is synced from the Rewrite Labs design system. Keep `tokens/fonts.css` importing `/fonts.css` rather than Google Fonts; the test checks this.
+- **Open Graph image:** `website/og.png` is 1200x630. Regenerate it by screenshotting an HTML page that uses the site fonts and colors.

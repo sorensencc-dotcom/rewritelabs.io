@@ -5,6 +5,8 @@ interface Props {
   rss?: { href: string; title: string };
 }
 const { title, description, rss } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL('/og.png', Astro.site).href;
 const ds = '/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe';
 const tokens = ['colors', 'typography', 'spacing', 'radius', 'shadows', 'base'];
 ---
@@ -16,6 +18,18 @@ const tokens = ['colors', 'typography', 'spacing', 'radius', 'shadows', 'base'];
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rewrite Labs" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="theme-color" content="#0F0F1A" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/fonts.css" />
     {tokens.map((t) => <link rel="stylesheet" href={`${ds}/tokens/${t}.css`} />)}
