@@ -50,7 +50,11 @@ Cloudflare Pages settings:
 
 `website/blog/`, `website/ai-news-feed/`, `website/_cs/` and `website/sitemap.xml` are build output and stay out of git.
 
-The waitlist form posts to `website/functions/api/waitlist.js`, which stores emails in a Cloudflare KV namespace bound as `WAITLIST`.
+The waitlist form posts to `functions/api/waitlist.js`, which stores emails in a Cloudflare KV namespace bound as `WAITLIST`. Pages only deploys functions from a `functions/` folder at the project root, not from inside the build output (`website/`). The KV binding is set in the Pages project (Settings, Bindings): variable name `WAITLIST`, namespace `rewritelabs-waitlist`, for both Production and Preview. Without it the function answers 503 `not_configured`.
+
+### Caching
+
+Cloudflare's default Browser Cache TTL is 4 hours and it overrides shorter origin values, so a visitor's browser can keep an old `site.css` or HTML page after a deploy. CSS and JS links therefore carry a content hash (`site.css?v=<hash>`): the build adds it to the blog layout and `npm run prerender` stamps it onto the static pages, so a changed file always has a new URL. Set the zone's Browser Cache TTL to "Respect Existing Headers" (Caching, Configuration) so HTML revalidates too.
 
 ## Updating vendored assets
 

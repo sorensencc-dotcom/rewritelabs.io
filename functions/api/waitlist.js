@@ -9,6 +9,11 @@ const json = (body, status = 200) =>
   });
 
 export async function onRequestPost({ request, env }) {
+  if (!env?.WAITLIST) {
+    console.error('waitlist: the WAITLIST KV binding is missing; add it under the Pages project settings');
+    return json({ ok: false, error: 'not_configured' }, 503);
+  }
+
   let data;
   try {
     data = await request.json();
