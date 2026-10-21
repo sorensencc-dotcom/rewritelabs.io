@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy — Rewrite Labs</title><meta name="description" content="How Rewrite Labs handles the email address you submit to the early-access waitlist.">
+<link rel="canonical" href="https://rewritelabs.io/privacy"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#0F0F1A"><meta property="og:type" content="website"><meta property="og:site_name" content="Rewrite Labs"><meta property="og:title" content="Privacy Policy — Rewrite Labs"><meta property="og:description" content="How Rewrite Labs handles the email address you submit to the early-access waitlist."><meta property="og:url" content="https://rewritelabs.io/privacy"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Privacy Policy — Rewrite Labs"><meta name="twitter:description" content="How Rewrite Labs handles the email address you submit to the early-access waitlist.">
 <link rel="stylesheet" href="_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/fonts.css">
 <link rel="stylesheet" href="_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/colors.css">
 <link rel="stylesheet" href="_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/tokens/typography.css">
@@ -10,13 +11,13 @@
 <link rel="stylesheet" href="_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/styles.css">
 <link rel="stylesheet" href="site.css">
 </head><body>
-<div id="root"></div>
-<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<div id="root"><div class="nav"><a href="/" class="nav__brand"><div class="wordmark">Rewrite<span class="wordmark__slash">/</span><span class="wordmark__labs">Labs</span></div></a><div class="nav__actions"><a href="/case-study" class="nav__link">Case Study</a><a href="/blog/" class="nav__link nav__link--wide">Blog</a><a href="/ai-news-feed/" class="nav__link nav__link--wide">AI News</a><button type="button" style="font-family:var(--font-display);font-weight:600;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;transition:background var(--duration-fast) var(--ease-standard),color var(--duration-fast) var(--ease-standard),border-color var(--duration-fast) var(--ease-standard);display:inline-flex;align-items:center;gap:8px;opacity:1;padding:8px 14px;font-size:13px;background:var(--brand-primary);color:var(--brand-on-primary);box-shadow:none">Get Early Access →</button></div></div><main class="legal"><h1 class="legal__title">Privacy Policy</h1><p class="legal__p legal__p--meta">Last updated: October 21, 2026</p><h2 class="legal__h2">Who we are</h2><p class="legal__p">Rewrite Labs is a brand of Cast Iron Productions LLC. Cast Iron Productions LLC runs this site and is responsible for the information described here. Its address is 7901 4th St N, Ste 300, St. Petersburg, FL 33702.</p><h2 class="legal__h2">What we collect</h2><p class="legal__p">The only form on this site is the early-access waitlist. When you submit it, we store:</p><ul class="legal__p legal__list"><li>your email address</li><li>the date and time you signed up</li><li>your country, as reported by Cloudflare from your connection</li></ul><p class="legal__p">We do not ask for your name or any other detail.</p><h2 class="legal__h2">How we use it</h2><p class="legal__p">We use your email address only to contact you about early access to Rewrite Labs.</p><h2 class="legal__h2">Where it is stored</h2><p class="legal__p">The waitlist is stored in Cloudflare Workers KV. This site is hosted on Cloudflare Pages. Cloudflare processes requests to the site and, like any host, handles visitors’ IP addresses to deliver pages.</p><h2 class="legal__h2">Cookies and analytics</h2><p class="legal__p">This site does not set cookies. It does not run analytics or advertising trackers.</p><p class="legal__p">Your browser loads fonts from Google Fonts. That service receives your IP address and browser details when it serves those files. We do not control its practices.</p><h2 class="legal__h2">Your requests</h2><p class="legal__p">To ask what we hold about you, or to have your waitlist entry removed, email <a href="mailto:info@rewritelabs.io">info@rewritelabs.io</a>. Send the request from the address you signed up with.</p><h2 class="legal__h2">Changes</h2><p class="legal__p">If we change this policy, we will update the date above.</p><h2 class="legal__h2">Contact</h2><p class="legal__p">Cast Iron Productions LLC (Rewrite Labs)<br/>7901 4th St N, Ste 300, St. Petersburg, FL 33702<br/><a href="mailto:info@rewritelabs.io">info@rewritelabs.io</a></p></main><div class="footer"><div class="wordmark wordmark--sm">Rewrite<span class="wordmark__slash">/</span><span class="wordmark__labs">Labs</span></div><div class="footer__legal">© 2026 Cast Iron Productions LLC · Rewrite Labs<br/>7901 4th St N, Ste 300, St. Petersburg, FL 33702<br/><a href="/blog/" class="muted-link">Blog</a> · <a href="/ai-news-feed/" class="muted-link">AI News Feed</a> · <a href="/privacy" class="muted-link">Privacy</a> · <a href="mailto:info@rewritelabs.io" class="muted-link">info@rewritelabs.io</a></div></div></div>
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
 <script src="_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe/_ds_bundle.js"></script>
 <script src="screens.js"></script>
 <script>
-ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(function(){
+ReactDOM.hydrateRoot(document.getElementById('root'),React.createElement(function(){
   const {Nav, Footer} = window.RLScreens;
   const h = React.createElement;
   const P = (...c) => h('p', {className:'legal__p'}, ...c);
@@ -26,7 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(
     h(Nav),
     h('main', {className:'legal'},
       h('h1', {className:'legal__title'}, 'Privacy Policy'),
-      h('p', {className:'legal__p legal__p--meta'}, 'Last updated: October 20, 2026'),
+      h('p', {className:'legal__p legal__p--meta'}, 'Last updated: October 21, 2026'),
       H('Who we are'),
       P('Rewrite Labs is a brand of Cast Iron Productions LLC. Cast Iron Productions LLC runs this site and is responsible for the information described here. Its address is 7901 4th St N, Ste 300, St. Petersburg, FL 33702.'),
       H('What we collect'),
@@ -42,7 +43,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(
       P('The waitlist is stored in Cloudflare Workers KV. This site is hosted on Cloudflare Pages. Cloudflare processes requests to the site and, like any host, handles visitors’ IP addresses to deliver pages.'),
       H('Cookies and analytics'),
       P('This site does not set cookies. It does not run analytics or advertising trackers.'),
-      P('Your browser loads React from unpkg.com and fonts from Google Fonts. Those services receive your IP address and browser details when they serve those files. We do not control their practices.'),
+      P('Your browser loads fonts from Google Fonts. That service receives your IP address and browser details when it serves those files. We do not control its practices.'),
       H('Your requests'),
       P('To ask what we hold about you, or to have your waitlist entry removed, email ', mail, '. Send the request from the address you signed up with.'),
       H('Changes'),
