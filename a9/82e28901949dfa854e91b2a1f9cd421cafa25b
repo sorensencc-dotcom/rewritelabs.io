@@ -1,0 +1,19 @@
+.github/workflows/publish-briefing.yml
+  s_727b07f893f4b8::t_9a30c51f22ffcc 1-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a982e28901949dfa854e91b2a1f9cd421cafa25b",
+  "prompts": {},
+  "sessions": {
+    "s_727b07f893f4b8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "32279a06-7c94-4223-b372-1fb31a251e73",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
