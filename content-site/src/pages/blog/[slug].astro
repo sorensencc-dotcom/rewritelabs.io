@@ -11,7 +11,7 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 const related = relatedBriefingsFor(post, await allBriefings());
 const minutes = readingMinutes(post.body);
-const { title, description, date, topics, originalUrl, originalLabel } = post.data;
+const { title, description, date, topics, image, imageAlt, originalUrl, originalLabel } = post.data;
 const url = new URL(`/blog/${post.slug}/`, Astro.site).href;
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -20,12 +20,12 @@ const jsonLd = {
   description,
   datePublished: date.toISOString(),
   mainEntityOfPage: url,
-  image: new URL('/og.png', Astro.site).href,
+  image: new URL(image ?? '/og.png', Astro.site).href,
   publisher: { '@type': 'Organization', name: 'Rewrite Labs', url: Astro.site?.href },
 };
 ---
 
-<Base title={`${title} — Rewrite Labs`} description={description} type="article">
+<Base title={`${title} — Rewrite Labs`} description={description} type="article" image={image}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <article class="container article">
     <header class="article__head">
@@ -43,6 +43,12 @@ const jsonLd = {
         </ul>
       )}
     </header>
+
+    {image && (
+      <figure class="article__figure">
+        <img src={image} alt={imageAlt ?? ''} width="1376" height="768" decoding="async" />
+      </figure>
+    )}
 
     <div class="prose prose--article"><Content /></div>
 

@@ -3,6 +3,8 @@ title: "Autonomy Is a Tooling Problem"
 date: 2026-10-21
 description: "Scaling the model will not scale autonomy. The mechanical systems around it will: tripwires, guards, halts, and structure-aware context."
 topics: ["agentic-ai", "tooling"]
+image: "/img/autonomy-is-a-tooling-problem.jpg"
+imageAlt: "Infographic titled The Operational Tooling for Agentic AI. Four mechanical execution primitives (token tripwires, churn detectors, diff-reversal guards, structural halts) feed a structural layer of AST skeletonization and context compaction, leading to economically sane autonomy. Caption: autonomy isn't a model problem, it's a tooling problem."
 originalUrl: "https://www.linkedin.com/posts/christophersorensen_agentic-ai-isnt-held-back-by-imagination-activity-7495614670104338432-2MnC"
 originalLabel: "LinkedIn"
 draft: false

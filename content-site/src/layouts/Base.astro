@@ -4,10 +4,11 @@ interface Props {
   description: string;
   rss?: { href: string; title: string };
   type?: 'website' | 'article';
+  image?: string;
 }
-const { title, description, rss, type = 'website' } = Astro.props;
+const { title, description, rss, type = 'website', image = '/og.png' } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const ogImage = new URL('/og.png', Astro.site).href;
+const ogImage = new URL(image, Astro.site).href;
 const ds = '/_ds/rewrite-labs-design-system-7b8b1b9a-3ab3-4fcb-883b-416a3c571ffe';
 const tokens = ['colors', 'typography', 'spacing', 'radius', 'shadows', 'base'];
 ---

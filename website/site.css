@@ -317,3 +317,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--fg-1); outline-
 @media (prefers-reduced-motion: reduce) {
   .blog-feature { transition: none; }
 }
+
+.article__figure { margin: 0 0 48px; }
+.article__figure img { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); }
