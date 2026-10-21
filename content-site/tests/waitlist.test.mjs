@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { onRequestPost, onRequest } from '../../website/functions/api/waitlist.js';
+import fs from 'node:fs';
+import { onRequestPost, onRequest } from '../../functions/api/waitlist.js';
 
 const kv = () => {
   const store = new Map();
@@ -45,4 +46,16 @@ test('rejects bad input with a 400, including JSON null', async () => {
 
 test('other methods get 405', async () => {
   assert.equal(onRequest().status, 405);
+});
+
+test('answers 503 not_configured when the KV binding is missing', async () => {
+  const res = await post(JSON.stringify({ email: 'a@b.co' }), {});
+  assert.equal(res.status, 503);
+  assert.equal((await res.json()).error, 'not_configured');
+});
+
+test('lives in the project-root functions folder, which is where Pages deploys it from', () => {
+  const root = new URL('../../', import.meta.url);
+  assert.ok(fs.existsSync(new URL('functions/api/waitlist.js', root)));
+  assert.ok(!fs.existsSync(new URL('website/functions', root)), 'website/ is the build output; Pages ignores a functions folder inside it');
 });

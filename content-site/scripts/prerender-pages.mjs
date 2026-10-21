@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 
@@ -9,6 +10,15 @@ const website = path.resolve(root, '..', 'website');
 const require = createRequire(path.join(root, 'package.json'));
 const React = require('react');
 const { renderToString } = require('react-dom/server');
+
+// Local assets a browser could cache stale. Their ?v= is a content hash, so it changes whenever the file does.
+const VERSIONED = ['site.css', 'fonts.css', 'theme.js', 'screens.js', 'casestudy.js'];
+const stampRe = new RegExp(`((?:href|src)="/?)(${VERSIONED.map((f) => f.replace('.', '\\.')).join('|')})(?:\\?v=[0-9a-f]+)?"`, 'g');
+const stamp = (html, dir) =>
+  html.replace(stampRe, (_m, head, file) => {
+    const v = createHash('sha1').update(fs.readFileSync(path.join(dir, file))).digest('hex').slice(0, 8);
+    return `${head}${file}?v=${v}"`;
+  });
 
 const ROOT_OPEN = '<div id="root">';
 const CREATE_ROOT = "ReactDOM.createRoot(document.getElementById('root')).render(";
@@ -43,7 +53,7 @@ export function prerender(html, dir = website) {
   vm.createContext(ctx);
   for (const m of scripts) {
     if (/\sdefer\b/.test(m[1])) continue; // browser-only scripts such as theme.js
-    const src = /\ssrc="([^"]+)"/.exec(m[1])?.[1];
+    const src = /\ssrc="([^"?]+)/.exec(m[1])?.[1];
     if (!src || /^https?:/.test(src) || src.startsWith('vendor/')) continue;
     vm.runInContext(fs.readFileSync(path.join(dir, src), 'utf8'), ctx, { filename: src });
   }
@@ -52,9 +62,10 @@ export function prerender(html, dir = website) {
 
   const markup = renderToString(tree);
   const script = inline[0].replace(CREATE_ROOT, HYDRATE_ROOT);
-  return (
+  return stamp(
     html.slice(0, innerStart) + markup + html.slice(rootClose, inline.index) + script +
-    html.slice(inline.index + inline[0].length)
+    html.slice(inline.index + inline[0].length),
+    dir,
   );
 }
 

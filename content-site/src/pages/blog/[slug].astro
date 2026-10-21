@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import { asset } from '../../lib/assets';
 import { publishedPosts, allBriefings, relatedBriefingsFor, formatDate, readingMinutes } from '../../lib/content';
 
 export async function getStaticPaths() {
@@ -70,7 +71,7 @@ const jsonLd = {
         <p class="signup__note" role="status" aria-live="polite">We'll only use your email to contact you about early access. <a href="/privacy">Privacy</a></p>
       </form>
       <noscript><p class="signup__note">Turn on JavaScript to join here, or email <a href="mailto:info@rewritelabs.io">info@rewritelabs.io</a>.</p></noscript>
-      <script is:inline src="/signup.js" defer></script>
+      <script is:inline src={asset('signup.js')} defer></script>
     </aside>
 
     {related.length > 0 && (

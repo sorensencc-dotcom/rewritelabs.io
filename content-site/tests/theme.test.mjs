@@ -56,7 +56,7 @@ for (const file of ['index.html', 'case-study.html', 'privacy.html']) {
   test(`${file} applies the saved theme before paint and loads the toggle script`, () => {
     const html = read(file);
     assert.match(html, /localStorage\.getItem\("rl-theme"\)/);
-    assert.match(html, /<script src="\/theme\.js" defer>/);
+    assert.match(html, /<script src="\/theme\.js\?v=[0-9a-f]{8}" defer>/);
     assert.match(html, /class="theme-toggle"/);
     assert.match(html, /<main[ >]/, 'page has a main landmark');
   });

@@ -32,16 +32,18 @@
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(body),
       })
-        .then(function (r) { return r.json().then(function (j) { return r.ok && j.ok; }); })
-        .catch(function () { return false; })
-        .then(function (ok) {
-          if (ok) {
+        .then(function (r) { return r.json().then(function (j) { return r.ok && j.ok ? 'ok' : r.status >= 500 ? 'server' : 'invalid'; }); })
+        .catch(function () { return 'server'; })
+        .then(function (result) {
+          if (result === 'ok') {
             fields.hidden = true;
             say("You're on the list. We'll be in touch soon.", 'done');
           } else {
             button.disabled = false;
             button.textContent = idle;
-            say('Something went wrong. Check your email address and try again.', 'error');
+            say(result === 'server'
+              ? 'Signup is unavailable right now. Please try again later or email info@rewritelabs.io.'
+              : 'Check your email address and try again.', 'error');
             input.focus();
           }
         });

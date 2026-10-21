@@ -13,6 +13,7 @@ for (const file of ['index.html', 'case-study.html', 'privacy.html']) {
     assert.equal(prerender(html), html, 'run `npm run prerender` in content-site and commit the result');
     assert.match(html, /<h1[ >]/, 'crawlable <h1> present in the static HTML');
     assert.match(html, /hydrateRoot/, 'client hydrates instead of re-rendering');
+    assert.match(html, /site\.css\?v=[0-9a-f]{8}/, 'site.css is versioned so a stale browser copy cannot be reused');
     assert.match(html, /<link rel="canonical"/);
     assert.match(html, /og:image" content="https:\/\/rewritelabs\.io\/og\.png/);
   });

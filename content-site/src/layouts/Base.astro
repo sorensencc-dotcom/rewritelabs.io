@@ -6,6 +6,7 @@ interface Props {
   type?: 'website' | 'article';
   image?: string;
 }
+import { asset } from '../lib/assets';
 const { title, description, rss, type = 'website', image = '/og.png' } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(image, Astro.site).href;
@@ -34,12 +35,12 @@ const tokens = ['colors', 'typography', 'spacing', 'radius', 'shadows', 'base'];
     <meta name="theme-color" content="#0F0F1A" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#F6F6FB" media="(prefers-color-scheme: light)" />
     <script is:inline>try{var t=localStorage.getItem("rl-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-    <script is:inline src="/theme.js" defer></script>
+    <script is:inline src={asset('theme.js')} defer></script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/fonts.css" />
+    <link rel="stylesheet" href={asset('fonts.css')} />
     {tokens.map((t) => <link rel="stylesheet" href={`${ds}/tokens/${t}.css`} />)}
     <link rel="stylesheet" href={`${ds}/styles.css`} />
-    <link rel="stylesheet" href="/site.css" />
+    <link rel="stylesheet" href={asset('site.css')} />
     <slot name="head" />
     {rss && <link rel="alternate" type="application/rss+xml" title={rss.title} href={rss.href} />}
   </head>
