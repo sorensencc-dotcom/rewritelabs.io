@@ -28,14 +28,14 @@ function MiniSite({old:isOld,label}){
 function Hero(){
   return h("div",{className:"container hero"},
     h("div",null,
-      h("div",{className:"eyebrow hero__eyebrow"},"AI-Powered Website Redesign"),
-      h("h1",{className:"hero__title"},"The Internet Is Full of Outdated Websites.",h("br",null),h("span",{className:"hero__title-accent"},"We Fix That.")),
-      h("p",{className:"lede hero__lede"},"Rewrite Labs scans the web for businesses losing customers to broken, slow, and outdated sites — then delivers a modern redesign, automatically."),
+      h("div",{className:"eyebrow hero__eyebrow"},"Rewrite Labs"),
+      h("h1",{className:"hero__title"},"Automation That Runs on Your Own Ground.",h("br",null),h("span",{className:"hero__title-accent"},"Best of Breed Where It Counts.")),
+      h("p",{className:"lede hero__lede"},"Rewrite Labs builds AI tools that keep your data and keys on your own machines and use the best model or service for each job. We start with websites: we find businesses losing customers to outdated sites and deliver a modern redesign, automatically."),
       h("div",{className:"hero__cta"},
-        h(Button,{variant:"primary",size:"lg",onClick:function(){goTo("waitlist");}},"Get Early Access →"),
-        h(Button,{variant:"secondary",size:"lg",onClick:function(){goTo("process");}},"See How It Works ↓"))),
+        h(Button,{variant:"primary",size:"lg",onClick:function(){goTo("platform");}},"Explore What We Build ↓"),
+        h(Button,{variant:"secondary",size:"lg",onClick:function(){goTo("waitlist");}},"Get Early Access →"))),
     h("div",{className:"hero__card"},
-      h("div",{className:"hero__card-title"},"rewritelabs.io — scanning sample-bakery.example"),
+      h("div",{className:"hero__card-title"},"Rewrite Labs Sites — scanning sample-bakery.example"),
       h("div",{className:"hero__compare"},h(MiniSite,{old:true,label:"Before"}),h("div",{className:"hero__arrow"},"→"),h(MiniSite,{label:"After"})),
       h("div",{className:"hero__stats"},
         h(StatCard,{value:"2009",label:"Design Age",tone:"bad"}),
@@ -45,6 +45,8 @@ function Hero(){
       h("div",{className:"hero__badges"},h(Badge,{tone:"bad"},"Outdated"),h(Badge,{tone:"bad"},"Fails"),h(Badge,{tone:"warn"},"High Priority")),
       h("a",{href:"/case-study",className:"hero__more"},"See the full before/after →")));
 }
+
+function SitesAnchor(){return h("div",{id:"sites"});}
 
 function StatStrip(){
   const items=[['200M+','Outdated websites on the internet'],['94%','Of first impressions are design-related'],['3s','Time before users abandon a slow site']];
@@ -59,9 +61,28 @@ function ProcessSection(){
     {emoji:'🚀',title:'Convert Interest into Production-Ready Websites',body:'Interested owners become paying clients. Our team refines the AI-generated design into a production-ready site and handles delivery — end to end.',footnote:'Human-refined, client-approved'}
   ];
   return h("div",{id:"process",className:"container process"},
-    h("div",{className:"eyebrow"},"The Process"),
+    h("div",{className:"eyebrow"},"Rewrite Labs Sites"),
     h("h2",{className:"display-md process__title"},"From scan to shipped, fully automated."),
     h("div",{className:"process__grid"},steps.map((s,i)=>h(ProcessStep,_extends({key:s.title,index:i+1},s)))));
+}
+
+function PlatformSection(){
+  const items=[
+    {name:'Rewrite Labs Sites',tag:'Website redesign',body:"We scan for outdated small-business sites and deliver a modern, mobile-ready redesign automatically, with a before and after preview for the owner.",status:'Early access open',href:'#sites'},
+    {name:'TRM',tag:'Research engine',body:"Research with an audit trail. TRM ingests sources, extracts facts, scores and crosslinks topics, and logs every change. If there is no evidence, there is no claim.",status:'In development'},
+    {name:'Sigil',tag:'Agent relay',body:"A signed, auditable relay between AI agents such as Claude, Codex, Grok, and local models. Every message is cryptographically signed, and risky actions wait for a human to approve.",status:'In development'},
+    {name:'Toolforge',tag:'Agent skills',body:"Verified skills and plugins for AI coding agents. Each one is validated and version-pinned before it installs, and a public marketplace is on the way.",status:'Marketplace coming soon'},
+    {name:'kb-sync',tag:'Knowledge base',body:"A knowledge base that lives on your own machine, with full-text and semantic search that needs no network round trip.",status:'In development'}
+  ];
+  return h("div",{id:"platform",className:"container platform"},
+    h("div",{className:"eyebrow"},"What We Build"),
+    h("h2",{className:"display-md platform__title"},"One rule across everything we build."),
+    h("p",{className:"lede platform__lede"},"Home ground, best of breed. Your data and keys stay on your own machines, and each job goes to the best model or service for it. Websites are where it reaches customers. The rest is the tooling behind it."),
+    h("div",{className:"platform__grid"},items.map(it=>h("div",{key:it.name,className:"platform__card"},
+      h("div",{className:"platform__tag"},it.tag),
+      h("h3",{className:"platform__name"},it.name),
+      h("p",{className:"platform__body"},it.body),
+      h("div",{className:"platform__status"},it.href?h("a",{href:it.href,className:"platform__link"},it.status+" →"):it.status)))));
 }
 
 function WaitlistSection(){
@@ -97,5 +118,5 @@ function Footer(){
       h("a",{href:"/privacy",className:"muted-link"},"Privacy")," \xB7 ",h("a",{href:"mailto:info@rewritelabs.io",className:"muted-link"},"info@rewritelabs.io")));
 }
 
-window.RLScreens={Nav,Hero,StatStrip,ProcessSection,WaitlistSection,Footer};
+window.RLScreens={Nav,Hero,SitesAnchor,StatStrip,ProcessSection,PlatformSection,WaitlistSection,Footer};
 })();
