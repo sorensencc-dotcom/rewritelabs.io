@@ -1,0 +1,71 @@
+content-site/astro.config.mjs
+  s_3393102e819c4f::t_fa24821caabf09 1-8
+content-site/src/pages/ai-news-feed/rss.xml.ts
+  s_3393102e819c4f::t_39f5e0a3bf7bda 1-18
+content-site/package.json
+  s_3393102e819c4f::t_4e177ad28c396d 9
+  s_3393102e819c4f::t_fa24821caabf09 1-8,10-16
+content-site/src/content/config.ts
+  s_3393102e819c4f::t_fa24821caabf09 1-46
+content-site/src/lib/content.ts
+  s_3393102e819c4f::t_fa24821caabf09 1-46
+content-site/scripts/export-briefing.mjs
+  s_3393102e819c4f::t_beadb0cf179ee3 1-68
+content-site/.gitignore
+  s_3393102e819c4f::t_fa24821caabf09 1-3
+content-site/src/pages/blog/rss.xml.ts
+  s_3393102e819c4f::t_f7ac570fca6753 1-18
+website/site.css
+  s_3393102e819c4f::t_8fdd6e9feda509 196-235
+content-site/tsconfig.json
+  s_3393102e819c4f::t_fa24821caabf09 1
+content-site/src/pages/ai-news-feed/index.astro
+  s_3393102e819c4f::t_422485bf9b0d02 1-39
+content-site/scripts/publish-briefing.mjs
+  s_3393102e819c4f::t_31564b1f329e5b 1-52
+.gitignore
+  s_3393102e819c4f::t_c6b71cf87437ed 7
+  s_3393102e819c4f::t_8fdd6e9feda509 8-11
+content-site/tests/export-briefing.test.mjs
+  s_3393102e819c4f::t_01495778a33878 1-45
+content-site/scripts/copy-to-website.mjs
+  s_3393102e819c4f::t_365c7ec542a589 9-11,16-19
+  s_3393102e819c4f::t_b3dd9ba0189274 1-8,12-15,20-25
+content-site/src/pages/blog/[slug].astro
+  s_3393102e819c4f::t_cd1266b3a1481a 1-32
+content-site/src/pages/blog/index.astro
+  s_3393102e819c4f::t_f6d5b1dd57adb6 1-31
+content-site/src/pages/ai-news-feed/[slug].astro
+  s_3393102e819c4f::t_9bfd561b73dfa8 1-55
+content-site/src/env.d.ts
+  s_3393102e819c4f::t_8db056a8a9bcac 1
+  s_3393102e819c4f::t_fa24821caabf09 2
+content-site/src/layouts/Base.astro
+  s_3393102e819c4f::t_fd7daa91c80c60 1-45
+content-site/README.md
+  s_3393102e819c4f::t_895f9f35dbc597 1-39
+content-site/package-lock.json
+  s_3393102e819c4f::t_c28af09ebefa5c 1-5751
+content-site/.ijfw/.session-edits.jsonl
+  s_3393102e819c4f::t_c8a790a4520d35 1
+content-site/.ijfw/.session-signals.jsonl
+  s_3393102e819c4f::t_a9e5be64fbdecd 1-2
+content-site/src/.ijfw/.session-edits.jsonl
+  s_3393102e819c4f::t_760b3739d0104d 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0b6ac257318af16e1ec0b71543b3e59318288159",
+  "prompts": {},
+  "sessions": {
+    "s_3393102e819c4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1b790d3a-44b6-4579-a418-e3c2237b9f7f",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
