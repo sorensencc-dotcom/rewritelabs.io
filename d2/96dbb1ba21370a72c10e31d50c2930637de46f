@@ -1,0 +1,19 @@
+content-site/scripts/publish-briefing.mjs
+  s_3393102e819c4f::t_fe628293c8e0a9 50-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d296dbb1ba21370a72c10e31d50c2930637de46f",
+  "prompts": {},
+  "sessions": {
+    "s_3393102e819c4f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1b790d3a-44b6-4579-a418-e3c2237b9f7f",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
