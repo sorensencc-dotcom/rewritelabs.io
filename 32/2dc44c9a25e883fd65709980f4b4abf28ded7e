@@ -1,0 +1,19 @@
+package-lock.json
+  s_727b07f893f4b8::t_a0c4ec06a04446 7518-7535,7573-7591,7617-7649
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "322dc44c9a25e883fd65709980f4b4abf28ded7e",
+  "prompts": {},
+  "sessions": {
+    "s_727b07f893f4b8": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "32279a06-7c94-4223-b372-1fb31a251e73",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
