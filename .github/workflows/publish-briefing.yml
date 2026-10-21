@@ -1,0 +1,45 @@
+name: Publish briefing
+
+# Receives a scored briefing payload from the cloud runner (Step 8c) and opens a
+# draft PR. Needs "Allow GitHub Actions to create and approve pull requests"
+# enabled under Settings > Actions > General.
+on:
+  repository_dispatch:
+    types: [publish-briefing]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-briefing-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Write payload
+        env:
+          PAYLOAD_JSON: ${{ toJson(github.event.client_payload) }}
+        run: printf '%s' "$PAYLOAD_JSON" > "$RUNNER_TEMP/briefing-payload.json"
+
+      - name: Validate payload
+        run: node content-site/scripts/publish-briefing.mjs "$RUNNER_TEMP/briefing-payload.json" --dry-run
+
+      - name: Open draft PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node content-site/scripts/publish-briefing.mjs "$RUNNER_TEMP/briefing-payload.json" | tee "$RUNNER_TEMP/pr-url.txt"
+
+      - name: Summarize
+        run: echo "Draft PR $(tail -n 1 "$RUNNER_TEMP/pr-url.txt")" >> "$GITHUB_STEP_SUMMARY"
