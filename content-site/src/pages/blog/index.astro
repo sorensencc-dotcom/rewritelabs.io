@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import { publishedPosts, formatDate } from '../../lib/content';
+const posts = await publishedPosts();
+---
+
+<Base
+  title="Blog — Rewrite Labs"
+  description="Market research and notes from Rewrite Labs on AI, automation, and small-business websites."
+  rss={{ href: '/blog/rss.xml', title: 'Rewrite Labs Blog' }}
+>
+  <div class="container feed">
+    <div class="eyebrow">Blog</div>
+    <h1 class="display-lg feed__title">Market research and field notes.</h1>
+    <p class="lede feed__lede">What we are learning about AI, automation, and the websites small businesses depend on.</p>
+    {posts.length === 0 ? (
+      <p class="feed__empty">First posts coming soon.</p>
+    ) : (
+      <div class="feed__list">
+        {posts.map((p) => (
+          <article class="feed__card">
+            <time class="feed__meta" datetime={p.data.date.toISOString()}>{formatDate(p.data.date)}</time>
+            <h2 class="feed__card-title"><a href={`/blog/${p.slug}/`}>{p.data.title}</a></h2>
+            <p class="feed__summary">{p.data.description}</p>
+          </article>
+        ))}
+      </div>
+    )}
+    <p class="feed__cross">Looking for daily signals? See the <a href="/ai-news-feed/">AI News Feed</a>.</p>
+  </div>
+</Base>

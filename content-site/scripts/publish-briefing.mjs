@@ -1,0 +1,52 @@
+// Step 8c: turn a scored briefing payload (JSON file) into a draft PR on the site repo.
+// Usage: node scripts/publish-briefing.mjs <payload.json> [--dry-run]
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { exportBriefing, validatePayload } from './export-briefing.mjs';
+
+const [payloadPath, ...flags] = process.argv.slice(2);
+const dryRun = flags.includes('--dry-run');
+if (!payloadPath) {
+  console.error('usage: publish-briefing.mjs <payload.json> [--dry-run]');
+  process.exit(2);
+}
+
+const payload = JSON.parse(fs.readFileSync(payloadPath, 'utf8'));
+validatePayload(payload);
+
+const here = path.dirname(fileURLToPath(import.meta.url));
+const run = (cmd, args, cwd) => execFileSync(cmd, args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'inherit'] }).trim();
+const repo = run('git', ['rev-parse', '--show-toplevel'], here);
+
+if (dryRun) {
+  console.log(`payload valid for ${payload.date}; would open draft PR briefing/${payload.date}`);
+  process.exit(0);
+}
+
+const branch = `briefing/${payload.date}`;
+const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'briefing-'));
+const work = path.join(tmp, 'wt');
+run('git', ['fetch', 'origin', 'main'], repo);
+run('git', ['worktree', 'add', '-b', branch, work, 'origin/main'], repo);
+try {
+  const file = exportBriefing(payload, path.join(work, 'content-site/src/content/briefings'));
+  run('git', ['add', file], work);
+  run('git', ['commit', '-m', `chore(briefing): AI news synthesis for ${payload.date}`], work);
+  run('git', ['push', '-u', 'origin', branch], work);
+  const url = run(
+    'gh',
+    [
+      'pr', 'create', '--draft', '--base', 'main', '--head', branch,
+      '--title', `briefing: ${payload.title}`,
+      '--body', `Draft AI news briefing for ${payload.date}. Review the themes, confidence score, and source links, then mark ready and merge to publish.`,
+    ],
+    work,
+  );
+  console.log(url);
+} finally {
+  run('git', ['worktree', 'remove', '--force', work], repo);
+  fs.rmSync(tmp, { recursive: true, force: true });
+}

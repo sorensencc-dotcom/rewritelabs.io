@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import { allBriefings, formatDate, deltaGlyph } from '../../lib/content';
+const briefings = await allBriefings();
+---
+
+<Base
+  title="AI News Feed — Rewrite Labs"
+  description="Daily AI briefings synthesized across eight curated sources, with confidence scores and 7-day trend deltas."
+  rss={{ href: '/ai-news-feed/rss.xml', title: 'Rewrite Labs AI News Feed' }}
+>
+  <div class="container feed">
+    <div class="eyebrow">AI News Feed</div>
+    <h1 class="display-lg feed__title">Daily AI signals for operators.</h1>
+    <p class="lede feed__lede">We weigh mentions across eight curated sources, check claims against primary sources, and track whether each theme is accelerating or fading over seven days.</p>
+    {briefings.length === 0 ? (
+      <p class="feed__empty">First briefing coming soon.</p>
+    ) : (
+      <div class="feed__list">
+        {briefings.map((b) => (
+          <article class="feed__card">
+            <div class="feed__row">
+              <time class="feed__meta" datetime={b.data.date.toISOString()}>{formatDate(b.data.date)}</time>
+              <span class="feed__meta">{Math.round(b.data.confidenceScore * 100)}% confidence &middot; {b.data.sourcesEvaluated} sources</span>
+            </div>
+            <h2 class="feed__card-title"><a href={`/ai-news-feed/${b.slug}/`}>{b.data.title}</a></h2>
+            {b.data.summary && <p class="feed__summary">{b.data.summary}</p>}
+            <ul class="chips">
+              {b.data.themes.map((t) => (
+                <li class={`chip chip--${t.delta7d}`}><span aria-hidden="true">{deltaGlyph[t.delta7d]}</span> {t.name}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    )}
+    <p class="feed__cross">Want the longer view? Read the <a href="/blog/">blog</a>.</p>
+  </div>
+</Base>
