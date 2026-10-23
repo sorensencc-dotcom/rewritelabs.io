@@ -23,7 +23,7 @@ const briefings = await allBriefings();
               <time class="feed__meta" datetime={b.data.date.toISOString()}>{formatDate(b.data.date)}</time>
               <span class="feed__meta">{Math.round(b.data.confidenceScore * 100)}% confidence &middot; {b.data.sourcesEvaluated} sources</span>
             </div>
-            <h2 class="feed__card-title"><a href={`/ai-news-feed/${b.slug}/`}>{b.data.title}</a></h2>
+            <h2 class="feed__card-title"><a href={`/ai-news-feed/${b.id}/`}>{b.data.title}</a></h2>
             {b.data.summary && <p class="feed__summary">{b.data.summary}</p>}
             <ul class="chips">
               {b.data.themes.map((t) => (
