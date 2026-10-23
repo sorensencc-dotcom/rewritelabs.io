@@ -1,0 +1,23 @@
+.github/workflows/site-checks.yml
+  s_293e74b05e4175::t_e347787a7a4bed 28
+README.md
+  s_293e74b05e4175::t_8ce3d12aefe7bf 35,55
+content-site/README.md
+  s_293e74b05e4175::t_7d2398fa595c83 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a16527863829919d1f02b11fdfe9fa807d0c0d58",
+  "prompts": {},
+  "sessions": {
+    "s_293e74b05e4175": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3a996a26-72c0-462c-8b32-9701e8e2dfd7",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
