@@ -22,7 +22,7 @@ npm run build   # build, then copy dist/blog, dist/ai-news-feed into ../website
 
 - Build command: `cd content-site && npm ci && npm run build`
 - Build output directory: `website`
-- Environment variable: `NODE_VERSION=22`
+- Environment variable: `NODE_VERSION=22.23.4`
 
 `website/blog/`, `website/ai-news-feed/`, and `website/_cs/` are build output and stay out of git.
 
