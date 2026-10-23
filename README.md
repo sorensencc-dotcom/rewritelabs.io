@@ -32,7 +32,7 @@ To preview locally, serve `website/` with any static server after running the bu
 
 ## Checks
 
-`.github/workflows/site-checks.yml` runs on every pull request and on pushes to `main`: the `content-site` tests, the pre-render freshness check, the production build, and a check that the build left the committed files unchanged. It runs on Node 20 like Cloudflare Pages. Run the same locally with `cd content-site && npm ci && npm test && npm run build`.
+`.github/workflows/site-checks.yml` runs on every pull request and on pushes to `main`: the `content-site` tests, the pre-render freshness check, the production build, and a check that the build left the committed files unchanged. It runs on Node 22.23.4 like Cloudflare Pages (Astro 7 needs 22.23.4 or newer; a bare `22` can resolve to an older patch). Run the same locally with `cd content-site && npm ci && npm test && npm run build`.
 
 ## Themes and contrast
 
@@ -52,7 +52,7 @@ Cloudflare Pages settings:
 
 - Build command: `cd content-site && npm ci && npm run build`
 - Build output directory: `website`
-- Environment variable: `NODE_VERSION=20`
+- Environment variable: `NODE_VERSION=22.23.4`
 
 `website/blog/`, `website/ai-news-feed/`, `website/_cs/` and `website/sitemap.xml` are build output and stay out of git.
 

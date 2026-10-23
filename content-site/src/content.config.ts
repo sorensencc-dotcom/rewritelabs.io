@@ -1,4 +1,6 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 const httpUrl = z
   .string()
@@ -8,7 +10,7 @@ const httpUrl = z
 const topics = z.array(z.string().min(1)).default([]);
 
 const blog = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
@@ -24,7 +26,7 @@ const blog = defineCollection({
 });
 
 const briefings = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/briefings' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),

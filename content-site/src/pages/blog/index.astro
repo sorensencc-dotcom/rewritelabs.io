@@ -28,7 +28,7 @@ const [latest, ...older] = posts;
             <span aria-hidden="true">&middot;</span>
             <span>{readingMinutes(latest.body)} min read</span>
           </p>
-          <h2 class="blog-feature__title"><a href={`/blog/${latest.slug}/`} class="blog-feature__link">{latest.data.title}</a></h2>
+          <h2 class="blog-feature__title"><a href={`/blog/${latest.id}/`} class="blog-feature__link">{latest.data.title}</a></h2>
           <p class="blog-feature__summary">{latest.data.description}</p>
           <div class="blog-feature__foot">
             {latest.data.topics.length > 0 && (
@@ -46,7 +46,7 @@ const [latest, ...older] = posts;
               <li class="blog-row">
                 <time class="blog-row__date" datetime={p.data.date.toISOString()}>{formatDate(p.data.date)}</time>
                 <div>
-                  <h2 class="blog-row__title"><a href={`/blog/${p.slug}/`} class="blog-row__link">{p.data.title}</a></h2>
+                  <h2 class="blog-row__title"><a href={`/blog/${p.id}/`} class="blog-row__link">{p.data.title}</a></h2>
                   <p class="blog-row__summary">{p.data.description}</p>
                 </div>
               </li>

@@ -23,14 +23,14 @@ const shares = (a: string[], b: string[]) => {
 export function relatedPostsFor(briefing: Briefing, posts: Post[], limit = 3): Post[] {
   const explicit = new Set(briefing.data.relatedPosts);
   return posts
-    .filter((p) => explicit.has(p.slug) || shares(briefing.data.topics, p.data.topics))
+    .filter((p) => explicit.has(p.id) || shares(briefing.data.topics, p.data.topics))
     .slice(0, limit);
 }
 
 export function relatedBriefingsFor(post: Post, briefings: Briefing[], limit = 3): Briefing[] {
   const explicit = new Set(post.data.relatedBriefings);
   return briefings
-    .filter((b) => explicit.has(b.slug) || shares(post.data.topics, b.data.topics))
+    .filter((b) => explicit.has(b.id) || shares(post.data.topics, b.data.topics))
     .slice(0, limit);
 }
 

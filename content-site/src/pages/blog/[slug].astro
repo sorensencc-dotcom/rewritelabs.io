@@ -1,19 +1,20 @@
 ---
+import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { asset } from '../../lib/assets';
 import { publishedPosts, allBriefings, relatedBriefingsFor, formatDate, readingMinutes } from '../../lib/content';
 
 export async function getStaticPaths() {
   const posts = await publishedPosts();
-  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
 }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 const related = relatedBriefingsFor(post, await allBriefings());
 const minutes = readingMinutes(post.body);
 const { title, description, date, topics, image, imageAlt, originalUrl, originalLabel } = post.data;
-const url = new URL(`/blog/${post.slug}/`, Astro.site).href;
+const url = new URL(`/blog/${post.id}/`, Astro.site).href;
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
@@ -62,7 +63,7 @@ const jsonLd = {
     <aside class="article__cta" aria-labelledby="cta-title">
       <h2 id="cta-title" class="article__cta-title">Automation that runs on your own ground.</h2>
       <p>Rewrite Labs builds AI tools that keep your data and keys on your own machines. Early access is open.</p>
-      <form class="signup" data-source={`blog:${post.slug}`} novalidate>
+      <form class="signup" data-source={`blog:${post.id}`} novalidate>
         <div class="signup__fields">
           <label class="sr-only" for="signup-email">Email address</label>
           <input id="signup-email" class="signup__input" name="email" type="email" autocomplete="email" placeholder="you@business.com" required />
@@ -80,7 +81,7 @@ const jsonLd = {
         <h2 class="related__title">Related briefings</h2>
         <ul class="related__list">
           {related.map((b) => (
-            <li><a href={`/ai-news-feed/${b.slug}/`}>{b.data.title}</a> <span class="feed__meta">{formatDate(b.data.date)}</span></li>
+            <li><a href={`/ai-news-feed/${b.id}/`}>{b.data.title}</a> <span class="feed__meta">{formatDate(b.data.date)}</span></li>
           ))}
         </ul>
       </aside>

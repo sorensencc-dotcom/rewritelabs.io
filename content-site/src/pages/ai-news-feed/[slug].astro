@@ -1,14 +1,15 @@
 ---
+import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { allBriefings, publishedPosts, relatedPostsFor, formatDate, deltaGlyph } from '../../lib/content';
 
 export async function getStaticPaths() {
   const briefings = await allBriefings();
-  return briefings.map((briefing) => ({ params: { slug: briefing.slug }, props: { briefing } }));
+  return briefings.map((briefing) => ({ params: { slug: briefing.id }, props: { briefing } }));
 }
 
 const { briefing } = Astro.props;
-const { Content } = await briefing.render();
+const { Content } = await render(briefing);
 const related = relatedPostsFor(briefing, await publishedPosts());
 const d = briefing.data;
 ---
@@ -46,7 +47,7 @@ const d = briefing.data;
         <h2 class="related__title">From the blog</h2>
         <ul class="related__list">
           {related.map((p) => (
-            <li><a href={`/blog/${p.slug}/`}>{p.data.title}</a> <span class="feed__meta">{formatDate(p.data.date)}</span></li>
+            <li><a href={`/blog/${p.id}/`}>{p.data.title}</a> <span class="feed__meta">{formatDate(p.data.date)}</span></li>
           ))}
         </ul>
       </aside>
