@@ -1,0 +1,25 @@
+.agents/skills/author-blog-post/SKILL.md
+  s_302404a55f0ddd::t_96f043aae58851 1-89
+content-site/package.json
+  s_302404a55f0ddd::t_62ee1912fa35e3 14
+content-site/scripts/validate-blog.mjs
+  s_302404a55f0ddd::t_e94adcfaf77edd 1-172
+content-site/tests/validate-blog.test.mjs
+  s_302404a55f0ddd::t_dae43905987899 1-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "538c54082d705604f4a9850d0a5b4126ba263564",
+  "prompts": {},
+  "sessions": {
+    "s_302404a55f0ddd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9ac7ad57-5ee2-4545-ad63-df35055cff4f",
+        "model": "unknown"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
