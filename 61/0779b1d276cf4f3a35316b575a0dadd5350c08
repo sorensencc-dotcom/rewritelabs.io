@@ -1,0 +1,19 @@
+content-site/src/content/blog/why-local-sites-fail-mobile-audits.md
+  s_16726c970a606e::t_144f8a97f18b4b 1-70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "610779b1d276cf4f3a35316b575a0dadd5350c08",
+  "prompts": {},
+  "sessions": {
+    "s_16726c970a606e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_16726c970a606e",
+        "model": "unknown"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
