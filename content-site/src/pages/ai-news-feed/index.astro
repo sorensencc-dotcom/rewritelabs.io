@@ -17,7 +17,7 @@ const briefings = await allBriefings();
       <p class="feed__empty">First briefing coming soon.</p>
     ) : (
       <div class="feed__list">
-        {briefings.map((b) => (
+        {briefings.map((b, i) => (
           <article class="feed__card">
             <div class="feed__row">
               <time class="feed__meta" datetime={b.data.date.toISOString()}>{formatDate(b.data.date)}</time>
@@ -25,11 +25,29 @@ const briefings = await allBriefings();
             </div>
             <h2 class="feed__card-title"><a href={`/ai-news-feed/${b.id}/`}>{b.data.title}</a></h2>
             {b.data.summary && <p class="feed__summary">{b.data.summary}</p>}
-            <ul class="chips">
-              {b.data.themes.map((t) => (
-                <li class={`chip chip--${t.delta7d}`}><span aria-hidden="true">{deltaGlyph[t.delta7d]}</span> {t.name}</li>
-              ))}
-            </ul>
+            {i === 0 ? (
+              <div class="themes">
+                {b.data.themes.map((t) => (
+                  <section class="theme">
+                    <h3 class="theme__name"><span class={`delta delta--${t.delta7d}`} aria-hidden="true">{deltaGlyph[t.delta7d]}</span> {t.name}</h3>
+                    <p class="feed__meta">{t.delta7d} over 7 days &middot; {t.tags.join(' · ')}</p>
+                    <p class="feed__summary">{t.summary}</p>
+                    <ul class="sources">
+                      {t.primarySources.map((s) => (
+                        <li><a href={s.url} rel="noopener noreferrer">{s.title}</a></li>
+                      ))}
+                    </ul>
+                  </section>
+                ))}
+                <p class="feed__meta"><a href={`/ai-news-feed/${b.id}/`}>Full briefing and operator takeaways &rarr;</a></p>
+              </div>
+            ) : (
+              <ul class="chips">
+                {b.data.themes.map((t) => (
+                  <li class={`chip chip--${t.delta7d}`}><span aria-hidden="true">{deltaGlyph[t.delta7d]}</span> {t.name}</li>
+                ))}
+              </ul>
+            )}
           </article>
         ))}
       </div>
