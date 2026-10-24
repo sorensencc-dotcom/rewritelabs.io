@@ -39,25 +39,28 @@ function Nav(){
         h("button",{type:"button",className:"btn btn--quiet",onClick:function(){goTo("waitlist");}},"Get early access"))));
 }
 
-/* A sample scan, built at full size. The values are the sample's own, and the figure says it is a sample. */
-function ScanRecord(){
+/* The home-ground stack, built at full size: what runs where, and the four claims it rests on. */
+function StackRecord(){
+  const stack=[
+    {name:'Sites',tag:'Websites',proof:'Static, zero-tracker output'},
+    {name:'TRM',tag:'Research',proof:'Evidence-first audit trail'},
+    {name:'Sigil',tag:'Agent relay',proof:'Ed25519 signed envelopes'},
+    {name:'Toolforge',tag:'Skills',proof:'Validated and version-pinned'},
+    {name:'kb-sync',tag:'Knowledge',proof:'Local zero-roundtrip search'}
+  ];
+  const stats=[['100%','Local keys and data'],['Ed25519','Signed actions'],['0ms','Cloud roundtrip'],['Best of Breed','Model routing']];
   return h("figure",{className:"record","aria-labelledby":"record-title"},
-    h("figcaption",{id:"record-title",className:"record__head"},
-      h("span",null,"Sample scan"),
-      h("span",{className:"measured record__id"},"sample-bakery.example")),
-    h("div",{className:"record__reading"},
-      h("span",{className:"reading"},"2009"),
-      h("span",{className:"record__label"},"Design age of the site")),
-    h("dl",{className:"record__rows"},
-      h("div",{className:"record__row"},h("dt",null,"Mobile ready"),h("dd",{className:"measured"},"No")),
-      h("div",{className:"record__row"},h("dt",null,"Page speed"),h("dd",{className:"measured"},"38")),
-      h("div",{className:"record__row"},h("dt",null,"Redesign score"),h("dd",{className:"measured record__good"},"94"))),
+    h("figcaption",{id:"record-title",className:"record__head"},"Rewrite Labs home ground stack"),
+    h("dl",{className:"record__stats"},stats.map(([v,l])=>h("div",{key:l,className:"record__stat"},h("dt",null,l),h("dd",{className:"measured"},v)))),
+    h("ul",{className:"record__stack"},stack.map(s=>h("li",{key:s.name,className:"record__item"},
+      h("span",{className:"record__name"},s.name," ",h("span",{className:"record__tag"},s.tag)),
+      h("span",{className:"record__proof"},s.proof)))),
     h("div",{className:"record__foot"},
-      h("ul",{className:"chips","aria-label":"Verdicts"},
-        h("li",{className:"chip chip--bad"},"Outdated"),
-        h("li",{className:"chip chip--bad"},"Fails"),
-        h("li",{className:"chip chip--cool"},"High priority")),
-      h("a",{href:"/case-study",className:"link"},"See the full before and after")));
+      h("ul",{className:"chips","aria-label":"Principles"},
+        h("li",{className:"chip chip--ok"},"Local first"),
+        h("li",{className:"chip chip--ok"},"Audited actions"),
+        h("li",{className:"chip chip--ok"},"Zero telemetry")),
+      h("a",{href:"#platform",className:"link",onClick:function(e){e.preventDefault();goTo("platform");}},"Explore the platform")));
 }
 
 function Hero(){
@@ -69,7 +72,7 @@ function Hero(){
         h("div",{className:"hero__actions"},
           h("button",{type:"button",className:"btn btn--primary",onClick:function(){goTo("waitlist");}},"Get early access"),
           h("button",{type:"button",className:"btn btn--quiet",onClick:function(){goTo("platform");}},"See what we build"))),
-      h(ScanRecord,null)));
+      h(StackRecord,null)));
 }
 
 function SitesAnchor(){return h("div",{id:"sites"});}
@@ -143,11 +146,11 @@ function Figures(){
 
 function PlatformSection(){
   const items=[
-    {name:'Rewrite Labs Sites',tag:'Website redesign',body:"We scan for outdated small-business sites and deliver a modern, mobile-ready redesign automatically, with a before and after preview for the owner.",status:'Early access open',href:'#sites',lead:true},
-    {name:'TRM',tag:'Research engine',body:"Research with an audit trail. TRM ingests sources, extracts facts, scores and crosslinks topics, and logs every change. If there is no evidence, there is no claim.",status:'In development'},
-    {name:'Sigil',tag:'Agent relay',body:"A signed, auditable relay between AI agents such as Claude, Codex, Grok, and local models. Every message is cryptographically signed, and risky actions wait for a human to approve.",status:'In development'},
-    {name:'Toolforge',tag:'Agent skills',body:"Verified skills and plugins for Claude Code. Each one is validated and version-pinned before it installs.",command:'claude plugin marketplace add sorensencc-dotcom/toolforge-marketplace',status:'Live: browse the catalog',href:'https://github.com/sorensencc-dotcom/toolforge-marketplace'},
-    {name:'kb-sync',tag:'Knowledge base',body:"A knowledge base that lives on your own machine, with full-text and semantic search that needs no network round trip.",status:'In development'}
+    {name:'Rewrite Labs Sites',tag:'Website redesign',body:"We scan for outdated small-business sites and deliver a modern, mobile-ready redesign automatically, with a before and after preview for the owner.",status:'Early access open',tone:'ok',action:'Join early access',href:'#waitlist',lead:true},
+    {name:'TRM',tag:'Research engine',body:"Research with an audit trail. TRM ingests sources, extracts facts, scores and crosslinks topics, and logs every change. If there is no evidence, there is no claim.",status:'In development',action:'Get early access',href:'#waitlist'},
+    {name:'Sigil',tag:'Agent relay',body:"A signed, auditable relay between AI agents such as Claude, Codex, Grok, and local models. Every message is cryptographically signed, and risky actions wait for a human to approve.",status:'In development',action:'Get early access',href:'#waitlist'},
+    {name:'Toolforge',tag:'Agent skills',body:"Verified skills and plugins for AI coding agents. Each capability is validated against strict schema contracts and version-pinned before installation, with a public marketplace in development.",status:'In development',action:'Get early access',href:'#waitlist'},
+    {name:'kb-sync',tag:'Knowledge base',body:"A knowledge base that lives on your own machine, with full-text and semantic search that needs no network round trip.",status:'In development',action:'Get early access',href:'#waitlist'}
   ];
   return h("section",{id:"platform","aria-labelledby":"platform-title",className:"platform"},
     h("div",{className:"container"},
@@ -156,10 +159,10 @@ function PlatformSection(){
         h("p",{className:"lead"},"Your data and keys stay on your own machines. Each job goes to the best model or service for it.")),
       h("ul",{className:"index"},items.map(it=>h("li",{key:it.name,className:"index__row"+(it.lead?" index__row--lead":"")},
         h("div",{className:"index__name"},h("h3",null,it.name),h("p",{className:"index__tag"},it.tag)),
-        h("div",{className:"index__body"},
-          h("p",null,it.body),
-          it.command?h("code",{className:"measured index__command"},it.command):null),
-        h("div",{className:"index__status"},it.href?h("a",{href:it.href,className:"chip chip--link"+(it.lead?" chip--accent":" chip--ok")},it.status):h("span",{className:"chip"},it.status)))))));
+        h("div",{className:"index__body"},h("p",null,it.body)),
+        h("div",{className:"index__status"},
+          h("span",{className:"chip"+(it.tone==='ok'?" chip--ok":"")},it.status),
+          h("a",{href:it.href,className:"link",onClick:function(e){e.preventDefault();goTo(it.href.slice(1));}},it.action)))))));
 }
 
 function WaitlistSection(){
