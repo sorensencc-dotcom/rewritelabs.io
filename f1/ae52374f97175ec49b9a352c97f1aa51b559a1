@@ -1,0 +1,27 @@
+website/case-study.html
+  s_10d7e352b57d98::t_7a7cb058c05bea 13,19
+website/index.html
+  s_10d7e352b57d98::t_851013f5ad6769 13,15,19
+website/privacy.html
+  s_10d7e352b57d98::t_4472c8227abb52 13,19
+website/screens.js
+  s_10d7e352b57d98::t_e7f07ef789bc55 31-36,40-46,56-57,59-67
+website/site.css
+  s_10d7e352b57d98::t_be0f3df80e9b10 83-88,216-217
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f1ae52374f97175ec49b9a352c97f1aa51b559a1",
+  "prompts": {},
+  "sessions": {
+    "s_10d7e352b57d98": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_10d7e352b57d98",
+        "model": "unknown"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
