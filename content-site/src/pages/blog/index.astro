@@ -6,13 +6,12 @@ const [latest, ...older] = posts;
 ---
 
 <Base
-  title="Blog — Rewrite Labs"
+  title="Blog | Rewrite Labs"
   description="Market research and notes from Rewrite Labs on AI, automation, and small-business websites."
   rss={{ href: '/blog/rss.xml', title: 'Rewrite Labs Blog' }}
 >
   <div class="container blog">
     <header class="blog__head">
-      <div class="eyebrow">Blog</div>
       <h1 class="display-lg blog__title">Market research and field notes.</h1>
       <p class="lede blog__lede">What we are learning about AI, automation, and the websites small businesses depend on.</p>
     </header>
@@ -22,10 +21,9 @@ const [latest, ...older] = posts;
     ) : (
       <>
         <article class="blog-feature">
-          <p class="blog-feature__label">Latest</p>
           <p class="blog-feature__meta">
+            <span class="blog-feature__label">Latest</span>
             <time datetime={latest.data.date.toISOString()}>{formatDate(latest.data.date)}</time>
-            <span aria-hidden="true">&middot;</span>
             <span>{readingMinutes(latest.body)} min read</span>
           </p>
           <h2 class="blog-feature__title"><a href={`/blog/${latest.id}/`} class="blog-feature__link">{latest.data.title}</a></h2>
@@ -36,7 +34,7 @@ const [latest, ...older] = posts;
                 {latest.data.topics.map((t) => <li class="chip">{t}</li>)}
               </ul>
             )}
-            <span class="blog-feature__more" aria-hidden="true">Read the post &rarr;</span>
+            <span class="blog-feature__more" aria-hidden="true">Read the post</span>
           </div>
         </article>
 
@@ -57,7 +55,7 @@ const [latest, ...older] = posts;
     )}
 
     <p class="blog__more">
-      Daily signals: <a href="/ai-news-feed/">AI News Feed</a> &middot; Subscribe: <a href="/blog/rss.xml">RSS</a>
+      Daily signals: <a href="/ai-news-feed/">AI News Feed</a>. Subscribe: <a href="/blog/rss.xml">RSS</a>.
     </p>
   </div>
 </Base>

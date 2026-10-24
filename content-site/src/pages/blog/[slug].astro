@@ -27,14 +27,13 @@ const jsonLd = {
 };
 ---
 
-<Base title={`${title} — Rewrite Labs`} description={description} type="article" image={image}>
+<Base title={`${title} | Rewrite Labs`} description={description} type="article" image={image}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <article class="container article">
     <header class="article__head">
-      <a href="/blog/" class="article__back">&larr; All posts</a>
+      <a href="/blog/" class="article__back">All posts</a>
       <p class="article__meta">
         <time datetime={date.toISOString()}>{formatDate(date)}</time>
-        <span aria-hidden="true">&middot;</span>
         <span>{minutes} min read</span>
       </p>
       <h1 class="article__title">{title}</h1>
@@ -68,7 +67,7 @@ const jsonLd = {
           <label class="sr-only" for="signup-email">Email address</label>
           <input id="signup-email" class="signup__input" name="email" type="email" autocomplete="email" placeholder="you@business.com" required />
           <div class="hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
-          <button type="submit" class="btn-cta">Join waitlist &rarr;</button>
+          <button type="submit" class="btn-cta">Join the waitlist</button>
         </div>
         <p class="signup__note" role="status" aria-live="polite">We'll only use your email to contact you about early access. <a href="/privacy">Privacy</a></p>
       </form>

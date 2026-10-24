@@ -1,10 +1,18 @@
 (function(){
 function _extends(){return _extends=Object.assign?Object.assign.bind():function(n){for(var e=1;e<arguments.length;e++){var t=arguments[e];for(var r in t)({}).hasOwnProperty.call(t,r)&&(n[r]=t[r]);}return n;},_extends.apply(null,arguments);}
-const{Button,Badge,Input,StatCard,ProcessStep}=window.RewriteLabsDesignSystem_7b8b1b;
 const h=React.createElement;
 
+/* The mark: a struck line (the old site) above an amber line (the rewrite). Both colours come from CSS tokens. */
+function Mark(){
+  return h("svg",{className:"mark",viewBox:"0 0 32 32",width:28,height:28,"aria-hidden":"true",focusable:"false"},
+    h("rect",{className:"mark__tile",x:1,y:1,width:30,height:30,rx:7}),
+    h("rect",{className:"mark__old",x:7,y:9,width:13,height:3,rx:1.5}),
+    h("path",{className:"mark__strike",d:"M5.5 14.5L23 7.5"}),
+    h("rect",{className:"mark__new",x:7,y:18,width:18,height:4,rx:2}));
+}
+
 function Wordmark({small}){
-  return h("div",{className:"wordmark"+(small?" wordmark--sm":"")},"Rewrite",h("span",{className:"wordmark__slash"},"/"),h("span",{className:"wordmark__labs"},"Labs"));
+  return h("span",{className:"wordmark"+(small?" wordmark--sm":"")},h(Mark,null),h("span",{className:"wordmark__text"},"Rewrite ",h("span",{className:"wordmark__labs"},"Labs")));
 }
 
 function goTo(id){var el=document.getElementById(id);if(el){el.scrollIntoView({behavior:"smooth",block:"start"});}else{window.location.href="/#"+id;}}
@@ -19,80 +27,139 @@ function ThemeToggle(){
 
 function Nav(){
   return h("nav",{className:"nav","aria-label":"Primary"},
-    h("a",{href:"/",className:"nav__brand"},h(Wordmark,null)),
-    h("div",{className:"nav__actions"},
-      h("a",{href:"/case-study",className:"nav__link"},"Case Study"),
-      h("a",{href:"/blog/",className:"nav__link nav__link--wide"},"Blog"),
-      h("a",{href:"/ai-news-feed/",className:"nav__link nav__link--wide"},"AI News"),
-      h(ThemeToggle,null),
-      h(Button,{variant:"primary",size:"sm",onClick:function(){goTo("waitlist");}},"Get Early Access →")));
+    h("a",{className:"skip",href:"#main"},"Skip to content"),
+    h("div",{className:"nav__bar"},
+      h("div",{className:"nav__links"},
+        h("a",{href:"/case-study",className:"nav__link"},"Case study"),
+        h("a",{href:"/blog/",className:"nav__link nav__link--wide"},"Blog"),
+        h("a",{href:"/ai-news-feed/",className:"nav__link nav__link--wide"},"AI news")),
+      h("a",{href:"/",className:"nav__brand","aria-label":"Rewrite Labs home"},h(Wordmark,null)),
+      h("div",{className:"nav__actions"},
+        h(ThemeToggle,null),
+        h("button",{type:"button",className:"btn btn--quiet",onClick:function(){goTo("waitlist");}},"Get early access"))));
 }
 
-function MiniSite({old:isOld,label}){
-  return h("div",{className:"minisite"+(isOld?" minisite--old":"")},
-    h("div",{className:"minisite__bar"},h("div",{className:"minisite__dot"}),h("div",{className:"minisite__dot"})),
-    h("div",{className:"minisite__body"},h("div",{className:"minisite__line minisite__line--head"}),h("div",{className:"minisite__line minisite__line--a"}),h("div",{className:"minisite__line minisite__line--b"})),
-    h("div",{className:"minisite__label"},label));
+/* A sample scan, built at full size. The values are the sample's own, and the figure says it is a sample. */
+function ScanRecord(){
+  return h("figure",{className:"record","aria-labelledby":"record-title"},
+    h("figcaption",{id:"record-title",className:"record__head"},
+      h("span",null,"Sample scan"),
+      h("span",{className:"measured record__id"},"sample-bakery.example")),
+    h("div",{className:"record__reading"},
+      h("span",{className:"reading"},"2009"),
+      h("span",{className:"record__label"},"Design age of the site")),
+    h("dl",{className:"record__rows"},
+      h("div",{className:"record__row"},h("dt",null,"Mobile ready"),h("dd",{className:"measured"},"No")),
+      h("div",{className:"record__row"},h("dt",null,"Page speed"),h("dd",{className:"measured"},"38")),
+      h("div",{className:"record__row"},h("dt",null,"Redesign score"),h("dd",{className:"measured record__good"},"94"))),
+    h("div",{className:"record__foot"},
+      h("ul",{className:"chips","aria-label":"Verdicts"},
+        h("li",{className:"chip chip--bad"},"Outdated"),
+        h("li",{className:"chip chip--bad"},"Fails"),
+        h("li",{className:"chip chip--cool"},"High priority")),
+      h("a",{href:"/case-study",className:"link"},"See the full before and after")));
 }
 
 function Hero(){
-  return h("div",{className:"container hero"},
-    h("div",null,
-      h("div",{className:"eyebrow hero__eyebrow"},"Rewrite Labs"),
-      h("h1",{className:"hero__title"},"Automation That Runs on Your Own Ground.",h("br",null),h("span",{className:"hero__title-accent"},"Best of Breed Where It Counts.")),
-      h("p",{className:"lede hero__lede"},"Rewrite Labs builds AI tools that keep your data and keys on your own machines and use the best model or service for each job. We start with websites: we find businesses losing customers to outdated sites and deliver a modern redesign, automatically."),
-      h("div",{className:"hero__cta"},
-        h(Button,{variant:"primary",size:"lg",onClick:function(){goTo("platform");}},"Explore What We Build ↓"),
-        h(Button,{variant:"secondary",size:"lg",onClick:function(){goTo("waitlist");}},"Get Early Access →"))),
-    h("div",{className:"hero__card"},
-      h("div",{className:"hero__card-title"},"Rewrite Labs Sites — scanning sample-bakery.example"),
-      h("div",{className:"hero__compare"},h(MiniSite,{old:true,label:"Before"}),h("div",{className:"hero__arrow"},"→"),h(MiniSite,{label:"After"})),
-      h("div",{className:"hero__stats"},
-        h(StatCard,{value:"2009",label:"Design Age",tone:"bad"}),
-        h(StatCard,{value:"No",label:"Mobile Ready",tone:"bad"}),
-        h(StatCard,{value:"38",label:"Page Speed",tone:"bad"}),
-        h(StatCard,{value:"94",label:"Redesign Score",tone:"good"})),
-      h("div",{className:"hero__badges"},h(Badge,{tone:"bad"},"Outdated"),h(Badge,{tone:"bad"},"Fails"),h(Badge,{tone:"warn"},"High Priority")),
-      h("a",{href:"/case-study",className:"hero__more"},"See the full before/after →")));
+  return h("section",{className:"hero","aria-labelledby":"hero-title"},
+    h("div",{className:"container hero__grid"},
+      h("div",{className:"hero__text"},
+        h("h1",{id:"hero-title"},"Automation that runs on your own ground."),
+        h("p",{className:"lead hero__lead"},"AI tools that keep your data and keys on your machines."),
+        h("div",{className:"hero__actions"},
+          h("button",{type:"button",className:"btn btn--primary",onClick:function(){goTo("waitlist");}},"Get early access"),
+          h("button",{type:"button",className:"btn btn--quiet",onClick:function(){goTo("platform");}},"See what we build"))),
+      h(ScanRecord,null)));
 }
 
 function SitesAnchor(){return h("div",{id:"sites"});}
 
-function StatStrip(){
-  const items=[['200M+','Outdated websites on the internet'],['94%','Of first impressions are design-related'],['3s','Time before users abandon a slow site']];
-  return h("div",{className:"container stat-strip"},items.map(([v,l])=>h("div",{key:l,className:"stat-strip__item"},h("div",{className:"stat-strip__value"},v),h("div",{className:"stat-strip__label"},l))));
+/* One visual state per step. They share one cell of the grid and the one for the step in view shows, so the visual stays pinned while the steps scroll. */
+function stateFor(i,on){
+  const cls="pinstate"+(on?" is-on":"");
+  const minus=(t)=>h("p",{className:"diff__row diff__row--minus"},h("span",{className:"diff__gutter","aria-hidden":"true"},"−"),t);
+  const plus=(t)=>h("p",{className:"diff__row diff__row--plus"},h("span",{className:"diff__gutter","aria-hidden":"true"},"+"),t);
+  if(i===0)return h("figure",{className:cls},
+    h("figcaption",{className:"pinstate__head"},"What the crawler scores"),
+    h("ul",{className:"pinlist"},["Design age","Mobile responsiveness","Page speed","Accessibility"].map(t=>h("li",{key:t,className:"pinlist__row"},h("span",null,t),h("span",{className:"chip chip--cool"},"Scored")))));
+  if(i===1)return h("figure",{className:cls},
+    h("figcaption",{className:"pinstate__head"},"What the draft changed on the Sunbelt sample"),
+    h("div",{className:"diff"},
+      minus("Nine-item flat navigation, three levels of dropdowns"),
+      plus("Four links, one always-visible phone call-to-action"),
+      minus("“Get an estimate” repeated six times down the page"),
+      plus("One persistent call-to-action, styled to stand out once")));
+  if(i===2)return h("figure",{className:cls},
+    h("figcaption",{className:"pinstate__head"},"The owner’s preview"),
+    h("dl",{className:"pinmeta"},
+      h("div",{className:"pinmeta__row"},h("dt",null,"To"),h("dd",{className:"measured"},"owner@sample-bakery.example")),
+      h("div",{className:"pinmeta__row"},h("dt",null,"Attached"),h("dd",null,"A before and after of their own site"))),
+    h("a",{href:"/case-study",className:"link"},"See a full sample"));
+  return h("figure",{className:cls},
+    h("figcaption",{className:"pinstate__head"},"From draft to delivery"),
+    h("ul",{className:"trail"},
+      h("li",{className:"trail__row"},h("span",{className:"trail__who trail__who--tool"},"AI"),h("span",null,"Draft generated")),
+      h("li",{className:"trail__row"},h("span",{className:"trail__who trail__who--person"},"Our team"),h("span",null,"Design refined for production")),
+      h("li",{className:"trail__row"},h("span",{className:"trail__who trail__who--person"},"The owner"),h("span",null,"Approved")),
+      h("li",{className:"trail__row"},h("span",{className:"trail__who trail__who--tool"},"Delivery"),h("span",null,"Site shipped end to end"))));
 }
 
 function ProcessSection(){
   const steps=[
-    {emoji:'🔍',title:'AI Crawler Finds the Worst Offenders',body:"Our crawler scans thousands of websites daily, scoring each one on design age, mobile responsiveness, page speed, and accessibility. No manual prospecting required.",footnote:'Thousands scanned daily'},
-    {emoji:'✦',title:'AI Generates a Modern Mockup — Instantly',body:"Using the site's existing content and branding, our AI engine generates a polished, modern redesign. Same business, new look — automatically tailored to each owner.",footnote:'Before & after in seconds'},
-    {emoji:'📬',title:'Personalized Outreach with a Compelling Preview',body:'Business owners receive a personalized message with a before & after preview of their site. The offer sells itself. No cold calls, no spray-and-pray.',footnote:'Hyper-personalized at scale'},
-    {emoji:'🚀',title:'Convert Interest into Production-Ready Websites',body:'Interested owners become paying clients. Our team refines the AI-generated design into a production-ready site and handles delivery — end to end.',footnote:'Human-refined, client-approved'}
+    {title:'A crawler finds the worst offenders',body:"It scans thousands of websites daily and scores each on design age, mobile responsiveness, page speed and accessibility. No manual prospecting.",footnote:'Thousands scanned daily'},
+    {title:'Our AI drafts a modern mockup',body:"It reads the site’s existing content and branding, then generates a polished redesign. Same business, new look, tailored to each owner.",footnote:'Before and after in seconds'},
+    {title:'The owner gets a personal preview',body:'Business owners receive a message with a before and after of their own site. The offer sells itself. No cold calls, no spray and pray.',footnote:'Personalized at scale'},
+    {title:'Interested owners become clients',body:'Our team refines the AI-generated design into a production-ready site and handles delivery, end to end.',footnote:'Human-refined, client-approved'}
   ];
-  return h("div",{id:"process",className:"container process"},
-    h("div",{className:"eyebrow"},"Rewrite Labs Sites"),
-    h("h2",{className:"display-md process__title"},"From scan to shipped, fully automated."),
-    h("div",{className:"process__grid"},steps.map((s,i)=>h(ProcessStep,_extends({key:s.title,index:i+1},s)))));
+  const [step,setStep]=React.useState(0);
+  const refs=React.useRef([]);
+  React.useEffect(function(){
+    if(!("IntersectionObserver" in window))return;
+    const io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){setStep(Number(e.target.getAttribute("data-step")));}});
+    },{rootMargin:"-45% 0px -45% 0px"});
+    refs.current.forEach(function(el){if(el)io.observe(el);});
+    return function(){io.disconnect();};
+  },[]);
+  return h("section",{id:"sites","aria-labelledby":"process-title",className:"pin"},
+    h("div",{id:"process",className:"container"},
+      h("div",{className:"headblock"},
+        h("h2",{id:"process-title"},"From scan to shipped, fully automated."),
+        h("p",{className:"lead"},"We start with websites. We find businesses losing customers to outdated sites and deliver a modern redesign, automatically.")),
+      h("ol",{className:"pin__steps"},steps.map((s,i)=>h("li",{key:s.title,role:"listitem",className:"pin__item"},
+        h("div",{className:"pin__step"+(step===i?" is-on":""),"data-step":i,ref:function(el){refs.current[i]=el;}},
+          h("h3",null,s.title),
+          h("p",{className:"pin__body"},s.body),
+          h("p",{className:"pin__note"},s.footnote)),
+        stateFor(i,step===i))))));
+}
+
+function Figures(){
+  const items=[['200M+','Outdated websites on the internet'],['94%','Of first impressions are design-related'],['3s','Time before users abandon a slow site']];
+  return h("section",{className:"figures","aria-label":"Why outdated sites cost customers"},
+    h("div",{className:"container"},
+      h("dl",{className:"figures__list"},items.map(([v,l])=>h("div",{key:l,className:"figures__row"},h("dt",{className:"figures__label"},l),h("dd",{className:"figures__value"},v))))));
 }
 
 function PlatformSection(){
   const items=[
-    {name:'Rewrite Labs Sites',tag:'Website redesign',body:"We scan for outdated small-business sites and deliver a modern, mobile-ready redesign automatically, with a before and after preview for the owner.",status:'Early access open',href:'#sites'},
+    {name:'Rewrite Labs Sites',tag:'Website redesign',body:"We scan for outdated small-business sites and deliver a modern, mobile-ready redesign automatically, with a before and after preview for the owner.",status:'Early access open',href:'#sites',lead:true},
     {name:'TRM',tag:'Research engine',body:"Research with an audit trail. TRM ingests sources, extracts facts, scores and crosslinks topics, and logs every change. If there is no evidence, there is no claim.",status:'In development'},
     {name:'Sigil',tag:'Agent relay',body:"A signed, auditable relay between AI agents such as Claude, Codex, Grok, and local models. Every message is cryptographically signed, and risky actions wait for a human to approve.",status:'In development'},
-    {name:'Toolforge',tag:'Agent skills',body:"Verified skills and plugins for Claude Code. Each one is validated and version-pinned before it installs. Add the marketplace with claude plugin marketplace add sorensencc-dotcom/toolforge-marketplace.",status:'Live: browse the catalog',href:'https://github.com/sorensencc-dotcom/toolforge-marketplace'},
+    {name:'Toolforge',tag:'Agent skills',body:"Verified skills and plugins for Claude Code. Each one is validated and version-pinned before it installs.",command:'claude plugin marketplace add sorensencc-dotcom/toolforge-marketplace',status:'Live: browse the catalog',href:'https://github.com/sorensencc-dotcom/toolforge-marketplace'},
     {name:'kb-sync',tag:'Knowledge base',body:"A knowledge base that lives on your own machine, with full-text and semantic search that needs no network round trip.",status:'In development'}
   ];
-  return h("div",{id:"platform",className:"container platform"},
-    h("div",{className:"eyebrow"},"What We Build"),
-    h("h2",{className:"display-md platform__title"},"One rule across everything we build."),
-    h("p",{className:"lede platform__lede"},"Home ground, best of breed. Your data and keys stay on your own machines, and each job goes to the best model or service for it. Websites are where it reaches customers. The rest is the tooling behind it."),
-    h("div",{className:"platform__grid"},items.map(it=>h("div",{key:it.name,className:"platform__card"},
-      h("div",{className:"platform__tag"},it.tag),
-      h("h3",{className:"platform__name"},it.name),
-      h("p",{className:"platform__body"},it.body),
-      h("div",{className:"platform__status"},it.href?h("a",{href:it.href,className:"platform__link"},it.status+" →"):it.status)))));
+  return h("section",{id:"platform","aria-labelledby":"platform-title",className:"platform"},
+    h("div",{className:"container"},
+      h("div",{className:"headblock headblock--split"},
+        h("h2",{id:"platform-title"},"One rule across everything we build."),
+        h("p",{className:"lead"},"Your data and keys stay on your own machines. Each job goes to the best model or service for it.")),
+      h("ul",{className:"index"},items.map(it=>h("li",{key:it.name,className:"index__row"+(it.lead?" index__row--lead":"")},
+        h("div",{className:"index__name"},h("h3",null,it.name),h("p",{className:"index__tag"},it.tag)),
+        h("div",{className:"index__body"},
+          h("p",null,it.body),
+          it.command?h("code",{className:"measured index__command"},it.command):null),
+        h("div",{className:"index__status"},it.href?h("a",{href:it.href,className:"chip chip--link"+(it.lead?" chip--accent":" chip--ok")},it.status):h("span",{className:"chip"},it.status)))))));
 }
 
 function WaitlistSection(){
@@ -114,26 +181,40 @@ function WaitlistSection(){
         else setErr(res==='limited'?'Too many attempts from this connection. Please try again later.':res==='server'?'Signup is unavailable right now. Please try again later or email info@rewritelabs.io.':'Check your email address and try again.');
       });
   }
-  return h("div",{id:"waitlist",className:"waitlist"},
-    h("div",{className:"eyebrow"},"Early Access"),
-    h("h2",{className:"display-md waitlist__title"},"Be first in line."),
-    h("p",{className:"waitlist__lede"},"We're opening access to a limited group of early users. Drop your email and we'll reach out when we're ready for you."),
-    !sent
-      ?h("form",{onSubmit:submit,className:"waitlist__form"},
-          h("label",{className:"waitlist__field"},h("span",{className:"sr-only"},"Email address"),h(Input,{type:"email",placeholder:"you@business.com",value:email,onChange:e=>setEmail(e.target.value)})),
-          h("div",{className:"hp","aria-hidden":"true"},h("label",null,"Leave this field empty",h("input",{type:"text",name:"website",tabIndex:-1,autoComplete:"off",value:trap,onChange:e=>setTrap(e.target.value)}))),
-          h(Button,{variant:"primary",type:"submit",disabled:busy},busy?"Joining...":"Join Waitlist →"))
-      :h("div",{role:"status",className:"waitlist__done"},"✓ You're on the list! We'll be in touch soon."),
-    h("div",{role:"status","aria-live":"polite",className:"waitlist__note"},err||"We'll only use your email to contact you about early access."," ",h("a",{href:"/privacy",className:"muted-link"},"Privacy")));
+  return h("section",{id:"waitlist","aria-labelledby":"waitlist-title",className:"waitlist"},
+    h("div",{className:"container waitlist__grid"},
+      h("div",{className:"waitlist__text"},
+        h("h2",{id:"waitlist-title"},"Be first in line."),
+        h("p",{className:"lead"},"We’re opening access to a limited group of early users. Drop your email and we’ll reach out when we’re ready for you.")),
+      h("div",{className:"waitlist__panel"},
+        !sent
+          ?h("form",{onSubmit:submit,className:"waitlist__form",noValidate:true},
+              h("label",{className:"field",htmlFor:"waitlist-email"},h("span",{className:"field__label"},"Email address"),
+                h("input",{id:"waitlist-email",className:"field__input",type:"email",name:"email",autoComplete:"email",inputMode:"email",placeholder:"you@business.com",required:true,value:email,onChange:e=>setEmail(e.target.value)})),
+              h("div",{className:"hp","aria-hidden":"true"},h("label",null,"Leave this field empty",h("input",{type:"text",name:"website",tabIndex:-1,autoComplete:"off",value:trap,onChange:e=>setTrap(e.target.value)}))),
+              h("button",{className:"btn btn--primary",type:"submit",disabled:busy,"aria-busy":busy?"true":undefined},busy?"Joining…":"Join the waitlist"))
+          :h("div",{role:"status",className:"waitlist__done"},"You’re on the list. We’ll be in touch soon."),
+        h("div",{role:"status","aria-live":"polite",className:"waitlist__note"},err||"We’ll only use your email to contact you about early access."," ",h("a",{href:"/privacy",className:"link"},"Privacy")))));
 }
 
 function Footer(){
   return h("footer",{className:"footer"},
-    h(Wordmark,{small:true}),
-    h("div",{className:"footer__legal"},"\xA9 2026 Cast Iron Productions LLC \xB7 Rewrite Labs",h("br"),"7901 4th St N, Ste 300, St. Petersburg, FL 33702",h("br"),
-      h("a",{href:"/blog/",className:"muted-link"},"Blog")," · ",h("a",{href:"/ai-news-feed/",className:"muted-link"},"AI News Feed")," · ",
-      h("a",{href:"/privacy",className:"muted-link"},"Privacy")," \xB7 ",h("a",{href:"mailto:info@rewritelabs.io",className:"muted-link"},"info@rewritelabs.io")));
+    h("div",{className:"container footer__grid"},
+      h("div",{className:"footer__id"},
+        h("a",{href:"/",className:"footer__brand","aria-label":"Rewrite Labs home"},h(Wordmark,null)),
+        h("p",{className:"footer__legal"},"\xA9 2026 Cast Iron Productions LLC (Rewrite Labs)",h("br"),"7901 4th St N, Ste 300",h("br"),"St. Petersburg, FL 33702")),
+      h("nav",{className:"footer__col","aria-label":"Read"},
+        h("h2",{className:"footer__h"},"Read"),
+        h("ul",null,
+          h("li",null,h("a",{href:"/blog/",className:"link"},"Blog")),
+          h("li",null,h("a",{href:"/ai-news-feed/",className:"link"},"AI News Feed")),
+          h("li",null,h("a",{href:"/case-study",className:"link"},"Case study")))),
+      h("nav",{className:"footer__col","aria-label":"Company"},
+        h("h2",{className:"footer__h"},"Company"),
+        h("ul",null,
+          h("li",null,h("a",{href:"/privacy",className:"link"},"Privacy")),
+          h("li",null,h("a",{href:"mailto:info@rewritelabs.io",className:"link"},"info@rewritelabs.io"))))));
 }
 
-window.RLScreens={Nav,Hero,SitesAnchor,StatStrip,ProcessSection,PlatformSection,WaitlistSection,Footer};
+window.RLScreens={Nav,Hero,SitesAnchor,ProcessSection,Figures,PlatformSection,WaitlistSection,Footer,Wordmark};
 })();

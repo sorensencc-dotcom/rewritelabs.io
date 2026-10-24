@@ -6,7 +6,6 @@ import { fileURLToPath } from 'node:url';
 
 const website = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'website');
 const read = (f) => fs.readFileSync(path.join(website, f), 'utf8');
-const ds = fs.readdirSync(path.join(website, '_ds'))[0];
 
 const tokens = (css) => Object.fromEntries([...css.matchAll(/(--[\w-]+)\s*:\s*([^;}]+)/g)].map((m) => [m[1], m[2].trim()]));
 const block = (css, header) => {
@@ -21,9 +20,21 @@ const resolve = (t, name) => {
   return v;
 };
 
-const luminance = (hex) => {
-  const c = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255).map((x) => (x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4));
-  return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+// Tokens are OKLCH. Convert to linear sRGB for the WCAG relative-luminance formula.
+const luminance = (color) => {
+  const m = /^oklch\(\s*([\d.]+)%\s+([\d.]+)\s+([\d.]+)/.exec(color);
+  assert.ok(m, `expected an oklch() colour, got ${color}`);
+  const L = Number(m[1]) / 100;
+  const C = Number(m[2]);
+  const hue = (Number(m[3]) * Math.PI) / 180;
+  const a = C * Math.cos(hue);
+  const b = C * Math.sin(hue);
+  const l = (L + 0.3963377774 * a + 0.2158037573 * b) ** 3;
+  const mm = (L - 0.1055613458 * a - 0.0638541728 * b) ** 3;
+  const s = (L - 0.0894841775 * a - 1.291485548 * b) ** 3;
+  const lin = [4.0767416621 * l - 3.3077115913 * mm + 0.2309699292 * s, -1.2684380046 * l + 2.6097574011 * mm - 0.3413193965 * s, -0.0041960863 * l - 0.7034186147 * mm + 1.707614701 * s];
+  const [r, g, bl] = lin.map((x) => Math.min(1, Math.max(0, x)));
+  return 0.2126 * r + 0.7152 * g + 0.0722 * bl;
 };
 const contrast = (a, b) => {
   const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x);
@@ -31,14 +42,13 @@ const contrast = (a, b) => {
 };
 
 const site = read('site.css');
-const dsColors = tokens(read(`_ds/${ds}/tokens/colors.css`));
-const dark = { ...dsColors, ...tokens(block(site, ':root {\n  color-scheme: dark;')) };
+const dark = tokens(block(site, ':root {\n  color-scheme: dark;'));
 const light = { ...dark, ...tokens(block(site, ':root[data-theme="light"] {')) };
 
 for (const [name, t] of [['dark', dark], ['light', light]]) {
   test(`${name} theme: text tokens are at least 4.5:1 on the page and card backgrounds`, () => {
-    for (const fg of ['--fg-1', '--fg-2', '--fg-3', '--accent-text', '--signal-bad', '--signal-good', '--signal-warn']) {
-      for (const bg of ['--ink-1', '--ink-2']) {
+    for (const fg of ['--color-ink', '--color-ink-2', '--color-muted', '--color-accent', '--color-cool', '--color-ok', '--color-bad']) {
+      for (const bg of ['--color-paper', '--color-paper-2']) {
         const ratio = contrast(resolve(t, fg), resolve(t, bg));
         assert.ok(ratio >= 4.5, `${name}: ${fg} ${resolve(t, fg)} on ${bg} ${resolve(t, bg)} is ${ratio.toFixed(2)}:1`);
       }
@@ -62,9 +72,7 @@ for (const file of ['index.html', 'case-study.html', 'privacy.html']) {
   });
 }
 
-test('the design system Input gets a visible resting border and the honeypot stays off screen', () => {
-  assert.match(site, /\.waitlist__field > input:not\(:focus\) \{ border-color: var\(--fg-3\) !important; \}/);
+test('form fields have a visible resting border and the honeypot stays off screen', () => {
+  assert.match(site, /\.field__input, \.signup__input \{[^}]*border: var\(--rule-hair\) solid var\(--color-muted\)/);
   assert.match(site, /\.hp \{ position: absolute; left: -9999px;/);
-  const dsInput = fs.readFileSync(path.join(website, '_ds', ds, '_ds_bundle.js'), 'utf8');
-  assert.match(dsInput, /var\(--border-subtle\)/, 'if the design system changes its Input border, revisit the override in site.css');
 });
