@@ -11,6 +11,7 @@
     "build": "astro build && node scripts/copy-to-website.mjs && node scripts/prerender-pages.mjs",
     "prerender": "node scripts/prerender-pages.mjs",
     "test": "node --test",
+    "validate:blog": "node scripts/validate-blog.mjs",
     "export:briefing": "node scripts/publish-briefing.mjs"
   },
   "dependencies": {
