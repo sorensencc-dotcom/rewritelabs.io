@@ -28,14 +28,22 @@ function Nav(){
       h(Button,{variant:"primary",size:"sm",onClick:function(){goTo("waitlist");}},"Get Early Access →")));
 }
 
-function MiniSite({old:isOld,label}){
-  return h("div",{className:"minisite"+(isOld?" minisite--old":"")},
-    h("div",{className:"minisite__bar"},h("div",{className:"minisite__dot"}),h("div",{className:"minisite__dot"})),
-    h("div",{className:"minisite__body"},h("div",{className:"minisite__line minisite__line--head"}),h("div",{className:"minisite__line minisite__line--a"}),h("div",{className:"minisite__line minisite__line--b"})),
-    h("div",{className:"minisite__label"},label));
+function HeroStackItem({name,tag,proof}){
+  return h("div",{className:"hero__stack-item"},
+    h("div",{className:"hero__stack-left"},
+      h("span",{className:"hero__stack-name"},name),
+      h("span",{className:"hero__stack-tag"},tag)),
+    h("span",{className:"hero__stack-proof"},proof));
 }
 
 function Hero(){
+  const stack=[
+    {name:'Sites',tag:'Websites',proof:'Static, zero-tracker output'},
+    {name:'TRM',tag:'Research',proof:'Evidence-first audit trail'},
+    {name:'Sigil',tag:'Agent Relay',proof:'Ed25519 signed envelopes'},
+    {name:'Toolforge',tag:'Skills',proof:'Validated & version-pinned'},
+    {name:'kb-sync',tag:'Knowledge',proof:'Local zero-roundtrip search'}
+  ];
   return h("div",{className:"container hero"},
     h("div",null,
       h("div",{className:"eyebrow hero__eyebrow"},"Rewrite Labs"),
@@ -45,15 +53,18 @@ function Hero(){
         h(Button,{variant:"primary",size:"lg",onClick:function(){goTo("platform");}},"Explore What We Build ↓"),
         h(Button,{variant:"secondary",size:"lg",onClick:function(){goTo("waitlist");}},"Get Early Access →"))),
     h("div",{className:"hero__card"},
-      h("div",{className:"hero__card-title"},"Rewrite Labs Sites — scanning sample-bakery.example"),
-      h("div",{className:"hero__compare"},h(MiniSite,{old:true,label:"Before"}),h("div",{className:"hero__arrow"},"→"),h(MiniSite,{label:"After"})),
+      h("div",{className:"hero__card-title"},"Rewrite Labs // Home Ground Stack"),
+      h("div",{className:"hero__stack"},stack.map(function(s){return h(HeroStackItem,_extends({key:s.name},s));})),
       h("div",{className:"hero__stats"},
-        h(StatCard,{value:"2009",label:"Design Age",tone:"bad"}),
-        h(StatCard,{value:"No",label:"Mobile Ready",tone:"bad"}),
-        h(StatCard,{value:"38",label:"Page Speed",tone:"bad"}),
-        h(StatCard,{value:"94",label:"Redesign Score",tone:"good"})),
-      h("div",{className:"hero__badges"},h(Badge,{tone:"bad"},"Outdated"),h(Badge,{tone:"bad"},"Fails"),h(Badge,{tone:"warn"},"High Priority")),
-      h("a",{href:"/case-study",className:"hero__more"},"See the full before/after →")));
+        h(StatCard,{value:"100%",label:"Local Keys & Data",tone:"good"}),
+        h(StatCard,{value:"Ed25519",label:"Signed Actions",tone:"good"}),
+        h(StatCard,{value:"0ms",label:"Cloud Roundtrip",tone:"good"}),
+        h(StatCard,{value:"Best of Breed",label:"Model Routing",tone:"neutral"})),
+      h("div",{className:"hero__badges"},
+        h(Badge,{tone:"good"},"Local First"),
+        h(Badge,{tone:"good"},"Audited Actions"),
+        h(Badge,{tone:"neutral"},"Zero Telemetry")),
+      h("a",{href:"#platform",onClick:function(e){e.preventDefault();goTo("platform");},className:"hero__more"},"Explore the full platform architecture ↓")));
 }
 
 function SitesAnchor(){return h("div",{id:"sites"});}
