@@ -5,12 +5,11 @@ const briefings = await allBriefings();
 ---
 
 <Base
-  title="AI News Feed — Rewrite Labs"
+  title="AI News Feed | Rewrite Labs"
   description="Daily AI briefings synthesized across eight curated sources, with confidence scores and 7-day trend deltas."
   rss={{ href: '/ai-news-feed/rss.xml', title: 'Rewrite Labs AI News Feed' }}
 >
   <div class="container feed">
-    <div class="eyebrow">AI News Feed</div>
     <h1 class="display-lg feed__title">Daily AI signals for operators.</h1>
     <p class="lede feed__lede">We weigh mentions across eight curated sources, check claims against primary sources, and track whether each theme is accelerating or fading over seven days.</p>
     {briefings.length === 0 ? (
@@ -21,7 +20,8 @@ const briefings = await allBriefings();
           <article class="feed__card">
             <div class="feed__row">
               <time class="feed__meta" datetime={b.data.date.toISOString()}>{formatDate(b.data.date)}</time>
-              <span class="feed__meta">{Math.round(b.data.confidenceScore * 100)}% confidence &middot; {b.data.sourcesEvaluated} sources</span>
+              <span class="feed__meta">{Math.round(b.data.confidenceScore * 100)}% confidence</span>
+              <span class="feed__meta">{b.data.sourcesEvaluated} sources</span>
             </div>
             <h2 class="feed__card-title"><a href={`/ai-news-feed/${b.id}/`}>{b.data.title}</a></h2>
             {b.data.summary && <p class="feed__summary">{b.data.summary}</p>}
@@ -30,7 +30,7 @@ const briefings = await allBriefings();
                 {b.data.themes.map((t) => (
                   <section class="theme">
                     <h3 class="theme__name"><span class={`delta delta--${t.delta7d}`} aria-hidden="true">{deltaGlyph[t.delta7d]}</span> {t.name}</h3>
-                    <p class="feed__meta">{t.delta7d} over 7 days &middot; {t.tags.join(' · ')}</p>
+                    <p class="feed__meta">{t.delta7d} over 7 days. Tags: {t.tags.join(', ')}</p>
                     <p class="feed__summary">{t.summary}</p>
                     <ul class="sources">
                       {t.primarySources.map((s) => (
@@ -39,7 +39,7 @@ const briefings = await allBriefings();
                     </ul>
                   </section>
                 ))}
-                <p class="feed__meta"><a href={`/ai-news-feed/${b.id}/`}>Full briefing and operator takeaways &rarr;</a></p>
+                <p class="feed__meta"><a href={`/ai-news-feed/${b.id}/`}>Full briefing and operator takeaways</a></p>
               </div>
             ) : (
               <ul class="chips">

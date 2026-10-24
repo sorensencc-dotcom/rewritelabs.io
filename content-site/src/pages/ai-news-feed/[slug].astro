@@ -15,15 +15,16 @@ const d = briefing.data;
 ---
 
 <Base
-  title={`${d.title} — Rewrite Labs`}
+  title={`${d.title} | Rewrite Labs`}
   description={d.summary ?? 'Daily AI briefing from Rewrite Labs.'}
   rss={{ href: '/ai-news-feed/rss.xml', title: 'Rewrite Labs AI News Feed' }}
 >
   <article class="container post">
-    <a href="/ai-news-feed/" class="post__back">&larr; AI News Feed</a>
+    <a href="/ai-news-feed/" class="post__back">AI News Feed</a>
     <div class="feed__row">
       <time class="feed__meta" datetime={d.date.toISOString()}>{formatDate(d.date)}</time>
-      <span class="feed__meta">{Math.round(d.confidenceScore * 100)}% confidence &middot; {d.sourcesEvaluated} sources</span>
+      <span class="feed__meta">{Math.round(d.confidenceScore * 100)}% confidence</span>
+      <span class="feed__meta">{d.sourcesEvaluated} sources</span>
     </div>
     <h1 class="display-lg post__title">{d.title}</h1>
     {d.summary && <p class="lede">{d.summary}</p>}
@@ -31,7 +32,7 @@ const d = briefing.data;
       {d.themes.map((t) => (
         <section class="theme">
           <h2 class="theme__name"><span class={`delta delta--${t.delta7d}`} aria-hidden="true">{deltaGlyph[t.delta7d]}</span> {t.name}</h2>
-          <p class="feed__meta">{t.delta7d} over 7 days &middot; {t.tags.join(' · ')}</p>
+          <p class="feed__meta">{t.delta7d} over 7 days. Tags: {t.tags.join(', ')}</p>
           <p class="feed__summary">{t.summary}</p>
           <ul class="sources">
             {t.primarySources.map((s) => (

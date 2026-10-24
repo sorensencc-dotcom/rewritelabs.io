@@ -6,7 +6,7 @@ Source for [rewritelabs.io](https://rewritelabs.io) and the scan/redesign pipeli
 
 | Path | What it is |
 | --- | --- |
-| `website/` | The static site served by Cloudflare Pages: landing page, case study, privacy policy, the waitlist function, and the self-hosted React, fonts and design system. |
+| `website/` | The static site served by Cloudflare Pages: landing page, case study, privacy policy, the waitlist function, and the self-hosted React and fonts. |
 | `content-site/` | Astro app that builds `/blog` and `/ai-news-feed` into `website/`. See [content-site/README.md](content-site/README.md). |
 | `engine/`, `scanner/`, `discovery/` | Site scanning, discovery and rewrite pipeline (Node). |
 | `data/`, `reports/` | Pipeline data (feeds, metrics, results) and generated reports. |
@@ -36,9 +36,9 @@ To preview locally, serve `website/` with any static server after running the bu
 
 ## Themes and contrast
 
-Dark is the default. Light follows the system setting, and the nav toggle (`website/theme.js`) forces either one and remembers the choice in `localStorage`. The tokens live at the top of `website/site.css`: a dark block, a `[data-theme="light"]` block, and an identical `prefers-color-scheme: light` block. Edit the two light blocks together; a test checks they match, and that every text token is at least 4.5:1 on the page and card backgrounds in both themes.
+The look is the Hallmark "Console" theme: Host Grotesk for what a person reads, Atkinson Hyperlegible Mono for what an instrument measured, amber for a person and cool blue for an instrument. Dark (graphite) is the default. Light (paper) follows the system setting, and the nav toggle (`website/theme.js`) forces either one and remembers the choice in `localStorage`. The tokens live at the top of `website/site.css`: a dark block, a `[data-theme="light"]` block, and an identical `prefers-color-scheme: light` block. Edit the two light blocks together; a test checks they match, and that every text token (`--color-ink`, `--color-ink-2`, `--color-muted`, `--color-accent`, `--color-cool`, `--color-ok`, `--color-bad`) is at least 4.5:1 on `--color-paper` and `--color-paper-2` in both themes.
 
-Use `--accent-text` for text in the brand color. The crimson `--pink-400` is 3.8:1 on the dark page, so keep it to fills and large display text.
+Fonts are self-hosted from `website/fonts/` (see `website/fonts.css`). The old Inter, Space Grotesk and JetBrains Mono files and the `website/_ds/` design-system folder are no longer referenced by any page; they can be deleted.
 
 ## Email signup on posts
 
