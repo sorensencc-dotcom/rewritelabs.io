@@ -89,21 +89,30 @@ function ProcessSection(){
 
 function PlatformSection(){
   const items=[
-    {name:'Rewrite Labs Sites',tag:'Website redesign',body:"We scan for outdated small-business sites and deliver a modern, mobile-ready redesign automatically, with a before and after preview for the owner.",status:'Early access open',href:'#sites'},
-    {name:'TRM',tag:'Research engine',body:"Research with an audit trail. TRM ingests sources, extracts facts, scores and crosslinks topics, and logs every change. If there is no evidence, there is no claim.",status:'In development'},
-    {name:'Sigil',tag:'Agent relay',body:"A signed, auditable relay between AI agents such as Claude, Codex, Grok, and local models. Every message is cryptographically signed, and risky actions wait for a human to approve.",status:'In development'},
-    {name:'Toolforge',tag:'Agent skills',body:"Verified skills and plugins for Claude Code. Each one is validated and version-pinned before it installs. Add the marketplace with claude plugin marketplace add sorensencc-dotcom/toolforge-marketplace.",status:'Live: browse the catalog',href:'https://github.com/sorensencc-dotcom/toolforge-marketplace'},
-    {name:'kb-sync',tag:'Knowledge base',body:"A knowledge base that lives on your own machine, with full-text and semantic search that needs no network round trip.",status:'In development'}
+    {name:'Rewrite Labs Sites',tag:'Website redesign',body:"We scan for outdated small-business sites and deliver a modern, mobile-ready redesign automatically, with a before and after preview for the owner.",status:'Early access open',tone:'good',action:'Join early access',href:'#waitlist'},
+    {name:'TRM',tag:'Research engine',body:"Research with an audit trail. TRM ingests sources, extracts facts, scores and crosslinks topics, and logs every change. If there is no evidence, there is no claim.",status:'In development',tone:'neutral',action:'Get early access',href:'#waitlist'},
+    {name:'Sigil',tag:'Agent relay',body:"A signed, auditable relay between AI agents such as Claude, Codex, Grok, and local models. Every message is cryptographically signed, and risky actions wait for a human to approve.",status:'In development',tone:'neutral',action:'Get early access',href:'#waitlist'},
+    {name:'Toolforge',tag:'Agent skills',body:"Verified skills and plugins for AI coding agents. Each capability is validated against strict schema contracts and version-pinned before installation, with a public marketplace in development.",status:'In development',tone:'neutral',action:'Get early access',href:'#waitlist'},
+    {name:'kb-sync',tag:'Knowledge base',body:"A knowledge base that lives on your own machine, with full-text and semantic search that needs no network round trip.",status:'In development',tone:'neutral',action:'Get early access',href:'#waitlist'}
   ];
   return h("div",{id:"platform",className:"container platform"},
     h("div",{className:"eyebrow"},"What We Build"),
     h("h2",{className:"display-md platform__title"},"One rule across everything we build."),
     h("p",{className:"lede platform__lede"},"Home ground, best of breed. Your data and keys stay on your own machines, and each job goes to the best model or service for it. Websites are where it reaches customers. The rest is the tooling behind it."),
-    h("div",{className:"platform__grid"},items.map(it=>h("div",{key:it.name,className:"platform__card"},
-      h("div",{className:"platform__tag"},it.tag),
-      h("h3",{className:"platform__name"},it.name),
-      h("p",{className:"platform__body"},it.body),
-      h("div",{className:"platform__status"},it.href?h("a",{href:it.href,className:"platform__link"},it.status+" →"):it.status)))));
+    h("div",{className:"platform__grid"},items.map(function(it){
+      return h("div",{key:it.name,className:"platform__card"},
+        h("div",{className:"platform__header"},
+          h("div",{className:"platform__tag"},it.tag),
+          h(Badge,{tone:it.tone||"neutral"},it.status)),
+        h("h3",{className:"platform__name"},it.name),
+        h("p",{className:"platform__body"},it.body),
+        it.href?h("div",{className:"platform__status"},
+          h("a",{
+            href:it.href,
+            onClick:function(e){if(it.href.startsWith('#')){e.preventDefault();goTo(it.href.slice(1));}},
+            className:"platform__link"
+          },it.action+" →")):null);
+    })));
 }
 
 function WaitlistSection(){
