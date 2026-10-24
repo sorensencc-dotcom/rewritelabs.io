@@ -1,0 +1,19 @@
+content-site/src/pages/ai-news-feed/index.astro
+  s_4eadce32fe980a::t_6a5db016252a05 20,28-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "007e687201ed5426d992ebed48d1edb8deaccecb",
+  "prompts": {},
+  "sessions": {
+    "s_4eadce32fe980a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72dbb1de-84f8-49c1-8f27-08958b4e18c7",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
