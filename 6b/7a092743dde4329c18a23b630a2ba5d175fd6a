@@ -1,0 +1,23 @@
+content-site/tests/dispatch-briefing.test.mjs
+  s_082b0a63b52261::t_b7c43bedf52c4d 1-114
+content-site/scripts/dispatch-briefing.mjs
+  s_082b0a63b52261::t_afd2a5a272d1e8 1-101
+content-site/STEP-8C.md
+  s_082b0a63b52261::t_25da580e793ee8 55-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6b7a092743dde4329c18a23b630a2ba5d175fd6a",
+  "prompts": {},
+  "sessions": {
+    "s_082b0a63b52261": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "587c1bcd-8c41-4329-bb94-3173f9b65e61",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
