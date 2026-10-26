@@ -52,6 +52,17 @@ GitHub's `repository_dispatch` accepts at most **10 top-level properties** and 6
 
 The Publish briefing workflow opens the draft PR and then starts the Site checks workflow on the branch. A PR opened with the default `GITHUB_TOKEN` does not trigger `pull_request` workflows, so without that step no tests or build would run on a briefing PR. A briefing that does not match the content schema turns the check red before it can be merged.
 
+## Cloud dispatch
+
+A cloud runner has no checkout, no `git` and no `gh`, so it cannot run `publish-briefing.mjs`. It sends the payload to GitHub instead, and the Publish briefing workflow opens the draft PR.
+
+- Create a fine-grained personal access token scoped to the `sorensencc-dotcom/rewritelabs.io` repository only, with Repository permission Contents set to read and write (this is what `repository_dispatch` needs). Give it a short expiry.
+- Store it in the runner's secret store as `GH_DISPATCH_TOKEN`. Never commit it, put it in a payload, or paste it into a log.
+- Run `node content-site/scripts/dispatch-briefing.mjs briefing-payload.json`. Add `--dry-run` to validate without sending. `BRIEFING_REPO` overrides the target repository.
+- Exit 0 means GitHub accepted the event (HTTP 204). Exit 1 means the dispatch failed, and exit 2 means a bad payload, a missing token or a usage error. The token never appears in error text.
+
+The payload is checked with the same rules as the local path, plus GitHub's `client_payload` limits: at most 10 top-level keys and at most 65535 characters. The local `publish-briefing.mjs` path stays as it is for machines with a checkout.
+
 ## Check a payload without touching git
 
 ```bash
