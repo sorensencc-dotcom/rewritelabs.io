@@ -1,0 +1,14 @@
+content-site/src/content/briefings/2026-10-28.md
+  h_5c172e9b435f5a 1-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5adfe95a6e008c6f6eed61abc99fe14c1cdda512",
+  "prompts": {},
+  "humans": {
+    "h_5c172e9b435f5a": {
+      "author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
