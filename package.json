@@ -10,7 +10,9 @@
         "start:sweeper": "node engine/discovery/runSweeper.js",
         "lint": "eslint .",
         "format": "prettier --write .",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "npm --prefix content-site test",
+        "wiki:sync": "node scripts/sync-wiki.mjs",
+        "wiki:publish": "node scripts/sync-wiki.mjs --push",
         "start:console": "node engine/operatorConsole/server.js"
     },
     "keywords": [],
