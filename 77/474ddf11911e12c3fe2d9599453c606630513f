@@ -1,0 +1,19 @@
+.husky/pre-commit
+  s_350c2af054ff1e::t_39d545267e140f 3,5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "77474ddf11911e12c3fe2d9599453c606630513f",
+  "prompts": {},
+  "sessions": {
+    "s_350c2af054ff1e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_350c2af054ff1e",
+        "model": "unknown"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
