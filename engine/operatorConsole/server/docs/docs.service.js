@@ -17,24 +17,25 @@ let lunrIndex = null;
 export async function initDocsEngine() {
   semanticModel = await use.load();
 
-  const versions = fs.readdirSync(DOCS_ROOT);
-  const docs = [];
+  const versions = await fs.promises.readdir(DOCS_ROOT);
 
-  versions.forEach(version => {
-    const files = fs.readdirSync(path.join(DOCS_ROOT, version));
+  const docsArrays = await Promise.all(versions.map(async version => {
+    const files = await fs.promises.readdir(path.join(DOCS_ROOT, version));
 
-    files.forEach(file => {
-      const raw = fs.readFileSync(path.join(DOCS_ROOT, version, file), "utf8");
+    return await Promise.all(files.map(async file => {
+      const raw = await fs.promises.readFile(path.join(DOCS_ROOT, version, file), "utf8");
       const parsed = matter(raw);
 
-      docs.push({
+      return {
         version,
         file,
         content: parsed.content,
         metadata: parsed.data
-      });
-    });
-  });
+      };
+    }));
+  }));
+
+  const docs = docsArrays.flat();
 
   const embeddings = await semanticModel.embed(docs.map(d => d.content));
   const vectors = embeddings.arraySync();
@@ -102,15 +103,7 @@ export function integrityCheck(doc) {
   if (!doc.metadata.summary) issues.push("Missing summary");
   if (!doc.metadata.updated) issues.push("Missing updated date");
 
-  const links = doc.content.match(/
-
-\[
-
-\[(.*?)\]
-
-\]
-
-/g);
+  const links = doc.content.match(/\[\[(.*?)\]\]/g);
   if (links) {
     links.forEach(link => {
       const file = link.replace("[[", "").replace("]]", "");
