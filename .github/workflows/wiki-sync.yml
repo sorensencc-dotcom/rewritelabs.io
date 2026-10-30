@@ -1,0 +1,27 @@
+name: Wiki Sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'wiki/**'
+      - 'scripts/sync-wiki.mjs'
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.23.4
+      - name: Sync and publish wiki
+        env:
+          WIKI_REPO_URL: "https://x-access-token:${{ secrets.WIKI_PUSH_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git"
+        run: node scripts/sync-wiki.mjs --push
