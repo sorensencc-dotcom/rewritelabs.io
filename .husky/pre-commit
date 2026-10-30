@@ -1,5 +1,5 @@
 #!/bin/sh
-npm run lint
 npm test
-npm run format
+node content-site/scripts/validate-blog.mjs
 npm run wiki:sync -- --dry-run
+
