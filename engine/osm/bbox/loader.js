@@ -33,7 +33,7 @@ async function loadRegion(region) {
 
   let data = {};
   try {
-    const raw = fs.readFileSync(filePath, "utf8");
+    const raw = await fs.promises.readFile(filePath, "utf8");
     data = JSON.parse(raw);
   } catch (err) {
     console.error(`Failed to load bbox file for region "${region}":`, err.message);
