@@ -1,0 +1,19 @@
+wiki/_Sidebar.md
+  s_f9204e718a8a51::t_5a34cbdb49ffc3 3-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "73374a9562594b13cbb1ad542756789c704db337",
+  "prompts": {},
+  "sessions": {
+    "s_f9204e718a8a51": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "03137f00-8527-46c0-98c1-92def41d2ba2",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
