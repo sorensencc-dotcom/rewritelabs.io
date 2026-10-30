@@ -1,10 +1,10 @@
 ### Rewrite Labs Platform
 
-- [[Home|Overview]]
-- [[Architecture|Platform Architecture]]
-- [[Development-Workflow|Development Workflow]]
-- [[Content-and-Briefings|Content & Briefings]]
-- [[Deployment-and-Operations|Deployment & Operations]]
+- [[Home]]
+- [[Architecture]]
+- [[Development-Workflow]]
+- [[Content-and-Briefings]]
+- [[Deployment-and-Operations]]
 
 ---
 
