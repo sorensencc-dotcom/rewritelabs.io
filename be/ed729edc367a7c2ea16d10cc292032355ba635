@@ -1,0 +1,39 @@
+.husky/pre-commit
+  s_8ff75bf40ceba1::t_cfa08552d4507a 5
+package.json
+  s_8ff75bf40ceba1::t_2cc21fdd380aa7 13-15
+.github/workflows/wiki-sync.yml
+  s_8ff75bf40ceba1::t_c63209642f2156 1-27
+scripts/sync-wiki.mjs
+  s_8ff75bf40ceba1::t_1c60453f90079f 1-93
+wiki/Architecture.md
+  s_8ff75bf40ceba1::t_c1e38690556f66 1-53
+wiki/Content-and-Briefings.md
+  s_8ff75bf40ceba1::t_aaec4f982281bc 1-47
+wiki/Deployment-and-Operations.md
+  s_8ff75bf40ceba1::t_5a4e676a045599 1-38
+wiki/Development-Workflow.md
+  s_8ff75bf40ceba1::t_525427b382bdcd 1-61
+wiki/Home.md
+  s_8ff75bf40ceba1::t_4d575b0cf021ba 1-59
+wiki/_Footer.md
+  s_8ff75bf40ceba1::t_2c5f155a38f26c 1-2
+wiki/_Sidebar.md
+  s_8ff75bf40ceba1::t_e1e8ff31731bac 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "beed729edc367a7c2ea16d10cc292032355ba635",
+  "prompts": {},
+  "sessions": {
+    "s_8ff75bf40ceba1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "77e63bc4-4500-4ae0-8135-7bc4b36b942b",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
