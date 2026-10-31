@@ -28,12 +28,12 @@ export function listDocs(req, res) {
   res.json(result);
 }
 
-export function getDoc(req, res) {
+export async function getDoc(req, res) {
   const { version, name } = req.params;
   const filePath = path.join(DOCS_ROOT, version, name);
 
   try {
-    const raw = fs.readFileSync(filePath, "utf8");
+    const raw = await fs.promises.readFile(filePath, "utf8");
     const parsed = matter(raw);
 
     res.json({
