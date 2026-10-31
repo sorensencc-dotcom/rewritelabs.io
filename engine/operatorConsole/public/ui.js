@@ -61,10 +61,13 @@ async function updateLogs() {
     return;
   }
 
-  el.innerHTML = data
-    .slice(-20)
-    .map((l) => `<div class="log-line">${l}</div>`)
-    .join("");
+  el.replaceChildren();
+  data.slice(-20).forEach((l) => {
+    const div = document.createElement("div");
+    div.className = "log-line";
+    div.textContent = l;
+    el.appendChild(div);
+  });
 }
 
 // ------------------------------
