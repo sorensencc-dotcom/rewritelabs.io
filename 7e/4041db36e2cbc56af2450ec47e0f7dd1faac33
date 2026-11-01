@@ -1,0 +1,16 @@
+content-site/scripts/dispatch-briefing.mjs
+  h_5c172e9b435f5a 7,16-17,19-99,151,154-164,166,170,172-175,180-185,187-189,192-201
+content-site/tests/dispatch-briefing.test.mjs
+  h_5c172e9b435f5a 3-16,128-278
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7e4041db36e2cbc56af2450ec47e0f7dd1faac33",
+  "prompts": {},
+  "humans": {
+    "h_5c172e9b435f5a": {
+      "author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
