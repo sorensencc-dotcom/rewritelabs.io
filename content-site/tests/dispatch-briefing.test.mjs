@@ -184,6 +184,18 @@ test('readPayloadFile: successfully loads valid UTF-8 JSON payload', () => {
   }
 });
 
+test('readPayloadFile: handles UTF-8 BOM from exported Google Docs', () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'gdoc-bom-'));
+  try {
+    const f = path.join(tmp, 'payload-bom.json');
+    fs.writeFileSync(f, '\uFEFF' + JSON.stringify(payload()), 'utf8');
+    const loaded = readPayloadFile(f);
+    assert.deepEqual(loaded, payload());
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+});
+
 test('getPublishedDates: extracts published dates from markdown directory', () => {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'pub-dates-'));
   try {

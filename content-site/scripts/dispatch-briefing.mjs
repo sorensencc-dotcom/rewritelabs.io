@@ -33,7 +33,7 @@ export function readPayloadFile(filePath) {
     }
     throw new Error(`file not found: ${filePath}`);
   }
-  const raw = fs.readFileSync(filePath, 'utf8');
+  let raw = fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, '');
   let data;
   try {
     data = JSON.parse(raw);
