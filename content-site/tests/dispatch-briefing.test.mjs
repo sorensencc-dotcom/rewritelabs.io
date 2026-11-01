@@ -1,6 +1,19 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildRequest, dispatchBriefing, DEFAULT_REPO, EVENT_TYPE } from '../scripts/dispatch-briefing.mjs';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {
+  buildRequest,
+  dispatchBriefing,
+  readPayloadFile,
+  getPublishedDates,
+  collectPendingBriefings,
+  GdocPointerError,
+  main,
+  DEFAULT_REPO,
+  EVENT_TYPE,
+} from '../scripts/dispatch-briefing.mjs';
 
 const TOKEN = 'ghp_SECRET_TOKEN_VALUE';
 
@@ -111,4 +124,155 @@ test('dispatchBriefing: non-204 error has status and body, not token', async () 
       return true;
     },
   );
+});
+
+test('readPayloadFile: detects and rejects .gdoc shortcut extension', () => {
+  assert.throws(
+    () => readPayloadFile('C:/fake/briefing-payload.json.gdoc'),
+    (err) => {
+      assert.ok(err instanceof GdocPointerError);
+      assert.match(err.message, /Google Doc pointer shortcut/);
+      return true;
+    },
+  );
+});
+
+test('readPayloadFile: detects adjacent .gdoc shortcut when json is missing', () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'gdoc-test-'));
+  try {
+    fs.writeFileSync(path.join(tmp, 'briefing-payload.json.gdoc'), '{"doc_id":"123"}', 'utf8');
+    assert.throws(
+      () => readPayloadFile(path.join(tmp, 'briefing-payload.json')),
+      (err) => {
+        assert.ok(err instanceof GdocPointerError);
+        assert.match(err.message, /Google Doc shortcut exists/);
+        return true;
+      },
+    );
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+});
+
+test('readPayloadFile: detects .gdoc shortcut content inside json file', () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'gdoc-content-'));
+  try {
+    const f = path.join(tmp, 'payload.json');
+    fs.writeFileSync(f, JSON.stringify({ doc_id: 'abc', url: 'https://docs.google.com/open?id=abc' }), 'utf8');
+    assert.throws(
+      () => readPayloadFile(f),
+      (err) => {
+        assert.ok(err instanceof GdocPointerError);
+        assert.match(err.message, /Google Doc pointer shortcut contents detected/);
+        return true;
+      },
+    );
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+});
+
+test('readPayloadFile: successfully loads valid UTF-8 JSON payload', () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'gdoc-valid-'));
+  try {
+    const f = path.join(tmp, 'payload.json');
+    fs.writeFileSync(f, JSON.stringify(payload()), 'utf8');
+    const loaded = readPayloadFile(f);
+    assert.deepEqual(loaded, payload());
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+});
+
+test('getPublishedDates: extracts published dates from markdown directory', () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'pub-dates-'));
+  try {
+    fs.writeFileSync(path.join(tmp, '2026-10-28.md'), 'published', 'utf8');
+    fs.writeFileSync(path.join(tmp, '2026-10-29.md'), 'published', 'utf8');
+    fs.writeFileSync(path.join(tmp, 'not-a-date.md'), 'ignored', 'utf8');
+    const dates = getPublishedDates(tmp);
+    assert.equal(dates.size, 2);
+    assert.ok(dates.has('2026-10-28'));
+    assert.ok(dates.has('2026-10-29'));
+    assert.ok(!dates.has('not-a-date'));
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+});
+
+test('collectPendingBriefings: sweeps archive directory and orders chronologically', () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'archive-sweep-'));
+  try {
+    const archiveDir = path.join(tmp, 'AI_News');
+    const contentDir = path.join(tmp, 'content');
+    fs.mkdirSync(archiveDir);
+    fs.mkdirSync(contentDir);
+
+    fs.writeFileSync(path.join(contentDir, '2026-10-27.md'), '# Already published', 'utf8');
+
+    const p27 = { ...payload(), date: '2026-10-27' };
+    const p28 = { ...payload(), date: '2026-10-28' };
+    const p29 = { ...payload(), date: '2026-10-29' };
+    const p30 = { ...payload(), date: '2026-10-30' };
+
+    fs.writeFileSync(path.join(archiveDir, 'briefing-payload-2026-10-27.json'), JSON.stringify(p27), 'utf8');
+    fs.writeFileSync(path.join(archiveDir, 'briefing-payload-2026-10-29.json'), JSON.stringify(p29), 'utf8');
+    fs.writeFileSync(path.join(archiveDir, 'briefing-payload-2026-10-28.json'), JSON.stringify(p28), 'utf8');
+
+    const stagingFile = path.join(tmp, 'briefing-payload.json');
+    fs.writeFileSync(stagingFile, JSON.stringify(p30), 'utf8');
+
+    const pending = collectPendingBriefings({ stagingFile, archiveDir, contentDir });
+    assert.equal(pending.length, 3);
+    assert.equal(pending[0].date, '2026-10-28');
+    assert.equal(pending[1].date, '2026-10-29');
+    assert.equal(pending[2].date, '2026-10-30');
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+});
+
+test('main: rejects .gdoc with code 2', async () => {
+  const code = await main(['node', 'dispatch-briefing.mjs', 'file.gdoc']);
+  assert.equal(code, 2);
+});
+
+test('main: runs backlog dry-run in chronological order', async () => {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'main-sweep-'));
+  try {
+    const archiveDir = path.join(tmp, 'AI_News');
+    const contentDir = path.join(tmp, 'content');
+    fs.mkdirSync(archiveDir);
+    fs.mkdirSync(contentDir);
+
+    const p28 = { ...payload(), date: '2026-10-28' };
+    const p29 = { ...payload(), date: '2026-10-29' };
+    fs.writeFileSync(path.join(archiveDir, 'briefing-payload-2026-10-28.json'), JSON.stringify(p28), 'utf8');
+    const stagingFile = path.join(tmp, 'briefing-payload.json');
+    fs.writeFileSync(stagingFile, JSON.stringify(p29), 'utf8');
+
+    const logs = [];
+    const origLog = console.log;
+    console.log = (...args) => logs.push(args.join(' '));
+    try {
+      const code = await main([
+        'node',
+        'dispatch-briefing.mjs',
+        stagingFile,
+        '--dry-run',
+        '--archive-dir',
+        archiveDir,
+        '--content-dir',
+        contentDir,
+      ]);
+      assert.equal(code, 0);
+      assert.equal(logs.length, 2);
+      assert.match(logs[0], /payload valid for 2026-10-28/);
+      assert.match(logs[1], /payload valid for 2026-10-29/);
+    } finally {
+      console.log = origLog;
+    }
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
 });
