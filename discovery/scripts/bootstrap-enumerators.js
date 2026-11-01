@@ -69,17 +69,8 @@ app.post("/control", (req, res) => {
 async function enumerateOnce() {
   if (!ENABLED) return;
 
-  // TODO: replace this with real enumeration logic per service.
-  // For now, we push a dummy candidate into rawCandidates.
-  const candidate = {
-    v: 1,
-    source: SERVICE_NAME,
-    domain: \`\${SERVICE_NAME}-example-\${Date.now()}.com\`,
-    discovered_at: new Date().toISOString()
-  };
-
-  await queues.rawCandidates.add("raw", candidate);
-  console.log("[enumerator]", SERVICE_NAME, "queued", candidate.domain);
+  // TODO: Implement real enumeration logic per service.
+  throw new Error("Not implemented");
 }
 
 async function loop() {
