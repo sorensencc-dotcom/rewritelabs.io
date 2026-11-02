@@ -132,13 +132,12 @@ export async function handleShardAssignment(job) {
 
   if (sites.length > 0) {
     const values = [];
-    const queryArgs = [];
-    let paramIndex = 1;
+    const params = [];
+    let paramIdx = 1;
 
     for (const site of sites) {
-      values.push(`(gen_random_uuid(), $${paramIndex++}, (SELECT id FROM country WHERE code = $${paramIndex++}), $${paramIndex++}, $${paramIndex++}, $${paramIndex++}::jsonb, $${paramIndex++}, $${paramIndex++}, $${paramIndex++}, $${paramIndex++})`);
-
-      queryArgs.push(
+      values.push(`(gen_random_uuid(), $${paramIdx++}, (SELECT id FROM country WHERE code = $${paramIdx++}), $${paramIdx++}, $${paramIdx++}, $${paramIdx++}::jsonb, $${paramIdx++}, $${paramIdx++}, $${paramIdx++}, $${paramIdx++})`);
+      params.push(
         site.domain,
         site.country,
         site.region,
@@ -151,33 +150,41 @@ export async function handleShardAssignment(job) {
       );
     }
 
-    const { rows } = await db.query(`
-      INSERT INTO candidate (id, domain, country_id, region, category_guess,
-                             tech_fingerprint, mobile_score, ssl, last_sweep_id, deployed_url)
-      VALUES ${values.join(', ')}
-      ON CONFLICT (domain) DO UPDATE
+    const { rows } = await db.query(
+      `INSERT INTO candidate (id, domain, country_id, region, category_guess,
+                              tech_fingerprint, mobile_score, ssl, last_sweep_id, deployed_url)
+       VALUES ${values.join(', ')}
+       ON CONFLICT (domain) DO UPDATE
          SET last_seen     = NOW(),
              tech_fingerprint = EXCLUDED.tech_fingerprint,
              deployed_url  = EXCLUDED.deployed_url
-      RETURNING id, domain
-    `, queryArgs);
+       RETURNING id, domain`,
+      params
+    );
 
-    const idMap = new Map();
+    const domainToId = new Map();
     for (const row of rows) {
-      idMap.set(row.domain, row.id);
+      domainToId.set(row.domain, row.id);
     }
 
-    for (const site of sites) {
-      const candidate_id = idMap.get(site.domain);
-
-      await queues.candidateDiscovered.add("discovered", {
+    const jobs = sites.map(site => ({
+      name: "discovered",
+      data: {
         v: 1,
-        candidate_id,
+        candidate_id: domainToId.get(site.domain),
         ...site,
         first_seen: new Date().toISOString(),
         last_seen: new Date().toISOString(),
         sweep_id: msg.sweep_id
-      });
+      }
+    }));
+
+    if (queues.candidateDiscovered.addBulk) {
+      await queues.candidateDiscovered.addBulk(jobs);
+    } else {
+      for (const job of jobs) {
+        await queues.candidateDiscovered.add(job.name, job.data);
+      }
     }
   }
 
