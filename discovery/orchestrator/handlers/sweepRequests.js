@@ -29,27 +29,40 @@ export async function handleSweepRequest(job) {
     return;
   }
 
+  const insertValues = [];
+  const queryParams = [];
+
   for (let i = 0; i < shardSpecs.length; i++) {
     const [start, end] = shardSpecs[i].split("-");
     const node = nodes[i % nodes.length];
 
+    const offset = i * 3;
+    insertValues.push(`(gen_random_uuid(), $${offset + 1}, $${offset + 2}, $${offset + 3}, 'assigned')`);
+
+    queryParams.push(sweepId, node.id, { type: "tld_range", start, end });
+  }
+
+  if (insertValues.length > 0) {
     const { rows } = await db.query(
       `INSERT INTO shard (id, sweep_id, node_id, spec, status)
-       VALUES (gen_random_uuid(), $1, $2, $3, 'assigned')
-       RETURNING id`,
-      [sweepId, node.id, { type: "tld_range", start, end }]
+       VALUES ${insertValues.join(", ")}
+       RETURNING id, node_id, spec`,
+      queryParams
     );
 
-    const shardId = rows[0].id;
+    const queueJobs = rows.map((row) => ({
+      name: "assign",
+      data: {
+        v: 1,
+        shard_id: row.id,
+        sweep_id: sweepId,
+        node_id: row.node_id,
+        spec: row.spec,
+        timestamp: new Date().toISOString(),
+      },
+    }));
 
-    await queues.shardAssignments.add("assign", {
-      v: 1,
-      shard_id: shardId,
-      sweep_id: sweepId,
-      node_id: node.id,
-      spec: { type: "tld_range", start, end },
-      timestamp: new Date().toISOString()
-    });
+    await queues.shardAssignments.addBulk(queueJobs);
   }
 
   console.log("[orchestrator] Sweep started:", sweepId, "level:", level);
