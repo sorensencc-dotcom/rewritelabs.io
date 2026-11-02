@@ -130,19 +130,15 @@ export async function handleShardAssignment(job) {
 
   const sites = await crawlShard(msg.spec);
 
-  for (const site of sites) {
-    const { rows } = await db.query(
-      `INSERT INTO candidate (id, domain, country_id, region, category_guess,
-                              tech_fingerprint, mobile_score, ssl, last_sweep_id, deployed_url)
-       VALUES (gen_random_uuid(), $1,
-         (SELECT id FROM country WHERE code = $2),
-         $3, $4, $5::jsonb, $6, $7, $8, $9)
-       ON CONFLICT (domain) DO UPDATE
-         SET last_seen     = NOW(),
-             tech_fingerprint = EXCLUDED.tech_fingerprint,
-             deployed_url  = EXCLUDED.deployed_url
-       RETURNING id`,
-      [
+  if (sites.length > 0) {
+    const values = [];
+    const queryArgs = [];
+    let paramIndex = 1;
+
+    for (const site of sites) {
+      values.push(`(gen_random_uuid(), $${paramIndex++}, (SELECT id FROM country WHERE code = $${paramIndex++}), $${paramIndex++}, $${paramIndex++}, $${paramIndex++}::jsonb, $${paramIndex++}, $${paramIndex++}, $${paramIndex++}, $${paramIndex++})`);
+
+      queryArgs.push(
         site.domain,
         site.country,
         site.region,
@@ -152,19 +148,37 @@ export async function handleShardAssignment(job) {
         site.ssl,
         msg.sweep_id,
         site.deployed_url
-      ]
-    );
+      );
+    }
 
-    const candidate_id = rows[0].id;
+    const { rows } = await db.query(`
+      INSERT INTO candidate (id, domain, country_id, region, category_guess,
+                             tech_fingerprint, mobile_score, ssl, last_sweep_id, deployed_url)
+      VALUES ${values.join(', ')}
+      ON CONFLICT (domain) DO UPDATE
+         SET last_seen     = NOW(),
+             tech_fingerprint = EXCLUDED.tech_fingerprint,
+             deployed_url  = EXCLUDED.deployed_url
+      RETURNING id, domain
+    `, queryArgs);
 
-    await queues.candidateDiscovered.add("discovered", {
-      v: 1,
-      candidate_id,
-      ...site,
-      first_seen: new Date().toISOString(),
-      last_seen: new Date().toISOString(),
-      sweep_id: msg.sweep_id
-    });
+    const idMap = new Map();
+    for (const row of rows) {
+      idMap.set(row.domain, row.id);
+    }
+
+    for (const site of sites) {
+      const candidate_id = idMap.get(site.domain);
+
+      await queues.candidateDiscovered.add("discovered", {
+        v: 1,
+        candidate_id,
+        ...site,
+        first_seen: new Date().toISOString(),
+        last_seen: new Date().toISOString(),
+        sweep_id: msg.sweep_id
+      });
+    }
   }
 
   await db.query(
