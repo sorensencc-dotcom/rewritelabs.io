@@ -29,41 +29,37 @@ export async function handleSweepRequest(job) {
     return;
   }
 
-  const insertValues = [];
-  const queryParams = [];
-
+  const values = [];
+  const params = [];
   for (let i = 0; i < shardSpecs.length; i++) {
     const [start, end] = shardSpecs[i].split("-");
     const node = nodes[i % nodes.length];
 
-    const offset = i * 3;
-    insertValues.push(`(gen_random_uuid(), $${offset + 1}, $${offset + 2}, $${offset + 3}, 'assigned')`);
-
-    queryParams.push(sweepId, node.id, { type: "tld_range", start, end });
+    values.push(`(gen_random_uuid(), $${params.length + 1}, $${params.length + 2}, $${params.length + 3}, 'assigned')`);
+    params.push(sweepId, node.id, { type: "tld_range", start, end });
   }
 
-  if (insertValues.length > 0) {
-    const { rows } = await db.query(
-      `INSERT INTO shard (id, sweep_id, node_id, spec, status)
-       VALUES ${insertValues.join(", ")}
-       RETURNING id, node_id, spec`,
-      queryParams
-    );
+  const { rows } = await db.query(
+    `INSERT INTO shard (id, sweep_id, node_id, spec, status)
+     VALUES ${values.join(", ")}
+     RETURNING id, node_id, spec`,
+    params
+  );
 
-    const queueJobs = rows.map((row) => ({
-      name: "assign",
-      data: {
-        v: 1,
-        shard_id: row.id,
-        sweep_id: sweepId,
-        node_id: row.node_id,
-        spec: row.spec,
-        timestamp: new Date().toISOString(),
-      },
-    }));
+  const timestamp = new Date().toISOString();
+  const jobs = rows.map(row => ({
+    name: "assign",
+    data: {
+      v: 1,
+      shard_id: row.id,
+      sweep_id: sweepId,
+      node_id: row.node_id,
+      spec: row.spec,
+      timestamp
+    }
+  }));
 
-    await queues.shardAssignments.addBulk(queueJobs);
-  }
+  await queues.shardAssignments.addBulk(jobs);
 
   console.log("[orchestrator] Sweep started:", sweepId, "level:", level);
 }
