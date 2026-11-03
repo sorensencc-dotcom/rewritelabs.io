@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { exportBriefing, renderBriefing, validatePayload } from '../scripts/export-briefing.mjs';
 
 const base = () => ({
@@ -106,4 +107,39 @@ test('the example payload from the docs is valid, and a minimal real briefing re
 test('the repo path helper points at the briefings folder the site reads', async () => {
   const { briefingRepoPath } = await import('../scripts/export-briefing.mjs');
   assert.equal(briefingRepoPath('2026-10-21'), 'content-site/src/content/briefings/2026-10-21.md');
+});
+
+test('rejects internal operator directives and internal repository names', () => {
+  assert.throws(
+    () => validatePayload({ ...base(), bodyMarkdown: '**Operator Takeaways (Rewrite Labs & Toolforge):**\n1. Do X.' }),
+    /internal operator directives/,
+  );
+  assert.throws(
+    () => validatePayload({ ...base(), bodyMarkdown: 'Integrate this with Sigil mesh.' }),
+    /internal operator directives/,
+  );
+  assert.throws(
+    () => validatePayload({ ...base(), bodyMarkdown: 'Deploy rewrite-mcp server.' }),
+    /internal operator directives/,
+  );
+  assert.throws(
+    () => validatePayload({ ...base(), themes: [{ ...theme(), summary: 'Use toolforge to build this.' }] }),
+    /internal operator directives/,
+  );
+  assert.throws(
+    () => validatePayload({ ...base(), themes: [{ ...theme(), name: 'Update cic-jev' }] }),
+    /internal operator directives/,
+  );
+});
+
+test('all published briefings in src/content/briefings contain zero leaked internal directives', () => {
+  const briefingsDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../src/content/briefings');
+  const files = fs.readdirSync(briefingsDir).filter((f) => f.endsWith('.md'));
+  assert.ok(files.length >= 10, 'expected at least 10 briefing files');
+  const leakRegex = /\b(?:operator takeaways|toolforge|sigil|rewrite-mcp|cic-jev)\b/i;
+  for (const f of files) {
+    const text = fs.readFileSync(path.join(briefingsDir, f), 'utf8');
+    const match = leakRegex.exec(text);
+    assert.equal(match, null, `file ${f} contains leaked internal term: "${match?.[0]}"`);
+  }
 });

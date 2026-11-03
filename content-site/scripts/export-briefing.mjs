@@ -14,6 +14,7 @@ const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 // Raw HTML tags (autolinks such as <https://example.org> are not tags) and links with script-capable schemes.
 const RAW_HTML = /<\/?[a-z][a-z0-9-]*(?:\s[^>]*)?\/?>/i;
 const BAD_LINK = /\]\(\s*(?:javascript|data|vbscript):/i;
+export const INTERNAL_LEAK = /\b(?:operator takeaways|toolforge|sigil|rewrite-mcp|cic-jev)\b/i;
 
 const isText = (v, max) => typeof v === 'string' && v.trim().length > 0 && v.length <= max;
 const isStringList = (v, max, pattern) =>
@@ -41,6 +42,7 @@ function isHttpUrl(u) {
 export function validatePayload(p) {
   if (!p || typeof p !== 'object' || Array.isArray(p)) fail('payload must be an object');
   if (!isText(p.title, MAX.title)) fail(`title is required (text, up to ${MAX.title} characters)`);
+  if (INTERNAL_LEAK.test(p.title)) fail('title must not contain internal operator directives or repository names');
   if (!isRealDate(p.date)) fail('date must be a real calendar date in YYYY-MM-DD form');
   if (typeof p.confidenceScore !== 'number' || !Number.isFinite(p.confidenceScore) || p.confidenceScore < 0 || p.confidenceScore > 1) {
     fail('confidenceScore must be a number from 0 to 1');
@@ -49,12 +51,16 @@ export function validatePayload(p) {
     fail('sourcesEvaluated must be a whole number from 1 to 1000');
   }
   if (p.summary !== undefined && !isText(p.summary, MAX.summary)) fail(`summary must be text up to ${MAX.summary} characters`);
+  if (p.summary !== undefined && INTERNAL_LEAK.test(p.summary)) fail('summary must not contain internal operator directives or repository names');
   if (p.topics !== undefined && !isStringList(p.topics, MAX.topic)) fail('topics must be a list of short text values');
   if (p.relatedPosts !== undefined && !isStringList(p.relatedPosts, MAX.topic, SLUG)) fail('relatedPosts must be a list of blog slugs');
   if (p.bodyMarkdown !== undefined) {
     if (typeof p.bodyMarkdown !== 'string' || p.bodyMarkdown.length > MAX.body) fail(`bodyMarkdown must be text up to ${MAX.body} characters`);
     if (RAW_HTML.test(p.bodyMarkdown)) fail('bodyMarkdown must not contain raw HTML; use Markdown');
     if (BAD_LINK.test(p.bodyMarkdown)) fail('bodyMarkdown must not contain javascript:, data: or vbscript: links');
+    if (INTERNAL_LEAK.test(p.bodyMarkdown)) {
+      fail('bodyMarkdown must not contain internal operator directives or repository names (Sigil, Toolforge, Rewrite-MCP, CIC-Jev); use Industry & Architecture Takeaways');
+    }
   }
   if (!Array.isArray(p.themes) || p.themes.length === 0 || p.themes.length > MAX.themes) {
     fail(`themes must be a list of 1 to ${MAX.themes} entries`);
@@ -62,6 +68,9 @@ export function validatePayload(p) {
   for (const t of p.themes) {
     if (!t || typeof t !== 'object') fail('each theme must be an object');
     if (!isText(t.name, MAX.themeName) || !isText(t.summary, MAX.themeSummary)) fail('each theme needs a name and a summary (text)');
+    if (INTERNAL_LEAK.test(t.name) || INTERNAL_LEAK.test(t.summary)) {
+      fail(`theme "${t.name}" must not contain internal operator directives or repository names`);
+    }
     if (!DELTAS.includes(t.delta7d)) fail(`delta7d must be one of ${DELTAS.join(', ')}`);
     if (t.tags !== undefined && !isStringList(t.tags, MAX.topic)) fail(`theme "${t.name}" tags must be a list of short text values`);
     if (!Array.isArray(t.primarySources) || t.primarySources.length === 0 || t.primarySources.length > MAX.sources) {
