@@ -1,0 +1,16 @@
+content-site/scripts/export-briefing.mjs
+  h_5c172e9b435f5a 17,45,54,61-63,71-73
+content-site/tests/export-briefing.test.mjs
+  h_5c172e9b435f5a 6,111-145
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b2a04b4582ef22f6fe833917dabdec8d11847a94",
+  "prompts": {},
+  "humans": {
+    "h_5c172e9b435f5a": {
+      "author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
