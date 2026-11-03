@@ -16,7 +16,7 @@ if (!payloadPath) {
 
 let payload;
 try {
-  payload = JSON.parse(fs.readFileSync(payloadPath, 'utf8'));
+  payload = JSON.parse(fs.readFileSync(payloadPath, 'utf8').replace(/^\uFEFF/, ''));
   validatePayload(payload);
 } catch (err) {
   console.error(err.message);
