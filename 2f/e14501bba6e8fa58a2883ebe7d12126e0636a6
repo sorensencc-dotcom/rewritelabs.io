@@ -1,0 +1,26 @@
+content-site/src/content/briefings/2026-10-23.md
+  h_5c172e9b435f5a 56-59
+content-site/src/content/briefings/2026-10-26.md
+  h_5c172e9b435f5a 56-59
+content-site/src/content/briefings/2026-10-27.md
+  h_5c172e9b435f5a 56-59
+content-site/src/content/briefings/2026-10-28.md
+  h_5c172e9b435f5a 39-42
+content-site/src/content/briefings/2026-10-29.md
+  h_5c172e9b435f5a 39-43
+content-site/src/content/briefings/2026-10-30.md
+  h_5c172e9b435f5a 39-42
+content-site/src/content/briefings/2026-10-31.md
+  h_5c172e9b435f5a 41-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2fe14501bba6e8fa58a2883ebe7d12126e0636a6",
+  "prompts": {},
+  "humans": {
+    "h_5c172e9b435f5a": {
+      "author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
