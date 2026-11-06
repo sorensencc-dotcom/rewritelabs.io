@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/case-study", "destination": "/case-study.html" },
+    { "source": "/privacy", "destination": "/privacy.html" }
+  ],
+  "redirects": [
+    { "source": "/case-study.html", "destination": "/case-study", "permanent": true },
+    { "source": "/privacy.html", "destination": "/privacy", "permanent": true }
+  ]
+}
