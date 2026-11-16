@@ -1,0 +1,18 @@
+.husky/pre-commit
+  h_5c172e9b435f5a 2-9
+content-site/scripts/precommit-is-docs-only.mjs
+  h_5c172e9b435f5a 1-34
+content-site/tests/precommit-is-docs-only.test.mjs
+  h_5c172e9b435f5a 1-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "620ad72fd005b6e646a3f3bb477c549597b02d07",
+  "prompts": {},
+  "humans": {
+    "h_5c172e9b435f5a": {
+      "author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
