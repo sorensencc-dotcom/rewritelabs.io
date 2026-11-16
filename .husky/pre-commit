@@ -1,5 +1,12 @@
 #!/bin/sh
-npm test
+# Docs-only staged changes skip npm test. Blog validation and the wiki
+# dry-run still run. A missing detector falls through and runs tests.
+DOCS_ONLY="content-site/scripts/precommit-is-docs-only.mjs"
+if [ -f "$DOCS_ONLY" ] && git diff --cached --name-only | node "$DOCS_ONLY"; then
+  echo "pre-commit: docs-only change; skipping the test suite."
+else
+  npm test
+fi
 node content-site/scripts/validate-blog.mjs
 npm run wiki:sync -- --dry-run
 
