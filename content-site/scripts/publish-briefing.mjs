@@ -42,8 +42,8 @@ const onOrigin = (() => {
   }
 })();
 if (onOrigin) {
-  console.error(`${branch} already exists on origin. Close its PR and delete the remote branch, or use a different date.`);
-  process.exit(1);
+  console.log(`${branch} already exists on origin; skipping duplicate publish.`);
+  process.exit(0);
 }
 // A local branch with no remote twin is debris from an aborted run of this script.
 try {
@@ -51,7 +51,7 @@ try {
 } catch {}
 
 run('git', ['fetch', 'origin', 'main'], repo);
-// A second run for a date that is already published would otherwise replace that page. Refuse instead.
+// A second run for a date that is already published would otherwise replace that page. Skip idempotently.
 const published = (() => {
   try {
     execFileSync('git', ['cat-file', '-e', `origin/main:${briefingRepoPath(payload.date)}`], { cwd: repo, stdio: 'ignore' });
@@ -61,8 +61,8 @@ const published = (() => {
   }
 })();
 if (published) {
-  console.error(`A briefing for ${payload.date} is already on main (${briefingRepoPath(payload.date)}). Use a different date, or edit that file by hand.`);
-  process.exit(1);
+  console.log(`A briefing for ${payload.date} is already on main (${briefingRepoPath(payload.date)}); skipping.`);
+  process.exit(0);
 }
 
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'briefing-'));
