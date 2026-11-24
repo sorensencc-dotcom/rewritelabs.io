@@ -16,7 +16,7 @@ Briefings are daily intelligence digests synthesized across primary research sou
    ```
 3. Creates a new branch `briefing/<YYYY-MM-DD>` and opens a pull request on GitHub.
 4. CI workflow `.github/workflows/site-checks.yml` validates schema conformance and builds site artifacts.
-5. Upon human operator review, the PR is merged into `main`, immediately triggering Cloudflare Pages deployment.
+5. Once the site checks pass, the Auto-merge briefing workflow merges the PR into `main` — only if it changes exactly one new briefing file — immediately triggering Cloudflare Pages deployment. Any other change still needs human review and merge.
 
 ### Schema Fields
 - `date`: Valid calendar date (`YYYY-MM-DD`).
