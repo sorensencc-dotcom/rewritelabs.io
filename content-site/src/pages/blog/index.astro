@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import NewsletterSignup from '../../components/NewsletterSignup.astro';
 import { publishedPosts, formatDate, readingMinutes } from '../../lib/content';
 const posts = await publishedPosts();
 const [latest, ...older] = posts;
@@ -55,7 +56,9 @@ const [latest, ...older] = posts;
     )}
 
     <p class="blog__more">
-      Daily signals: <a href="/ai-news-feed/">AI News Feed</a>. Subscribe: <a href="/blog/rss.xml">RSS</a>.
+      Daily signals: <a href="/ai-news-feed/">AI News Feed</a>.
     </p>
+
+    <NewsletterSignup source="blog:index" rss="/blog/rss.xml" />
   </div>
 </Base>

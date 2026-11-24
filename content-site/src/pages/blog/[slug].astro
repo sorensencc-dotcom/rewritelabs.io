@@ -1,7 +1,7 @@
 ---
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { asset } from '../../lib/assets';
+import NewsletterSignup from '../../components/NewsletterSignup.astro';
 import { publishedPosts, allBriefings, relatedBriefingsFor, formatDate, readingMinutes } from '../../lib/content';
 
 export async function getStaticPaths() {
@@ -59,21 +59,7 @@ const jsonLd = {
       </p>
     )}
 
-    <aside class="article__cta" aria-labelledby="cta-title">
-      <h2 id="cta-title" class="article__cta-title">Automation that runs on your own ground.</h2>
-      <p>Rewrite Labs builds AI tools that keep your data and keys on your own machines. Early access is open.</p>
-      <form class="signup" data-source={`blog:${post.id}`} novalidate>
-        <div class="signup__fields">
-          <label class="sr-only" for="signup-email">Email address</label>
-          <input id="signup-email" class="signup__input" name="email" type="email" autocomplete="email" placeholder="you@business.com" required />
-          <div class="hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
-          <button type="submit" class="btn-cta">Join the waitlist</button>
-        </div>
-        <p class="signup__note" role="status" aria-live="polite">We'll only use your email to contact you about early access. <a href="/privacy">Privacy</a></p>
-      </form>
-      <noscript><p class="signup__note">Turn on JavaScript to join here, or email <a href="mailto:info@rewritelabs.io">info@rewritelabs.io</a>.</p></noscript>
-      <script is:inline src={asset('signup.js')} defer></script>
-    </aside>
+    <NewsletterSignup source={`blog:${post.id}`} rss="/blog/rss.xml" />
 
     {related.length > 0 && (
       <aside class="related">
