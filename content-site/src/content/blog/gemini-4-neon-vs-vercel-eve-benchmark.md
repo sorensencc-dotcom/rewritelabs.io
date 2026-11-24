@@ -14,7 +14,7 @@ We benchmarked Google Gemini 4 Neon against Vercel eve 1.0 across the Rewrite La
 
 ## The benchmark workloads
 
-We evaluated both models on two core agent workloads in `rewrite-mcp`:
+We evaluated both models on two core agent workloads in our pipeline:
 
 1. **Document rewriting (`rewrite`)**: 3,000 input tokens, 3,000 output tokens. Represents full-page HTML and markdown transformation, style-guide enforcement, and bulk site synchronization.
 2. **Structural analysis (`analysis`)**: 2,000 input tokens, 1,500 output tokens. Represents abstract syntax tree (AST) extraction, tool-calling schema validation, and WebMCP agentic commerce routing.
@@ -51,7 +51,7 @@ High throughput is useless if transient provider rate limits cause unhandled exc
 - **Spurious exhaustion**: Marking a model down after transient 429 or 503 drops before exhausting backoff limits.
 - **Unfair comparison**: Evaluating candidates on mismatched fixture states when one endpoint recovers and another fails silently.
 
-To eliminate these failure modes, we modeled the benchmark and routing pipeline in TLA+ (`BenchmarkPipeline.tla`).
+To eliminate these failure modes, we modeled the benchmark and routing pipeline in TLA+.
 
 Using the TLC model checker, we verified 232 states and 407 steps with zero invariant violations:
 
@@ -102,7 +102,7 @@ stateDiagram-v2
 
 ## Routing policy synthesis
 
-We integrated the benchmark results directly into the `rewrite-mcp` routing engine (`benchmarks/routing/policy.ts`):
+We integrated the benchmark results directly into our model routing layer:
 
 1. **Bulk text and markdown transformation (`rewrite`, `generation`)** routes to `google/gemini-4-neon`. Gemini 4 Neon provides high token velocity, low cost, and consistent prose quality.
 2. **Schema validation and tool dispatch (`analysis`, `webmcp`)** routes to `vercel/vercel-eve-1.0`. Vercel eve 1.0 delivers sub-40ms edge response and 99.1% AST compliance for tool calls.
