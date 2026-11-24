@@ -34,6 +34,6 @@ The daily news skill writes a payload JSON (see `scripts/export-briefing.mjs` fo
 node scripts/publish-briefing.mjs payload.json
 ```
 
-That validates the payload, commits `content-site/src/content/briefings/<date>.md` on a `briefing/<date>` branch in a temporary worktree, pushes it, and opens a draft PR. Marking the PR ready and merging publishes it. Add `--dry-run` to validate without touching git.
+That validates the payload, commits `content-site/src/content/briefings/<date>.md` on a `briefing/<date>` branch in a temporary worktree, pushes it, and opens a draft PR. On the cloud path the PR auto-merges once the site checks pass; from a local run, marking the PR ready and merging publishes it. Add `--dry-run` to validate without touching git.
 
 Source links must be `http(s)`. Every theme needs at least one primary source.

@@ -1,6 +1,6 @@
 # Step 8c: publish the briefing to rewritelabs.io
 
-Paste this block into the `daily-ai-news-summary` skill after Step 8b (NotebookLM and Drive persistence). Step 8c is the only step that touches the public site, and it only opens a draft PR. A human marks it ready and merges to publish.
+Paste this block into the `daily-ai-news-summary` skill after Step 8b (NotebookLM and Drive persistence). Step 8c is the only step that touches the public site, and it only opens a draft PR. On the cloud path the PR auto-merges once the site checks pass (see Auto-merge below); from a local run a human still marks it ready and merges to publish.
 
 ## Instruction block for the skill
 
@@ -10,7 +10,7 @@ Paste this block into the `daily-ai-news-summary` skill after Step 8b (NotebookL
 > node C:\dev\rewritelabs-io\content-site\scripts\publish-briefing.mjs briefing-payload.json
 > ```
 >
-> The command prints a draft PR URL. Add that URL to the run summary. If the command exits non-zero, report the error text and continue. Never retry in a loop, never edit the site repo by hand, and never skip a theme's primary sources: a theme with no corroborated primary link is left out of the payload.
+> The command prints a draft PR URL. Add that URL to the run summary. On the cloud path the PR is merged automatically once the site checks pass (see Auto-merge below); from a local run, mark it ready and merge it by hand. If the command exits non-zero, report the error text and continue. Never retry in a loop, never edit the site repo by hand, and never skip a theme's primary sources: a theme with no corroborated primary link is left out of the payload.
 
 ## Payload contract
 
@@ -51,6 +51,17 @@ GitHub's `repository_dispatch` accepts at most **10 top-level properties** and 6
 `publish-briefing.mjs` refuses to run if `briefing/<date>` already exists on origin, and also if `content-site/src/content/briefings/<date>.md` is already on `main`, so a repeat run cannot replace a published briefing. Edit that file by hand instead.
 
 The Publish briefing workflow opens the draft PR and then starts the Site checks workflow on the branch. A PR opened with the default `GITHUB_TOKEN` does not trigger `pull_request` workflows, so without that step no tests or build would run on a briefing PR. A briefing that does not match the content schema turns the check red before it can be merged.
+
+## Auto-merge
+
+Briefing PRs merge themselves — no human in the loop. The `Auto-merge briefing` workflow (`.github/workflows/auto-merge-briefing.yml`) runs when a Site checks run completes, and merges the PR only if all of these hold:
+
+- the Site checks run concluded `success` (content tests, prerender check, and production build all passed);
+- the branch is `briefing/YYYY-MM-DD`;
+- the PR head is the exact commit the checks ran on;
+- the PR changes exactly one file, `content-site/src/content/briefings/YYYY-MM-DD.md` for that same date.
+
+If any of those fails, the workflow fails closed: the PR stays open as a draft and a human merges or closes it. It never touches any other PR — blog posts, code, and workflow changes still need a human merge. The local path (`publish-briefing.mjs` run by hand) does not auto-merge; mark that PR ready and merge it yourself.
 
 ## Cloud dispatch
 
