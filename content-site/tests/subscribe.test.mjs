@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { onRequestPost, onRequest, cleanTracks } from '../../functions/api/subscribe.js';
+import { onRequestPost, onRequest, cleanTracks, kitReady } from '../../functions/api/subscribe.js';
 
 const kv = () => {
   const store = new Map();
@@ -71,4 +71,92 @@ test('cleanTracks keeps known tracks in order without repeats', () => {
 
 test('other methods get 405', () => {
   assert.equal(onRequest().status, 405);
+});
+
+const kitEnv = () => ({
+  NEWSLETTER: kv(),
+  KIT_API_KEY: 'test-key',
+  KIT_FORM_ID: '111',
+  KIT_TAG_OPERATOR: '222',
+  KIT_TAG_FIELD: '333',
+});
+
+const withFetch = async (handler, fn) => {
+  const calls = [];
+  const real = globalThis.fetch;
+  globalThis.fetch = async (url, init) => {
+    calls.push({ url: String(url), body: JSON.parse(init.body), key: init.headers['x-kit-api-key'] });
+    return handler(String(url));
+  };
+  try {
+    await fn(calls);
+  } finally {
+    globalThis.fetch = real;
+  }
+};
+
+test('Kit sync is off until every Kit setting exists', () => {
+  assert.equal(kitReady(kitEnv()), true);
+  for (const missing of ['KIT_API_KEY', 'KIT_FORM_ID', 'KIT_TAG_OPERATOR', 'KIT_TAG_FIELD']) {
+    const env = kitEnv();
+    delete env[missing];
+    assert.equal(kitReady(env), false);
+  }
+});
+
+test('without Kit settings nothing is sent and the signup stays pending', async () => {
+  await withFetch(() => new Response('{}', { status: 201 }), async (calls) => {
+    const env = { NEWSLETTER: kv() };
+    const res = await post(JSON.stringify({ email: 'a@b.co', tracks: ['operator'] }), env);
+    assert.equal(res.status, 200);
+    assert.equal(calls.length, 0);
+    assert.equal(JSON.parse(env.NEWSLETTER.store.get('email:a@b.co')).status, 'pending');
+  });
+});
+
+test('sends an inactive subscriber to the opt-in form, tags each track, then marks it sent', async () => {
+  await withFetch(() => new Response('{}', { status: 201 }), async (calls) => {
+    const env = kitEnv();
+    await post(JSON.stringify({ email: 'a@b.co', tracks: ['field', 'operator'] }), env);
+    assert.deepEqual(
+      calls.map((c) => c.url),
+      [
+        'https://api.kit.com/v4/subscribers',
+        'https://api.kit.com/v4/forms/111/subscribers',
+        'https://api.kit.com/v4/tags/222/subscribers',
+        'https://api.kit.com/v4/tags/333/subscribers',
+      ],
+    );
+    assert.deepEqual(calls[0].body, { email_address: 'a@b.co', state: 'inactive' });
+    assert.ok(calls.every((c) => c.key === 'test-key' && c.body.email_address === 'a@b.co'));
+    assert.equal(JSON.parse(env.NEWSLETTER.store.get('email:a@b.co')).status, 'sent');
+  });
+});
+
+test('tags only the tracks picked', async () => {
+  await withFetch(() => new Response('{}', { status: 201 }), async (calls) => {
+    await post(JSON.stringify({ email: 'a@b.co', tracks: ['field'] }), kitEnv());
+    assert.ok(!calls.some((c) => c.url.includes('/tags/222/')));
+    assert.ok(calls.some((c) => c.url.includes('/tags/333/')));
+  });
+});
+
+test('a Kit failure keeps the entry pending and the reader gets the same answer', async () => {
+  await withFetch((url) => new Response('{}', { status: url.includes('/forms/') ? 500 : 201 }), async () => {
+    const env = kitEnv();
+    const res = await post(JSON.stringify({ email: 'a@b.co', tracks: ['operator'] }), env);
+    assert.equal(res.status, 200);
+    assert.deepEqual(await res.json(), { ok: true });
+    assert.equal(JSON.parse(env.NEWSLETTER.store.get('email:a@b.co')).status, 'pending');
+  });
+});
+
+test('a known address is never sent to Kit again', async () => {
+  await withFetch(() => new Response('{}', { status: 201 }), async (calls) => {
+    const env = kitEnv();
+    await post(JSON.stringify({ email: 'a@b.co', tracks: ['operator'] }), env);
+    const before = calls.length;
+    await post(JSON.stringify({ email: 'a@b.co', tracks: ['field'] }), env);
+    assert.equal(calls.length, before);
+  });
 });
