@@ -4,7 +4,7 @@ date: 2026-11-20
 description: "Empirical throughput, AST accuracy, and formally verified statechart routing across high-velocity code rewriting and edge agent pipelines."
 topics: ["benchmarks", "agentic-ai", "formal-verification"]
 image: "/img/gemini-4-neon-vs-vercel-eve-benchmark-statechart.png"
-imageAlt: "Cathryn Lavery architecture diagram titled Gemini 4 Neon vs Vercel eve 1.0 Benchmark and Routing Pipeline, showing four stages: workload dispatch, exponential retry backoff, rubric scoring, and policy routing, model checked with TLA+ across 232 states."
+imageAlt: "Architecture diagram titled Gemini 4 Neon vs Vercel eve 1.0 Benchmark and Routing Pipeline, showing four stages: workload dispatch, exponential retry backoff, rubric scoring, and policy routing, model checked with TLA+ across 232 states."
 draft: false
 ---
 
