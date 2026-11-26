@@ -1,0 +1,18 @@
+.github/workflows/publish-briefing.yml
+  h_5c172e9b435f5a 3-7,11-14,21,23,49-51,54-82,85,89,96,113
+content-site/scripts/fetch-drive-briefing.mjs
+  h_5c172e9b435f5a 1-181
+content-site/tests/fetch-drive-briefing.test.mjs
+  h_5c172e9b435f5a 1-111
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "016914e4a18f9ce7648c9fdb1b1420688f8e2c21",
+  "prompts": {},
+  "humans": {
+    "h_5c172e9b435f5a": {
+      "author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
