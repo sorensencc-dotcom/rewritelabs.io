@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import NewsletterSignup from '../../components/NewsletterSignup.astro';
 import { allBriefings, formatDate, deltaGlyph } from '../../lib/content';
 const briefings = await allBriefings();
 ---
@@ -53,5 +54,6 @@ const briefings = await allBriefings();
       </div>
     )}
     <p class="feed__cross">Want the longer view? Read the <a href="/blog/">blog</a>.</p>
+    <NewsletterSignup source="feed:index" rss="/ai-news-feed/rss.xml" />
   </div>
 </Base>

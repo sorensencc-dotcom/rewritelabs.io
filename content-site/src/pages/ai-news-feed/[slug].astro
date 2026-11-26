@@ -1,6 +1,7 @@
 ---
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import NewsletterSignup from '../../components/NewsletterSignup.astro';
 import { allBriefings, publishedPosts, relatedPostsFor, formatDate, deltaGlyph } from '../../lib/content';
 
 export async function getStaticPaths() {
@@ -43,6 +44,7 @@ const d = briefing.data;
       ))}
     </div>
     <div class="prose"><Content /></div>
+    <NewsletterSignup source={`feed:${briefing.id}`} rss="/ai-news-feed/rss.xml" />
     {related.length > 0 && (
       <aside class="related">
         <h2 class="related__title">From the blog</h2>

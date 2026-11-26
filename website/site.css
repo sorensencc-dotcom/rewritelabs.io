@@ -464,3 +464,17 @@ a.chip:active { transform: translateY(1px); }
 html:not(.js) .pin__steps { display: block; }
 html:not(.js) .pin__item { display: block; }
 html:not(.js) .pinstate { position: static; min-height: 0; margin-block: var(--space-md) var(--space-xl); }
+
+/* Newsletter signup (blog and AI News Feed). Separate from the waitlist form. */
+.newsletter-box { display: flex; flex-direction: column; gap: var(--space-md); margin-top: var(--space-3xl); padding: var(--space-xl); background: var(--color-paper-2); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); }
+.newsletter-box__title { max-width: 24ch; font-size: var(--text-2xl); }
+.newsletter-box p { color: var(--color-ink-2); }
+.newsletter__fields { display: flex; flex-direction: column; gap: var(--space-md); }
+.newsletter__tracks { display: flex; flex-direction: column; gap: var(--space-sm); margin: 0; padding: 0; border: 0; }
+.newsletter__track { display: flex; gap: var(--space-sm); align-items: baseline; color: var(--color-ink-2); }
+.newsletter__track strong { color: var(--color-ink); font-weight: 500; }
+.newsletter__note { min-height: 1lh; margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--color-muted); }
+.newsletter__note a, .newsletter-box a { color: var(--color-ink); text-decoration-color: var(--color-rule-2); }
+.newsletter__note--error { color: var(--color-error); }
+.newsletter__note--done { color: var(--color-success); }
+@media (max-width: 40rem) { .newsletter-box { padding: var(--space-lg); } }

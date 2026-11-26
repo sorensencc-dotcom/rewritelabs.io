@@ -1,0 +1,33 @@
+---
+// One newsletter form per page. Separate from the product waitlist: it posts to /api/subscribe.
+interface Props {
+  source: string; // where the signup came from, e.g. "blog:index" or "feed:2026-11-23"
+  rss: string; // the page's RSS feed, offered as the no-email option
+}
+import { asset } from '../lib/assets';
+const { source, rss } = Astro.props;
+const id = `nl-${source.replace(/[^a-z0-9]/gi, '-')}`;
+---
+
+<aside class="newsletter-box" aria-labelledby={`${id}-title`}>
+  <h2 id={`${id}-title`} class="newsletter-box__title">Get it by email, once a week.</h2>
+  <p>A Friday digest of the week's briefings, one takeaway, and one thing to test. Pick the track you want.</p>
+  <form class="newsletter" data-source={source} novalidate>
+    <div class="newsletter__fields">
+      <fieldset class="newsletter__tracks">
+        <legend class="sr-only">Tracks</legend>
+        <label class="newsletter__track"><input type="checkbox" name="track" value="operator" checked /> <span><strong>Operator Notes</strong> for builders running AI in production</span></label>
+        <label class="newsletter__track"><input type="checkbox" name="track" value="field" /> <span><strong>Field Notes</strong> for local service owners whose website books the job</span></label>
+      </fieldset>
+      <div class="signup__fields">
+        <label class="sr-only" for={`${id}-email`}>Email address</label>
+        <input id={`${id}-email`} class="signup__input" name="email" type="email" autocomplete="email" placeholder="you@business.com" required />
+        <div class="hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+        <button type="submit" class="btn btn--quiet">Subscribe</button>
+      </div>
+    </div>
+    <p class="newsletter__note" role="status" aria-live="polite">Free. Unsubscribe any time. Not the product waitlist. <a href="/privacy">Privacy</a> · <a href={rss}>RSS</a></p>
+  </form>
+  <noscript><p class="newsletter__note">Turn on JavaScript to subscribe here, or follow by <a href={rss}>RSS</a>.</p></noscript>
+  <script is:inline src={asset('newsletter.js')} defer></script>
+</aside>
