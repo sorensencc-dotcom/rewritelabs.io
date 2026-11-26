@@ -8,6 +8,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        description: 'Git ref to check out (defaults to triggering ref)'
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -21,6 +27,8 @@ jobs:
         working-directory: content-site
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || '' }}
 
       # Astro 7 needs Node 22.23.4 or newer; keep this in step with NODE_VERSION in the Cloudflare Pages project.
       - uses: actions/setup-node@v4

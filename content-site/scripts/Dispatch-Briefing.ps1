@@ -106,6 +106,21 @@ try {
             }
         }
     }
+    if (-not $hasToken) {
+        $ghExe = (Get-Command gh.exe -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty Source)
+        if ($ghExe) {
+            $prevEap = $ErrorActionPreference
+            $ErrorActionPreference = 'Continue'
+            $ghToken = (& $ghExe auth token 2>$null | Out-String).Trim()
+            $ghExit = $LASTEXITCODE
+            $ErrorActionPreference = $prevEap
+            if ($ghExit -eq 0 -and -not [string]::IsNullOrWhiteSpace($ghToken)) {
+                $env:GH_DISPATCH_TOKEN = $ghToken
+                $hasToken = $true
+                Write-Log 'Resolved GH_DISPATCH_TOKEN via gh auth token fallback.'
+            }
+        }
+    }
 
     $useDryRun = $DryRun.IsPresent -or (-not $hasToken)
     if (-not $hasToken -and -not $DryRun.IsPresent) {
