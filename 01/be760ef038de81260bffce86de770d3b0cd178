@@ -1,0 +1,18 @@
+.github/workflows/publish-briefing.yml
+  h_5c172e9b435f5a 24-28,56-57,62-71,75-120
+.github/workflows/site-checks.yml
+  h_5c172e9b435f5a 11-16,30-31
+content-site/scripts/Dispatch-Briefing.ps1
+  h_5c172e9b435f5a 109-123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "01be760ef038de81260bffce86de770d3b0cd178",
+  "prompts": {},
+  "humans": {
+    "h_5c172e9b435f5a": {
+      "author": "Chris Sorensen <sorensencc@gmail.com>"
+    }
+  }
+}
