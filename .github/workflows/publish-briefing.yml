@@ -1,20 +1,26 @@
 name: Publish briefing
 
-# Receives a scored briefing payload from the cloud runner (Step 8c) and opens a
-# draft PR. Needs "Allow GitHub Actions to create and approve pull requests"
-# enabled under Settings > Actions > General.
+# Receives a scored briefing payload via repository_dispatch (Step 8c) OR pulls
+# the latest briefing-payload.json directly from Google Drive on a daily schedule
+# (or manual workflow_dispatch), opens a draft PR, runs Site checks, and auto-merges.
+# Needs "Allow GitHub Actions to create and approve pull requests" enabled under
+# Settings > Actions > General.
 on:
   repository_dispatch:
     types: [publish-briefing]
+  schedule:
+    # Daily at 10:30 AM EST (15:30 UTC), ~90 minutes after Drive staging.
+    - cron: '30 15 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
   pull-requests: write
   actions: write
 
-# One run per briefing date at a time, so two dispatches for the same day cannot race on the branch.
+# One run per briefing date (or scheduled pull) at a time so concurrent runs cannot race.
 concurrency:
-  group: publish-briefing-${{ github.event.client_payload.date }}
+  group: publish-briefing-${{ github.event.client_payload.date || github.event_name }}
   cancel-in-progress: false
 
 jobs:
@@ -40,21 +46,54 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Write payload
+      - name: Write payload from repository_dispatch
+        id: dispatch_payload
+        if: github.event_name == 'repository_dispatch'
         env:
           PAYLOAD_JSON: ${{ toJson(github.event.client_payload) }}
-        run: printf '%s' "$PAYLOAD_JSON" > "$RUNNER_TEMP/briefing-payload.json"
+        run: |
+          printf '%s' "$PAYLOAD_JSON" > "$RUNNER_TEMP/briefing-payload.json"
+          echo "ready=true" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch payload from Google Drive
+        id: drive_payload
+        if: github.event_name != 'repository_dispatch'
+        env:
+          GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
+          GDRIVE_FOLDER_ID: ${{ vars.GDRIVE_FOLDER_ID }}
+        run: |
+          if [ -z "$GDRIVE_SERVICE_ACCOUNT_JSON" ]; then
+            echo "::warning::GDRIVE_SERVICE_ACCOUNT_JSON secret is not configured; skipping scheduled Drive pull."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          set +e
+          node content-site/scripts/fetch-drive-briefing.mjs "$RUNNER_TEMP/briefing-payload.json"
+          code=$?
+          set -e
+          if [ "$code" -eq 3 ]; then
+            echo "No staged briefing-payload.json found in Google Drive; nothing to publish."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$code" -ne 0 ]; then
+            exit "$code"
+          fi
+          echo "ready=true" >> "$GITHUB_OUTPUT"
 
       - name: Validate payload
+        if: steps.dispatch_payload.outputs.ready == 'true' || steps.drive_payload.outputs.ready == 'true'
         run: node content-site/scripts/publish-briefing.mjs "$RUNNER_TEMP/briefing-payload.json" --dry-run
 
       - name: Open draft PR
+        if: steps.dispatch_payload.outputs.ready == 'true' || steps.drive_payload.outputs.ready == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node content-site/scripts/publish-briefing.mjs "$RUNNER_TEMP/briefing-payload.json" | tee "$RUNNER_TEMP/pr-url.txt"
 
       - name: Resolve open briefing PR
         id: pr
+        if: steps.dispatch_payload.outputs.ready == 'true' || steps.drive_payload.outputs.ready == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -71,6 +110,7 @@ jobs:
           echo "head_sha=$head_sha" >> "$GITHUB_OUTPUT"
 
       - name: Summarize
+        if: steps.dispatch_payload.outputs.ready == 'true' || steps.drive_payload.outputs.ready == 'true'
         run: echo "Draft PR $(tail -n 1 "$RUNNER_TEMP/pr-url.txt")" >> "$GITHUB_STEP_SUMMARY"
 
   # Call Site checks directly via workflow_call instead of workflow_dispatch + workflow_run:
