@@ -21,6 +21,11 @@ jobs:
   create-briefing-pr:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      date: ${{ steps.pr.outputs.date }}
+      branch: ${{ steps.pr.outputs.branch }}
+      pr_number: ${{ steps.pr.outputs.pr_number }}
+      head_sha: ${{ steps.pr.outputs.head_sha }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -48,14 +53,68 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node content-site/scripts/publish-briefing.mjs "$RUNNER_TEMP/briefing-payload.json" | tee "$RUNNER_TEMP/pr-url.txt"
 
-      # A PR opened with GITHUB_TOKEN does not trigger the pull_request workflows, so start the site checks by hand.
-      # Their result shows on the PR, and a briefing that breaks the content schema turns it red before merge.
-      - name: Run site checks on the briefing branch
+      - name: Resolve open briefing PR
+        id: pr
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           date=$(node -p "require(process.env.RUNNER_TEMP + '/briefing-payload.json').date")
-          gh workflow run site-checks.yml --ref "briefing/$date" || echo "::warning::Could not start the site checks for briefing/$date"
+          branch="briefing/$date"
+          pr_number=$(gh pr list --head "$branch" --base main --state open --json number --jq '.[0].number // empty')
+          head_sha=""
+          if [ -n "$pr_number" ]; then
+            head_sha=$(gh pr view "$pr_number" --json headRefOid --jq '.headRefOid')
+          fi
+          echo "date=$date" >> "$GITHUB_OUTPUT"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          echo "pr_number=$pr_number" >> "$GITHUB_OUTPUT"
+          echo "head_sha=$head_sha" >> "$GITHUB_OUTPUT"
 
       - name: Summarize
         run: echo "Draft PR $(tail -n 1 "$RUNNER_TEMP/pr-url.txt")" >> "$GITHUB_STEP_SUMMARY"
+
+  # Call Site checks directly via workflow_call instead of workflow_dispatch + workflow_run:
+  # GitHub Actions suppresses cascading workflow_run events from GITHUB_TOKEN-triggered runs.
+  site-checks:
+    needs: create-briefing-pr
+    if: needs.create-briefing-pr.outputs.pr_number != ''
+    uses: ./.github/workflows/site-checks.yml
+    with:
+      ref: ${{ needs.create-briefing-pr.outputs.branch }}
+
+  auto-merge:
+    needs: [create-briefing-pr, site-checks]
+    if: needs.create-briefing-pr.outputs.pr_number != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Verify single-file briefing scope and merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          DATE: ${{ needs.create-briefing-pr.outputs.date }}
+          BRANCH: ${{ needs.create-briefing-pr.outputs.branch }}
+          HEAD_SHA: ${{ needs.create-briefing-pr.outputs.head_sha }}
+          PR_NUMBER: ${{ needs.create-briefing-pr.outputs.pr_number }}
+        run: |
+          if ! [[ "$DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "::error::Branch $BRANCH is not a dated briefing branch; refusing to merge PR #$PR_NUMBER."
+            exit 1
+          fi
+          pr_sha=$(gh pr view "$PR_NUMBER" --json headRefOid --jq '.headRefOid')
+          if [ "$pr_sha" != "$HEAD_SHA" ]; then
+            echo "::error::PR #$PR_NUMBER head $pr_sha is not the checked commit ($HEAD_SHA); refusing to merge."
+            exit 1
+          fi
+          files=$(gh pr view "$PR_NUMBER" --json files --jq '.files[].path')
+          expected="content-site/src/content/briefings/$DATE.md"
+          if [ "$files" != "$expected" ]; then
+            echo "::error::PR #$PR_NUMBER changes files other than $expected; refusing to merge."
+            echo "Changed files: $files"
+            exit 1
+          fi
+          is_draft=$(gh pr view "$PR_NUMBER" --json isDraft --jq '.isDraft')
+          if [ "$is_draft" = "true" ]; then
+            gh pr ready "$PR_NUMBER"
+          fi
+          gh pr merge "$PR_NUMBER" --merge --delete-branch
