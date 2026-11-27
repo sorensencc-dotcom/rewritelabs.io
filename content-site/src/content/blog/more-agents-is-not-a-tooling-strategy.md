@@ -14,7 +14,7 @@ Five weeks of daily briefings later, the strongest new evidence is about the too
 
 On [Nov 15](https://rewritelabs.io/ai-news-feed/2026-11-15/) the feed covered a Nature Machine Intelligence study (Kim et al., 2026). The authors held prompts, tools, and compute budgets constant. They varied only the coordination structure and the model. That gave 260 configurations across six benchmarks, five architectures, and three model families.
 
-The spread was wide. On structured financial reasoning, a centralized multi-agent setup scored 80.8% higher than a single agent. On sequential planning, every multi-agent architecture lost ground. Hybrid lost 39.1%. Independent agents lost 70.0%.
+The spread was wide. On Finance Agent, a structured financial reasoning benchmark, a centralized multi-agent setup scored 80.8% higher than a single agent. On PlanCraft, a sequential planning benchmark, every multi-agent architecture lost ground. Hybrid lost 39.1%. Independent agents lost 70.0%. That range is PlanCraft alone, not a general rate.
 
 Coordination also has a cost you pay either way. The multi-agent setups used 1.6 to 6.2 times more reasoning turns than one agent under the same compute ceiling.
 
@@ -68,7 +68,7 @@ Operator Notes is the builder track of the Rewrite Labs blog: local-first, audit
 
 **Sources**
 
-- Kim et al., "Capable language models can outgrow the benefits of collaboration," Nature Machine Intelligence 8 (2026): https://www.media.mit.edu/publications/capable-language-models-can-outgrow-the-benefits-of-collaboration/
+- Kim et al., "Capable language models can outgrow the benefits of collaboration," Nature Machine Intelligence 8 (2026), DOI 10.1038/s42256-026-01268-y: https://doi.org/10.1038/s42256-026-01268-y
 - Replit, "Throwing Headcount at the Problem": https://frontier.replit.com/throwing-headcount-at-the-problem/
 - Stripe, "Stripe evals: Measuring real-world coding agent performance": https://stripe.dev/blog/stripe-integration-evals-methodology
 - Lei et al., "SWE-CoWork," arXiv:2611.20218: https://arxiv.org/abs/2611.20218
