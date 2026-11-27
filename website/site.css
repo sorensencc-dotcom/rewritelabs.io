@@ -252,6 +252,9 @@ a.chip:active { transform: translateY(1px); }
 .footer__h { max-width: none; font-family: var(--font-body); font-size: var(--text-sm); font-weight: 500; letter-spacing: 0; line-height: 1.5; color: var(--color-muted); }
 .footer__col ul { display: flex; flex-direction: column; gap: var(--space-xs); list-style: none; padding: 0; }
 .footer__col a { font-size: var(--text-sm); }
+.footer__socials { display: flex; gap: var(--space-md); list-style: none; padding: 0; margin: 0; }
+.footer__socials a { display: inline-flex; color: var(--color-muted); transition: color var(--dur-micro) var(--ease-out); }
+.footer__socials a:hover { color: var(--color-accent); }
 
 /* Case study: two specimens, then the diff table */
 .cs-header { display: flex; flex-direction: column; gap: var(--space-lg); padding-block: var(--space-2xl) 0; }
